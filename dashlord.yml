@@ -18,8 +18,8 @@ tools:
   dependabot: true
   codescan: true
   stats: false
-  declaration-a11y: true
-  ecoindex: true
+  declaration-a11y: false
+  ecoindex: false
 urls:
   - url: https://www.keiruaprod.fr
   - url: https://www.keiruaprod.fr/blog
