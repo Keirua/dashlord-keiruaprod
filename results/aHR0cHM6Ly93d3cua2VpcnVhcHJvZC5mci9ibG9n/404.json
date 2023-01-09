@@ -1,0 +1,24 @@
+{
+  "links": [
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "www.keiruaprod.fr",
+        "port": null,
+        "hostname": "www.keiruaprod.fr",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/blog",
+        "path": "/blog",
+        "href": "https://www.keiruaprod.fr/blog"
+      },
+      "link": "https://www.keiruaprod.fr/blog",
+      "line": "--2023-01-09 13:18:34--  https://www.keiruaprod.fr/blog",
+      "broken": false
+    }
+  ],
+  "broken": []
+}
