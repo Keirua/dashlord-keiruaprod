@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 15 Jan 2023 00:23:55",
+	"@generated": "Sun, 22 Jan 2023 00:24:37",
 	"site":[ 
 		{
 			"@name": "https://www.keiruaprod.fr",
@@ -41,14 +41,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/01/09/better-ssh-public-key-usage.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/01/12/envoyer-une-notification-discord.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/01/12/envoyer-une-notification-discord.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/01/18/integrations-chatgpt.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -137,14 +137,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/01/09/better-ssh-public-key-usage.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/01/12/envoyer-une-notification-discord.html",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/01/12/envoyer-une-notification-discord.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/01/18/integrations-chatgpt.html",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
@@ -225,7 +225,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "434"
+					"sourceid": "431"
 				},
 				{
 					"pluginid": "10099",
@@ -258,7 +258,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "472"
+					"sourceid": "458"
 				},
 				{
 					"pluginid": "90003",
@@ -292,14 +292,14 @@
 							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.outbound-links.js\"></script>"
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/01/09/better-ssh-public-key-usage.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/01/12/envoyer-une-notification-discord.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.outbound-links.js\"></script>"
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/01/12/envoyer-une-notification-discord.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/01/18/integrations-chatgpt.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -354,7 +354,7 @@
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "10003",
@@ -380,7 +380,7 @@
 					"reference": "<p>https://nvd.nist.gov/vuln/detail/CVE-2012-6708</p><p>https://github.com/jquery/jquery/issues/2432</p><p>http://research.insecurelabs.org/jquery/test/</p><p>http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/</p><p>http://bugs.jquery.com/ticket/11290</p><p>https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/</p><p>https://nvd.nist.gov/vuln/detail/CVE-2019-11358</p><p>https://nvd.nist.gov/vuln/detail/CVE-2015-9251</p><p>https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b</p><p>https://blog.jquery.com/2020/04/10/jquery-3-5-0-released/</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
-					"sourceid": "36"
+					"sourceid": "40"
 				},
 				{
 					"pluginid": "10017",
@@ -502,7 +502,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "36"
+					"sourceid": "40"
 				},
 				{
 					"pluginid": "10063",
@@ -529,7 +529,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/01/12/envoyer-une-notification-discord.html",
+							"uri": "https://www.keiruaprod.fr/blog/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -598,7 +598,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</p><p>https://developers.google.com/web/updates/2018/06/feature-policy</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "10040",
@@ -652,7 +652,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html</p>",
 					"cweid": "311",
 					"wascid": "4",
-					"sourceid": "634"
+					"sourceid": "636"
 				},
 				{
 					"pluginid": "10035",
@@ -680,6 +680,13 @@
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/css/bootstrap-responsive.min.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.keiruaprod.fr/css/font-awesome.min.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -735,13 +742,13 @@
 							"evidence": ""
 						}
 					],
-					"count": "10",
+					"count": "11",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>http://caniuse.com/stricttransportsecurity</p><p>http://tools.ietf.org/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "10096",
@@ -774,7 +781,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "524"
+					"sourceid": "526"
 				},
 				{
 					"pluginid": "10021",
@@ -870,7 +877,7 @@
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "10094",
@@ -882,6 +889,13 @@
 					"riskdesc": "Informational (Medium)",
 					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
 					"instances":[ 
+						{
+							"uri": "https://www.keiruaprod.fr/blog/2021/05/11/advent-of-code-2020.html",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "com/Keirua/aoc2020/blob/main/day2/src/main"
+						},
 						{
 							"uri": "https://www.keiruaprod.fr/blog/2021/05/15/mandelbrot.html",
 							"method": "GET",
@@ -967,13 +981,13 @@
 							"evidence": "D27CDB6E-AE6D-11cf-96B8-444553540000"
 						}
 					],
-					"count": "12",
+					"count": "13",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>r\uFFFD\uFFFD\\x0006\uFFFD\\x001b\uFFFD\uFFFDjw^\uFFFD\uFFFD-\uFFFD\uFFFDho\uFFFD\uFFFD\uFFFD\u05EB\uFFFDf\uFFFDu\uFFFD[\uFFFD\uFFFD\uFFFDjw^\uFFFD\uFFFD-</p>",
+					"otherinfo": "<p>r\uFFFD\uFFFD)\u8AF9\uFFFD\u06A1\u0374\uFFFDO\u06D6\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u05B2\uFFFD\uFFFD+s\uFFFD\uFFFD\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "407"
+					"sourceid": "417"
 				},
 				{
 					"pluginid": "10027",
@@ -1020,7 +1034,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "950"
+					"sourceid": "952"
 				},
 				{
 					"pluginid": "10109",
@@ -1046,7 +1060,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "529"
+					"sourceid": "531"
 				},
 				{
 					"pluginid": "10015",
@@ -1231,7 +1245,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "8"
+					"sourceid": "3"
 				}
 			]
 		}
