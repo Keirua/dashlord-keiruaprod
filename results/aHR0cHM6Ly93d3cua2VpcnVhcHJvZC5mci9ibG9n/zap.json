@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 22 Jan 2023 00:24:37",
+	"@generated": "Sun, 29 Jan 2023 00:24:56",
 	"site":[ 
 		{
 			"@name": "https://www.keiruaprod.fr",
@@ -41,14 +41,21 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/01/12/envoyer-une-notification-discord.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/01/18/integrations-chatgpt.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/01/18/integrations-chatgpt.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/01/25/extension-firefox.html",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.keiruaprod.fr/blog/2023/01/26/using-direnv.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -97,7 +104,7 @@
 							"evidence": ""
 						}
 					],
-					"count": "11",
+					"count": "12",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header, to achieve optimal browser support: \"Content-Security-Policy\" for Chrome 25+, Firefox 23+ and Safari 7+, \"X-Content-Security-Policy\" for Firefox 4.0+ and Internet Explorer 10+, and \"X-WebKit-CSP\" for Chrome 14+ and Safari 6+.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>http://www.w3.org/TR/CSP/</p><p>http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</p><p>http://www.html5rocks.com/en/tutorials/security/content-security-policy/</p><p>http://caniuse.com/#feat=contentsecuritypolicy</p><p>http://content-security-policy.com/</p>",
@@ -137,14 +144,21 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/01/12/envoyer-une-notification-discord.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/01/18/integrations-chatgpt.html",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/01/18/integrations-chatgpt.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/01/25/extension-firefox.html",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.keiruaprod.fr/blog/2023/01/26/using-direnv.html",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
@@ -193,13 +207,13 @@
 							"evidence": ""
 						}
 					],
-					"count": "11",
+					"count": "12",
 					"solution": "<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p><p>If you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy's \"frame-ancestors\" directive.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "3"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10099",
@@ -225,7 +239,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "431"
+					"sourceid": "440"
 				},
 				{
 					"pluginid": "10099",
@@ -258,7 +272,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "458"
+					"sourceid": "477"
 				},
 				{
 					"pluginid": "90003",
@@ -292,14 +306,14 @@
 							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.outbound-links.js\"></script>"
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/01/12/envoyer-une-notification-discord.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/01/18/integrations-chatgpt.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.outbound-links.js\"></script>"
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/01/18/integrations-chatgpt.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/01/26/using-direnv.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -536,6 +550,13 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://www.keiruaprod.fr/blog/2023/01/26/using-direnv.html",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://www.keiruaprod.fr/developpement",
 							"method": "GET",
 							"param": "",
@@ -578,13 +599,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/js/libs/jquery-1.7.2.min.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://www.keiruaprod.fr/resume.html",
 							"method": "GET",
 							"param": "",
@@ -598,7 +612,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</p><p>https://developers.google.com/web/updates/2018/06/feature-policy</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "3"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10040",
@@ -652,7 +666,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html</p>",
 					"cweid": "311",
 					"wascid": "4",
-					"sourceid": "636"
+					"sourceid": "642"
 				},
 				{
 					"pluginid": "10035",
@@ -680,13 +694,6 @@
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/css/bootstrap-responsive.min.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://www.keiruaprod.fr/css/font-awesome.min.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -742,13 +749,13 @@
 							"evidence": ""
 						}
 					],
-					"count": "11",
+					"count": "10",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>http://caniuse.com/stricttransportsecurity</p><p>http://tools.ietf.org/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "3"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10096",
@@ -781,7 +788,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "526"
+					"sourceid": "527"
 				},
 				{
 					"pluginid": "10021",
@@ -877,7 +884,7 @@
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "3"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10094",
@@ -967,13 +974,6 @@
 							"evidence": "com/ZoeSchiffer/status/1593391604785504257"
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/feed.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "com/ZoeSchiffer/status/1593391604785504257"
-						},
-						{
 							"uri": "https://www.keiruaprod.fr/js/libs/jquery-1.7.2.min.js",
 							"method": "GET",
 							"param": "",
@@ -981,13 +981,13 @@
 							"evidence": "D27CDB6E-AE6D-11cf-96B8-444553540000"
 						}
 					],
-					"count": "13",
+					"count": "12",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
 					"otherinfo": "<p>r\uFFFD\uFFFD)\u8AF9\uFFFD\u06A1\u0374\uFFFDO\u06D6\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u05B2\uFFFD\uFFFD+s\uFFFD\uFFFD\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "417"
+					"sourceid": "423"
 				},
 				{
 					"pluginid": "10027",
@@ -1034,7 +1034,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "952"
+					"sourceid": "961"
 				},
 				{
 					"pluginid": "10109",
@@ -1060,7 +1060,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "531"
+					"sourceid": "537"
 				},
 				{
 					"pluginid": "10015",
@@ -1245,7 +1245,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "3"
+					"sourceid": "8"
 				}
 			]
 		}
