@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 29 Jan 2023 00:24:18",
+	"@generated": "Sun, 5 Feb 2023 00:24:34",
 	"site":[ 
 		{
 			"@name": "https://www.keiruaprod.fr",
@@ -115,7 +115,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90003",
@@ -169,7 +169,7 @@
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10003",
@@ -447,13 +447,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/js/libs/bootstrap/bootstrap.min.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://www.keiruaprod.fr/resume.html",
 							"method": "GET",
 							"param": "",
@@ -475,7 +468,7 @@
 							"evidence": ""
 						}
 					],
-					"count": "12",
+					"count": "11",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>http://caniuse.com/stricttransportsecurity</p><p>http://tools.ietf.org/html/rfc6797</p>",
@@ -502,6 +495,13 @@
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/css/bootstrap-responsive.min.css",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.keiruaprod.fr/css/font-awesome-ie7.min.css",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -537,13 +537,6 @@
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/index.html",
-							"method": "GET",
-							"param": "X-Content-Type-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://www.keiruaprod.fr/js/libs/bootstrap/bootstrap.min.js",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -738,6 +731,13 @@
 							"evidence": "max-age=900"
 						},
 						{
+							"uri": "https://www.keiruaprod.fr/css/font-awesome-ie7.min.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=900"
+						},
+						{
 							"uri": "https://www.keiruaprod.fr/css/font-awesome.min.css",
 							"method": "GET",
 							"param": "",
@@ -771,13 +771,6 @@
 							"param": "",
 							"attack": "",
 							"evidence": ""
-						},
-						{
-							"uri": "https://www.keiruaprod.fr/js/libs/bootstrap/bootstrap.min.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=900"
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/resume.html",
