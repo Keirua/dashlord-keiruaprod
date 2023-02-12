@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.keiruaprod.fr</pre>
-<p class="lead">Sun Feb  5 00:29:50 2023 – Sun Feb  5 00:30:11 2023<br>1 hosts scanned.
+<p class="lead">Sun Feb 12 00:30:00 2023 – Sun Feb 12 00:30:27 2023<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -120,23 +120,19 @@
 <td title="Extra Info">bad gateway</td>
 </tr>
 <tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>http-server-header</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">
-  Apache
-  nginx</pre>
-<h5>fingerprint-strings</h5>
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
   GetRequest: 
     HTTP/1.1 404 Not Found
     server: nginx
-    date: Sun, 05 Feb 2023 00:30:03 GMT
+    date: Sun, 12 Feb 2023 00:30:17 GMT
     content-type: text/html; charset=utf8
-    x-ovh-webhosting-id: 875351e3d731ae9e6cb0bd363a607bd9
+    x-ovh-webhosting-id: e1fd51517102fe9a46aa653414598303
     pragma: no-cache
     cache-control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-    content-length: 4961
-    x-iplb-request-id: ACB089B7:5441_D5BA2104:0050_63DEF885_30A2F:1981E
-    x-iplb-instance: 31956
+    content-length: 4958
+    x-iplb-request-id: 0D583DE2:7440_D5BA2104:0050_63E83313_1D620:2DA2B
+    x-iplb-instance: 32001
     connection: close
     &lt;html xml:lang="en-EN" lang="en-EN"&gt;
     &lt;head&gt;
@@ -151,14 +147,14 @@
   HTTPOptions: 
     HTTP/1.1 404 Not Found
     server: nginx
-    date: Sun, 05 Feb 2023 00:30:03 GMT
+    date: Sun, 12 Feb 2023 00:30:17 GMT
     content-type: text/html; charset=utf8
-    x-ovh-webhosting-id: 189325f05bde525fe642c32ad51e45fe
+    x-ovh-webhosting-id: 0b3dda773174e81207d5ee6efdf827aa
     pragma: no-cache
     cache-control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-    content-length: 4961
-    x-iplb-request-id: ACB089B7:5440_D5BA2104:0050_63DEF88B_68F15:2732B
-    x-iplb-instance: 31974
+    content-length: 4958
+    x-iplb-request-id: 0D583DE2:7441_D5BA2104:0050_63E83319_28B45:2DA2C
+    x-iplb-instance: 32001
     connection: close
     &lt;html xml:lang="en-EN" lang="en-EN"&gt;
     &lt;head&gt;
@@ -170,6 +166,10 @@
     &lt;meta name="robots" content="noindex, nofollow"&gt;
     &lt;meta name="description" qtlid="283606" content="Site not installed"&gt;
     &lt;meta</pre>
+<h5>http-server-header</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">
+  Apache
+  nginx</pre>
 </td></tr>
 <tr class="success">
 <td title="Port">443</td>
