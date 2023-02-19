@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 12 Feb 2023 00:25:29",
+	"@generated": "Sun, 19 Feb 2023 00:24:12",
 	"site":[ 
 		{
 			"@name": "https://www.keiruaprod.fr",
@@ -41,13 +41,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/01/26/using-direnv.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://www.keiruaprod.fr/blog/2023/01/30/simple-python-progressbar.html",
 							"method": "GET",
 							"param": "",
@@ -104,13 +97,13 @@
 							"evidence": ""
 						}
 					],
-					"count": "12",
+					"count": "11",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header, to achieve optimal browser support: \"Content-Security-Policy\" for Chrome 25+, Firefox 23+ and Safari 7+, \"X-Content-Security-Policy\" for Firefox 4.0+ and Internet Explorer 10+, and \"X-WebKit-CSP\" for Chrome 14+ and Safari 6+.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>http://www.w3.org/TR/CSP/</p><p>http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</p><p>http://www.html5rocks.com/en/tutorials/security/content-security-policy/</p><p>http://caniuse.com/#feat=contentsecuritypolicy</p><p>http://content-security-policy.com/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "3"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10020",
@@ -122,20 +115,6 @@
 					"riskdesc": "Medium (Medium)",
 					"desc": "<p>The response does not include either Content-Security-Policy with 'frame-ancestors' directive or X-Frame-Options to protect against 'ClickJacking' attacks.</p>",
 					"instances":[ 
-						{
-							"uri": "https://www.keiruaprod.fr/",
-							"method": "GET",
-							"param": "X-Frame-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://www.keiruaprod.fr/blog",
-							"method": "GET",
-							"param": "X-Frame-Options",
-							"attack": "",
-							"evidence": ""
-						},
 						{
 							"uri": "https://www.keiruaprod.fr/blog/",
 							"method": "GET",
@@ -200,13 +179,13 @@
 							"evidence": ""
 						}
 					],
-					"count": "11",
+					"count": "9",
 					"solution": "<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p><p>If you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy's \"frame-ancestors\" directive.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "3"
+					"sourceid": "42"
 				},
 				{
 					"pluginid": "10099",
@@ -253,7 +232,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "446"
+					"sourceid": "443"
 				},
 				{
 					"pluginid": "10099",
@@ -320,13 +299,6 @@
 							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.outbound-links.js\"></script>"
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/01/26/using-direnv.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.outbound-links.js\"></script>"
-						},
-						{
 							"uri": "https://www.keiruaprod.fr/blog/2023/01/30/simple-python-progressbar.html",
 							"method": "GET",
 							"param": "",
@@ -383,7 +355,7 @@
 							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>"
 						}
 					],
-					"count": "12",
+					"count": "11",
 					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
@@ -511,7 +483,7 @@
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "3"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10110",
@@ -564,7 +536,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/01/26/using-direnv.html",
+							"uri": "https://www.keiruaprod.fr/blog/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -633,7 +605,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</p><p>https://developers.google.com/web/updates/2018/06/feature-policy</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "3"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10040",
@@ -721,13 +693,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/css/font-awesome.min.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://www.keiruaprod.fr/css/style.css",
 							"method": "GET",
 							"param": "",
@@ -777,13 +742,13 @@
 							"evidence": ""
 						}
 					],
-					"count": "11",
+					"count": "10",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>http://caniuse.com/stricttransportsecurity</p><p>http://tools.ietf.org/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "3"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10096",
@@ -912,7 +877,7 @@
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "3"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10094",
@@ -1062,7 +1027,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "965"
+					"sourceid": "970"
 				},
 				{
 					"pluginid": "10109",
@@ -1184,7 +1149,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "3"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10049",
@@ -1273,7 +1238,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "3"
+					"sourceid": "8"
 				}
 			]
 		}
