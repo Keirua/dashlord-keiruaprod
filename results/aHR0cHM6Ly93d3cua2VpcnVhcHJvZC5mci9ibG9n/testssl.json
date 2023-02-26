@@ -234,7 +234,7 @@
               "ip"           : "www.keiruaprod.fr/213.186.33.4",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "not supported"
+              "finding"      : "supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -373,8 +373,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "www.keiruaprod.fr/213.186.33.4",
               "port"         : "443",
-              "severity"     : "MEDIUM",
-              "finding"      : "expires < 30 days (20)"
+              "severity"     : "HIGH",
+              "finding"      : "expires < 15 days (13)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -387,7 +387,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "www.keiruaprod.fr/213.186.33.4",
               "port"         : "443",
-              "severity"     : "MEDIUM",
+              "severity"     : "HIGH",
               "finding"      : "2023-03-11 19:42"
           }
 ,         {
@@ -577,7 +577,7 @@
               "ip"           : "www.keiruaprod.fr/213.186.33.4",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1676766368"
+              "finding"      : "1677371520"
           }
 ,         {
               "id"           : "HSTS",
@@ -1156,6 +1156,6 @@
               "ip"           : "www.keiruaprod.fr/213.186.33.4",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "147"
+              "finding"      : "187"
           }
 ]
