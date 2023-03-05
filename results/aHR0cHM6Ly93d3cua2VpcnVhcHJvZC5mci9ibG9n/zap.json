@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 26 Feb 2023 00:25:34",
+	"@generated": "Sun, 5 Mar 2023 00:26:42",
 	"site":[ 
 		{
 			"@name": "https://www.keiruaprod.fr",
@@ -11,7 +11,7 @@
 			"alerts": [ 
 				{
 					"pluginid": "10038",
-					"alertRef": "10038",
+					"alertRef": "10038-1",
 					"alert": "Content Security Policy (CSP) Header Not Set",
 					"name": "Content Security Policy (CSP) Header Not Set",
 					"riskcode": "2",
@@ -41,14 +41,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/01/30/simple-python-progressbar.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/02/04/fizzbuzz.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/01/30/un-repl-avec-readline.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/03/02/algorithmes-de-m%C3%A9morisation-par-r%C3%A9p%C3%A9tition-espac%C3%A9e.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -98,7 +98,7 @@
 						}
 					],
 					"count": "11",
-					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header, to achieve optimal browser support: \"Content-Security-Policy\" for Chrome 25+, Firefox 23+ and Safari 7+, \"X-Content-Security-Policy\" for Firefox 4.0+ and Internet Explorer 10+, and \"X-WebKit-CSP\" for Chrome 14+ and Safari 6+.</p>",
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>http://www.w3.org/TR/CSP/</p><p>http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</p><p>http://www.html5rocks.com/en/tutorials/security/content-security-policy/</p><p>http://caniuse.com/#feat=contentsecuritypolicy</p><p>http://content-security-policy.com/</p>",
 					"cweid": "693",
@@ -137,14 +137,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/01/30/simple-python-progressbar.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/02/04/fizzbuzz.html",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/01/30/un-repl-avec-readline.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/03/02/algorithmes-de-m%C3%A9morisation-par-r%C3%A9p%C3%A9tition-espac%C3%A9e.html",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
@@ -199,7 +199,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "10099",
@@ -246,7 +246,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "473"
+					"sourceid": "454"
 				},
 				{
 					"pluginid": "10099",
@@ -279,7 +279,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "471"
+					"sourceid": "500"
 				},
 				{
 					"pluginid": "90003",
@@ -313,14 +313,14 @@
 							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.outbound-links.js\"></script>"
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/01/30/simple-python-progressbar.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/02/04/fizzbuzz.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.outbound-links.js\"></script>"
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/01/30/un-repl-avec-readline.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/03/02/algorithmes-de-m%C3%A9morisation-par-r%C3%A9p%C3%A9tition-espac%C3%A9e.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -401,7 +401,7 @@
 					"reference": "<p>https://nvd.nist.gov/vuln/detail/CVE-2012-6708</p><p>https://github.com/jquery/jquery/issues/2432</p><p>http://research.insecurelabs.org/jquery/test/</p><p>http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/</p><p>http://bugs.jquery.com/ticket/11290</p><p>https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/</p><p>https://nvd.nist.gov/vuln/detail/CVE-2019-11358</p><p>https://nvd.nist.gov/vuln/detail/CVE-2015-9251</p><p>https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b</p><p>https://blog.jquery.com/2020/04/10/jquery-3-5-0-released/</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
-					"sourceid": "43"
+					"sourceid": "174"
 				},
 				{
 					"pluginid": "10017",
@@ -523,7 +523,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "43"
+					"sourceid": "174"
 				},
 				{
 					"pluginid": "10063",
@@ -550,14 +550,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/01/30/simple-python-progressbar.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/02/04/fizzbuzz.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/01/30/un-repl-avec-readline.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/03/02/algorithmes-de-m%C3%A9morisation-par-r%C3%A9p%C3%A9tition-espac%C3%A9e.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -673,7 +673,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html</p>",
 					"cweid": "311",
 					"wascid": "4",
-					"sourceid": "648"
+					"sourceid": "659"
 				},
 				{
 					"pluginid": "10035",
@@ -762,7 +762,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>http://caniuse.com/stricttransportsecurity</p><p>http://tools.ietf.org/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "10096",
@@ -795,7 +795,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "541"
+					"sourceid": "544"
 				},
 				{
 					"pluginid": "10021",
@@ -904,27 +904,6 @@
 					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2021/05/11/advent-of-code-2020.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "com/Keirua/aoc2020/blob/main/day2/src/main"
-						},
-						{
-							"uri": "https://www.keiruaprod.fr/blog/2021/05/15/mandelbrot.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "com/Brobin/mandelb0t/blob/master/mandelbot/mandelbot"
-						},
-						{
-							"uri": "https://www.keiruaprod.fr/blog/2021/05/16/video-games-stories.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "com/channel/UCtUbO6rBht0daVIOGML3c8w"
-						},
-						{
 							"uri": "https://www.keiruaprod.fr/blog/2021/06/26/replicating-heavens-above-satellite-tables.html",
 							"method": "GET",
 							"param": "",
@@ -981,6 +960,27 @@
 							"evidence": "com/ZoeSchiffer/status/1593391604785504257"
 						},
 						{
+							"uri": "https://www.keiruaprod.fr/blog/2023/01/31/some-nice-lectures.html",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "PL4p0f21pJfd_oVyaHw0Qh5A7nU8WqAcZd"
+						},
+						{
+							"uri": "https://www.keiruaprod.fr/blog/2023/03/02/algorithmes-de-m%C3%A9morisation-par-r%C3%A9p%C3%A9tition-espac%C3%A9e.html",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "com/clockzhong/OpenSuperMemo/tree/master/SM2"
+						},
+						{
+							"uri": "https://www.keiruaprod.fr/blog/feed.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "com/clockzhong/OpenSuperMemo/tree/master/SM2"
+						},
+						{
 							"uri": "https://www.keiruaprod.fr/js/libs/jquery-1.7.2.min.js",
 							"method": "GET",
 							"param": "",
@@ -990,11 +990,11 @@
 					],
 					"count": "12",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>r\uFFFD\uFFFD)\u8AF9\uFFFD\u06A1\u0374\uFFFDO\u06D6\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u05B2\uFFFD\uFFFD+s\uFFFD\uFFFD\uFFFD</p>",
+					"otherinfo": "<p>r\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u01AD\uFFFD\uFFFD\uFFFD\uFFFD\\x0002\\x0000\\x0003\uFFFD\uFFFD\u04EF\uFFFD\uFFFD\uFFFD\\x0000\uFFFD\\x0000\uFFFDm4\uFFFD\uFFFD\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "431"
+					"sourceid": "368"
 				},
 				{
 					"pluginid": "10027",
@@ -1041,7 +1041,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "976"
+					"sourceid": "993"
 				},
 				{
 					"pluginid": "10109",
@@ -1067,7 +1067,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "545"
+					"sourceid": "554"
 				},
 				{
 					"pluginid": "10015",
