@@ -5,7 +5,7 @@
     "http": {
       "url": "https://www.keiruaprod.fr",
       "algorithm_version": 2,
-      "end_time": "Sun, 19 Mar 2023 00:24:51 GMT",
+      "end_time": "Sun, 26 Mar 2023 00:24:01 GMT",
       "grade": "F",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
@@ -15,13 +15,13 @@
         "Content-Encoding": "gzip",
         "Content-Length": "1763",
         "Content-Type": "text/html",
-        "Date": "Sun, 19 Mar 2023 00:24:50 GMT",
+        "Date": "Sun, 26 Mar 2023 00:23:59 GMT",
         "Server": "Apache",
         "Vary": "Accept-Encoding"
       },
-      "scan_id": 35390029,
+      "scan_id": 35645219,
       "score": 0,
-      "start_time": "Sun, 19 Mar 2023 00:24:47 GMT",
+      "start_time": "Sun, 26 Mar 2023 00:23:56 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 6,
@@ -599,7 +599,7 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "OK",
-        "finding": "72 >= 30 days"
+        "finding": "65 >= 30 days"
       },
       {
         "id": "cert_notBefore",
@@ -795,14 +795,14 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "0 seconds from localtime"
+        "finding": "-1 seconds from localtime"
       },
       {
         "id": "HTTP_headerTime",
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "1679185603"
+        "finding": "1679790345"
       },
       {
         "id": "HSTS",
@@ -1381,7 +1381,7 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "186"
+        "finding": "149"
       }
     ],
     "thirdparties": {
@@ -1408,7 +1408,7 @@
         },
         {
           "type": "google analytics",
-          "url": "https://ssl.google-analytics.com/r/__utm.gif?utmwv=5.7.2&utms=1&utmn=229193698&utmhn=www.keiruaprod.fr&utmcs=UTF-8&utmsr=800x600&utmvp=800x600&utmsc=24-bit&utmul=en-us&utmje=0&utmfl=-&utmdt=D%C3%A9veloppeur%20web%20et%20formateur%20Symfony2%2FSymfony3%20freelance%20Paris%20-%20KeiruaProd&utmhid=1113820679&utmr=-&utmp=%2F&utmht=1679185527269&utmac=UA-26997065-1&utmcc=__utma%3D185069491.452842382.1679185527.1679185527.1679185527.1%3B%2B__utmz%3D185069491.1679185527.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmjid=1053409480&utmredir=1&utmu=qAAAAAAAAAAAAAAAAAAAAAAE~",
+          "url": "https://ssl.google-analytics.com/r/__utm.gif?utmwv=5.7.2&utms=1&utmn=696464636&utmhn=www.keiruaprod.fr&utmcs=UTF-8&utmsr=800x600&utmvp=800x600&utmsc=24-bit&utmul=en-us&utmje=0&utmfl=-&utmdt=D%C3%A9veloppeur%20web%20et%20formateur%20Symfony2%2FSymfony3%20freelance%20Paris%20-%20KeiruaProd&utmhid=750757416&utmr=-&utmp=%2F&utmht=1679790275865&utmac=UA-26997065-1&utmcc=__utma%3D185069491.2121102316.1679790276.1679790276.1679790276.1%3B%2B__utmz%3D185069491.1679790276.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmjid=2071108439&utmredir=1&utmu=qAAAAAAAAAAAAAAAAAAAAAAE~",
           "details": {
             "id": "google analytics",
             "message": "Use hosted Matomo instance"
@@ -1418,10 +1418,10 @@
       "cookies": [
         {
           "name": "__utmb",
-          "value": "185069491.1.10.1679185527",
+          "value": "185069491.1.10.1679790276",
           "domain": ".keiruaprod.fr",
           "path": "/",
-          "expires": 1679187327,
+          "expires": 1679792075,
           "size": 31,
           "httpOnly": false,
           "secure": false,
@@ -1432,10 +1432,10 @@
         },
         {
           "name": "__utmz",
-          "value": "185069491.1679185527.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)",
+          "value": "185069491.1679790276.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)",
           "domain": ".keiruaprod.fr",
           "path": "/",
-          "expires": 1694953527,
+          "expires": 1695558275,
           "size": 76,
           "httpOnly": false,
           "secure": false,
@@ -1463,7 +1463,7 @@
           "value": "1",
           "domain": ".keiruaprod.fr",
           "path": "/",
-          "expires": 1679186127,
+          "expires": 1679790875,
           "size": 7,
           "httpOnly": false,
           "secure": false,
@@ -1474,11 +1474,11 @@
         },
         {
           "name": "__utma",
-          "value": "185069491.452842382.1679185527.1679185527.1679185527.1",
+          "value": "185069491.2121102316.1679790276.1679790276.1679790276.1",
           "domain": ".keiruaprod.fr",
           "path": "/",
-          "expires": 1742257527,
-          "size": 60,
+          "expires": 1742862275,
+          "size": 61,
           "httpOnly": false,
           "secure": false,
           "session": false,
@@ -1492,7 +1492,7 @@
         "content-encoding": "gzip",
         "content-length": "1763",
         "content-type": "text/html",
-        "date": "Sun, 19 Mar 2023 00:25:26 GMT",
+        "date": "Sun, 26 Mar 2023 00:24:35 GMT",
         "server": "Apache",
         "vary": "Accept-Encoding"
       },
@@ -1555,7 +1555,7 @@
         },
         {
           "hostname": "ajax.googleapis.com",
-          "ip": "142.250.152.95",
+          "ip": "172.253.115.95",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -1609,18 +1609,13 @@
         },
         {
           "hostname": "plausible.io",
-          "ip": "212.102.40.114",
+          "ip": "37.19.207.34",
           "geoip": {
             "city": {
-              "geoname_id": 4684888,
+              "geoname_id": 4744870,
               "names": {
-                "de": "Dallas",
-                "en": "Dallas",
-                "es": "Dallas",
-                "fr": "Dallas",
-                "ja": "ダラス",
-                "pt-BR": "Dallas",
-                "ru": "Даллас"
+                "en": "Ashburn",
+                "ru": "Ашберн"
               }
             },
             "continent": {
@@ -1653,13 +1648,13 @@
             },
             "location": {
               "accuracy_radius": 20,
-              "latitude": 32.7797,
-              "longitude": -96.8022,
-              "metro_code": 623,
-              "time_zone": "America/Chicago"
+              "latitude": 39.0469,
+              "longitude": -77.4903,
+              "metro_code": 511,
+              "time_zone": "America/New_York"
             },
             "postal": {
-              "code": "75270"
+              "code": "20149"
             },
             "registered_country": {
               "geoname_id": 2635167,
@@ -1677,15 +1672,15 @@
             },
             "subdivisions": [
               {
-                "geoname_id": 4736286,
-                "iso_code": "TX",
+                "geoname_id": 6254928,
+                "iso_code": "VA",
                 "names": {
-                  "en": "Texas",
-                  "es": "Texas",
-                  "fr": "Texas",
-                  "ja": "テキサス州",
-                  "ru": "Техас",
-                  "zh-CN": "德克萨斯州"
+                  "en": "Virginia",
+                  "fr": "Virginie",
+                  "ja": "バージニア州",
+                  "pt-BR": "Virgínia",
+                  "ru": "Вирджиния",
+                  "zh-CN": "弗吉尼亚州"
                 }
               }
             ]
@@ -1693,7 +1688,7 @@
         },
         {
           "hostname": "ssl.google-analytics.com",
-          "ip": "108.177.120.97",
+          "ip": "142.251.111.97",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -1926,7 +1921,7 @@
     "zap": {
       "@programName": "OWASP ZAP",
       "@version": "2.12.0",
-      "@generated": "Sun, 19 Mar 2023 00:24:37",
+      "@generated": "Sun, 26 Mar 2023 00:23:26",
       "site": [
         {
           "@name": "https://www.keiruaprod.fr",
@@ -2034,7 +2029,7 @@
       {
         "requestedUrl": "https://www.keiruaprod.fr/",
         "finalUrl": "https://www.keiruaprod.fr/",
-        "fetchTime": "2023-03-19T00:24:56.377Z",
+        "fetchTime": "2023-03-26T00:23:45.990Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -2097,53 +2092,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 2762,
+            "numericValue": 3221,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 2246,
-                  "firstMeaningfulPaint": 2246,
-                  "largestContentfulPaint": 2246,
-                  "interactive": 2762,
-                  "speedIndex": 2246,
-                  "totalBlockingTime": 35,
-                  "maxPotentialFID": 120,
+                  "firstContentfulPaint": 2154,
+                  "firstMeaningfulPaint": 2404,
+                  "largestContentfulPaint": 2880,
+                  "interactive": 3221,
+                  "speedIndex": 2272,
+                  "totalBlockingTime": 17,
+                  "maxPotentialFID": 83,
                   "cumulativeLayoutShift": 0,
                   "cumulativeLayoutShiftMainFrame": 0,
                   "totalCumulativeLayoutShift": 0,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 286384205,
+                  "observedTimeOriginTs": 303890693,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 286384205,
-                  "observedFirstPaint": 667,
-                  "observedFirstPaintTs": 287051273,
-                  "observedFirstContentfulPaint": 667,
-                  "observedFirstContentfulPaintTs": 287051273,
-                  "observedFirstContentfulPaintAllFrames": 667,
-                  "observedFirstContentfulPaintAllFramesTs": 287051273,
-                  "observedFirstMeaningfulPaint": 667,
-                  "observedFirstMeaningfulPaintTs": 287051273,
-                  "observedLargestContentfulPaint": 667,
-                  "observedLargestContentfulPaintTs": 287051273,
-                  "observedLargestContentfulPaintAllFrames": 667,
-                  "observedLargestContentfulPaintAllFramesTs": 287051273,
-                  "observedTraceEnd": 3213,
-                  "observedTraceEndTs": 289597639,
-                  "observedLoad": 901,
-                  "observedLoadTs": 287284715,
-                  "observedDomContentLoaded": 666,
-                  "observedDomContentLoadedTs": 287050189,
+                  "observedNavigationStartTs": 303890693,
+                  "observedFirstPaint": 552,
+                  "observedFirstPaintTs": 304442649,
+                  "observedFirstContentfulPaint": 552,
+                  "observedFirstContentfulPaintTs": 304442649,
+                  "observedFirstContentfulPaintAllFrames": 552,
+                  "observedFirstContentfulPaintAllFramesTs": 304442649,
+                  "observedFirstMeaningfulPaint": 552,
+                  "observedFirstMeaningfulPaintTs": 304442649,
+                  "observedLargestContentfulPaint": 552,
+                  "observedLargestContentfulPaintTs": 304442649,
+                  "observedLargestContentfulPaintAllFrames": 552,
+                  "observedLargestContentfulPaintAllFramesTs": 304442649,
+                  "observedTraceEnd": 3007,
+                  "observedTraceEndTs": 306897611,
+                  "observedLoad": 694,
+                  "observedLoadTs": 304585053,
+                  "observedDomContentLoaded": 531,
+                  "observedDomContentLoadedTs": 304422156,
                   "observedCumulativeLayoutShift": 0,
                   "observedCumulativeLayoutShiftMainFrame": 0,
                   "observedTotalCumulativeLayoutShift": 0,
-                  "observedFirstVisualChange": 654,
-                  "observedFirstVisualChangeTs": 287038205,
-                  "observedLastVisualChange": 1270,
-                  "observedLastVisualChangeTs": 287654205,
-                  "observedSpeedIndex": 660,
-                  "observedSpeedIndexTs": 287044684
+                  "observedFirstVisualChange": 530,
+                  "observedFirstVisualChangeTs": 304420693,
+                  "observedLastVisualChange": 1130,
+                  "observedLastVisualChangeTs": 305020693,
+                  "observedSpeedIndex": 536,
+                  "observedSpeedIndexTs": 304427156
                 },
                 {
                   "lcpInvalidated": false
@@ -2165,18 +2160,18 @@
                   "numScripts": 4,
                   "numStylesheets": 4,
                   "numFonts": 1,
-                  "numTasks": 196,
+                  "numTasks": 190,
                   "numTasksOver10ms": 3,
-                  "numTasksOver25ms": 2,
-                  "numTasksOver50ms": 0,
+                  "numTasksOver25ms": 3,
+                  "numTasksOver50ms": 1,
                   "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 13.068000000000001,
-                  "throughput": 3901827.4219784825,
-                  "maxRtt": 114.79199999999999,
-                  "maxServerLatency": 4.966000000000008,
-                  "totalByteWeight": 128216,
-                  "totalTaskTime": 133.8449999999999,
+                  "rtt": 5.899000000000001,
+                  "throughput": 5797785.577433271,
+                  "maxRtt": 83.063,
+                  "maxServerLatency": 4.179999999999993,
+                  "totalByteWeight": 128226,
+                  "totalTaskTime": 170.3179999999998,
                   "mainDocumentTransferSize": 1904
                 }
               ]
@@ -2225,7 +2220,7 @@
     "http": {
       "url": "https://www.keiruaprod.fr/blog",
       "algorithm_version": 2,
-      "end_time": "Sun, 19 Mar 2023 00:24:51 GMT",
+      "end_time": "Sun, 26 Mar 2023 00:24:01 GMT",
       "grade": "F",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
@@ -2235,13 +2230,13 @@
         "Content-Encoding": "gzip",
         "Content-Length": "1763",
         "Content-Type": "text/html",
-        "Date": "Sun, 19 Mar 2023 00:24:50 GMT",
+        "Date": "Sun, 26 Mar 2023 00:23:59 GMT",
         "Server": "Apache",
         "Vary": "Accept-Encoding"
       },
-      "scan_id": 35390029,
+      "scan_id": 35645219,
       "score": 0,
-      "start_time": "Sun, 19 Mar 2023 00:24:47 GMT",
+      "start_time": "Sun, 26 Mar 2023 00:23:56 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 6,
@@ -2819,7 +2814,7 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "OK",
-        "finding": "72 >= 30 days"
+        "finding": "65 >= 30 days"
       },
       {
         "id": "cert_notBefore",
@@ -3022,7 +3017,7 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "1679185592"
+        "finding": "1679790376"
       },
       {
         "id": "HSTS",
@@ -3601,7 +3596,7 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "143"
+        "finding": "203"
       }
     ],
     "thirdparties": {
@@ -3615,9 +3610,9 @@
       "headers": {
         "accept-ranges": "bytes",
         "content-encoding": "gzip",
-        "content-length": "8286",
+        "content-length": "8479",
         "content-type": "text/html",
-        "date": "Sun, 19 Mar 2023 00:25:26 GMT",
+        "date": "Sun, 26 Mar 2023 00:24:50 GMT",
         "server": "Apache",
         "vary": "Accept-Encoding"
       },
@@ -3680,13 +3675,18 @@
         },
         {
           "hostname": "plausible.io",
-          "ip": "37.19.207.34",
+          "ip": "169.150.221.147",
           "geoip": {
             "city": {
-              "geoname_id": 4744870,
+              "geoname_id": 5392171,
               "names": {
-                "en": "Ashburn",
-                "ru": "Ашберн"
+                "de": "San José",
+                "en": "San Jose",
+                "es": "San José",
+                "fr": "San José",
+                "ja": "サンノゼ",
+                "pt-BR": "San José",
+                "ru": "Сан-Хосе"
               }
             },
             "continent": {
@@ -3719,13 +3719,13 @@
             },
             "location": {
               "accuracy_radius": 20,
-              "latitude": 39.0469,
-              "longitude": -77.4903,
-              "metro_code": 511,
-              "time_zone": "America/New_York"
+              "latitude": 37.1835,
+              "longitude": -121.7714,
+              "metro_code": 807,
+              "time_zone": "America/Los_Angeles"
             },
             "postal": {
-              "code": "20149"
+              "code": "95141"
             },
             "registered_country": {
               "geoname_id": 2635167,
@@ -3743,15 +3743,17 @@
             },
             "subdivisions": [
               {
-                "geoname_id": 6254928,
-                "iso_code": "VA",
+                "geoname_id": 5332921,
+                "iso_code": "CA",
                 "names": {
-                  "en": "Virginia",
-                  "fr": "Virginie",
-                  "ja": "バージニア州",
-                  "pt-BR": "Virgínia",
-                  "ru": "Вирджиния",
-                  "zh-CN": "弗吉尼亚州"
+                  "de": "Kalifornien",
+                  "en": "California",
+                  "es": "California",
+                  "fr": "Californie",
+                  "ja": "カリフォルニア州",
+                  "pt-BR": "Califórnia",
+                  "ru": "Калифорния",
+                  "zh-CN": "加州"
                 }
               }
             ]
@@ -3881,7 +3883,7 @@
     "zap": {
       "@programName": "OWASP ZAP",
       "@version": "2.12.0",
-      "@generated": "Sun, 19 Mar 2023 00:24:21",
+      "@generated": "Sun, 26 Mar 2023 00:23:57",
       "site": [
         {
           "@name": "https://www.keiruaprod.fr",
@@ -4024,7 +4026,7 @@
       {
         "requestedUrl": "https://www.keiruaprod.fr/blog",
         "finalUrl": "https://www.keiruaprod.fr/blog/",
-        "fetchTime": "2023-03-19T00:24:37.503Z",
+        "fetchTime": "2023-03-26T00:24:18.419Z",
         "runWarnings": [
           "The page may not be loading as expected because your test URL (https://www.keiruaprod.fr/blog) was redirected to https://www.keiruaprod.fr/blog/. Try testing the second URL directly."
         ],
@@ -4089,53 +4091,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 1067,
+            "numericValue": 1715,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 1067,
-                  "firstMeaningfulPaint": 1067,
-                  "largestContentfulPaint": 1774,
-                  "interactive": 1067,
-                  "speedIndex": 1182,
-                  "totalBlockingTime": 0,
-                  "maxPotentialFID": 16,
+                  "firstContentfulPaint": 1256,
+                  "firstMeaningfulPaint": 1256,
+                  "largestContentfulPaint": 2121,
+                  "interactive": 1715,
+                  "speedIndex": 1743,
+                  "totalBlockingTime": 8,
+                  "maxPotentialFID": 74,
                   "cumulativeLayoutShift": 0,
                   "cumulativeLayoutShiftMainFrame": 0,
                   "totalCumulativeLayoutShift": 0,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 240746273,
+                  "observedTimeOriginTs": 296298326,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 240746273,
-                  "observedFirstPaint": 528,
-                  "observedFirstPaintTs": 241274127,
-                  "observedFirstContentfulPaint": 528,
-                  "observedFirstContentfulPaintTs": 241274127,
-                  "observedFirstContentfulPaintAllFrames": 528,
-                  "observedFirstContentfulPaintAllFramesTs": 241274127,
-                  "observedFirstMeaningfulPaint": 528,
-                  "observedFirstMeaningfulPaintTs": 241274127,
-                  "observedLargestContentfulPaint": 528,
-                  "observedLargestContentfulPaintTs": 241274127,
-                  "observedLargestContentfulPaintAllFrames": 528,
-                  "observedLargestContentfulPaintAllFramesTs": 241274127,
-                  "observedTraceEnd": 2841,
-                  "observedTraceEndTs": 243587546,
-                  "observedLoad": 508,
-                  "observedLoadTs": 241254700,
-                  "observedDomContentLoaded": 505,
-                  "observedDomContentLoadedTs": 241250871,
+                  "observedNavigationStartTs": 296298326,
+                  "observedFirstPaint": 850,
+                  "observedFirstPaintTs": 297148276,
+                  "observedFirstContentfulPaint": 850,
+                  "observedFirstContentfulPaintTs": 297148276,
+                  "observedFirstContentfulPaintAllFrames": 850,
+                  "observedFirstContentfulPaintAllFramesTs": 297148276,
+                  "observedFirstMeaningfulPaint": 850,
+                  "observedFirstMeaningfulPaintTs": 297148276,
+                  "observedLargestContentfulPaint": 850,
+                  "observedLargestContentfulPaintTs": 297148276,
+                  "observedLargestContentfulPaintAllFrames": 850,
+                  "observedLargestContentfulPaintAllFramesTs": 297148276,
+                  "observedTraceEnd": 3171,
+                  "observedTraceEndTs": 299469500,
+                  "observedLoad": 832,
+                  "observedLoadTs": 297130276,
+                  "observedDomContentLoaded": 795,
+                  "observedDomContentLoadedTs": 297093324,
                   "observedCumulativeLayoutShift": 0,
                   "observedCumulativeLayoutShiftMainFrame": 0,
                   "observedTotalCumulativeLayoutShift": 0,
-                  "observedFirstVisualChange": 527,
-                  "observedFirstVisualChangeTs": 241273273,
-                  "observedLastVisualChange": 527,
-                  "observedLastVisualChangeTs": 241273273,
-                  "observedSpeedIndex": 527,
-                  "observedSpeedIndexTs": 241273682
+                  "observedFirstVisualChange": 839,
+                  "observedFirstVisualChangeTs": 297137326,
+                  "observedLastVisualChange": 856,
+                  "observedLastVisualChangeTs": 297154326,
+                  "observedSpeedIndex": 840,
+                  "observedSpeedIndexTs": 297138447
                 },
                 {
                   "lcpInvalidated": false
@@ -4157,19 +4159,19 @@
                   "numScripts": 1,
                   "numStylesheets": 3,
                   "numFonts": 0,
-                  "numTasks": 109,
-                  "numTasksOver10ms": 0,
+                  "numTasks": 111,
+                  "numTasksOver10ms": 3,
                   "numTasksOver25ms": 0,
                   "numTasksOver50ms": 0,
                   "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 5.780000000000001,
-                  "throughput": 30295142.071230214,
-                  "maxRtt": 87.015,
-                  "maxServerLatency": 29.644000000000005,
-                  "totalByteWeight": 16641,
-                  "totalTaskTime": 39.21800000000002,
-                  "mainDocumentTransferSize": 8435
+                  "rtt": 2.166999999999999,
+                  "throughput": 19414478.456590686,
+                  "maxRtt": 147.44500000000002,
+                  "maxServerLatency": 3.3519999999999754,
+                  "totalByteWeight": 16843,
+                  "totalTaskTime": 81.005,
+                  "mainDocumentTransferSize": 8628
                 }
               ]
             }
