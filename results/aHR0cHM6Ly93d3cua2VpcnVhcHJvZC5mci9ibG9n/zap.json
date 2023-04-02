@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 26 Mar 2023 00:23:57",
+	"@generated": "Sun, 2 Apr 2023 00:24:10",
 	"site":[ 
 		{
 			"@name": "https://www.keiruaprod.fr",
@@ -41,14 +41,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/03/23/prompts-chatgpt.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/03/25/compromission-des-cl%C3%A9s-github.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/03/25/compromission-des-cl%C3%A9s-github.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/04/01/collectible-cards-and-old-cigarettes.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -103,7 +103,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>http://www.w3.org/TR/CSP/</p><p>http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</p><p>http://www.html5rocks.com/en/tutorials/security/content-security-policy/</p><p>http://caniuse.com/#feat=contentsecuritypolicy</p><p>http://content-security-policy.com/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "3"
+					"sourceid": "9"
 				},
 				{
 					"pluginid": "10020",
@@ -123,13 +123,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog",
-							"method": "GET",
-							"param": "X-Frame-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://www.keiruaprod.fr/blog/",
 							"method": "GET",
 							"param": "X-Frame-Options",
@@ -137,14 +130,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/03/23/prompts-chatgpt.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/03/25/compromission-des-cl%C3%A9s-github.html",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/03/25/compromission-des-cl%C3%A9s-github.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/04/01/collectible-cards-and-old-cigarettes.html",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
@@ -193,13 +186,13 @@
 							"evidence": ""
 						}
 					],
-					"count": "11",
+					"count": "10",
 					"solution": "<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p><p>If you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy's \"frame-ancestors\" directive.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "9"
 				},
 				{
 					"pluginid": "10099",
@@ -232,7 +225,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "476"
+					"sourceid": "509"
 				},
 				{
 					"pluginid": "10099",
@@ -265,7 +258,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "497"
+					"sourceid": "531"
 				},
 				{
 					"pluginid": "90003",
@@ -299,14 +292,14 @@
 							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.outbound-links.js\"></script>"
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/03/23/prompts-chatgpt.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/03/25/compromission-des-cl%C3%A9s-github.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.outbound-links.js\"></script>"
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/03/25/compromission-des-cl%C3%A9s-github.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/04/01/collectible-cards-and-old-cigarettes.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -387,7 +380,7 @@
 					"reference": "<p>https://nvd.nist.gov/vuln/detail/CVE-2012-6708</p><p>https://github.com/jquery/jquery/issues/2432</p><p>http://research.insecurelabs.org/jquery/test/</p><p>http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/</p><p>http://bugs.jquery.com/ticket/11290</p><p>https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/</p><p>https://nvd.nist.gov/vuln/detail/CVE-2019-11358</p><p>https://nvd.nist.gov/vuln/detail/CVE-2015-9251</p><p>https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b</p><p>https://blog.jquery.com/2020/04/10/jquery-3-5-0-released/</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
-					"sourceid": "57"
+					"sourceid": "123"
 				},
 				{
 					"pluginid": "10017",
@@ -483,7 +476,7 @@
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "3"
+					"sourceid": "9"
 				},
 				{
 					"pluginid": "10110",
@@ -509,7 +502,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "57"
+					"sourceid": "123"
 				},
 				{
 					"pluginid": "10063",
@@ -543,7 +536,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/03/25/compromission-des-cl%C3%A9s-github.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/04/01/collectible-cards-and-old-cigarettes.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -659,7 +652,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html</p>",
 					"cweid": "311",
 					"wascid": "4",
-					"sourceid": "713"
+					"sourceid": "689"
 				},
 				{
 					"pluginid": "10035",
@@ -693,7 +686,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/css/style.css",
+							"uri": "https://www.keiruaprod.fr/css/font-awesome.min.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -748,7 +741,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>http://caniuse.com/stricttransportsecurity</p><p>http://tools.ietf.org/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "9"
 				},
 				{
 					"pluginid": "10096",
@@ -781,7 +774,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "589"
+					"sourceid": "584"
 				},
 				{
 					"pluginid": "10021",
@@ -890,13 +883,6 @@
 					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2021/06/29/notes-learning-how-to-learn.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "com/channel/UCnINhoHWuVjUDXp7dav5e3A"
-						},
-						{
 							"uri": "https://www.keiruaprod.fr/blog/2021/08/16/summer-articles.html",
 							"method": "GET",
 							"param": "",
@@ -960,11 +946,18 @@
 							"evidence": "AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ=="
 						},
 						{
+							"uri": "https://www.keiruaprod.fr/blog/2023/04/01/collectible-cards-and-old-cigarettes.html",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "com/Svet_Mori/status/1630654844410253312"
+						},
+						{
 							"uri": "https://www.keiruaprod.fr/blog/feed.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ=="
+							"evidence": "com/Svet_Mori/status/1630654844410253312"
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/js/libs/jquery-1.7.2.min.js",
@@ -976,11 +969,11 @@
 					],
 					"count": "12",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>r\uFFFD\uFFFDr\\x0016\uFFFD\uFFFD\uFFFDP)\uFFFD6\\x001a\\x0007Z\uFFFDcP5\uFFFD\uFFFD\u05AF\uFFFD\uFFFD\uFFFD</p>",
+					"otherinfo": "<p>\uFFFD\uFFFD\uFFFD\uFFFDm\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD'\uFFFD\uFFFD^\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD{\\x000f\uFFFD\uFFFD{(\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "390"
+					"sourceid": "383"
 				},
 				{
 					"pluginid": "10027",
@@ -1027,7 +1020,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1020"
+					"sourceid": "1034"
 				},
 				{
 					"pluginid": "10109",
@@ -1053,7 +1046,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "593"
+					"sourceid": "588"
 				},
 				{
 					"pluginid": "10015",
@@ -1129,13 +1122,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/robots.txt",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://www.keiruaprod.fr/sitemap.xml",
 							"method": "GET",
 							"param": "Cache-Control",
@@ -1143,13 +1129,13 @@
 							"evidence": ""
 						}
 					],
-					"count": "11",
+					"count": "10",
 					"solution": "<p>For secure content, ensure the cache-control HTTP header is set with \"no-cache, no-store, must-revalidate\". If an asset should be cached consider setting the directives \"public, max-age, immutable\".</p>",
 					"otherinfo": "",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "3"
+					"sourceid": "9"
 				},
 				{
 					"pluginid": "10049",
@@ -1177,6 +1163,13 @@
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/css/bootstrap-responsive.min.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=900"
+						},
+						{
+							"uri": "https://www.keiruaprod.fr/css/font-awesome.min.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1211,13 +1204,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/resume.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://www.keiruaprod.fr/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -1238,7 +1224,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "8"
+					"sourceid": "9"
 				}
 			]
 		}

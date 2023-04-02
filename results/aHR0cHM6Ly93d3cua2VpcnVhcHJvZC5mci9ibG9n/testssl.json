@@ -1,12 +1,5 @@
 [
          {
-              "id"           : "engine_problem",
-              "ip"           : "www.keiruaprod.fr/",
-              "port"         : "443",
-              "severity"     : "WARN",
-              "finding"      : "No engine or GOST support via engine with your /home/testssl/bin/openssl.Linux.x86_64"
-          }
-,         {
               "id"           : "service",
               "ip"           : "www.keiruaprod.fr/213.186.33.4",
               "port"         : "443",
@@ -374,7 +367,7 @@
               "ip"           : "www.keiruaprod.fr/213.186.33.4",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "65 >= 30 days"
+              "finding"      : "58 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -577,7 +570,7 @@
               "ip"           : "www.keiruaprod.fr/213.186.33.4",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1679790376"
+              "finding"      : "1680395187"
           }
 ,         {
               "id"           : "HSTS",
@@ -1156,6 +1149,6 @@
               "ip"           : "www.keiruaprod.fr/213.186.33.4",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "203"
+              "finding"      : "160"
           }
 ]
