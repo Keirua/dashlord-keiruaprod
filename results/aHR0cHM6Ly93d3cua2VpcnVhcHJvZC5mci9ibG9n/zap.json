@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 2 Apr 2023 00:24:10",
+	"@generated": "Sun, 9 Apr 2023 00:22:06",
 	"site":[ 
 		{
 			"@name": "https://www.keiruaprod.fr",
@@ -24,77 +24,88 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/blog",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/blog/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/03/25/compromission-des-cl%C3%A9s-github.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/04/02/the-murmur-hashing-algorithm.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/04/01/collectible-cards-and-old-cigarettes.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/04/04/une-semaine-avec-chatgpt.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/developpement",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/developpement.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/formations",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/formations.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/index.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/resume.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
 					"count": "11",
@@ -103,7 +114,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>http://www.w3.org/TR/CSP/</p><p>http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</p><p>http://www.html5rocks.com/en/tutorials/security/content-security-policy/</p><p>http://caniuse.com/#feat=contentsecuritypolicy</p><p>http://content-security-policy.com/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "9"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "10020",
@@ -120,79 +131,97 @@
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.keiruaprod.fr/blog",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/blog/",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/03/25/compromission-des-cl%C3%A9s-github.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/04/02/the-murmur-hashing-algorithm.html",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/04/01/collectible-cards-and-old-cigarettes.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/04/04/une-semaine-avec-chatgpt.html",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/developpement",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/developpement.html",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/formations",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/formations.html",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/index.html",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/resume.html",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
-					"count": "10",
+					"count": "11",
 					"solution": "<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p><p>If you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy's \"frame-ancestors\" directive.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "9"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10099",
@@ -209,14 +238,16 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "\n        for row in csvreader:"
+							"evidence": "\n        for row in csvreader:",
+							"otherinfo": "\n        for row in csvreader:"
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/blog/2023/01/30/un-repl-avec-readline.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "#!/usr/bin/env python"
+							"evidence": "#!/usr/bin/env python",
+							"otherinfo": "#!/usr/bin/env python"
 						}
 					],
 					"count": "2",
@@ -225,7 +256,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "509"
+					"sourceid": "486"
 				},
 				{
 					"pluginid": "10099",
@@ -242,14 +273,16 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "UPDATE dossiers\n    SET "
+							"evidence": "UPDATE dossiers\n    SET ",
+							"otherinfo": "UPDATE dossiers\n    SET "
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/blog/2021/10/31/dynamic-temporary-demo-environment-with-clever-cloud.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Create database addon"
+							"evidence": "Create database addon",
+							"otherinfo": "Create database addon"
 						}
 					],
 					"count": "2",
@@ -258,7 +291,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "531"
+					"sourceid": "526"
 				},
 				{
 					"pluginid": "90003",
@@ -275,77 +308,88 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>"
+							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/blog",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.outbound-links.js\"></script>"
+							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.outbound-links.js\"></script>",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/blog/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.outbound-links.js\"></script>"
+							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.outbound-links.js\"></script>",
+							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/03/25/compromission-des-cl%C3%A9s-github.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/04/02/the-murmur-hashing-algorithm.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.outbound-links.js\"></script>"
+							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.outbound-links.js\"></script>",
+							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/04/01/collectible-cards-and-old-cigarettes.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/04/04/une-semaine-avec-chatgpt.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.outbound-links.js\"></script>"
+							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.outbound-links.js\"></script>",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/developpement",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>"
+							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/developpement.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>"
+							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/formations",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>"
+							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/formations.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>"
+							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/index.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>"
+							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/resume.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>"
+							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>",
+							"otherinfo": ""
 						}
 					],
 					"count": "11",
@@ -371,7 +415,8 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "jquery-1.7.2.min.js"
+							"evidence": "jquery-1.7.2.min.js",
+							"otherinfo": "CVE-2020-11023\nCVE-2020-11022\nCVE-2015-9251\nCVE-2019-11358\nCVE-2012-6708\n"
 						}
 					],
 					"count": "1",
@@ -380,7 +425,7 @@
 					"reference": "<p>https://nvd.nist.gov/vuln/detail/CVE-2012-6708</p><p>https://github.com/jquery/jquery/issues/2432</p><p>http://research.insecurelabs.org/jquery/test/</p><p>http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/</p><p>http://bugs.jquery.com/ticket/11290</p><p>https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/</p><p>https://nvd.nist.gov/vuln/detail/CVE-2019-11358</p><p>https://nvd.nist.gov/vuln/detail/CVE-2015-9251</p><p>https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b</p><p>https://blog.jquery.com/2020/04/10/jquery-3-5-0-released/</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
-					"sourceid": "123"
+					"sourceid": "45"
 				},
 				{
 					"pluginid": "10017",
@@ -397,77 +442,88 @@
 							"method": "GET",
 							"param": "//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js",
 							"attack": "",
-							"evidence": "<script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js\"></script>"
+							"evidence": "<script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js\"></script>",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/",
 							"method": "GET",
 							"param": "https://plausible.io/js/plausible.js",
 							"attack": "",
-							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>"
+							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/blog",
 							"method": "GET",
 							"param": "https://plausible.io/js/plausible.outbound-links.js",
 							"attack": "",
-							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.outbound-links.js\"></script>"
+							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.outbound-links.js\"></script>",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/developpement.html",
 							"method": "GET",
 							"param": "//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js",
 							"attack": "",
-							"evidence": "<script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js\"></script>"
+							"evidence": "<script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js\"></script>",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/developpement.html",
 							"method": "GET",
 							"param": "https://plausible.io/js/plausible.js",
 							"attack": "",
-							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>"
+							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/formations.html",
 							"method": "GET",
 							"param": "//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js",
 							"attack": "",
-							"evidence": "<script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js\"></script>"
+							"evidence": "<script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js\"></script>",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/formations.html",
 							"method": "GET",
 							"param": "https://plausible.io/js/plausible.js",
 							"attack": "",
-							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>"
+							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/index.html",
 							"method": "GET",
 							"param": "//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js",
 							"attack": "",
-							"evidence": "<script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js\"></script>"
+							"evidence": "<script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js\"></script>",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/index.html",
 							"method": "GET",
 							"param": "https://plausible.io/js/plausible.js",
 							"attack": "",
-							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>"
+							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/resume.html",
 							"method": "GET",
 							"param": "//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js",
 							"attack": "",
-							"evidence": "<script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js\"></script>"
+							"evidence": "<script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js\"></script>",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/resume.html",
 							"method": "GET",
 							"param": "https://plausible.io/js/plausible.js",
 							"attack": "",
-							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>"
+							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>",
+							"otherinfo": ""
 						}
 					],
 					"count": "11",
@@ -476,7 +532,7 @@
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "9"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10110",
@@ -493,7 +549,8 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "eval"
+							"evidence": "eval",
+							"otherinfo": ""
 						}
 					],
 					"count": "1",
@@ -502,7 +559,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "123"
+					"sourceid": "45"
 				},
 				{
 					"pluginid": "10063",
@@ -519,77 +576,88 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/blog",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/",
+							"uri": "https://www.keiruaprod.fr/blog/2023/04/02/the-murmur-hashing-algorithm.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/04/01/collectible-cards-and-old-cigarettes.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/04/04/une-semaine-avec-chatgpt.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/developpement",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/developpement.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/formations",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/formations.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/index.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/js/libs/bootstrap/bootstrap.min.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/resume.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
 					"count": "11",
@@ -615,35 +683,40 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "http://blog.keiruaprod.fr/wp-content/uploads/2013/02/gitbisect_goodbad-300x89.png"
+							"evidence": "http://blog.keiruaprod.fr/wp-content/uploads/2013/02/gitbisect_goodbad-300x89.png",
+							"otherinfo": "tag=img src=http://blog.keiruaprod.fr/wp-content/uploads/2013/02/gitbisect_goodbad-300x89.png\ntag=img src=http://blog.keiruaprod.fr/wp-content/uploads/2013/02/gitbisect_summary-300x75.png\ntag=img src=http://blog.keiruaprod.fr/wp-content/uploads/2013/02/screen_better_log-300x191.png\n"
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/blog/2013/06/04/github-quick-file-navigation%EF%BB%BF%EF%BB%BF/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "http://blog.keiruaprod.fr/wp-content/uploads/2013/06/t.png"
+							"evidence": "http://blog.keiruaprod.fr/wp-content/uploads/2013/06/t.png",
+							"otherinfo": "tag=img src=http://blog.keiruaprod.fr/wp-content/uploads/2013/06/t.png\n"
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/blog/2013/06/18/des-alias-git-utiles/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "http://blog.keiruaprod.fr/wp-content/uploads/2013/02/screen_better_log.png"
+							"evidence": "http://blog.keiruaprod.fr/wp-content/uploads/2013/02/screen_better_log.png",
+							"otherinfo": "tag=img src=http://blog.keiruaprod.fr/wp-content/uploads/2013/02/screen_better_log.png\n"
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/blog/2013/08/12/ne-plus-se-planter-de-console-entre-sa-vm-la-preprod-la-prod/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "http://blog.keiruaprod.fr/wp-content/uploads/2013/08/codes_couleur-300x180.png"
+							"evidence": "http://blog.keiruaprod.fr/wp-content/uploads/2013/08/codes_couleur-300x180.png",
+							"otherinfo": "tag=img src=http://blog.keiruaprod.fr/wp-content/uploads/2013/08/codes_couleur-300x180.png\ntag=img src=http://blog.keiruaprod.fr/wp-content/uploads/2013/08/profils-300x191.png\ntag=img src=http://blog.keiruaprod.fr/wp-content/uploads/2013/08/config_vm-300x200.png\n"
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/blog/2014/09/02/guide-de-survie-pour-le-partage-de-terminaux-avec-terminator/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "http://blog.keiruaprod.fr/wp-content/uploads/2014/09/terminator-300x139.png"
+							"evidence": "http://blog.keiruaprod.fr/wp-content/uploads/2014/09/terminator-300x139.png",
+							"otherinfo": "tag=img src=http://blog.keiruaprod.fr/wp-content/uploads/2014/09/terminator-300x139.png\n"
 						}
 					],
 					"count": "5",
@@ -652,7 +725,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html</p>",
 					"cweid": "311",
 					"wascid": "4",
-					"sourceid": "689"
+					"sourceid": "700"
 				},
 				{
 					"pluginid": "10035",
@@ -669,70 +742,80 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/blog",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/css/bootstrap-responsive.min.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/css/font-awesome.min.css",
+							"uri": "https://www.keiruaprod.fr/css/style.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/developpement.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/formations.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/index.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/resume.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
 					"count": "10",
@@ -741,7 +824,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>http://caniuse.com/stricttransportsecurity</p><p>http://tools.ietf.org/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "9"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10096",
@@ -758,14 +841,16 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1449373321"
+							"evidence": "1449373321",
+							"otherinfo": "1449373321, which evaluates to: 2015-12-06 03:42:01"
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/blog/2021/06/25/telegram-bot.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1624625831"
+							"evidence": "1624625831",
+							"otherinfo": "1624625831, which evaluates to: 2021-06-25 12:57:11"
 						}
 					],
 					"count": "2",
@@ -774,7 +859,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "584"
+					"sourceid": "600"
 				},
 				{
 					"pluginid": "10021",
@@ -791,77 +876,88 @@
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/blog",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/css/bootstrap-responsive.min.css",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/css/font-awesome.min.css",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/css/style.css",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/developpement.html",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/formations.html",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/index.html",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/resume.html",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/robots.txt",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/sitemap.xml",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						}
 					],
 					"count": "11",
@@ -870,7 +966,7 @@
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "3"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10094",
@@ -887,84 +983,96 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "io/2021/08/08/Another-Homebrew-Console"
+							"evidence": "io/2021/08/08/Another-Homebrew-Console",
+							"otherinfo": "\uFFFD\uFFFD\uFFFD\uFFFDm\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD'\uFFFD\uFFFD^\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD{\\x000f\uFFFD\uFFFD{(\uFFFD"
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/blog/2021/11/16/slack-notifications-from-python.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "com/devStepsize/b1b795309a217d24566dcc0ad136f784"
+							"evidence": "com/devStepsize/b1b795309a217d24566dcc0ad136f784",
+							"otherinfo": "r\uFFFD\uFFFDu\uFFFD\u04B5\uFFFDl\uFFFD7\uFFFDoV\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u0778\u7B9Dq\uFFFD\\x001aw]\uFFFD\uFFFD8"
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/blog/2021/11/29/adventofcode-part3-algorithms-and-data-structures-competitive-programming.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "PLZhotmgEsCQOA5rF03lp5DZnnAxJBQUpR"
+							"evidence": "PLZhotmgEsCQOA5rF03lp5DZnnAxJBQUpR",
+							"otherinfo": "<\uFFFDa\uFFFD\u0660\\x0012\uFFFD\uFFFD8\\x000ek\\x0017M\u59D0\u065Ep1$\\x0014\\x0014\uFFFD"
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/blog/2021/12/21/dynamic-programming.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "PLZhotmgEsCQOA5rF03lp5DZnnAxJBQUpR"
+							"evidence": "PLZhotmgEsCQOA5rF03lp5DZnnAxJBQUpR",
+							"otherinfo": "<\uFFFDa\uFFFD\u0660\\x0012\uFFFD\uFFFD8\\x000ek\\x0017M\u59D0\u065Ep1$\\x0014\\x0014\uFFFD"
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/blog/2021/12/29/a-comprehensive-guide-to-aoc-2021-day-24.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "XQAAAQCaBAAAAAAAAAA0m0pnuFI8c/fBNAn6x25rti77on4e8DYCelyI4Xj/SWO86l3MhYKSt/IwY1X8XDsPi6oUd359E/fP3WUCy+Hd0NBX3ScDH1UMDMoIn89DqtRJAkuU26H+bJQMhuQJZGvHfbRq+cNenkcVuZMyoJg2X38kr/tdzPWRs0R3nEQAYf3r0cXmSlac2aJH0P2sl7z4weDgKeKkKfE5swiQJ2MN12HwuoRR3LBTiJQjtT73JpWF+KtQBulka0/rhUSDOrztKM4biu1JoxqydIgyDfWupEKKtAiW75B1XW73P7TSQe8BI9O2T12ql8E/CBnsomkNwZLvIqQuyxA8lRBFyEb7T2Ofx8p8uaMPHbMv786Ho5P2KtCBwYdoX3z3fIV+cETYydTzjakKrUdUMq7dRV/kbM91elWwnwaxWByBhJS7jtOshbq8mO2W3BfCQ48WxEmwVrceIMSV2txALQlDxsy1lduebYKTzWCNl58cRdbnvICOxfoV9eofWAd6YP8WsL0eQUXcgzd8K1OW7qe67FH89TwqknLQ8KvTA3WKR1z4kubNHFXrvJLyFPO4Xqk5QhtviCMkBIiUic3Fvme1CyUV5V9g4XGkZpp95hCiTZFAtqVUvWvQARQNtGBuWv0mw9NB7qM940S7lQeCGHE95fH1UtwHYFdNrEuyPVdRYw6oCBD9+eh6PL+vkkN3dz3Axp2EUdlP/qwVQQ=="
+							"evidence": "XQAAAQCaBAAAAAAAAAA0m0pnuFI8c/fBNAn6x25rti77on4e8DYCelyI4Xj/SWO86l3MhYKSt/IwY1X8XDsPi6oUd359E/fP3WUCy+Hd0NBX3ScDH1UMDMoIn89DqtRJAkuU26H+bJQMhuQJZGvHfbRq+cNenkcVuZMyoJg2X38kr/tdzPWRs0R3nEQAYf3r0cXmSlac2aJH0P2sl7z4weDgKeKkKfE5swiQJ2MN12HwuoRR3LBTiJQjtT73JpWF+KtQBulka0/rhUSDOrztKM4biu1JoxqydIgyDfWupEKKtAiW75B1XW73P7TSQe8BI9O2T12ql8E/CBnsomkNwZLvIqQuyxA8lRBFyEb7T2Ofx8p8uaMPHbMv786Ho5P2KtCBwYdoX3z3fIV+cETYydTzjakKrUdUMq7dRV/kbM91elWwnwaxWByBhJS7jtOshbq8mO2W3BfCQ48WxEmwVrceIMSV2txALQlDxsy1lduebYKTzWCNl58cRdbnvICOxfoV9eofWAd6YP8WsL0eQUXcgzd8K1OW7qe67FH89TwqknLQ8KvTA3WKR1z4kubNHFXrvJLyFPO4Xqk5QhtviCMkBIiUic3Fvme1CyUV5V9g4XGkZpp95hCiTZFAtqVUvWvQARQNtGBuWv0mw9NB7qM940S7lQeCGHE95fH1UtwHYFdNrEuyPVdRYw6oCBD9+eh6PL+vkkN3dz3Axp2EUdlP/qwVQQ==",
+							"otherinfo": "]\\x0000\\x0000\\x0001\\x0000\uFFFD\\x0004\\x0000\\x0000\\x0000\\x0000\\x0000\\x0000\\x00004\uFFFDJg\uFFFDR<s\uFFFD\uFFFD4\t\uFFFD\uFFFDnk\uFFFD.\uFFFD\uFFFD~\\x001e\uFFFD6\\x0002z\\\uFFFD\uFFFDx\uFFFDIc\uFFFD\uFFFD]\u0305\uFFFD\uFFFD\uFFFD\uFFFD0cU\uFFFD\\;\\x000f\uFFFD\uFFFD\\x0014w~}\\x0013\uFFFD\uFFFD\uFFFDe\\x0002\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDW\uFFFD'\\x0003\\x001fU\\x000c\\x000c\uFFFD\\x0008\uFFFD\uFFFDC\uFFFD\uFFFDI\\x0002K\uFFFD\u06E1\uFFFDl\uFFFD\\x000c\uFFFD\uFFFD\tdk\uFFFD}\uFFFDj\uFFFD\uFFFD^\uFFFDG\\x0015\uFFFD\uFFFD2\uFFFD\uFFFD6_$\uFFFD\uFFFD]\uFFFD\uFFFD\uFFFD\uFFFDDw\uFFFDD\\x0000a\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDJV\uFFFD\u0662G\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD)\uFFFD)\uFFFD9\uFFFD\\x0008\uFFFD'c\r\uFFFDa\uFFFDQ\u0730S\uFFFD\uFFFD#\uFFFD>\uFFFD&\uFFFD\uFFFD\uFFFD\uFFFDP\\x0006\uFFFDdkO\uFFFDD\uFFFD:\uFFFD\uFFFD(\uFFFD\\x001b\uFFFD\uFFFDI\uFFFD\\x001a\uFFFDt\uFFFD2\r\uFFFD\uFFFD\uFFFDB\uFFFD\uFFFD\\x0008\uFFFD\uFFFDu]n\uFFFD?\uFFFD\uFFFDA\uFFFD\\x0001#\u04F6O]\uFFFD\uFFFD\uFFFD?\\x0008\\x0019\uFFFDi\r\uFFFD\uFFFD\uFFFD\"\uFFFD.\uFFFD\\x0010<\uFFFD\\x0010E\uFFFDF\uFFFDOc\uFFFD\uFFFD\uFFFD|\uFFFD\uFFFD\\x000f\\x001d\uFFFD/\uFFFD\u0387\uFFFD\uFFFD\uFFFD*\u0401\uFFFD\uFFFDh_|\uFFFD|\uFFFD~pD\uFFFD\uFFFD\uFFFD\uFFFD\n\uFFFDGT2\uFFFD\uFFFDE_\uFFFDl\uFFFDuzU\uFFFD\uFFFD\\x0006\uFFFDX\\x001c\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u04EC\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x0017\uFFFDC\uFFFD\\x0016\uFFFDI\uFFFDV\uFFFD\\x001e \u0115\uFFFD\uFFFD@-\tC\uFFFD\u0335\uFFFD\u06DEm\uFFFD\uFFFD\uFFFD`\uFFFD\uFFFD\uFFFD\\x001cE\uFFFD\u7F00\uFFFD\uFFFD\uFFFD\\x0015\uFFFD\uFFFD\\x001fX\\x0007z`\uFFFD\\x0016\uFFFD\uFFFD\\x001eAE\u07037|+S\uFFFD\uE9FA\uFFFDQ\uFFFD\uFFFD<*\uFFFDr\uFFFD\uFFFD\uFFFD\\x0003u\uFFFDG\\\uFFFD\uFFFD\uFFFD\uFFFD\\x001cU\uBF12\uFFFD\\x0014\uFFFD^\uFFFD9B\\x001bo\uFFFD#$\\x0004\uFFFD\uFFFD\uFFFD\uFFFD\u017Eg\uFFFD\\x000b%\\x0015\uFFFD_`\uFFFDq\uFFFDf\uFFFD}\uFFFD\\x0010\uFFFDM\uFFFD@\uFFFD\uFFFDT\uFFFDk\uFFFD\\x0001\\x0014\r\uFFFD`nZ\uFFFD&\uFFFD\uFFFDA\uFFFD=\uFFFDD\uFFFD\uFFFD\\x0007\uFFFD\\x0018q=\uFFFD\uFFFD\uFFFDR\uFFFD\\x0007`WM\uFFFDK\uFFFD=WQc\\x000e\uFFFD\\x0008\\x0010\uFFFD\uFFFD\uFFFDz<\uFFFD\uFFFD\uFFFDCww=\uFFFD\u019D\uFFFDQ\uFFFDO\uFFFD\uFFFD\\x0015A"
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/blog/2022/11/18/le-premier-mois-de-musk-chez-twitter.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "com/ZoeSchiffer/status/1593391604785504257"
+							"evidence": "com/ZoeSchiffer/status/1593391604785504257",
+							"otherinfo": "r\uFFFD\uFFFDf\uFFFD\uFFFDr\\x0018\uFFFD}\uFFFD\uFFFD\uFFFD\u05AD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD^\uFFFD\uFFFD9\uFFFDN6\uFFFD"
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/blog/2023/01/31/some-nice-lectures.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "PL4p0f21pJfd_oVyaHw0Qh5A7nU8WqAcZd"
+							"evidence": "PL4p0f21pJfd_oVyaHw0Qh5A7nU8WqAcZd",
+							"otherinfo": "<\uFFFD)\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDrh|4B\\x001e@\uFFFDu<Z\uFFFD\\x001ce"
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/blog/2023/03/02/algorithmes-de-m%C3%A9morisation-par-r%C3%A9p%C3%A9tition-espac%C3%A9e.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "com/clockzhong/OpenSuperMemo/tree/master/SM2"
+							"evidence": "com/clockzhong/OpenSuperMemo/tree/master/SM2",
+							"otherinfo": "r\uFFFD\uFFFDrZ\\x001c\uFFFD8h\uFFFD\\x000f\u03A5\uFFFD\u04BA\uFFFD\uFFFD1\uFFFD\uFFFD\uFFFD\uFFFD{\uFFFD\uFFFD\uFFFD\u05EB\uFFFD#6"
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/blog/2023/03/25/compromission-des-cl%C3%A9s-github.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ=="
+							"evidence": "AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==",
+							"otherinfo": "\\x0000\\x0000\\x0000\\x0007ssh-rsa\\x0000\\x0000\\x0000\\x0001#\\x0000\\x0000\\x0001\\x0001\\x0000\uFFFD`;\uFFFD\\x0011\uFFFDvy\uFFFD\uFFFD@\uFFFD;\uFFFD\\x0003K\\x0000J\uFFFD6\uFFFDk\uFFFD\uFFFD`\uFFFD\uFFFD\u02EA\uFFFDN\uFFFD\uFFFD\u00F3\u01D1\uFFFD\n\uFFFD\uFFFDt\uFFFDXi\uFFFDwD!\u00AB\uFFFD\uFFFDT0_8\uFFFD\uFFFDAK2\\x0008\uFFFDt\uFFFD7\uFFFD \uFFFDe\\x0018F,vR\u024B1\uFFFDn}\uFFFDR;\uFFFD\\x0000t*dD\uFFFD?\uFFFD^\\x00172\uFFFD6s\u01F7\uFFFD\\x0015UH{U\uFFFD\uFFFDIO8)\uFFFD\uFFFD\\x000f\uFFFD%Z\uFFFD\u02DA\uFFFD7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x0018GN\uFFFD\t\uFFFD\\x0005\"e\uFFFD\uFFFDn\uFFFDmJ\\x0016\uFFFD\uFFFD\\x001aJ0~\uFFFD\uFFFDQI\uFFFDi\uFFFD\uFFFD]V\uFFFD\uFFFDb~Q}\uFFFD\uFFFDdO[t\\OG\uFFFD\uFFFD\\x0008*\uFFFD\uFFFD\uFFFDD\uFFFD\uFFFD&\uFFFDl\uFFFDM\uFFFD\\x0010\\x000b\u01AByF\\x001d&W\uFFFDo\\x0006\uFFFD\uFFFD.kd\uFFFDV/\uFFFD\uFFFD \uFFFD\uFFFD\\x0006\uFFFD\\x000e\uFFFD\uFFFDZX;\uFFFD\\x0000\uFFFD\u04CC\uFFFD\\x0019p<T\uFFFD\uFFFD\uFFFDx\u0715\uFFFDPQ@i"
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/blog/2023/04/01/collectible-cards-and-old-cigarettes.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "com/Svet_Mori/status/1630654844410253312"
+							"evidence": "com/Svet_Mori/status/1630654844410253312",
+							"otherinfo": "r\uFFFD\uFFFDJ\uFFFD\uFFFD\uFFFD\uFFFD+\uFFFD\uFFFD-j\u06EC\uFFFD^\uFFFD\u04EEx\uFFFD8\uFFFDM\uFFFD\uFFFD}v"
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/blog/feed.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "com/Svet_Mori/status/1630654844410253312"
+							"evidence": "com/Svet_Mori/status/1630654844410253312",
+							"otherinfo": "r\uFFFD\uFFFDJ\uFFFD\uFFFD\uFFFD\uFFFD+\uFFFD\uFFFD-j\u06EC\uFFFD^\uFFFD\u04EEx\uFFFD8\uFFFDM\uFFFD\uFFFD}v"
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/js/libs/jquery-1.7.2.min.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "D27CDB6E-AE6D-11cf-96B8-444553540000"
+							"evidence": "D27CDB6E-AE6D-11cf-96B8-444553540000",
+							"otherinfo": "\\x000fn\uFFFD\\x000c\\x001e\uFFFD\uFFFD\\x0001:\\x000f\uFFFDuq\uFFFD\uFFFD\uFFFD\\x001f>\uFFFD9\uFFFD~x\uFFFDM4"
 						}
 					],
 					"count": "12",
@@ -973,7 +1081,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "383"
+					"sourceid": "393"
 				},
 				{
 					"pluginid": "10027",
@@ -990,28 +1098,32 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Bug"
+							"evidence": "Bug",
+							"otherinfo": "The following pattern was used: \\bBUG\\b and was detected in the element starting with: \"!function(e,t){\"object\"==typeof exports&&\"object\"==typeof module?module.exports=t():\"function\"==typeof define&&define.amd?define\", see evidence field for the suspicious comment/snippet."
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/js/libs/bootstrap/bootstrap.min.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "query"
+							"evidence": "query",
+							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"!function(a){a(function(){\"use strict\",a.support.transition=function(){var a=function(){var a=document.createElement(\"bootstrap\"\", see evidence field for the suspicious comment/snippet."
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/js/libs/jquery-1.7.2.min.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "select"
+							"evidence": "select",
+							"otherinfo": "The following pattern was used: \\bSELECT\\b and was detected 2 times, the first in the element starting with: \"(function(a,b){function cy(a){return f.isWindow(a)?a:a.nodeType===9?a.defaultView||a.parentWindow:!1}function cu(a){if(!cj[a]){v\", see evidence field for the suspicious comment/snippet."
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/js/libs/jquery-1.7.2.min.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "username"
+							"evidence": "username",
+							"otherinfo": "The following pattern was used: \\bUSERNAME\\b and was detected in the element starting with: \".clean(arguments);a.push.apply(a,this.toArray());return this.pushStack(a,\"before\",arguments)}},after:function(){if(this[0]&&this\", see evidence field for the suspicious comment/snippet."
 						}
 					],
 					"count": "4",
@@ -1020,7 +1132,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1034"
+					"sourceid": "1035"
 				},
 				{
 					"pluginid": "10109",
@@ -1037,7 +1149,8 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<a id=\"immutable\" aria-hidden=\"true\"><span aria-hidden=\"true\" class=\"octicon octicon-link\"></span></a>"
+							"evidence": "<a id=\"immutable\" aria-hidden=\"true\"><span aria-hidden=\"true\" class=\"octicon octicon-link\"></span></a>",
+							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						}
 					],
 					"count": "1",
@@ -1046,7 +1159,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "588"
+					"sourceid": "595"
 				},
 				{
 					"pluginid": "10015",
@@ -1063,79 +1176,97 @@
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/blog",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/blog/",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/developpement",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/developpement.html",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/formations",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/formations.html",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/index.html",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/resume.html",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.keiruaprod.fr/robots.txt",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/sitemap.xml",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
-					"count": "10",
+					"count": "11",
 					"solution": "<p>For secure content, ensure the cache-control HTTP header is set with \"no-cache, no-store, must-revalidate\". If an asset should be cached consider setting the directives \"public, max-age, immutable\".</p>",
 					"otherinfo": "",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "9"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "10049",
@@ -1152,70 +1283,80 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/blog",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/css/bootstrap-responsive.min.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "max-age=900"
-						},
-						{
-							"uri": "https://www.keiruaprod.fr/css/font-awesome.min.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=900"
+							"evidence": "max-age=900",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/css/style.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "max-age=900"
+							"evidence": "max-age=900",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/developpement.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/formations.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/index.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
+							"uri": "https://www.keiruaprod.fr/resume.html",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						}
 					],
 					"count": "10",
@@ -1224,7 +1365,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "9"
+					"sourceid": "3"
 				}
 			]
 		}
