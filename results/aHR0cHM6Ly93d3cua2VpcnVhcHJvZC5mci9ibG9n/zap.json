@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 9 Apr 2023 00:22:06",
+	"@generated": "Sun, 16 Apr 2023 00:22:08",
 	"site":[ 
 		{
 			"@name": "https://www.keiruaprod.fr",
@@ -44,7 +44,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/04/02/the-murmur-hashing-algorithm.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/04/01/collectible-cards-and-old-cigarettes.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -135,7 +135,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog",
+							"uri": "https://www.keiruaprod.fr/blog/",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
@@ -143,7 +143,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/",
+							"uri": "https://www.keiruaprod.fr/blog/2023/04/01/collectible-cards-and-old-cigarettes.html",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
@@ -256,7 +256,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "486"
+					"sourceid": "493"
 				},
 				{
 					"pluginid": "10099",
@@ -291,7 +291,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "526"
+					"sourceid": "536"
 				},
 				{
 					"pluginid": "90003",
@@ -328,7 +328,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/04/02/the-murmur-hashing-algorithm.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/04/01/collectible-cards-and-old-cigarettes.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -398,7 +398,7 @@
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "3"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10003",
@@ -425,7 +425,7 @@
 					"reference": "<p>https://nvd.nist.gov/vuln/detail/CVE-2012-6708</p><p>https://github.com/jquery/jquery/issues/2432</p><p>http://research.insecurelabs.org/jquery/test/</p><p>http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/</p><p>http://bugs.jquery.com/ticket/11290</p><p>https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/</p><p>https://nvd.nist.gov/vuln/detail/CVE-2019-11358</p><p>https://nvd.nist.gov/vuln/detail/CVE-2015-9251</p><p>https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b</p><p>https://blog.jquery.com/2020/04/10/jquery-3-5-0-released/</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
-					"sourceid": "45"
+					"sourceid": "43"
 				},
 				{
 					"pluginid": "10017",
@@ -532,7 +532,7 @@
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "10110",
@@ -559,7 +559,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "45"
+					"sourceid": "43"
 				},
 				{
 					"pluginid": "10063",
@@ -588,15 +588,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/04/02/the-murmur-hashing-algorithm.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/04/04/une-semaine-avec-chatgpt.html",
+							"uri": "https://www.keiruaprod.fr/blog/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -645,6 +637,14 @@
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/js/libs/bootstrap/bootstrap.min.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.keiruaprod.fr/js/libs/jquery-1.7.2.min.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -725,7 +725,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html</p>",
 					"cweid": "311",
 					"wascid": "4",
-					"sourceid": "700"
+					"sourceid": "710"
 				},
 				{
 					"pluginid": "10035",
@@ -859,7 +859,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "600"
+					"sourceid": "608"
 				},
 				{
 					"pluginid": "10021",
@@ -889,14 +889,6 @@
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/css/bootstrap-responsive.min.css",
-							"method": "GET",
-							"param": "X-Content-Type-Options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
-						},
-						{
-							"uri": "https://www.keiruaprod.fr/css/font-awesome.min.css",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -936,6 +928,14 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
+							"uri": "https://www.keiruaprod.fr/js/libs/bootstrap/bootstrap.min.js",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
 							"uri": "https://www.keiruaprod.fr/resume.html",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
@@ -966,7 +966,7 @@
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "10094",
@@ -978,14 +978,6 @@
 					"riskdesc": "Informational (Medium)",
 					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
 					"instances":[ 
-						{
-							"uri": "https://www.keiruaprod.fr/blog/2021/08/16/summer-articles.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "io/2021/08/08/Another-Homebrew-Console",
-							"otherinfo": "\uFFFD\uFFFD\uFFFD\uFFFDm\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD'\uFFFD\uFFFD^\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD{\\x000f\uFFFD\uFFFD{(\uFFFD"
-						},
 						{
 							"uri": "https://www.keiruaprod.fr/blog/2021/11/16/slack-notifications-from-python.html",
 							"method": "GET",
@@ -1043,6 +1035,14 @@
 							"otherinfo": "r\uFFFD\uFFFDrZ\\x001c\uFFFD8h\uFFFD\\x000f\u03A5\uFFFD\u04BA\uFFFD\uFFFD1\uFFFD\uFFFD\uFFFD\uFFFD{\uFFFD\uFFFD\uFFFD\u05EB\uFFFD#6"
 						},
 						{
+							"uri": "https://www.keiruaprod.fr/blog/2023/03/23/prompts-chatgpt.html",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "com/mattnigh/ChatGPT3-Free-Prompt-List",
+							"otherinfo": "r\uFFFD\uFFFD\uFFFD\uFFFDm\uFFFD(!\uFFFD(Z\uFFFDc\uFFFD\uFFFD\uFFFDky\uF3EE\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD"
+						},
+						{
 							"uri": "https://www.keiruaprod.fr/blog/2023/03/25/compromission-des-cl%C3%A9s-github.html",
 							"method": "GET",
 							"param": "",
@@ -1077,11 +1077,11 @@
 					],
 					"count": "12",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\uFFFD\uFFFD\uFFFDm\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD'\uFFFD\uFFFD^\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD{\\x000f\uFFFD\uFFFD{(\uFFFD</p>",
+					"otherinfo": "<p>r\uFFFD\uFFFDu\uFFFD\u04B5\uFFFDl\uFFFD7\uFFFDoV\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u0778\u7B9Dq\uFFFD\\x001aw]\uFFFD\uFFFD8</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "393"
+					"sourceid": "361"
 				},
 				{
 					"pluginid": "10027",
@@ -1132,7 +1132,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1035"
+					"sourceid": "1038"
 				},
 				{
 					"pluginid": "10109",
@@ -1159,7 +1159,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "595"
+					"sourceid": "597"
 				},
 				{
 					"pluginid": "10015",
