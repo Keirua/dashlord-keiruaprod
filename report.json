@@ -5,7 +5,7 @@
     "http": {
       "url": "https://www.keiruaprod.fr",
       "algorithm_version": 2,
-      "end_time": "Sun, 07 May 2023 00:22:32 GMT",
+      "end_time": "Sun, 14 May 2023 00:23:04 GMT",
       "grade": "F",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
@@ -15,13 +15,13 @@
         "Content-Encoding": "gzip",
         "Content-Length": "1763",
         "Content-Type": "text/html",
-        "Date": "Sun, 07 May 2023 00:22:31 GMT",
+        "Date": "Sun, 14 May 2023 00:23:03 GMT",
         "Server": "Apache",
         "Vary": "Accept-Encoding"
       },
-      "scan_id": 37098001,
+      "scan_id": 37336020,
       "score": 0,
-      "start_time": "Sun, 07 May 2023 00:22:28 GMT",
+      "start_time": "Sun, 14 May 2023 00:23:00 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 6,
@@ -256,15 +256,15 @@
         "id": "TLS1",
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
-        "severity": "LOW",
-        "finding": "offered (deprecated)"
+        "severity": "INFO",
+        "finding": "not offered"
       },
       {
         "id": "TLS1_1",
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
-        "severity": "LOW",
-        "finding": "offered (deprecated)"
+        "severity": "INFO",
+        "finding": "not offered"
       },
       {
         "id": "TLS1_2",
@@ -339,8 +339,8 @@
         "id": "cipherlist_STRONG_NOFS",
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
-        "severity": "OK",
-        "finding": "offered"
+        "severity": "INFO",
+        "finding": "not offered"
       },
       {
         "id": "cipherlist_STRONG_FS",
@@ -348,34 +348,6 @@
         "port": "443",
         "severity": "OK",
         "finding": "offered"
-      },
-      {
-        "id": "cipher_order-tls1",
-        "ip": "www.keiruaprod.fr/213.186.33.4",
-        "port": "443",
-        "severity": "OK",
-        "finding": "server"
-      },
-      {
-        "id": "cipherorder_TLSv1",
-        "ip": "www.keiruaprod.fr/213.186.33.4",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "ECDHE-RSA-AES128-SHA"
-      },
-      {
-        "id": "cipher_order-tls1_1",
-        "ip": "www.keiruaprod.fr/213.186.33.4",
-        "port": "443",
-        "severity": "OK",
-        "finding": "server"
-      },
-      {
-        "id": "cipherorder_TLSv1_1",
-        "ip": "www.keiruaprod.fr/213.186.33.4",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "ECDHE-RSA-AES128-SHA"
       },
       {
         "id": "cipher_order-tls1_2",
@@ -389,7 +361,7 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "ECDHE-RSA-AES128-GCM-SHA256"
+        "finding": "ECDHE-RSA-AES256-GCM-SHA384"
       },
       {
         "id": "cipher_order",
@@ -410,7 +382,7 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "DHE-RSA-AES128-GCM-SHA256 DHE-RSA-AES128-SHA256 DHE-RSA-AES128-SHA DHE-RSA-AES256-GCM-SHA384 DHE-RSA-AES256-SHA256 DHE-RSA-AES256-SHA ECDHE-RSA-AES128-GCM-SHA256 ECDHE-RSA-AES128-SHA256 ECDHE-RSA-AES128-SHA ECDHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES256-SHA384 ECDHE-RSA-AES256-SHA"
+        "finding": "ECDHE-RSA-AES128-GCM-SHA256 ECDHE-RSA-AES128-SHA256 ECDHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES256-SHA384"
       },
       {
         "id": "FS_ECDHE_curves",
@@ -452,7 +424,7 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "supported"
+        "finding": "not supported"
       },
       {
         "id": "TLS_timestamp",
@@ -592,7 +564,7 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "MEDIUM",
-        "finding": "expires < 30 days (23)"
+        "finding": "expires < 30 days (16)"
       },
       {
         "id": "cert_notBefore",
@@ -795,7 +767,7 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "1683419033"
+        "finding": "1684023889"
       },
       {
         "id": "HSTS",
@@ -881,7 +853,7 @@
         "severity": "OK",
         "cve": "CVE-2017-17382 CVE-2017-17427 CVE-2017-17428 CVE-2017-13098 CVE-2017-1000385 CVE-2017-13099 CVE-2016-6883 CVE-2012-5081 CVE-2017-6168",
         "cwe": "CWE-203",
-        "finding": "not vulnerable"
+        "finding": "not vulnerable, no RSA key transport cipher"
       },
       {
         "id": "secure_renego",
@@ -932,7 +904,7 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "OK",
-        "finding": "supported"
+        "finding": "no protocol below TLS 1.2 offered"
       },
       {
         "id": "SWEET32",
@@ -971,15 +943,6 @@
         "finding": "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=BA517A715ED940387A2B8E358D2F4C0D13F1DDDE474E7D72D1916719BBFFABAF"
       },
       {
-        "id": "LOGJAM-common_primes",
-        "ip": "www.keiruaprod.fr/213.186.33.4",
-        "port": "443",
-        "severity": "INFO",
-        "cve": "CVE-2015-4000",
-        "cwe": "CWE-310",
-        "finding": "HAProxy"
-      },
-      {
         "id": "LOGJAM",
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
@@ -989,22 +952,22 @@
         "finding": "not vulnerable, no DH EXPORT ciphers,"
       },
       {
-        "id": "BEAST_CBC_TLS1",
+        "id": "LOGJAM-common_primes",
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
-        "severity": "MEDIUM",
-        "cve": "CVE-2011-3389",
-        "cwe": "CWE-20",
-        "finding": "ECDHE-RSA-AES128-SHA ECDHE-RSA-AES256-SHA DHE-RSA-AES128-SHA DHE-RSA-AES256-SHA AES128-SHA AES256-SHA"
+        "severity": "OK",
+        "cve": "CVE-2015-4000",
+        "cwe": "CWE-310",
+        "finding": "no DH key with <= TLS 1.2"
       },
       {
         "id": "BEAST",
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
-        "severity": "LOW",
+        "severity": "OK",
         "cve": "CVE-2011-3389",
         "cwe": "CWE-20",
-        "finding": "VULNERABLE -- but also supports higher protocols  TLSv1.1 TLSv1.2 (likely mitigated)"
+        "finding": "not vulnerable, no SSL3 or TLS1"
       },
       {
         "id": "LUCKY13",
@@ -1045,14 +1008,14 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-CHACHA20-POLY1305"
+        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
       },
       {
         "id": "clientsimulation-android_81",
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-CHACHA20-POLY1305"
+        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
       },
       {
         "id": "clientsimulation-android_90",
@@ -1122,7 +1085,7 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.0 ECDHE-RSA-AES128-SHA"
+        "finding": "No connection"
       },
       {
         "id": "clientsimulation-ie_8_xp",
@@ -1136,14 +1099,14 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 DHE-RSA-AES128-GCM-SHA256"
+        "finding": "TLSv1.2 ECDHE-RSA-AES256-SHA384"
       },
       {
         "id": "clientsimulation-ie_11_win81",
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 DHE-RSA-AES128-GCM-SHA256"
+        "finding": "TLSv1.2 ECDHE-RSA-AES256-SHA384"
       },
       {
         "id": "clientsimulation-ie_11_winphone81",
@@ -1157,14 +1120,14 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
       },
       {
         "id": "clientsimulation-edge_15_win10",
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
       },
       {
         "id": "clientsimulation-edge_101_win10_21h2",
@@ -1199,14 +1162,14 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.0 ECDHE-RSA-AES128-SHA"
+        "finding": "No connection"
       },
       {
         "id": "clientsimulation-java_8u161",
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
       },
       {
         "id": "clientsimulation-java1102",
@@ -1241,14 +1204,14 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
       },
       {
         "id": "clientsimulation-openssl_110l",
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-CHACHA20-POLY1305"
+        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
       },
       {
         "id": "clientsimulation-openssl_111d",
@@ -1269,7 +1232,7 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
       },
       {
         "id": "clientsimulation-thunderbird_91_9",
@@ -1297,14 +1260,14 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "95"
+        "finding": "100"
       },
       {
         "id": "protocol_support_score_weighted",
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "28"
+        "finding": "30"
       },
       {
         "id": "key_exchange_score",
@@ -1339,31 +1302,17 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "79"
+        "finding": "81"
       },
       {
         "id": "overall_grade",
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
-        "severity": "MEDIUM",
-        "finding": "B"
+        "severity": "OK",
+        "finding": "A"
       },
       {
         "id": "grade_cap_reason_1",
-        "ip": "www.keiruaprod.fr/213.186.33.4",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "Grade capped to B. TLS 1.1 offered"
-      },
-      {
-        "id": "grade_cap_reason_2",
-        "ip": "www.keiruaprod.fr/213.186.33.4",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "Grade capped to B. TLS 1.0 offered"
-      },
-      {
-        "id": "grade_cap_reason_3",
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
@@ -1374,7 +1323,7 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "89"
+        "finding": "95"
       }
     ],
     "thirdparties": {
@@ -1401,7 +1350,7 @@
         },
         {
           "type": "google analytics",
-          "url": "https://ssl.google-analytics.com/r/__utm.gif?utmwv=5.7.2&utms=1&utmn=1597912453&utmhn=www.keiruaprod.fr&utmcs=UTF-8&utmsr=800x600&utmvp=800x600&utmsc=24-bit&utmul=en-us&utmje=0&utmfl=-&utmdt=D%C3%A9veloppeur%20web%20et%20formateur%20Symfony2%2FSymfony3%20freelance%20Paris%20-%20KeiruaProd&utmhid=1276085540&utmr=-&utmp=%2F&utmht=1683418987729&utmac=UA-26997065-1&utmcc=__utma%3D185069491.1390646947.1683418988.1683418988.1683418988.1%3B%2B__utmz%3D185069491.1683418988.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmjid=1345611673&utmredir=1&utmu=qAAAAAAAAAAAAAAAAAAAAAAE~",
+          "url": "https://ssl.google-analytics.com/r/__utm.gif?utmwv=5.7.2&utms=1&utmn=825455708&utmhn=www.keiruaprod.fr&utmcs=UTF-8&utmsr=800x600&utmvp=800x600&utmsc=24-bit&utmul=en-us&utmje=0&utmfl=-&utmdt=D%C3%A9veloppeur%20web%20et%20formateur%20Symfony2%2FSymfony3%20freelance%20Paris%20-%20KeiruaProd&utmhid=338150990&utmr=-&utmp=%2F&utmht=1684023820784&utmac=UA-26997065-1&utmcc=__utma%3D185069491.1580427955.1684023821.1684023821.1684023821.1%3B%2B__utmz%3D185069491.1684023821.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmjid=190563462&utmredir=1&utmu=qAAAAAAAAAAAAAAAAAAAAAAE~",
           "details": {
             "id": "google analytics",
             "message": "Use hosted Matomo instance"
@@ -1411,10 +1360,10 @@
       "cookies": [
         {
           "name": "__utmb",
-          "value": "185069491.1.10.1683418988",
+          "value": "185069491.1.10.1684023821",
           "domain": ".keiruaprod.fr",
           "path": "/",
-          "expires": 1683420787,
+          "expires": 1684025620,
           "size": 31,
           "httpOnly": false,
           "secure": false,
@@ -1425,10 +1374,10 @@
         },
         {
           "name": "__utmz",
-          "value": "185069491.1683418988.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)",
+          "value": "185069491.1684023821.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)",
           "domain": ".keiruaprod.fr",
           "path": "/",
-          "expires": 1699186987,
+          "expires": 1699791820,
           "size": 76,
           "httpOnly": false,
           "secure": false,
@@ -1456,7 +1405,7 @@
           "value": "1",
           "domain": ".keiruaprod.fr",
           "path": "/",
-          "expires": 1683419587,
+          "expires": 1684024420,
           "size": 7,
           "httpOnly": false,
           "secure": false,
@@ -1467,10 +1416,10 @@
         },
         {
           "name": "__utma",
-          "value": "185069491.1390646947.1683418988.1683418988.1683418988.1",
+          "value": "185069491.1580427955.1684023821.1684023821.1684023821.1",
           "domain": ".keiruaprod.fr",
           "path": "/",
-          "expires": 1746490987,
+          "expires": 1747095820,
           "size": 61,
           "httpOnly": false,
           "secure": false,
@@ -1485,7 +1434,7 @@
         "content-encoding": "gzip",
         "content-length": "1763",
         "content-type": "text/html",
-        "date": "Sun, 07 May 2023 00:23:07 GMT",
+        "date": "Sun, 14 May 2023 00:23:40 GMT",
         "server": "Apache",
         "vary": "Accept-Encoding"
       },
@@ -1548,7 +1497,7 @@
         },
         {
           "hostname": "ajax.googleapis.com",
-          "ip": "142.251.167.95",
+          "ip": "209.85.145.95",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -1602,13 +1551,19 @@
         },
         {
           "hostname": "plausible.io",
-          "ip": "37.19.207.34",
+          "ip": "38.142.94.218",
           "geoip": {
             "city": {
-              "geoname_id": 4744870,
+              "geoname_id": 5037649,
               "names": {
-                "en": "Ashburn",
-                "ru": "Ашберн"
+                "de": "Minneapolis",
+                "en": "Minneapolis",
+                "es": "Mineápolis",
+                "fr": "Minneapolis",
+                "ja": "ミネアポリス",
+                "pt-BR": "Minneapolis",
+                "ru": "Миннеаполис",
+                "zh-CN": "明尼阿波利斯"
               }
             },
             "continent": {
@@ -1641,39 +1596,40 @@
             },
             "location": {
               "accuracy_radius": 20,
-              "latitude": 39.0469,
-              "longitude": -77.4903,
-              "metro_code": 511,
-              "time_zone": "America/New_York"
+              "latitude": 44.9509,
+              "longitude": -93.3366,
+              "metro_code": 613,
+              "time_zone": "America/Chicago"
             },
             "postal": {
-              "code": "20149"
+              "code": "55416"
             },
             "registered_country": {
-              "geoname_id": 2635167,
-              "iso_code": "GB",
+              "geoname_id": 6252001,
+              "iso_code": "US",
               "names": {
-                "de": "Vereinigtes Königreich",
-                "en": "United Kingdom",
-                "es": "Reino Unido",
-                "fr": "Royaume Uni",
-                "ja": "英国",
-                "pt-BR": "Reino Unido",
-                "ru": "Британия",
-                "zh-CN": "英国"
+                "de": "Vereinigte Staaten",
+                "en": "United States",
+                "es": "Estados Unidos",
+                "fr": "États Unis",
+                "ja": "アメリカ",
+                "pt-BR": "EUA",
+                "ru": "США",
+                "zh-CN": "美国"
               }
             },
             "subdivisions": [
               {
-                "geoname_id": 6254928,
-                "iso_code": "VA",
+                "geoname_id": 5037779,
+                "iso_code": "MN",
                 "names": {
-                  "en": "Virginia",
-                  "fr": "Virginie",
-                  "ja": "バージニア州",
-                  "pt-BR": "Virgínia",
-                  "ru": "Вирджиния",
-                  "zh-CN": "弗吉尼亚州"
+                  "en": "Minnesota",
+                  "es": "Minnesota",
+                  "fr": "Minnesota",
+                  "ja": "ミネソタ州",
+                  "pt-BR": "Minesota",
+                  "ru": "Миннесота",
+                  "zh-CN": "明尼苏达州"
                 }
               }
             ]
@@ -1681,7 +1637,7 @@
         },
         {
           "hostname": "ssl.google-analytics.com",
-          "ip": "172.253.62.97",
+          "ip": "172.253.119.97",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -1914,7 +1870,7 @@
     "zap": {
       "@programName": "OWASP ZAP",
       "@version": "2.12.0",
-      "@generated": "Sun, 7 May 2023 00:21:58",
+      "@generated": "Sun, 14 May 2023 00:22:30",
       "site": [
         {
           "@name": "https://www.keiruaprod.fr",
@@ -2022,7 +1978,7 @@
       {
         "requestedUrl": "https://www.keiruaprod.fr/",
         "finalUrl": "https://www.keiruaprod.fr/",
-        "fetchTime": "2023-05-07T00:22:18.066Z",
+        "fetchTime": "2023-05-14T00:22:49.834Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -2085,53 +2041,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 3287,
+            "numericValue": 2774,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 2194,
-                  "firstMeaningfulPaint": 2194,
-                  "largestContentfulPaint": 2194,
-                  "interactive": 3287,
-                  "speedIndex": 2194,
-                  "totalBlockingTime": 38,
-                  "maxPotentialFID": 125,
+                  "firstContentfulPaint": 2214,
+                  "firstMeaningfulPaint": 2214,
+                  "largestContentfulPaint": 2214,
+                  "interactive": 2774,
+                  "speedIndex": 2224,
+                  "totalBlockingTime": 69,
+                  "maxPotentialFID": 119,
                   "cumulativeLayoutShift": 0,
                   "cumulativeLayoutShiftMainFrame": 0,
                   "totalCumulativeLayoutShift": 0,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 362647940,
+                  "observedTimeOriginTs": 352672910,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 362647940,
-                  "observedFirstPaint": 530,
-                  "observedFirstPaintTs": 363178234,
-                  "observedFirstContentfulPaint": 530,
-                  "observedFirstContentfulPaintTs": 363178234,
-                  "observedFirstContentfulPaintAllFrames": 530,
-                  "observedFirstContentfulPaintAllFramesTs": 363178234,
-                  "observedFirstMeaningfulPaint": 530,
-                  "observedFirstMeaningfulPaintTs": 363178234,
-                  "observedLargestContentfulPaint": 530,
-                  "observedLargestContentfulPaintTs": 363178234,
-                  "observedLargestContentfulPaintAllFrames": 530,
-                  "observedLargestContentfulPaintAllFramesTs": 363178234,
-                  "observedTraceEnd": 3027,
-                  "observedTraceEndTs": 365674720,
-                  "observedLoad": 715,
-                  "observedLoadTs": 363362884,
-                  "observedDomContentLoaded": 597,
-                  "observedDomContentLoadedTs": 363245331,
+                  "observedNavigationStartTs": 352672910,
+                  "observedFirstPaint": 708,
+                  "observedFirstPaintTs": 353381216,
+                  "observedFirstContentfulPaint": 708,
+                  "observedFirstContentfulPaintTs": 353381216,
+                  "observedFirstContentfulPaintAllFrames": 708,
+                  "observedFirstContentfulPaintAllFramesTs": 353381216,
+                  "observedFirstMeaningfulPaint": 708,
+                  "observedFirstMeaningfulPaintTs": 353381216,
+                  "observedLargestContentfulPaint": 708,
+                  "observedLargestContentfulPaintTs": 353381216,
+                  "observedLargestContentfulPaintAllFrames": 708,
+                  "observedLargestContentfulPaintAllFramesTs": 353381216,
+                  "observedTraceEnd": 3250,
+                  "observedTraceEndTs": 355923147,
+                  "observedLoad": 938,
+                  "observedLoadTs": 353611356,
+                  "observedDomContentLoaded": 729,
+                  "observedDomContentLoadedTs": 353402141,
                   "observedCumulativeLayoutShift": 0,
                   "observedCumulativeLayoutShiftMainFrame": 0,
                   "observedTotalCumulativeLayoutShift": 0,
-                  "observedFirstVisualChange": 520,
-                  "observedFirstVisualChangeTs": 363167940,
-                  "observedLastVisualChange": 1120,
-                  "observedLastVisualChangeTs": 363767940,
-                  "observedSpeedIndex": 527,
-                  "observedSpeedIndexTs": 363174806
+                  "observedFirstVisualChange": 696,
+                  "observedFirstVisualChangeTs": 353368910,
+                  "observedLastVisualChange": 1296,
+                  "observedLastVisualChangeTs": 353968910,
+                  "observedSpeedIndex": 702,
+                  "observedSpeedIndexTs": 353375198
                 },
                 {
                   "lcpInvalidated": false
@@ -2153,19 +2109,19 @@
                   "numScripts": 4,
                   "numStylesheets": 4,
                   "numFonts": 1,
-                  "numTasks": 183,
+                  "numTasks": 196,
                   "numTasksOver10ms": 4,
-                  "numTasksOver25ms": 2,
+                  "numTasksOver25ms": 3,
                   "numTasksOver50ms": 0,
                   "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 6.425,
-                  "throughput": 10082026.98852308,
-                  "maxRtt": 86.18400000000001,
-                  "maxServerLatency": 6.189999999999998,
-                  "totalByteWeight": 128227,
-                  "totalTaskTime": 150.05199999999974,
-                  "mainDocumentTransferSize": 1904
+                  "rtt": 25.994,
+                  "throughput": 3751682.5656916406,
+                  "maxRtt": 117.919,
+                  "maxServerLatency": 3.2350000000000136,
+                  "totalByteWeight": 128210,
+                  "totalTaskTime": 157.24000000000004,
+                  "mainDocumentTransferSize": 1895
                 }
               ]
             }
@@ -2191,7 +2147,7 @@
       "nmapOpenPortsGrade": "A",
       "testsslExpireSoon": true,
       "testsslExpireDate": "2023-05-30T19:49:00.000Z",
-      "testsslGrade": "B",
+      "testsslGrade": "A",
       "cookiesGrade": "C",
       "cookiesCount": 5,
       "trackersGrade": "C",
@@ -2214,7 +2170,7 @@
     "http": {
       "url": "https://www.keiruaprod.fr/blog",
       "algorithm_version": 2,
-      "end_time": "Sun, 07 May 2023 00:22:32 GMT",
+      "end_time": "Sun, 14 May 2023 00:23:04 GMT",
       "grade": "F",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
@@ -2224,13 +2180,13 @@
         "Content-Encoding": "gzip",
         "Content-Length": "1763",
         "Content-Type": "text/html",
-        "Date": "Sun, 07 May 2023 00:22:31 GMT",
+        "Date": "Sun, 14 May 2023 00:23:03 GMT",
         "Server": "Apache",
         "Vary": "Accept-Encoding"
       },
-      "scan_id": 37098001,
+      "scan_id": 37336020,
       "score": 0,
-      "start_time": "Sun, 07 May 2023 00:22:28 GMT",
+      "start_time": "Sun, 14 May 2023 00:23:00 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 6,
@@ -2465,15 +2421,15 @@
         "id": "TLS1",
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
-        "severity": "LOW",
-        "finding": "offered (deprecated)"
+        "severity": "INFO",
+        "finding": "not offered"
       },
       {
         "id": "TLS1_1",
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
-        "severity": "LOW",
-        "finding": "offered (deprecated)"
+        "severity": "INFO",
+        "finding": "not offered"
       },
       {
         "id": "TLS1_2",
@@ -2548,8 +2504,8 @@
         "id": "cipherlist_STRONG_NOFS",
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
-        "severity": "OK",
-        "finding": "offered"
+        "severity": "INFO",
+        "finding": "not offered"
       },
       {
         "id": "cipherlist_STRONG_FS",
@@ -2557,34 +2513,6 @@
         "port": "443",
         "severity": "OK",
         "finding": "offered"
-      },
-      {
-        "id": "cipher_order-tls1",
-        "ip": "www.keiruaprod.fr/213.186.33.4",
-        "port": "443",
-        "severity": "OK",
-        "finding": "server"
-      },
-      {
-        "id": "cipherorder_TLSv1",
-        "ip": "www.keiruaprod.fr/213.186.33.4",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "ECDHE-RSA-AES128-SHA"
-      },
-      {
-        "id": "cipher_order-tls1_1",
-        "ip": "www.keiruaprod.fr/213.186.33.4",
-        "port": "443",
-        "severity": "OK",
-        "finding": "server"
-      },
-      {
-        "id": "cipherorder_TLSv1_1",
-        "ip": "www.keiruaprod.fr/213.186.33.4",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "ECDHE-RSA-AES128-SHA"
       },
       {
         "id": "cipher_order-tls1_2",
@@ -2598,7 +2526,7 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "ECDHE-RSA-AES128-GCM-SHA256"
+        "finding": "ECDHE-RSA-AES256-GCM-SHA384"
       },
       {
         "id": "cipher_order",
@@ -2619,7 +2547,7 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "DHE-RSA-AES128-GCM-SHA256 DHE-RSA-AES128-SHA256 DHE-RSA-AES128-SHA DHE-RSA-AES256-GCM-SHA384 DHE-RSA-AES256-SHA256 DHE-RSA-AES256-SHA ECDHE-RSA-AES128-GCM-SHA256 ECDHE-RSA-AES128-SHA256 ECDHE-RSA-AES128-SHA ECDHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES256-SHA384 ECDHE-RSA-AES256-SHA"
+        "finding": "ECDHE-RSA-AES128-GCM-SHA256 ECDHE-RSA-AES128-SHA256 ECDHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES256-SHA384"
       },
       {
         "id": "FS_ECDHE_curves",
@@ -2801,7 +2729,7 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "MEDIUM",
-        "finding": "expires < 30 days (23)"
+        "finding": "expires < 30 days (16)"
       },
       {
         "id": "cert_notBefore",
@@ -3004,7 +2932,7 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "1683419065"
+        "finding": "1684023856"
       },
       {
         "id": "HSTS",
@@ -3090,7 +3018,7 @@
         "severity": "OK",
         "cve": "CVE-2017-17382 CVE-2017-17427 CVE-2017-17428 CVE-2017-13098 CVE-2017-1000385 CVE-2017-13099 CVE-2016-6883 CVE-2012-5081 CVE-2017-6168",
         "cwe": "CWE-203",
-        "finding": "not vulnerable"
+        "finding": "not vulnerable, no RSA key transport cipher"
       },
       {
         "id": "secure_renego",
@@ -3141,7 +3069,7 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "OK",
-        "finding": "supported"
+        "finding": "no protocol below TLS 1.2 offered"
       },
       {
         "id": "SWEET32",
@@ -3180,15 +3108,6 @@
         "finding": "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=BA517A715ED940387A2B8E358D2F4C0D13F1DDDE474E7D72D1916719BBFFABAF"
       },
       {
-        "id": "LOGJAM-common_primes",
-        "ip": "www.keiruaprod.fr/213.186.33.4",
-        "port": "443",
-        "severity": "INFO",
-        "cve": "CVE-2015-4000",
-        "cwe": "CWE-310",
-        "finding": "HAProxy"
-      },
-      {
         "id": "LOGJAM",
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
@@ -3198,22 +3117,22 @@
         "finding": "not vulnerable, no DH EXPORT ciphers,"
       },
       {
-        "id": "BEAST_CBC_TLS1",
+        "id": "LOGJAM-common_primes",
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
-        "severity": "MEDIUM",
-        "cve": "CVE-2011-3389",
-        "cwe": "CWE-20",
-        "finding": "ECDHE-RSA-AES128-SHA ECDHE-RSA-AES256-SHA DHE-RSA-AES128-SHA DHE-RSA-AES256-SHA AES128-SHA AES256-SHA"
+        "severity": "OK",
+        "cve": "CVE-2015-4000",
+        "cwe": "CWE-310",
+        "finding": "no DH key with <= TLS 1.2"
       },
       {
         "id": "BEAST",
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
-        "severity": "LOW",
+        "severity": "OK",
         "cve": "CVE-2011-3389",
         "cwe": "CWE-20",
-        "finding": "VULNERABLE -- but also supports higher protocols  TLSv1.1 TLSv1.2 (likely mitigated)"
+        "finding": "not vulnerable, no SSL3 or TLS1"
       },
       {
         "id": "LUCKY13",
@@ -3254,14 +3173,14 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-CHACHA20-POLY1305"
+        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
       },
       {
         "id": "clientsimulation-android_81",
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-CHACHA20-POLY1305"
+        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
       },
       {
         "id": "clientsimulation-android_90",
@@ -3331,7 +3250,7 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.0 ECDHE-RSA-AES128-SHA"
+        "finding": "No connection"
       },
       {
         "id": "clientsimulation-ie_8_xp",
@@ -3345,14 +3264,14 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 DHE-RSA-AES128-GCM-SHA256"
+        "finding": "TLSv1.2 ECDHE-RSA-AES256-SHA384"
       },
       {
         "id": "clientsimulation-ie_11_win81",
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 DHE-RSA-AES128-GCM-SHA256"
+        "finding": "TLSv1.2 ECDHE-RSA-AES256-SHA384"
       },
       {
         "id": "clientsimulation-ie_11_winphone81",
@@ -3366,14 +3285,14 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
       },
       {
         "id": "clientsimulation-edge_15_win10",
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
       },
       {
         "id": "clientsimulation-edge_101_win10_21h2",
@@ -3408,14 +3327,14 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.0 ECDHE-RSA-AES128-SHA"
+        "finding": "No connection"
       },
       {
         "id": "clientsimulation-java_8u161",
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
       },
       {
         "id": "clientsimulation-java1102",
@@ -3450,14 +3369,14 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
       },
       {
         "id": "clientsimulation-openssl_110l",
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-CHACHA20-POLY1305"
+        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
       },
       {
         "id": "clientsimulation-openssl_111d",
@@ -3478,7 +3397,7 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
       },
       {
         "id": "clientsimulation-thunderbird_91_9",
@@ -3506,14 +3425,14 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "95"
+        "finding": "100"
       },
       {
         "id": "protocol_support_score_weighted",
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "28"
+        "finding": "30"
       },
       {
         "id": "key_exchange_score",
@@ -3548,31 +3467,17 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "79"
+        "finding": "81"
       },
       {
         "id": "overall_grade",
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
-        "severity": "MEDIUM",
-        "finding": "B"
+        "severity": "OK",
+        "finding": "A"
       },
       {
         "id": "grade_cap_reason_1",
-        "ip": "www.keiruaprod.fr/213.186.33.4",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "Grade capped to B. TLS 1.1 offered"
-      },
-      {
-        "id": "grade_cap_reason_2",
-        "ip": "www.keiruaprod.fr/213.186.33.4",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "Grade capped to B. TLS 1.0 offered"
-      },
-      {
-        "id": "grade_cap_reason_3",
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
@@ -3583,7 +3488,7 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "157"
+        "finding": "60"
       }
     ],
     "thirdparties": {
@@ -3599,7 +3504,7 @@
         "content-encoding": "gzip",
         "content-length": "8639",
         "content-type": "text/html",
-        "date": "Sun, 07 May 2023 00:23:05 GMT",
+        "date": "Sun, 14 May 2023 00:23:37 GMT",
         "server": "Apache",
         "vary": "Accept-Encoding"
       },
@@ -3662,18 +3567,13 @@
         },
         {
           "hostname": "plausible.io",
-          "ip": "212.102.40.114",
+          "ip": "37.19.207.34",
           "geoip": {
             "city": {
-              "geoname_id": 4684888,
+              "geoname_id": 4744870,
               "names": {
-                "de": "Dallas",
-                "en": "Dallas",
-                "es": "Dallas",
-                "fr": "Dallas",
-                "ja": "ダラス",
-                "pt-BR": "Dallas",
-                "ru": "Даллас"
+                "en": "Ashburn",
+                "ru": "Ашберн"
               }
             },
             "continent": {
@@ -3706,13 +3606,13 @@
             },
             "location": {
               "accuracy_radius": 20,
-              "latitude": 32.7797,
-              "longitude": -96.8022,
-              "metro_code": 623,
-              "time_zone": "America/Chicago"
+              "latitude": 39.0469,
+              "longitude": -77.4903,
+              "metro_code": 511,
+              "time_zone": "America/New_York"
             },
             "postal": {
-              "code": "75270"
+              "code": "20149"
             },
             "registered_country": {
               "geoname_id": 2635167,
@@ -3730,15 +3630,15 @@
             },
             "subdivisions": [
               {
-                "geoname_id": 4736286,
-                "iso_code": "TX",
+                "geoname_id": 6254928,
+                "iso_code": "VA",
                 "names": {
-                  "en": "Texas",
-                  "es": "Texas",
-                  "fr": "Texas",
-                  "ja": "テキサス州",
-                  "ru": "Техас",
-                  "zh-CN": "德克萨斯州"
+                  "en": "Virginia",
+                  "fr": "Virginie",
+                  "ja": "バージニア州",
+                  "pt-BR": "Virgínia",
+                  "ru": "Вирджиния",
+                  "zh-CN": "弗吉尼亚州"
                 }
               }
             ]
@@ -3868,7 +3768,7 @@
     "zap": {
       "@programName": "OWASP ZAP",
       "@version": "2.12.0",
-      "@generated": "Sun, 7 May 2023 00:22:18",
+      "@generated": "Sun, 14 May 2023 00:22:48",
       "site": [
         {
           "@name": "https://www.keiruaprod.fr",
@@ -4011,7 +3911,7 @@
       {
         "requestedUrl": "https://www.keiruaprod.fr/blog",
         "finalUrl": "https://www.keiruaprod.fr/blog/",
-        "fetchTime": "2023-05-07T00:22:36.280Z",
+        "fetchTime": "2023-05-14T00:23:09.230Z",
         "runWarnings": [
           "The page may not be loading as expected because your test URL (https://www.keiruaprod.fr/blog) was redirected to https://www.keiruaprod.fr/blog/. Try testing the second URL directly."
         ],
@@ -4076,53 +3976,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 1114,
+            "numericValue": 1274,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 1114,
-                  "firstMeaningfulPaint": 1114,
-                  "largestContentfulPaint": 1326,
-                  "interactive": 1114,
-                  "speedIndex": 1463,
-                  "totalBlockingTime": 0,
-                  "maxPotentialFID": 35,
+                  "firstContentfulPaint": 1082,
+                  "firstMeaningfulPaint": 1082,
+                  "largestContentfulPaint": 1234,
+                  "interactive": 1274,
+                  "speedIndex": 1345,
+                  "totalBlockingTime": 79,
+                  "maxPotentialFID": 200,
                   "cumulativeLayoutShift": 0,
                   "cumulativeLayoutShiftMainFrame": 0,
                   "totalCumulativeLayoutShift": 0,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 390630956,
+                  "observedTimeOriginTs": 348865020,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 390630956,
-                  "observedFirstPaint": 678,
-                  "observedFirstPaintTs": 391308904,
-                  "observedFirstContentfulPaint": 678,
-                  "observedFirstContentfulPaintTs": 391308904,
-                  "observedFirstContentfulPaintAllFrames": 678,
-                  "observedFirstContentfulPaintAllFramesTs": 391308904,
-                  "observedFirstMeaningfulPaint": 678,
-                  "observedFirstMeaningfulPaintTs": 391308904,
-                  "observedLargestContentfulPaint": 678,
-                  "observedLargestContentfulPaintTs": 391308904,
-                  "observedLargestContentfulPaintAllFrames": 678,
-                  "observedLargestContentfulPaintAllFramesTs": 391308904,
-                  "observedTraceEnd": 3015,
-                  "observedTraceEndTs": 393646115,
-                  "observedLoad": 697,
-                  "observedLoadTs": 391328119,
-                  "observedDomContentLoaded": 697,
-                  "observedDomContentLoadedTs": 391327933,
+                  "observedNavigationStartTs": 348865020,
+                  "observedFirstPaint": 548,
+                  "observedFirstPaintTs": 349412885,
+                  "observedFirstContentfulPaint": 548,
+                  "observedFirstContentfulPaintTs": 349412885,
+                  "observedFirstContentfulPaintAllFrames": 548,
+                  "observedFirstContentfulPaintAllFramesTs": 349412885,
+                  "observedFirstMeaningfulPaint": 548,
+                  "observedFirstMeaningfulPaintTs": 349412885,
+                  "observedLargestContentfulPaint": 548,
+                  "observedLargestContentfulPaintTs": 349412885,
+                  "observedLargestContentfulPaintAllFrames": 548,
+                  "observedLargestContentfulPaintAllFramesTs": 349412885,
+                  "observedTraceEnd": 2966,
+                  "observedTraceEndTs": 351831036,
+                  "observedLoad": 643,
+                  "observedLoadTs": 349508227,
+                  "observedDomContentLoaded": 643,
+                  "observedDomContentLoadedTs": 349508173,
                   "observedCumulativeLayoutShift": 0,
                   "observedCumulativeLayoutShiftMainFrame": 0,
                   "observedTotalCumulativeLayoutShift": 0,
-                  "observedFirstVisualChange": 686,
-                  "observedFirstVisualChangeTs": 391316956,
-                  "observedLastVisualChange": 703,
-                  "observedLastVisualChangeTs": 391333956,
-                  "observedSpeedIndex": 687,
-                  "observedSpeedIndexTs": 391318013
+                  "observedFirstVisualChange": 537,
+                  "observedFirstVisualChangeTs": 349402020,
+                  "observedLastVisualChange": 870,
+                  "observedLastVisualChangeTs": 349735020,
+                  "observedSpeedIndex": 544,
+                  "observedSpeedIndexTs": 349409356
                 },
                 {
                   "lcpInvalidated": false
@@ -4144,19 +4044,19 @@
                   "numScripts": 1,
                   "numStylesheets": 3,
                   "numFonts": 0,
-                  "numTasks": 100,
-                  "numTasksOver10ms": 2,
-                  "numTasksOver25ms": 0,
+                  "numTasks": 104,
+                  "numTasksOver10ms": 3,
+                  "numTasksOver25ms": 2,
                   "numTasksOver50ms": 0,
                   "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 13.309999999999988,
-                  "throughput": 24216720.487874895,
-                  "maxRtt": 119.237,
-                  "maxServerLatency": 2.4819999999999993,
-                  "totalByteWeight": 16988,
-                  "totalTaskTime": 57.68800000000003,
-                  "mainDocumentTransferSize": 8779
+                  "rtt": 1.1519999999999868,
+                  "throughput": 1644636.9476355342,
+                  "maxRtt": 80.287,
+                  "maxServerLatency": 17.480000000000004,
+                  "totalByteWeight": 17012,
+                  "totalTaskTime": 110.50699999999998,
+                  "mainDocumentTransferSize": 8797
                 }
               ]
             }
@@ -4182,7 +4082,7 @@
       "nmapOpenPortsGrade": "A",
       "testsslExpireSoon": true,
       "testsslExpireDate": "2023-05-30T19:49:00.000Z",
-      "testsslGrade": "B",
+      "testsslGrade": "A",
       "cookiesGrade": "A",
       "cookiesCount": 0,
       "trackersGrade": "B",
