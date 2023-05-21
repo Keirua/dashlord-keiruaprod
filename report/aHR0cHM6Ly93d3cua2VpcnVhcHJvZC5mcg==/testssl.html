@@ -21,11 +21,11 @@
 ###########################################################</span>
 
  Using &quot;OpenSSL 1.0.2-bad (1.0.2k-dev)&quot; [~183 ciphers]
- on fv-az336-389:/home/testssl/bin/openssl.Linux.x86_64
+ on fv-az617-161:/home/testssl/bin/openssl.Linux.x86_64
  (built: &quot;Sep  1 14:03:44 2022&quot;, platform: &quot;linux-x86_64&quot;)
 
 
-<span style="color:white;background-color:black;"> Start 2023-05-14 00:23:55                --&gt;&gt; 213.186.33.4:443 (www.keiruaprod.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2023-05-21 00:24:24                --&gt;&gt; 213.186.33.4:443 (www.keiruaprod.fr) &lt;&lt;--</span>
 
  rDNS (213.186.33.4):    cluster003.ovh.net.
  Service detected:       HTTP
@@ -100,9 +100,9 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Server key size              </span>RSA 2048 bits (exponent is 65537)
 <span style="font-weight:bold;"> Server key usage             </span>Digital Signature, Key Encipherment
 <span style="font-weight:bold;"> Server extended key usage    </span>TLS Web Server Authentication, TLS Web Client Authentication
-<span style="font-weight:bold;"> Serial                       </span>0436FAD5B6DAC5504096EEA3A381E29ACC93 (OK: length 18)
-<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 7D6233632A9CB543B57734BE08CFBBF34C8DE815
-                              SHA256 BA517A715ED940387A2B8E358D2F4C0D13F1DDDE474E7D72D1916719BBFFABAF
+<span style="font-weight:bold;"> Serial                       </span>03566C7EB83973D39D3725D12E48A9C71D3B (OK: length 18)
+<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 57555826A16AEA6F4BBF5E876469A63F4C2E5FD2
+                              SHA256 CF78D06E8E77477AC73AF557F3090BE741970E593B7121DC1DAA8F4E7D5E6B38
 <span style="font-weight:bold;"> Common Name (CN)             </span><i>keiruaprod.fr </i> (CN in response to request w/o SNI: <i>cluster003.hosting.ovh.net </i>)
 <span style="font-weight:bold;"> subjectAltName (SAN)         </span><i>147colors.keiruaprod.fr 2048craze.keiruaprod.fr
                               blog.keiruaprod.fr foules.keiruaprod.fr
@@ -118,7 +118,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN</span> (SNI mandatory)
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#c05600;">expires &lt; 30 days (16)</span> (2023-03-01 19:49 --&gt; 2023-05-30 19:49)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">89 &gt;= 30 days</span> (2023-05-20 20:00 --&gt; 2023-08-18 20:00)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>--
 <span style="font-weight:bold;"> OCSP URI                     </span>http://r3.o.lencr.org
@@ -163,7 +163,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> FREAK</span> (CVE-2015-0204)                     <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
 <span style="font-weight:bold;"> DROWN</span> (CVE-2016-0800, CVE-2016-0703)      <span style="color:#008817;font-weight:bold;">not vulnerable on this host and port (OK)</span>
                                            make sure you don&apos;t use this certificate elsewhere with SSLv2 enabled services, see
-                                           <a href="https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=BA517A715ED940387A2B8E358D2F4C0D13F1DDDE474E7D72D1916719BBFFABAF" style="color:black;text-decoration:none;">https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=BA517A715ED940387A2B8E358D2F4C0D13F1DDDE474E7D72D1916719BBFFABAF</a>
+                                           <a href="https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=CF78D06E8E77477AC73AF557F3090BE741970E593B7121DC1DAA8F4E7D5E6B38" style="color:black;text-decoration:none;">https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=CF78D06E8E77477AC73AF557F3090BE741970E593B7121DC1DAA8F4E7D5E6B38</a>
 <span style="font-weight:bold;"> LOGJAM</span> (CVE-2015-4000), experimental      <span style="color:#008817;">not vulnerable (OK):</span> no DH EXPORT ciphers, no DH key detected with &lt;= TLS 1.2
 <span style="font-weight:bold;"> BEAST</span> (CVE-2011-3389)                     <span style="color:#008817;">not vulnerable (OK)</span>, no SSL3 or TLS1
 <span style="font-weight:bold;"> LUCKY13</span> (CVE-2013-0169), experimental     potentially <span style="color:#a86437;">VULNERABLE</span>, uses cipher block chaining (CBC) ciphers with TLS. Check patches
@@ -223,7 +223,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A</span>
 <span style="font-weight:bold;"> Grade cap reasons            </span>Grade capped to A. HSTS is not offered
 
-<span style="color:white;background-color:black;"> Done 2023-05-14 00:25:29 [  95s] --&gt;&gt; 213.186.33.4:443 (www.keiruaprod.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2023-05-21 00:25:25 [  63s] --&gt;&gt; 213.186.33.4:443 (www.keiruaprod.fr) &lt;&lt;--</span>
 
 
 </pre>
