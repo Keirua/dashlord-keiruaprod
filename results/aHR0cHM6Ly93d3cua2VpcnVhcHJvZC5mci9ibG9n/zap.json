@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 28 May 2023 00:23:13",
+	"@generated": "Sun, 4 Jun 2023 00:26:05",
 	"site":[ 
 		{
 			"@name": "https://www.keiruaprod.fr",
@@ -44,7 +44,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/04/04/une-semaine-avec-chatgpt.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/04/02/the-murmur-hashing-algorithm.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -151,7 +151,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/04/04/une-semaine-avec-chatgpt.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/04/02/the-murmur-hashing-algorithm.html",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
@@ -291,7 +291,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "522"
+					"sourceid": "544"
 				},
 				{
 					"pluginid": "90003",
@@ -328,7 +328,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/04/04/une-semaine-avec-chatgpt.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/04/01/collectible-cards-and-old-cigarettes.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -462,6 +462,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://www.keiruaprod.fr/blog/",
+							"method": "GET",
+							"param": "https://plausible.io/js/plausible.outbound-links.js",
+							"attack": "",
+							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.outbound-links.js\"></script>",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://www.keiruaprod.fr/developpement.html",
 							"method": "GET",
 							"param": "//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js",
@@ -503,22 +511,6 @@
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/index.html",
-							"method": "GET",
-							"param": "https://plausible.io/js/plausible.js",
-							"attack": "",
-							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.keiruaprod.fr/resume.html",
-							"method": "GET",
-							"param": "//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js",
-							"attack": "",
-							"evidence": "<script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js\"></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.keiruaprod.fr/resume.html",
 							"method": "GET",
 							"param": "https://plausible.io/js/plausible.js",
 							"attack": "",
@@ -526,7 +518,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "11",
+					"count": "10",
 					"solution": "<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can't be controlled by end users of the application.</p>",
 					"otherinfo": "",
 					"reference": "",
@@ -652,14 +644,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/js/libs/jquery-1.7.2.min.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://www.keiruaprod.fr/resume.html",
 							"method": "GET",
 							"param": "",
@@ -668,13 +652,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "12",
+					"count": "11",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Permissions-Policy header.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</p><p>https://developers.google.com/web/updates/2018/06/feature-policy</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "3"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "10040",
@@ -733,7 +717,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html</p>",
 					"cweid": "311",
 					"wascid": "4",
-					"sourceid": "699"
+					"sourceid": "695"
 				},
 				{
 					"pluginid": "10035",
@@ -762,23 +746,15 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://www.keiruaprod.fr/blog/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://www.keiruaprod.fr/css/bootstrap-responsive.min.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.keiruaprod.fr/css/font-awesome.min.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.keiruaprod.fr/css/style.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -834,7 +810,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "11",
+					"count": "10",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>http://caniuse.com/stricttransportsecurity</p><p>http://tools.ietf.org/html/rfc6797</p>",
@@ -875,7 +851,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "589"
+					"sourceid": "599"
 				},
 				{
 					"pluginid": "10021",
@@ -897,6 +873,14 @@
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/blog",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"uri": "https://www.keiruaprod.fr/blog/",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -976,7 +960,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						}
 					],
-					"count": "11",
+					"count": "12",
 					"solution": "<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>",
 					"otherinfo": "<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p><p>At \"High\" threshold this scan rule will not alert on client or server error responses.</p>",
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
@@ -1097,7 +1081,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "376"
+					"sourceid": "371"
 				},
 				{
 					"pluginid": "10027",
@@ -1148,7 +1132,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1037"
+					"sourceid": "1035"
 				},
 				{
 					"pluginid": "10109",
@@ -1175,7 +1159,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "600"
+					"sourceid": "594"
 				},
 				{
 					"pluginid": "10015",
@@ -1381,7 +1365,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "3"
+					"sourceid": "10"
 				}
 			]
 		}
