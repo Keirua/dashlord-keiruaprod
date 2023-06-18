@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 11 Jun 2023 00:24:52",
+	"@generated": "Sun, 18 Jun 2023 00:25:54",
 	"site":[ 
 		{
 			"@name": "https://www.keiruaprod.fr",
@@ -125,7 +125,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90003",
@@ -441,6 +441,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://www.keiruaprod.fr/css/bootstrap.min.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://www.keiruaprod.fr/css/font-awesome.min.css",
 							"method": "GET",
 							"param": "",
@@ -450,14 +458,6 @@
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/css/style.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.keiruaprod.fr/css/style2.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -878,7 +878,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "1"
 				}
 			]
 		}
