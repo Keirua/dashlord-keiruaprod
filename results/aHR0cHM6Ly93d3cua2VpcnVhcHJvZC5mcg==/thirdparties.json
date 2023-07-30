@@ -22,7 +22,7 @@
     },
     {
       "type": "google analytics",
-      "url": "https://ssl.google-analytics.com/r/__utm.gif?utmwv=5.7.2&utms=1&utmn=1661341835&utmhn=www.keiruaprod.fr&utmcs=UTF-8&utmsr=800x600&utmvp=800x600&utmsc=24-bit&utmul=en-us&utmje=0&utmfl=-&utmdt=D%C3%A9veloppeur%20web%20et%20formateur%20Symfony2%2FSymfony3%20freelance%20Paris%20-%20KeiruaProd&utmhid=1965367901&utmr=-&utmp=%2F&utmht=1690071933264&utmac=UA-26997065-1&utmcc=__utma%3D185069491.889829922.1690071933.1690071933.1690071933.1%3B%2B__utmz%3D185069491.1690071933.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmjid=1406270242&utmredir=1&utmu=qAAAAAAAAAAAAAAAAAAAAAAE~",
+      "url": "https://ssl.google-analytics.com/r/__utm.gif?utmwv=5.7.2&utms=1&utmn=1615452203&utmhn=www.keiruaprod.fr&utmcs=UTF-8&utmsr=800x600&utmvp=800x600&utmsc=24-bit&utmul=en-us&utmje=0&utmfl=-&utmdt=D%C3%A9veloppeur%20web%20et%20formateur%20Symfony2%2FSymfony3%20freelance%20Paris%20-%20KeiruaProd&utmhid=1175738839&utmr=-&utmp=%2F&utmht=1690676739452&utmac=UA-26997065-1&utmcc=__utma%3D185069491.474029905.1690676739.1690676739.1690676739.1%3B%2B__utmz%3D185069491.1690676739.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmjid=810259664&utmredir=1&utmu=qAAAAAAAAAAAAAAAAAAAAAAE~",
       "details": {
         "id": "google analytics",
         "message": "Use hosted Matomo instance"
@@ -32,10 +32,10 @@
   "cookies": [
     {
       "name": "__utmb",
-      "value": "185069491.1.10.1690071933",
+      "value": "185069491.1.10.1690676739",
       "domain": ".keiruaprod.fr",
       "path": "/",
-      "expires": 1690073733,
+      "expires": 1690678539,
       "size": 31,
       "httpOnly": false,
       "secure": false,
@@ -46,10 +46,10 @@
     },
     {
       "name": "__utmz",
-      "value": "185069491.1690071933.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)",
+      "value": "185069491.1690676739.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)",
       "domain": ".keiruaprod.fr",
       "path": "/",
-      "expires": 1705839933,
+      "expires": 1706444739,
       "size": 76,
       "httpOnly": false,
       "secure": false,
@@ -77,7 +77,7 @@
       "value": "1",
       "domain": ".keiruaprod.fr",
       "path": "/",
-      "expires": 1690072533,
+      "expires": 1690677339,
       "size": 7,
       "httpOnly": false,
       "secure": false,
@@ -88,10 +88,10 @@
     },
     {
       "name": "__utma",
-      "value": "185069491.889829922.1690071933.1690071933.1690071933.1",
+      "value": "185069491.474029905.1690676739.1690676739.1690676739.1",
       "domain": ".keiruaprod.fr",
       "path": "/",
-      "expires": 1753143933,
+      "expires": 1753748739,
       "size": 60,
       "httpOnly": false,
       "secure": false,
@@ -102,11 +102,11 @@
     }
   ],
   "headers": {
-    "accept-ranges": "bytes",
+    "accept-ranges": "none",
     "content-encoding": "gzip",
     "content-length": "1763",
     "content-type": "text/html",
-    "date": "Sun, 23 Jul 2023 00:25:32 GMT",
+    "date": "Sun, 30 Jul 2023 00:25:38 GMT",
     "server": "Apache",
     "vary": "Accept-Encoding"
   },
@@ -169,8 +169,14 @@
     },
     {
       "hostname": "ajax.googleapis.com",
-      "ip": "142.251.167.95",
+      "ip": "142.251.46.234",
       "geoip": {
+        "city": {
+          "geoname_id": 4361736,
+          "names": {
+            "en": "Marriottsville"
+          }
+        },
         "continent": {
           "code": "NA",
           "geoname_id": 6255149,
@@ -201,9 +207,13 @@
         },
         "location": {
           "accuracy_radius": 1000,
-          "latitude": 37.751,
-          "longitude": -97.822,
-          "time_zone": "America/Chicago"
+          "latitude": 39.3385,
+          "longitude": -76.9201,
+          "metro_code": 512,
+          "time_zone": "America/New_York"
+        },
+        "postal": {
+          "code": "21104"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -218,18 +228,39 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 4361885,
+            "iso_code": "MD",
+            "names": {
+              "de": "Maryland",
+              "en": "Maryland",
+              "es": "Maryland",
+              "fr": "Maryland",
+              "ja": "メリーランド州",
+              "pt-BR": "Maryland",
+              "ru": "Мэриленд",
+              "zh-CN": "马里兰州"
+            }
+          }
+        ]
       }
     },
     {
       "hostname": "plausible.io",
-      "ip": "37.19.207.34",
+      "ip": "169.150.221.147",
       "geoip": {
         "city": {
-          "geoname_id": 4744870,
+          "geoname_id": 5392171,
           "names": {
-            "en": "Ashburn",
-            "ru": "Ашберн"
+            "de": "San José",
+            "en": "San Jose",
+            "es": "San José",
+            "fr": "San José",
+            "ja": "サンノゼ",
+            "pt-BR": "San José",
+            "ru": "Сан-Хосе"
           }
         },
         "continent": {
@@ -262,13 +293,13 @@
         },
         "location": {
           "accuracy_radius": 20,
-          "latitude": 39.0469,
-          "longitude": -77.4903,
-          "metro_code": 511,
-          "time_zone": "America/New_York"
+          "latitude": 37.1835,
+          "longitude": -121.7714,
+          "metro_code": 807,
+          "time_zone": "America/Los_Angeles"
         },
         "postal": {
-          "code": "20149"
+          "code": "95141"
         },
         "registered_country": {
           "geoname_id": 2635167,
@@ -286,15 +317,17 @@
         },
         "subdivisions": [
           {
-            "geoname_id": 6254928,
-            "iso_code": "VA",
+            "geoname_id": 5332921,
+            "iso_code": "CA",
             "names": {
-              "en": "Virginia",
-              "fr": "Virginie",
-              "ja": "バージニア州",
-              "pt-BR": "Virgínia",
-              "ru": "Вирджиния",
-              "zh-CN": "弗吉尼亚州"
+              "de": "Kalifornien",
+              "en": "California",
+              "es": "California",
+              "fr": "Californie",
+              "ja": "カリフォルニア州",
+              "pt-BR": "Califórnia",
+              "ru": "Калифорния",
+              "zh-CN": "加州"
             }
           }
         ]
@@ -302,8 +335,14 @@
     },
     {
       "hostname": "ssl.google-analytics.com",
-      "ip": "172.253.62.97",
+      "ip": "142.250.191.40",
       "geoip": {
+        "city": {
+          "geoname_id": 4994862,
+          "names": {
+            "en": "Grosse Pointe"
+          }
+        },
         "continent": {
           "code": "NA",
           "geoname_id": 6255149,
@@ -333,10 +372,14 @@
           }
         },
         "location": {
-          "accuracy_radius": 1000,
-          "latitude": 37.751,
-          "longitude": -97.822,
-          "time_zone": "America/Chicago"
+          "accuracy_radius": 500,
+          "latitude": 42.3769,
+          "longitude": -82.9152,
+          "metro_code": 505,
+          "time_zone": "America/Detroit"
+        },
+        "postal": {
+          "code": "48230"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -351,7 +394,22 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 5001836,
+            "iso_code": "MI",
+            "names": {
+              "en": "Michigan",
+              "es": "Michigan",
+              "fr": "Michigan",
+              "ja": "ミシガン州",
+              "pt-BR": "Michigão",
+              "ru": "Мичиган",
+              "zh-CN": "密歇根州"
+            }
+          }
+        ]
       }
     }
   ]
