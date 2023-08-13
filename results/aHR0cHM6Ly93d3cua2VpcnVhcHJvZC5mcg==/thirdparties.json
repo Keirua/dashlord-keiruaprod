@@ -22,7 +22,7 @@
     },
     {
       "type": "google analytics",
-      "url": "https://ssl.google-analytics.com/r/__utm.gif?utmwv=5.7.2&utms=1&utmn=2058278479&utmhn=www.keiruaprod.fr&utmcs=UTF-8&utmsr=800x600&utmvp=800x600&utmsc=24-bit&utmul=en-us&utmje=0&utmfl=-&utmdt=D%C3%A9veloppeur%20web%20et%20formateur%20Symfony2%2FSymfony3%20freelance%20Paris%20-%20KeiruaProd&utmhid=1407135477&utmr=-&utmp=%2F&utmht=1691281353949&utmac=UA-26997065-1&utmcc=__utma%3D185069491.1975141574.1691281354.1691281354.1691281354.1%3B%2B__utmz%3D185069491.1691281354.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmjid=23840843&utmredir=1&utmu=qAAAAAAAAAAAAAAAAAAAAAAE~",
+      "url": "https://ssl.google-analytics.com/r/__utm.gif?utmwv=5.7.2&utms=1&utmn=276925554&utmhn=www.keiruaprod.fr&utmcs=UTF-8&utmsr=800x600&utmvp=800x600&utmsc=24-bit&utmul=en-us&utmje=0&utmfl=-&utmdt=D%C3%A9veloppeur%20web%20et%20formateur%20Symfony2%2FSymfony3%20freelance%20Paris%20-%20KeiruaProd&utmhid=695986432&utmr=-&utmp=%2F&utmht=1691886129601&utmac=UA-26997065-1&utmcc=__utma%3D185069491.925960458.1691886130.1691886130.1691886130.1%3B%2B__utmz%3D185069491.1691886130.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmjid=17938746&utmredir=1&utmu=qAAAAAAAAAAAAAAAAAAAAAAE~",
       "details": {
         "id": "google analytics",
         "message": "Use hosted Matomo instance"
@@ -32,10 +32,10 @@
   "cookies": [
     {
       "name": "__utmb",
-      "value": "185069491.1.10.1691281354",
+      "value": "185069491.1.10.1691886130",
       "domain": ".keiruaprod.fr",
       "path": "/",
-      "expires": 1691283153,
+      "expires": 1691887929,
       "size": 31,
       "httpOnly": false,
       "secure": false,
@@ -46,10 +46,10 @@
     },
     {
       "name": "__utmz",
-      "value": "185069491.1691281354.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)",
+      "value": "185069491.1691886130.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)",
       "domain": ".keiruaprod.fr",
       "path": "/",
-      "expires": 1707049353,
+      "expires": 1707654129,
       "size": 76,
       "httpOnly": false,
       "secure": false,
@@ -77,7 +77,7 @@
       "value": "1",
       "domain": ".keiruaprod.fr",
       "path": "/",
-      "expires": 1691281953,
+      "expires": 1691886729,
       "size": 7,
       "httpOnly": false,
       "secure": false,
@@ -88,11 +88,11 @@
     },
     {
       "name": "__utma",
-      "value": "185069491.1975141574.1691281354.1691281354.1691281354.1",
+      "value": "185069491.925960458.1691886130.1691886130.1691886130.1",
       "domain": ".keiruaprod.fr",
       "path": "/",
-      "expires": 1754353353,
-      "size": 61,
+      "expires": 1754958129,
+      "size": 60,
       "httpOnly": false,
       "secure": false,
       "session": false,
@@ -102,11 +102,11 @@
     }
   ],
   "headers": {
-    "accept-ranges": "none",
+    "accept-ranges": "bytes",
     "content-encoding": "gzip",
     "content-length": "1763",
     "content-type": "text/html",
-    "date": "Sun, 06 Aug 2023 00:22:33 GMT",
+    "date": "Sun, 13 Aug 2023 00:22:09 GMT",
     "server": "Apache",
     "vary": "Accept-Encoding"
   },
@@ -169,7 +169,7 @@
     },
     {
       "hostname": "ajax.googleapis.com",
-      "ip": "142.250.115.95",
+      "ip": "172.217.164.106",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -223,18 +223,18 @@
     },
     {
       "hostname": "plausible.io",
-      "ip": "212.102.40.114",
+      "ip": "169.150.221.147",
       "geoip": {
         "city": {
-          "geoname_id": 4684888,
+          "geoname_id": 5392171,
           "names": {
-            "de": "Dallas",
-            "en": "Dallas",
-            "es": "Dallas",
-            "fr": "Dallas",
-            "ja": "ダラス",
-            "pt-BR": "Dallas",
-            "ru": "Даллас"
+            "de": "San José",
+            "en": "San Jose",
+            "es": "San José",
+            "fr": "San José",
+            "ja": "サンノゼ",
+            "pt-BR": "San José",
+            "ru": "Сан-Хосе"
           }
         },
         "continent": {
@@ -267,13 +267,13 @@
         },
         "location": {
           "accuracy_radius": 20,
-          "latitude": 32.7797,
-          "longitude": -96.8022,
-          "metro_code": 623,
-          "time_zone": "America/Chicago"
+          "latitude": 37.1835,
+          "longitude": -121.7714,
+          "metro_code": 807,
+          "time_zone": "America/Los_Angeles"
         },
         "postal": {
-          "code": "75270"
+          "code": "95141"
         },
         "registered_country": {
           "geoname_id": 2635167,
@@ -291,15 +291,17 @@
         },
         "subdivisions": [
           {
-            "geoname_id": 4736286,
-            "iso_code": "TX",
+            "geoname_id": 5332921,
+            "iso_code": "CA",
             "names": {
-              "en": "Texas",
-              "es": "Texas",
-              "fr": "Texas",
-              "ja": "テキサス州",
-              "ru": "Техас",
-              "zh-CN": "德克萨斯州"
+              "de": "Kalifornien",
+              "en": "California",
+              "es": "California",
+              "fr": "Californie",
+              "ja": "カリフォルニア州",
+              "pt-BR": "Califórnia",
+              "ru": "Калифорния",
+              "zh-CN": "加州"
             }
           }
         ]
@@ -307,7 +309,7 @@
     },
     {
       "hostname": "ssl.google-analytics.com",
-      "ip": "142.250.138.97",
+      "ip": "142.250.188.8",
       "geoip": {
         "continent": {
           "code": "NA",
