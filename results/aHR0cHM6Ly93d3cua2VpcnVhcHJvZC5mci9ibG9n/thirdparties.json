@@ -7,11 +7,11 @@
   ],
   "cookies": [],
   "headers": {
-    "accept-ranges": "none",
+    "accept-ranges": "bytes",
     "content-encoding": "gzip",
     "content-length": "8691",
     "content-type": "text/html",
-    "date": "Sun, 06 Aug 2023 00:22:52 GMT",
+    "date": "Sun, 13 Aug 2023 00:22:25 GMT",
     "server": "Apache",
     "vary": "Accept-Encoding"
   },
