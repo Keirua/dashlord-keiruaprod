@@ -2,200 +2,7 @@
   {
     "404": [],
     "url": "https://www.keiruaprod.fr",
-    "http": {
-      "url": "https://www.keiruaprod.fr",
-      "algorithm_version": 2,
-      "end_time": "Sun, 13 Aug 2023 00:21:32 GMT",
-      "grade": "F",
-      "hidden": false,
-      "likelihood_indicator": "MEDIUM",
-      "response_headers": {
-        "Accept-Ranges": "bytes",
-        "Connection": "keep-alive",
-        "Content-Encoding": "gzip",
-        "Content-Length": "1763",
-        "Content-Type": "text/html",
-        "Date": "Sun, 13 Aug 2023 00:21:31 GMT",
-        "Server": "Apache",
-        "Vary": "Accept-Encoding"
-      },
-      "scan_id": 40734055,
-      "score": 0,
-      "start_time": "Sun, 13 Aug 2023 00:21:29 GMT",
-      "state": "FINISHED",
-      "status_code": 200,
-      "tests_failed": 6,
-      "tests_passed": 6,
-      "tests_quantity": 12,
-      "details": {
-        "content-security-policy": {
-          "expectation": "csp-implemented-with-no-unsafe",
-          "name": "content-security-policy",
-          "output": {
-            "data": null,
-            "http": false,
-            "meta": false,
-            "numPolicies": 0,
-            "policy": null
-          },
-          "pass": false,
-          "result": "csp-not-implemented",
-          "score_description": "Content Security Policy (CSP) header not implemented",
-          "score_modifier": -25
-        },
-        "contribute": {
-          "expectation": "contribute-json-only-required-on-mozilla-properties",
-          "name": "contribute",
-          "output": {
-            "data": null
-          },
-          "pass": true,
-          "result": "contribute-json-only-required-on-mozilla-properties",
-          "score_description": "Contribute.json isn't required on websites that don't belong to Mozilla",
-          "score_modifier": 0
-        },
-        "cookies": {
-          "expectation": "cookies-secure-with-httponly-sessions",
-          "name": "cookies",
-          "output": {
-            "data": null,
-            "sameSite": null
-          },
-          "pass": true,
-          "result": "cookies-not-found",
-          "score_description": "No cookies detected",
-          "score_modifier": 0
-        },
-        "cross-origin-resource-sharing": {
-          "expectation": "cross-origin-resource-sharing-not-implemented",
-          "name": "cross-origin-resource-sharing",
-          "output": {
-            "data": {
-              "acao": null,
-              "clientaccesspolicy": null,
-              "crossdomain": null
-            }
-          },
-          "pass": true,
-          "result": "cross-origin-resource-sharing-not-implemented",
-          "score_description": "Content is not visible via cross-origin resource sharing (CORS) files or headers",
-          "score_modifier": 0
-        },
-        "public-key-pinning": {
-          "expectation": "hpkp-not-implemented",
-          "name": "public-key-pinning",
-          "output": {
-            "data": null,
-            "includeSubDomains": false,
-            "max-age": null,
-            "numPins": null,
-            "preloaded": false
-          },
-          "pass": true,
-          "result": "hpkp-not-implemented",
-          "score_description": "HTTP Public Key Pinning (HPKP) header not implemented",
-          "score_modifier": 0
-        },
-        "redirection": {
-          "expectation": "redirection-to-https",
-          "name": "redirection",
-          "output": {
-            "destination": "https://www.keiruaprod.fr/",
-            "redirects": true,
-            "route": [
-              "http://www.keiruaprod.fr/",
-              "https://www.keiruaprod.fr/"
-            ],
-            "status_code": 200
-          },
-          "pass": true,
-          "result": "redirection-to-https",
-          "score_description": "Initial redirection is to HTTPS on same host, final destination is HTTPS",
-          "score_modifier": 0
-        },
-        "referrer-policy": {
-          "expectation": "referrer-policy-private",
-          "name": "referrer-policy",
-          "output": {
-            "data": null,
-            "http": false,
-            "meta": false
-          },
-          "pass": true,
-          "result": "referrer-policy-not-implemented",
-          "score_description": "Referrer-Policy header not implemented",
-          "score_modifier": 0
-        },
-        "strict-transport-security": {
-          "expectation": "hsts-implemented-max-age-at-least-six-months",
-          "name": "strict-transport-security",
-          "output": {
-            "data": null,
-            "includeSubDomains": false,
-            "max-age": null,
-            "preload": false,
-            "preloaded": false
-          },
-          "pass": false,
-          "result": "hsts-not-implemented",
-          "score_description": "HTTP Strict Transport Security (HSTS) header not implemented",
-          "score_modifier": -20
-        },
-        "subresource-integrity": {
-          "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-          "name": "subresource-integrity",
-          "output": {
-            "data": {
-              "//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js": {
-                "crossorigin": null,
-                "integrity": null
-              },
-              "https://plausible.io/js/plausible.js": {
-                "crossorigin": null,
-                "integrity": null
-              }
-            }
-          },
-          "pass": false,
-          "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
-          "score_description": "Subresource Integrity (SRI) not implemented, and external scripts are loaded over HTTP or use protocol-relative URLs via src=\"//...\"",
-          "score_modifier": -50
-        },
-        "x-content-type-options": {
-          "expectation": "x-content-type-options-nosniff",
-          "name": "x-content-type-options",
-          "output": {
-            "data": null
-          },
-          "pass": false,
-          "result": "x-content-type-options-not-implemented",
-          "score_description": "X-Content-Type-Options header not implemented",
-          "score_modifier": -5
-        },
-        "x-frame-options": {
-          "expectation": "x-frame-options-sameorigin-or-deny",
-          "name": "x-frame-options",
-          "output": {
-            "data": null
-          },
-          "pass": false,
-          "result": "x-frame-options-not-implemented",
-          "score_description": "X-Frame-Options (XFO) header not implemented",
-          "score_modifier": -20
-        },
-        "x-xss-protection": {
-          "expectation": "x-xss-protection-1-mode-block",
-          "name": "x-xss-protection",
-          "output": {
-            "data": null
-          },
-          "pass": false,
-          "result": "x-xss-protection-not-implemented",
-          "score_description": "X-XSS-Protection header not implemented",
-          "score_modifier": -10
-        }
-      }
-    },
+    "http": null,
     "updownio": null,
     "nmap": {
       "host": "www.keiruaprod.fr",
@@ -564,7 +371,7 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "OK",
-        "finding": "85 >= 30 days"
+        "finding": "78 >= 30 days"
       },
       {
         "id": "cert_notBefore",
@@ -767,7 +574,7 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "1691886204"
+        "finding": "1692491247"
       },
       {
         "id": "HSTS",
@@ -1323,7 +1130,7 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "104"
+        "finding": "99"
       }
     ],
     "thirdparties": {
@@ -1350,7 +1157,7 @@
         },
         {
           "type": "google analytics",
-          "url": "https://ssl.google-analytics.com/r/__utm.gif?utmwv=5.7.2&utms=1&utmn=276925554&utmhn=www.keiruaprod.fr&utmcs=UTF-8&utmsr=800x600&utmvp=800x600&utmsc=24-bit&utmul=en-us&utmje=0&utmfl=-&utmdt=D%C3%A9veloppeur%20web%20et%20formateur%20Symfony2%2FSymfony3%20freelance%20Paris%20-%20KeiruaProd&utmhid=695986432&utmr=-&utmp=%2F&utmht=1691886129601&utmac=UA-26997065-1&utmcc=__utma%3D185069491.925960458.1691886130.1691886130.1691886130.1%3B%2B__utmz%3D185069491.1691886130.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmjid=17938746&utmredir=1&utmu=qAAAAAAAAAAAAAAAAAAAAAAE~",
+          "url": "https://ssl.google-analytics.com/r/__utm.gif?utmwv=5.7.2&utms=1&utmn=175960096&utmhn=www.keiruaprod.fr&utmcs=UTF-8&utmsr=800x600&utmvp=800x600&utmsc=24-bit&utmul=en-us&utmje=0&utmfl=-&utmdt=D%C3%A9veloppeur%20web%20et%20formateur%20Symfony2%2FSymfony3%20freelance%20Paris%20-%20KeiruaProd&utmhid=1878062223&utmr=-&utmp=%2F&utmht=1692491177325&utmac=UA-26997065-1&utmcc=__utma%3D185069491.922872230.1692491177.1692491177.1692491177.1%3B%2B__utmz%3D185069491.1692491177.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmjid=1785487201&utmredir=1&utmu=qAAAAAAAAAAAAAAAAAAAAAAE~",
           "details": {
             "id": "google analytics",
             "message": "Use hosted Matomo instance"
@@ -1360,10 +1167,10 @@
       "cookies": [
         {
           "name": "__utmb",
-          "value": "185069491.1.10.1691886130",
+          "value": "185069491.1.10.1692491177",
           "domain": ".keiruaprod.fr",
           "path": "/",
-          "expires": 1691887929,
+          "expires": 1692492977,
           "size": 31,
           "httpOnly": false,
           "secure": false,
@@ -1374,10 +1181,10 @@
         },
         {
           "name": "__utmz",
-          "value": "185069491.1691886130.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)",
+          "value": "185069491.1692491177.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)",
           "domain": ".keiruaprod.fr",
           "path": "/",
-          "expires": 1707654129,
+          "expires": 1708259177,
           "size": 76,
           "httpOnly": false,
           "secure": false,
@@ -1405,7 +1212,7 @@
           "value": "1",
           "domain": ".keiruaprod.fr",
           "path": "/",
-          "expires": 1691886729,
+          "expires": 1692491777,
           "size": 7,
           "httpOnly": false,
           "secure": false,
@@ -1416,10 +1223,10 @@
         },
         {
           "name": "__utma",
-          "value": "185069491.925960458.1691886130.1691886130.1691886130.1",
+          "value": "185069491.922872230.1692491177.1692491177.1692491177.1",
           "domain": ".keiruaprod.fr",
           "path": "/",
-          "expires": 1754958129,
+          "expires": 1755563177,
           "size": 60,
           "httpOnly": false,
           "secure": false,
@@ -1434,7 +1241,7 @@
         "content-encoding": "gzip",
         "content-length": "1763",
         "content-type": "text/html",
-        "date": "Sun, 13 Aug 2023 00:22:09 GMT",
+        "date": "Sun, 20 Aug 2023 00:26:16 GMT",
         "server": "Apache",
         "vary": "Accept-Encoding"
       },
@@ -1497,7 +1304,7 @@
         },
         {
           "hostname": "ajax.googleapis.com",
-          "ip": "172.217.164.106",
+          "ip": "74.125.70.95",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -1529,9 +1336,9 @@
             },
             "location": {
               "accuracy_radius": 1000,
-              "latitude": 37.751,
-              "longitude": -97.822,
-              "time_zone": "America/Chicago"
+              "latitude": 34.0544,
+              "longitude": -118.244,
+              "time_zone": "America/Los_Angeles"
             },
             "registered_country": {
               "geoname_id": 6252001,
@@ -1546,23 +1353,40 @@
                 "ru": "США",
                 "zh-CN": "美国"
               }
-            }
+            },
+            "subdivisions": [
+              {
+                "geoname_id": 5332921,
+                "iso_code": "CA",
+                "names": {
+                  "de": "Kalifornien",
+                  "en": "California",
+                  "es": "California",
+                  "fr": "Californie",
+                  "ja": "カリフォルニア州",
+                  "pt-BR": "Califórnia",
+                  "ru": "Калифорния",
+                  "zh-CN": "加州"
+                }
+              }
+            ]
           }
         },
         {
           "hostname": "plausible.io",
-          "ip": "169.150.221.147",
+          "ip": "38.142.94.218",
           "geoip": {
             "city": {
-              "geoname_id": 5392171,
+              "geoname_id": 5037649,
               "names": {
-                "de": "San José",
-                "en": "San Jose",
-                "es": "San José",
-                "fr": "San José",
-                "ja": "サンノゼ",
-                "pt-BR": "San José",
-                "ru": "Сан-Хосе"
+                "de": "Minneapolis",
+                "en": "Minneapolis",
+                "es": "Mineápolis",
+                "fr": "Minneapolis",
+                "ja": "ミネアポリス",
+                "pt-BR": "Minneapolis",
+                "ru": "Миннеаполис",
+                "zh-CN": "明尼阿波利斯"
               }
             },
             "continent": {
@@ -1595,41 +1419,40 @@
             },
             "location": {
               "accuracy_radius": 20,
-              "latitude": 37.1835,
-              "longitude": -121.7714,
-              "metro_code": 807,
-              "time_zone": "America/Los_Angeles"
+              "latitude": 44.9618,
+              "longitude": -93.2638,
+              "metro_code": 613,
+              "time_zone": "America/Chicago"
             },
             "postal": {
-              "code": "95141"
+              "code": "55404"
             },
             "registered_country": {
-              "geoname_id": 2635167,
-              "iso_code": "GB",
+              "geoname_id": 6252001,
+              "iso_code": "US",
               "names": {
-                "de": "Vereinigtes Königreich",
-                "en": "United Kingdom",
-                "es": "Reino Unido",
-                "fr": "Royaume Uni",
-                "ja": "英国",
-                "pt-BR": "Reino Unido",
-                "ru": "Британия",
-                "zh-CN": "英国"
+                "de": "Vereinigte Staaten",
+                "en": "United States",
+                "es": "Estados Unidos",
+                "fr": "États Unis",
+                "ja": "アメリカ",
+                "pt-BR": "EUA",
+                "ru": "США",
+                "zh-CN": "美国"
               }
             },
             "subdivisions": [
               {
-                "geoname_id": 5332921,
-                "iso_code": "CA",
+                "geoname_id": 5037779,
+                "iso_code": "MN",
                 "names": {
-                  "de": "Kalifornien",
-                  "en": "California",
-                  "es": "California",
-                  "fr": "Californie",
-                  "ja": "カリフォルニア州",
-                  "pt-BR": "Califórnia",
-                  "ru": "Калифорния",
-                  "zh-CN": "加州"
+                  "en": "Minnesota",
+                  "es": "Minnesota",
+                  "fr": "Minnesota",
+                  "ja": "ミネソタ州",
+                  "pt-BR": "Minesota",
+                  "ru": "Миннесота",
+                  "zh-CN": "明尼苏达州"
                 }
               }
             ]
@@ -1637,7 +1460,7 @@
         },
         {
           "hostname": "ssl.google-analytics.com",
-          "ip": "142.250.188.8",
+          "ip": "142.251.161.97",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -1868,9 +1691,9 @@
       ]
     },
     "zap": {
-      "@programName": "OWASP ZAP",
+      "@programName": "ZAP",
       "@version": "2.13.0",
-      "@generated": "Sun, 13 Aug 2023 00:20:58",
+      "@generated": "Sun, 20 Aug 2023 00:20:19",
       "site": [
         {
           "@name": "https://www.keiruaprod.fr",
@@ -2006,7 +1829,7 @@
       {
         "requestedUrl": "https://www.keiruaprod.fr/",
         "finalUrl": "https://www.keiruaprod.fr/",
-        "fetchTime": "2023-08-13T00:21:18.019Z",
+        "fetchTime": "2023-08-20T00:20:40.235Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -2069,53 +1892,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 2911,
+            "numericValue": 3396,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 2382,
-                  "firstMeaningfulPaint": 2382,
-                  "largestContentfulPaint": 2382,
-                  "interactive": 2911,
-                  "speedIndex": 2480,
-                  "totalBlockingTime": 72,
-                  "maxPotentialFID": 193,
+                  "firstContentfulPaint": 2268,
+                  "firstMeaningfulPaint": 2268,
+                  "largestContentfulPaint": 2268,
+                  "interactive": 3396,
+                  "speedIndex": 2268,
+                  "totalBlockingTime": 185,
+                  "maxPotentialFID": 235,
                   "cumulativeLayoutShift": 0,
                   "cumulativeLayoutShiftMainFrame": 0,
                   "totalCumulativeLayoutShift": 0,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 245935634,
+                  "observedTimeOriginTs": 271155275,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 245935634,
-                  "observedFirstPaint": 855,
-                  "observedFirstPaintTs": 246791082,
-                  "observedFirstContentfulPaint": 855,
-                  "observedFirstContentfulPaintTs": 246791082,
-                  "observedFirstContentfulPaintAllFrames": 855,
-                  "observedFirstContentfulPaintAllFramesTs": 246791082,
-                  "observedFirstMeaningfulPaint": 855,
-                  "observedFirstMeaningfulPaintTs": 246791082,
-                  "observedLargestContentfulPaint": 855,
-                  "observedLargestContentfulPaintTs": 246791082,
-                  "observedLargestContentfulPaintAllFrames": 855,
-                  "observedLargestContentfulPaintAllFramesTs": 246791082,
-                  "observedTraceEnd": 3466,
-                  "observedTraceEndTs": 249401904,
-                  "observedLoad": 1155,
-                  "observedLoadTs": 247090448,
-                  "observedDomContentLoaded": 869,
-                  "observedDomContentLoadedTs": 246804454,
+                  "observedNavigationStartTs": 271155275,
+                  "observedFirstPaint": 667,
+                  "observedFirstPaintTs": 271821795,
+                  "observedFirstContentfulPaint": 667,
+                  "observedFirstContentfulPaintTs": 271821795,
+                  "observedFirstContentfulPaintAllFrames": 667,
+                  "observedFirstContentfulPaintAllFramesTs": 271821795,
+                  "observedFirstMeaningfulPaint": 667,
+                  "observedFirstMeaningfulPaintTs": 271821795,
+                  "observedLargestContentfulPaint": 667,
+                  "observedLargestContentfulPaintTs": 271821795,
+                  "observedLargestContentfulPaintAllFrames": 667,
+                  "observedLargestContentfulPaintAllFramesTs": 271821795,
+                  "observedTraceEnd": 3220,
+                  "observedTraceEndTs": 274375155,
+                  "observedLoad": 907,
+                  "observedLoadTs": 272062034,
+                  "observedDomContentLoaded": 673,
+                  "observedDomContentLoadedTs": 271827941,
                   "observedCumulativeLayoutShift": 0,
                   "observedCumulativeLayoutShiftMainFrame": 0,
                   "observedTotalCumulativeLayoutShift": 0,
-                  "observedFirstVisualChange": 837,
-                  "observedFirstVisualChangeTs": 246772634,
-                  "observedLastVisualChange": 1437,
-                  "observedLastVisualChangeTs": 247372634,
-                  "observedSpeedIndex": 844,
-                  "observedSpeedIndexTs": 246779462
+                  "observedFirstVisualChange": 667,
+                  "observedFirstVisualChangeTs": 271822275,
+                  "observedLastVisualChange": 1267,
+                  "observedLastVisualChangeTs": 272422275,
+                  "observedSpeedIndex": 673,
+                  "observedSpeedIndexTs": 271828460
                 },
                 {
                   "lcpInvalidated": false
@@ -2137,18 +1960,18 @@
                   "numScripts": 4,
                   "numStylesheets": 4,
                   "numFonts": 1,
-                  "numTasks": 181,
-                  "numTasksOver10ms": 5,
+                  "numTasks": 189,
+                  "numTasksOver10ms": 4,
                   "numTasksOver25ms": 1,
-                  "numTasksOver50ms": 0,
+                  "numTasksOver50ms": 1,
                   "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 1.6940000000000026,
-                  "throughput": 6332619.416479091,
-                  "maxRtt": 154.11700000000002,
-                  "maxServerLatency": 3.5459999999999923,
-                  "totalByteWeight": 128249,
-                  "totalTaskTime": 159.31999999999985,
+                  "rtt": 13.664000000000001,
+                  "throughput": 3814251.6154437177,
+                  "maxRtt": 115.70500000000001,
+                  "maxServerLatency": 5.312000000000012,
+                  "totalByteWeight": 128238,
+                  "totalTaskTime": 150.35899999999995,
                   "mainDocumentTransferSize": 1904
                 }
               ]
@@ -2169,7 +1992,6 @@
     "sonarcloud": null,
     "summary": {
       "404": "A+",
-      "httpGrade": "F",
       "nmapGrade": "A",
       "nmapOpenPortsCount": 2,
       "nmapOpenPortsGrade": "A",
@@ -2195,200 +2017,7 @@
   {
     "404": [],
     "url": "https://www.keiruaprod.fr/blog",
-    "http": {
-      "url": "https://www.keiruaprod.fr/blog",
-      "algorithm_version": 2,
-      "end_time": "Sun, 13 Aug 2023 00:21:32 GMT",
-      "grade": "F",
-      "hidden": false,
-      "likelihood_indicator": "MEDIUM",
-      "response_headers": {
-        "Accept-Ranges": "bytes",
-        "Connection": "keep-alive",
-        "Content-Encoding": "gzip",
-        "Content-Length": "1763",
-        "Content-Type": "text/html",
-        "Date": "Sun, 13 Aug 2023 00:21:31 GMT",
-        "Server": "Apache",
-        "Vary": "Accept-Encoding"
-      },
-      "scan_id": 40734055,
-      "score": 0,
-      "start_time": "Sun, 13 Aug 2023 00:21:29 GMT",
-      "state": "FINISHED",
-      "status_code": 200,
-      "tests_failed": 6,
-      "tests_passed": 6,
-      "tests_quantity": 12,
-      "details": {
-        "content-security-policy": {
-          "expectation": "csp-implemented-with-no-unsafe",
-          "name": "content-security-policy",
-          "output": {
-            "data": null,
-            "http": false,
-            "meta": false,
-            "numPolicies": 0,
-            "policy": null
-          },
-          "pass": false,
-          "result": "csp-not-implemented",
-          "score_description": "Content Security Policy (CSP) header not implemented",
-          "score_modifier": -25
-        },
-        "contribute": {
-          "expectation": "contribute-json-only-required-on-mozilla-properties",
-          "name": "contribute",
-          "output": {
-            "data": null
-          },
-          "pass": true,
-          "result": "contribute-json-only-required-on-mozilla-properties",
-          "score_description": "Contribute.json isn't required on websites that don't belong to Mozilla",
-          "score_modifier": 0
-        },
-        "cookies": {
-          "expectation": "cookies-secure-with-httponly-sessions",
-          "name": "cookies",
-          "output": {
-            "data": null,
-            "sameSite": null
-          },
-          "pass": true,
-          "result": "cookies-not-found",
-          "score_description": "No cookies detected",
-          "score_modifier": 0
-        },
-        "cross-origin-resource-sharing": {
-          "expectation": "cross-origin-resource-sharing-not-implemented",
-          "name": "cross-origin-resource-sharing",
-          "output": {
-            "data": {
-              "acao": null,
-              "clientaccesspolicy": null,
-              "crossdomain": null
-            }
-          },
-          "pass": true,
-          "result": "cross-origin-resource-sharing-not-implemented",
-          "score_description": "Content is not visible via cross-origin resource sharing (CORS) files or headers",
-          "score_modifier": 0
-        },
-        "public-key-pinning": {
-          "expectation": "hpkp-not-implemented",
-          "name": "public-key-pinning",
-          "output": {
-            "data": null,
-            "includeSubDomains": false,
-            "max-age": null,
-            "numPins": null,
-            "preloaded": false
-          },
-          "pass": true,
-          "result": "hpkp-not-implemented",
-          "score_description": "HTTP Public Key Pinning (HPKP) header not implemented",
-          "score_modifier": 0
-        },
-        "redirection": {
-          "expectation": "redirection-to-https",
-          "name": "redirection",
-          "output": {
-            "destination": "https://www.keiruaprod.fr/",
-            "redirects": true,
-            "route": [
-              "http://www.keiruaprod.fr/",
-              "https://www.keiruaprod.fr/"
-            ],
-            "status_code": 200
-          },
-          "pass": true,
-          "result": "redirection-to-https",
-          "score_description": "Initial redirection is to HTTPS on same host, final destination is HTTPS",
-          "score_modifier": 0
-        },
-        "referrer-policy": {
-          "expectation": "referrer-policy-private",
-          "name": "referrer-policy",
-          "output": {
-            "data": null,
-            "http": false,
-            "meta": false
-          },
-          "pass": true,
-          "result": "referrer-policy-not-implemented",
-          "score_description": "Referrer-Policy header not implemented",
-          "score_modifier": 0
-        },
-        "strict-transport-security": {
-          "expectation": "hsts-implemented-max-age-at-least-six-months",
-          "name": "strict-transport-security",
-          "output": {
-            "data": null,
-            "includeSubDomains": false,
-            "max-age": null,
-            "preload": false,
-            "preloaded": false
-          },
-          "pass": false,
-          "result": "hsts-not-implemented",
-          "score_description": "HTTP Strict Transport Security (HSTS) header not implemented",
-          "score_modifier": -20
-        },
-        "subresource-integrity": {
-          "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-          "name": "subresource-integrity",
-          "output": {
-            "data": {
-              "//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js": {
-                "crossorigin": null,
-                "integrity": null
-              },
-              "https://plausible.io/js/plausible.js": {
-                "crossorigin": null,
-                "integrity": null
-              }
-            }
-          },
-          "pass": false,
-          "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
-          "score_description": "Subresource Integrity (SRI) not implemented, and external scripts are loaded over HTTP or use protocol-relative URLs via src=\"//...\"",
-          "score_modifier": -50
-        },
-        "x-content-type-options": {
-          "expectation": "x-content-type-options-nosniff",
-          "name": "x-content-type-options",
-          "output": {
-            "data": null
-          },
-          "pass": false,
-          "result": "x-content-type-options-not-implemented",
-          "score_description": "X-Content-Type-Options header not implemented",
-          "score_modifier": -5
-        },
-        "x-frame-options": {
-          "expectation": "x-frame-options-sameorigin-or-deny",
-          "name": "x-frame-options",
-          "output": {
-            "data": null
-          },
-          "pass": false,
-          "result": "x-frame-options-not-implemented",
-          "score_description": "X-Frame-Options (XFO) header not implemented",
-          "score_modifier": -20
-        },
-        "x-xss-protection": {
-          "expectation": "x-xss-protection-1-mode-block",
-          "name": "x-xss-protection",
-          "output": {
-            "data": null
-          },
-          "pass": false,
-          "result": "x-xss-protection-not-implemented",
-          "score_description": "X-XSS-Protection header not implemented",
-          "score_modifier": -10
-        }
-      }
-    },
+    "http": null,
     "updownio": null,
     "nmap": {
       "host": "www.keiruaprod.fr",
@@ -2757,7 +2386,7 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "OK",
-        "finding": "85 >= 30 days"
+        "finding": "78 >= 30 days"
       },
       {
         "id": "cert_notBefore",
@@ -2960,7 +2589,7 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "1691886217"
+        "finding": "1692491236"
       },
       {
         "id": "HSTS",
@@ -3516,7 +3145,7 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "102"
+        "finding": "98"
       }
     ],
     "thirdparties": {
@@ -3532,7 +3161,7 @@
         "content-encoding": "gzip",
         "content-length": "8691",
         "content-type": "text/html",
-        "date": "Sun, 13 Aug 2023 00:22:25 GMT",
+        "date": "Sun, 20 Aug 2023 00:26:07 GMT",
         "server": "Apache",
         "vary": "Accept-Encoding"
       },
@@ -3799,9 +3428,9 @@
       ]
     },
     "zap": {
-      "@programName": "OWASP ZAP",
+      "@programName": "ZAP",
       "@version": "2.13.0",
-      "@generated": "Sun, 13 Aug 2023 00:21:31",
+      "@generated": "Sun, 20 Aug 2023 00:21:31",
       "site": [
         {
           "@name": "https://www.keiruaprod.fr",
@@ -3972,7 +3601,7 @@
       {
         "requestedUrl": "https://www.keiruaprod.fr/blog",
         "finalUrl": "https://www.keiruaprod.fr/blog/",
-        "fetchTime": "2023-08-13T00:21:53.916Z",
+        "fetchTime": "2023-08-20T00:22:00.064Z",
         "runWarnings": [
           "The page may not be loading as expected because your test URL (https://www.keiruaprod.fr/blog) was redirected to https://www.keiruaprod.fr/blog/. Try testing the second URL directly.",
           "The tested device appears to have a slower CPU than  Lighthouse expects. This can negatively affect your performance score. Learn more about [calibrating an appropriate CPU slowdown multiplier](https://github.com/GoogleChrome/lighthouse/blob/master/docs/throttling.md#cpu-throttling)."
@@ -4038,53 +3667,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 1213,
+            "numericValue": 1921,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 1105,
-                  "firstMeaningfulPaint": 1105,
-                  "largestContentfulPaint": 1939,
-                  "interactive": 1213,
-                  "speedIndex": 1566,
-                  "totalBlockingTime": 52,
-                  "maxPotentialFID": 128,
+                  "firstContentfulPaint": 1132,
+                  "firstMeaningfulPaint": 1132,
+                  "largestContentfulPaint": 2122,
+                  "interactive": 1921,
+                  "speedIndex": 1935,
+                  "totalBlockingTime": 451,
+                  "maxPotentialFID": 302,
                   "cumulativeLayoutShift": 0,
                   "cumulativeLayoutShiftMainFrame": 0,
                   "totalCumulativeLayoutShift": 0,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 352942292,
+                  "observedTimeOriginTs": 396178972,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 352942292,
-                  "observedFirstPaint": 695,
-                  "observedFirstPaintTs": 353637535,
-                  "observedFirstContentfulPaint": 695,
-                  "observedFirstContentfulPaintTs": 353637535,
-                  "observedFirstContentfulPaintAllFrames": 695,
-                  "observedFirstContentfulPaintAllFramesTs": 353637535,
-                  "observedFirstMeaningfulPaint": 695,
-                  "observedFirstMeaningfulPaintTs": 353637535,
-                  "observedLargestContentfulPaint": 695,
-                  "observedLargestContentfulPaintTs": 353637535,
-                  "observedLargestContentfulPaintAllFrames": 695,
-                  "observedLargestContentfulPaintAllFramesTs": 353637535,
-                  "observedTraceEnd": 3024,
-                  "observedTraceEndTs": 355966561,
-                  "observedLoad": 695,
-                  "observedLoadTs": 353637766,
-                  "observedDomContentLoaded": 695,
-                  "observedDomContentLoadedTs": 353637384,
+                  "observedNavigationStartTs": 396178972,
+                  "observedFirstPaint": 799,
+                  "observedFirstPaintTs": 396978465,
+                  "observedFirstContentfulPaint": 799,
+                  "observedFirstContentfulPaintTs": 396978465,
+                  "observedFirstContentfulPaintAllFrames": 799,
+                  "observedFirstContentfulPaintAllFramesTs": 396978465,
+                  "observedFirstMeaningfulPaint": 799,
+                  "observedFirstMeaningfulPaintTs": 396978465,
+                  "observedLargestContentfulPaint": 799,
+                  "observedLargestContentfulPaintTs": 396978465,
+                  "observedLargestContentfulPaintAllFrames": 799,
+                  "observedLargestContentfulPaintAllFramesTs": 396978465,
+                  "observedTraceEnd": 3134,
+                  "observedTraceEndTs": 399313214,
+                  "observedLoad": 738,
+                  "observedLoadTs": 396916673,
+                  "observedDomContentLoaded": 737,
+                  "observedDomContentLoadedTs": 396916317,
                   "observedCumulativeLayoutShift": 0,
                   "observedCumulativeLayoutShiftMainFrame": 0,
                   "observedTotalCumulativeLayoutShift": 0,
-                  "observedFirstVisualChange": 693,
-                  "observedFirstVisualChangeTs": 353635292,
-                  "observedLastVisualChange": 1026,
-                  "observedLastVisualChangeTs": 353968292,
-                  "observedSpeedIndex": 700,
-                  "observedSpeedIndexTs": 353642520
+                  "observedFirstVisualChange": 755,
+                  "observedFirstVisualChangeTs": 396933972,
+                  "observedLastVisualChange": 1088,
+                  "observedLastVisualChangeTs": 397266972,
+                  "observedSpeedIndex": 762,
+                  "observedSpeedIndexTs": 396940788
                 },
                 {
                   "lcpInvalidated": false
@@ -4106,19 +3735,19 @@
                   "numScripts": 1,
                   "numStylesheets": 3,
                   "numFonts": 0,
-                  "numTasks": 102,
-                  "numTasksOver10ms": 3,
-                  "numTasksOver25ms": 1,
-                  "numTasksOver50ms": 0,
+                  "numTasks": 104,
+                  "numTasksOver10ms": 8,
+                  "numTasksOver25ms": 4,
+                  "numTasksOver50ms": 1,
                   "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 14.105999999999995,
-                  "throughput": 28118500.103384018,
-                  "maxRtt": 115.943,
-                  "maxServerLatency": 3.969999999999999,
+                  "rtt": 9.793,
+                  "throughput": 24863161.751098484,
+                  "maxRtt": 115.101,
+                  "maxServerLatency": 3.2630000000000052,
                   "totalByteWeight": 17081,
-                  "totalTaskTime": 108.22299999999991,
-                  "mainDocumentTransferSize": 8840
+                  "totalTaskTime": 266.79399999999987,
+                  "mainDocumentTransferSize": 8831
                 }
               ]
             }
@@ -4138,7 +3767,6 @@
     "sonarcloud": null,
     "summary": {
       "404": "A+",
-      "httpGrade": "F",
       "nmapGrade": "A",
       "nmapOpenPortsCount": 2,
       "nmapOpenPortsGrade": "A",
