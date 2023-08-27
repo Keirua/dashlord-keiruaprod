@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.keiruaprod.fr</pre>
-<p class="lead">Sun Aug 20 00:28:11 2023 – Sun Aug 20 00:28:40 2023<br>1 hosts scanned.
+<p class="lead">Sun Aug 27 00:24:07 2023 – Sun Aug 27 00:24:36 2023<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -120,18 +120,22 @@
 <td title="Extra Info"></td>
 </tr>
 <tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>http-server-header</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">
+  Apache
+  nginx</pre>
+<h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
   GetRequest: 
     HTTP/1.1 404 Not Found
     server: nginx
-    date: Sun, 20 Aug 2023 00:28:27 GMT
+    date: Sun, 27 Aug 2023 00:24:23 GMT
     content-type: text/html; charset=utf8
-    x-ovh-webhosting-id: 32ff501d17962ff3676cdd5484b65dc8
+    x-ovh-webhosting-id: 0a45f9c00bfc1cca83cc6a0877a8b2ea
     pragma: no-cache
     cache-control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-    content-length: 4958
-    x-iplb-request-id: 284D2D90:1D02_D5BA2104:0050_64E15E25_FFD8:A08A
+    content-length: 4961
+    x-iplb-request-id: 68D28DA6:1C00_D5BA2104:0050_64EA97B1_8E64:242A5
     x-iplb-instance: 31938
     connection: close
     &lt;html xml:lang="en-EN" lang="en-EN"&gt;
@@ -143,18 +147,18 @@
     &lt;meta http-equiv="Content-Language" content="en-EN"&gt;
     &lt;meta name="robots" content="noindex, nofollow"&gt;
     &lt;meta name="description" qtlid="283606" content="Site not installed"&gt;
-    &lt;meta ht
+    &lt;meta h
   HTTPOptions: 
     HTTP/1.1 404 Not Found
     server: nginx
-    date: Sun, 20 Aug 2023 00:28:27 GMT
+    date: Sun, 27 Aug 2023 00:24:23 GMT
     content-type: text/html; charset=utf8
-    x-ovh-webhosting-id: 553e71446fa7419b67ea1eef65c980c0
+    x-ovh-webhosting-id: 17e6787e8034381505ca600af95e915c
     pragma: no-cache
     cache-control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-    content-length: 4958
-    x-iplb-request-id: 284D2D90:1D00_D5BA2104:0050_64E15E2B_212B2:28A3C
-    x-iplb-instance: 31974
+    content-length: 4961
+    x-iplb-request-id: 68D28DA6:1BC2_D5BA2104:0050_64EA97B7_A1DF:2DAB6
+    x-iplb-instance: 31947
     connection: close
     &lt;html xml:lang="en-EN" lang="en-EN"&gt;
     &lt;head&gt;
@@ -165,11 +169,7 @@
     &lt;meta http-equiv="Content-Language" content="en-EN"&gt;
     &lt;meta name="robots" content="noindex, nofollow"&gt;
     &lt;meta name="description" qtlid="283606" content="Site not installed"&gt;
-    &lt;meta</pre>
-<h5>http-server-header</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">
-  Apache
-  nginx</pre>
+    &lt;meta h</pre>
 </td></tr>
 <tr class="success">
 <td title="Port">443</td>
