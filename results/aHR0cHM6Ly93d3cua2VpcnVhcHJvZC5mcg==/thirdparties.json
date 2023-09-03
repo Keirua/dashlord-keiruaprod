@@ -22,7 +22,7 @@
     },
     {
       "type": "google analytics",
-      "url": "https://ssl.google-analytics.com/r/__utm.gif?utmwv=5.7.2&utms=1&utmn=74489241&utmhn=www.keiruaprod.fr&utmcs=UTF-8&utmsr=800x600&utmvp=800x600&utmsc=24-bit&utmul=en-us&utmje=0&utmfl=-&utmdt=D%C3%A9veloppeur%20web%20et%20formateur%20Symfony2%2FSymfony3%20freelance%20Paris%20-%20KeiruaProd&utmhid=1852087388&utmr=-&utmp=%2F&utmht=1693095734659&utmac=UA-26997065-1&utmcc=__utma%3D185069491.1306020985.1693095735.1693095735.1693095735.1%3B%2B__utmz%3D185069491.1693095735.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmjid=648254478&utmredir=1&utmu=qAAAAAAAAAAAAAAAAAAAAAAE~",
+      "url": "https://ssl.google-analytics.com/r/__utm.gif?utmwv=5.7.2&utms=1&utmn=499438811&utmhn=www.keiruaprod.fr&utmcs=UTF-8&utmsr=800x600&utmvp=800x600&utmsc=24-bit&utmul=en-us&utmje=0&utmfl=-&utmdt=D%C3%A9veloppeur%20web%20et%20formateur%20Symfony2%2FSymfony3%20freelance%20Paris%20-%20KeiruaProd&utmhid=1655910472&utmr=-&utmp=%2F&utmht=1693700571741&utmac=UA-26997065-1&utmcc=__utma%3D185069491.2130303882.1693700572.1693700572.1693700572.1%3B%2B__utmz%3D185069491.1693700572.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmjid=302380568&utmredir=1&utmu=qAAAAAAAAAAAAAAAAAAAAAAE~",
       "details": {
         "id": "google analytics",
         "message": "Use hosted Matomo instance"
@@ -32,10 +32,10 @@
   "cookies": [
     {
       "name": "__utmb",
-      "value": "185069491.1.10.1693095735",
+      "value": "185069491.1.10.1693700572",
       "domain": ".keiruaprod.fr",
       "path": "/",
-      "expires": 1693097534,
+      "expires": 1693702371,
       "size": 31,
       "httpOnly": false,
       "secure": false,
@@ -46,10 +46,10 @@
     },
     {
       "name": "__utmz",
-      "value": "185069491.1693095735.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)",
+      "value": "185069491.1693700572.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)",
       "domain": ".keiruaprod.fr",
       "path": "/",
-      "expires": 1708863734,
+      "expires": 1709468571,
       "size": 76,
       "httpOnly": false,
       "secure": false,
@@ -77,7 +77,7 @@
       "value": "1",
       "domain": ".keiruaprod.fr",
       "path": "/",
-      "expires": 1693096334,
+      "expires": 1693701171,
       "size": 7,
       "httpOnly": false,
       "secure": false,
@@ -88,10 +88,10 @@
     },
     {
       "name": "__utma",
-      "value": "185069491.1306020985.1693095735.1693095735.1693095735.1",
+      "value": "185069491.2130303882.1693700572.1693700572.1693700572.1",
       "domain": ".keiruaprod.fr",
       "path": "/",
-      "expires": 1756167734,
+      "expires": 1756772571,
       "size": 61,
       "httpOnly": false,
       "secure": false,
@@ -106,7 +106,7 @@
     "content-encoding": "gzip",
     "content-length": "1763",
     "content-type": "text/html",
-    "date": "Sun, 27 Aug 2023 00:22:14 GMT",
+    "date": "Sun, 03 Sep 2023 00:22:51 GMT",
     "server": "Apache",
     "vary": "Accept-Encoding"
   },
@@ -223,18 +223,17 @@
     },
     {
       "hostname": "plausible.io",
-      "ip": "212.102.40.114",
+      "ip": "37.19.216.130",
       "geoip": {
         "city": {
-          "geoname_id": 4684888,
+          "geoname_id": 4699066,
           "names": {
-            "de": "Dallas",
-            "en": "Dallas",
-            "es": "Dallas",
-            "fr": "Dallas",
-            "ja": "ダラス",
-            "pt-BR": "Dallas",
-            "ru": "Даллас"
+            "en": "Houston",
+            "fr": "Houston",
+            "ja": "ヒューストン",
+            "pt-BR": "Houston",
+            "ru": "Хьюстон",
+            "zh-CN": "休斯敦"
           }
         },
         "continent": {
@@ -267,13 +266,13 @@
         },
         "location": {
           "accuracy_radius": 20,
-          "latitude": 32.7797,
-          "longitude": -96.8022,
-          "metro_code": 623,
+          "latitude": 29.7646,
+          "longitude": -95.3657,
+          "metro_code": 618,
           "time_zone": "America/Chicago"
         },
         "postal": {
-          "code": "75270"
+          "code": "77002"
         },
         "registered_country": {
           "geoname_id": 2635167,
@@ -307,7 +306,7 @@
     },
     {
       "hostname": "ssl.google-analytics.com",
-      "ip": "142.250.115.97",
+      "ip": "142.250.114.97",
       "geoip": {
         "continent": {
           "code": "NA",
