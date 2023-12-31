@@ -5,7 +5,7 @@
     "http": {
       "url": "https://www.keiruaprod.fr",
       "algorithm_version": 2,
-      "end_time": "Sun, 24 Dec 2023 00:24:04 GMT",
+      "end_time": "Sun, 31 Dec 2023 00:24:02 GMT",
       "grade": "F",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
@@ -15,13 +15,13 @@
         "Content-Encoding": "gzip",
         "Content-Length": "1763",
         "Content-Type": "text/html",
-        "Date": "Sun, 24 Dec 2023 00:24:03 GMT",
+        "Date": "Sun, 31 Dec 2023 00:24:01 GMT",
         "Server": "Apache",
         "Vary": "Accept-Encoding"
       },
-      "scan_id": 45750359,
+      "scan_id": 45995199,
       "score": 0,
-      "start_time": "Sun, 24 Dec 2023 00:24:00 GMT",
+      "start_time": "Sun, 31 Dec 2023 00:23:58 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 6,
@@ -563,8 +563,8 @@
         "id": "cert_expirationStatus",
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
-        "severity": "OK",
-        "finding": "32 >= 30 days"
+        "severity": "MEDIUM",
+        "finding": "expires < 30 days (25)"
       },
       {
         "id": "cert_notBefore",
@@ -577,7 +577,7 @@
         "id": "cert_notAfter",
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
-        "severity": "OK",
+        "severity": "MEDIUM",
         "finding": "2024-01-25 15:24"
       },
       {
@@ -767,7 +767,7 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "1703377553"
+        "finding": "1703982301"
       },
       {
         "id": "HSTS",
@@ -1323,7 +1323,7 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "101"
+        "finding": "60"
       }
     ],
     "thirdparties": {
@@ -1350,7 +1350,7 @@
         },
         {
           "type": "google analytics",
-          "url": "https://ssl.google-analytics.com/r/__utm.gif?utmwv=5.7.2&utms=1&utmn=1446219507&utmhn=www.keiruaprod.fr&utmcs=UTF-8&utmsr=800x600&utmvp=800x600&utmsc=24-bit&utmul=en-us&utmje=0&utmfl=-&utmdt=D%C3%A9veloppeur%20web%20et%20formateur%20Symfony2%2FSymfony3%20freelance%20Paris%20-%20KeiruaProd&utmhid=301568964&utmr=-&utmp=%2F&utmht=1703377481343&utmac=UA-26997065-1&utmcc=__utma%3D185069491.1908376552.1703377481.1703377481.1703377481.1%3B%2B__utmz%3D185069491.1703377481.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmjid=1043326392&utmredir=1&utmu=qAAAAAAAAAAAAAAAAAAAAAAE~",
+          "url": "https://ssl.google-analytics.com/r/__utm.gif?utmwv=5.7.2&utms=1&utmn=1179812765&utmhn=www.keiruaprod.fr&utmcs=UTF-8&utmsr=800x600&utmvp=800x600&utmsc=24-bit&utmul=en-us&utmje=0&utmfl=-&utmdt=D%C3%A9veloppeur%20web%20et%20formateur%20Symfony2%2FSymfony3%20freelance%20Paris%20-%20KeiruaProd&utmhid=369431066&utmr=-&utmp=%2F&utmht=1703982261126&utmac=UA-26997065-1&utmcc=__utma%3D185069491.587032406.1703982261.1703982261.1703982261.1%3B%2B__utmz%3D185069491.1703982261.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmjid=513222736&utmredir=1&utmu=qAAAAAAAAAAAAAAAAAAAAAAE~",
           "details": {
             "id": "google analytics",
             "message": "Use hosted Matomo instance"
@@ -1360,10 +1360,10 @@
       "cookies": [
         {
           "name": "__utmb",
-          "value": "185069491.1.10.1703377481",
+          "value": "185069491.1.10.1703982261",
           "domain": ".keiruaprod.fr",
           "path": "/",
-          "expires": 1703379281,
+          "expires": 1703984061,
           "size": 31,
           "httpOnly": false,
           "secure": false,
@@ -1374,10 +1374,10 @@
         },
         {
           "name": "__utmz",
-          "value": "185069491.1703377481.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)",
+          "value": "185069491.1703982261.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)",
           "domain": ".keiruaprod.fr",
           "path": "/",
-          "expires": 1719145481,
+          "expires": 1719750261,
           "size": 76,
           "httpOnly": false,
           "secure": false,
@@ -1405,7 +1405,7 @@
           "value": "1",
           "domain": ".keiruaprod.fr",
           "path": "/",
-          "expires": 1703378081,
+          "expires": 1703982861,
           "size": 7,
           "httpOnly": false,
           "secure": false,
@@ -1416,11 +1416,11 @@
         },
         {
           "name": "__utma",
-          "value": "185069491.1908376552.1703377481.1703377481.1703377481.1",
+          "value": "185069491.587032406.1703982261.1703982261.1703982261.1",
           "domain": ".keiruaprod.fr",
           "path": "/",
-          "expires": 1766449481,
-          "size": 61,
+          "expires": 1767054261,
+          "size": 60,
           "httpOnly": false,
           "secure": false,
           "session": false,
@@ -1430,11 +1430,11 @@
         }
       ],
       "headers": {
-        "accept-ranges": "none",
+        "accept-ranges": "bytes",
         "content-encoding": "gzip",
         "content-length": "1763",
         "content-type": "text/html",
-        "date": "Sun, 24 Dec 2023 00:24:40 GMT",
+        "date": "Sun, 31 Dec 2023 00:24:20 GMT",
         "server": "Apache",
         "vary": "Accept-Encoding"
       },
@@ -1497,7 +1497,7 @@
         },
         {
           "hostname": "ajax.googleapis.com",
-          "ip": "142.250.176.10",
+          "ip": "172.217.0.170",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -1551,19 +1551,19 @@
         },
         {
           "hostname": "plausible.io",
-          "ip": "143.244.50.209",
+          "ip": "169.150.236.99",
           "geoip": {
             "city": {
-              "geoname_id": 5368361,
+              "geoname_id": 4887398,
               "names": {
-                "de": "Los Angeles",
-                "en": "Los Angeles",
-                "es": "Los Ángeles",
-                "fr": "Los Angeles",
-                "ja": "ロサンゼルス",
-                "pt-BR": "Los Angeles",
-                "ru": "Лос-Анджелес",
-                "zh-CN": "洛杉矶"
+                "de": "Chicago",
+                "en": "Chicago",
+                "es": "Chicago",
+                "fr": "Chicago",
+                "ja": "シカゴ",
+                "pt-BR": "Chicago",
+                "ru": "Чикаго",
+                "zh-CN": "芝加哥"
               }
             },
             "continent": {
@@ -1596,13 +1596,13 @@
             },
             "location": {
               "accuracy_radius": 20,
-              "latitude": 34.0544,
-              "longitude": -118.2441,
-              "metro_code": 803,
-              "time_zone": "America/Los_Angeles"
+              "latitude": 41.8874,
+              "longitude": -87.6318,
+              "metro_code": 602,
+              "time_zone": "America/Chicago"
             },
             "postal": {
-              "code": "90060"
+              "code": "60602"
             },
             "registered_country": {
               "geoname_id": 2635167,
@@ -1620,17 +1620,16 @@
             },
             "subdivisions": [
               {
-                "geoname_id": 5332921,
-                "iso_code": "CA",
+                "geoname_id": 4896861,
+                "iso_code": "IL",
                 "names": {
-                  "de": "Kalifornien",
-                  "en": "California",
-                  "es": "California",
-                  "fr": "Californie",
-                  "ja": "カリフォルニア州",
-                  "pt-BR": "Califórnia",
-                  "ru": "Калифорния",
-                  "zh-CN": "加州"
+                  "en": "Illinois",
+                  "es": "Illinois",
+                  "fr": "Illinois",
+                  "ja": "イリノイ州",
+                  "pt-BR": "Ilinóis",
+                  "ru": "Иллинойс",
+                  "zh-CN": "伊利诺伊州"
                 }
               }
             ]
@@ -1638,14 +1637,8 @@
         },
         {
           "hostname": "ssl.google-analytics.com",
-          "ip": "142.250.72.232",
+          "ip": "142.250.191.136",
           "geoip": {
-            "city": {
-              "geoname_id": 5131638,
-              "names": {
-                "en": "Plainview"
-              }
-            },
             "continent": {
               "code": "NA",
               "geoname_id": 6255149,
@@ -1676,13 +1669,9 @@
             },
             "location": {
               "accuracy_radius": 1000,
-              "latitude": 40.7746,
-              "longitude": -73.4761,
-              "metro_code": 501,
-              "time_zone": "America/New_York"
-            },
-            "postal": {
-              "code": "11803"
+              "latitude": 37.751,
+              "longitude": -97.822,
+              "time_zone": "America/Chicago"
             },
             "registered_country": {
               "geoname_id": 6252001,
@@ -1697,23 +1686,7 @@
                 "ru": "США",
                 "zh-CN": "美国"
               }
-            },
-            "subdivisions": [
-              {
-                "geoname_id": 5128638,
-                "iso_code": "NY",
-                "names": {
-                  "de": "New York",
-                  "en": "New York",
-                  "es": "Nueva York",
-                  "fr": "New York",
-                  "ja": "ニューヨーク州",
-                  "pt-BR": "Nova Iorque",
-                  "ru": "Нью-Йорк",
-                  "zh-CN": "纽约州"
-                }
-              }
-            ]
+            }
           }
         }
       ]
@@ -1897,7 +1870,7 @@
     "zap": {
       "@programName": "ZAP",
       "@version": "2.14.0",
-      "@generated": "Sun, 24 Dec 2023 00:23:31",
+      "@generated": "Sun, 31 Dec 2023 00:23:37",
       "site": [
         {
           "@name": "https://www.keiruaprod.fr",
@@ -2061,82 +2034,7 @@
         "extracted-results": [
           "keiruaprod.fr."
         ],
-        "timestamp": "2023-12-24T00:27:27.653386587Z",
-        "matcher-status": true
-      },
-      {
-        "template": "dns/txt-fingerprint.yaml",
-        "template-url": "https://templates.nuclei.sh/public/txt-fingerprint",
-        "template-id": "txt-fingerprint",
-        "template-path": "/home/runner/nuclei-templates/dns/txt-fingerprint.yaml",
-        "info": {
-          "name": "DNS TXT Record Detected",
-          "author": [
-            "pdteam"
-          ],
-          "tags": [
-            "dns",
-            "txt"
-          ],
-          "description": "A DNS TXT record was detected. The TXT record lets a domain admin leave notes on a DNS server.",
-          "reference": [
-            "https://www.netspi.com/blog/technical/network-penetration-testing/analyzing-dns-txt-records-to-fingerprint-service-providers/"
-          ],
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          },
-          "classification": {
-            "cve-id": null,
-            "cwe-id": [
-              "cwe-200"
-            ]
-          }
-        },
-        "type": "dns",
-        "host": "www.keiruaprod.fr.",
-        "matched-at": "www.keiruaprod.fr",
-        "extracted-results": [
-          "\"google-site-verification=FGowpopCvkmZfhWUb8BaQVp4BvMNEVT7u0N2ctjEjJk\"",
-          "\"protonmail-verification=dfa1b2d072dc1316e06262593cd68c524b03c7f8\"",
-          "\"v=spf1 include:mx.ovh.com include:_spf.protonmail.ch mx ~all\""
-        ],
-        "timestamp": "2023-12-24T00:27:27.813248154Z",
-        "matcher-status": true
-      },
-      {
-        "template": "dns/caa-fingerprint.yaml",
-        "template-url": "https://templates.nuclei.sh/public/caa-fingerprint",
-        "template-id": "caa-fingerprint",
-        "template-path": "/home/runner/nuclei-templates/dns/caa-fingerprint.yaml",
-        "info": {
-          "name": "CAA Record",
-          "author": [
-            "pdteam"
-          ],
-          "tags": [
-            "dns",
-            "caa"
-          ],
-          "description": "A CAA record was discovered. A CAA record is used to specify which certificate authorities (CAs) are allowed to issue certificates for a domain.",
-          "reference": [
-            "https://support.dnsimple.com/articles/caa-record/#whats-a-caa-record"
-          ],
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          },
-          "classification": {
-            "cve-id": null,
-            "cwe-id": [
-              "cwe-200"
-            ]
-          }
-        },
-        "type": "dns",
-        "host": "www.keiruaprod.fr.",
-        "matched-at": "www.keiruaprod.fr",
-        "timestamp": "2023-12-24T00:27:27.918002056Z",
+        "timestamp": "2023-12-31T00:26:17.443782471Z",
         "matcher-status": true
       },
       {
@@ -2172,7 +2070,7 @@
         "type": "dns",
         "host": "www.keiruaprod.fr.",
         "matched-at": "www.keiruaprod.fr",
-        "timestamp": "2023-12-24T00:27:28.656211079Z",
+        "timestamp": "2023-12-31T00:26:17.485299172Z",
         "matcher-status": true
       },
       {
@@ -2205,7 +2103,7 @@
         "type": "dns",
         "host": "www.keiruaprod.fr.",
         "matched-at": "www.keiruaprod.fr",
-        "timestamp": "2023-12-24T00:27:28.811161405Z",
+        "timestamp": "2023-12-31T00:26:17.489831415Z",
         "matcher-status": true
       },
       {
@@ -2245,7 +2143,82 @@
           "10 mail.protonmail.ch.",
           "20 mailsec.protonmail.ch."
         ],
-        "timestamp": "2023-12-24T00:27:28.811224092Z",
+        "timestamp": "2023-12-31T00:26:17.48987143Z",
+        "matcher-status": true
+      },
+      {
+        "template": "dns/caa-fingerprint.yaml",
+        "template-url": "https://templates.nuclei.sh/public/caa-fingerprint",
+        "template-id": "caa-fingerprint",
+        "template-path": "/home/runner/nuclei-templates/dns/caa-fingerprint.yaml",
+        "info": {
+          "name": "CAA Record",
+          "author": [
+            "pdteam"
+          ],
+          "tags": [
+            "dns",
+            "caa"
+          ],
+          "description": "A CAA record was discovered. A CAA record is used to specify which certificate authorities (CAs) are allowed to issue certificates for a domain.",
+          "reference": [
+            "https://support.dnsimple.com/articles/caa-record/#whats-a-caa-record"
+          ],
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          },
+          "classification": {
+            "cve-id": null,
+            "cwe-id": [
+              "cwe-200"
+            ]
+          }
+        },
+        "type": "dns",
+        "host": "www.keiruaprod.fr.",
+        "matched-at": "www.keiruaprod.fr",
+        "timestamp": "2023-12-31T00:26:17.554544378Z",
+        "matcher-status": true
+      },
+      {
+        "template": "dns/txt-fingerprint.yaml",
+        "template-url": "https://templates.nuclei.sh/public/txt-fingerprint",
+        "template-id": "txt-fingerprint",
+        "template-path": "/home/runner/nuclei-templates/dns/txt-fingerprint.yaml",
+        "info": {
+          "name": "DNS TXT Record Detected",
+          "author": [
+            "pdteam"
+          ],
+          "tags": [
+            "dns",
+            "txt"
+          ],
+          "description": "A DNS TXT record was detected. The TXT record lets a domain admin leave notes on a DNS server.",
+          "reference": [
+            "https://www.netspi.com/blog/technical/network-penetration-testing/analyzing-dns-txt-records-to-fingerprint-service-providers/"
+          ],
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          },
+          "classification": {
+            "cve-id": null,
+            "cwe-id": [
+              "cwe-200"
+            ]
+          }
+        },
+        "type": "dns",
+        "host": "www.keiruaprod.fr.",
+        "matched-at": "www.keiruaprod.fr",
+        "extracted-results": [
+          "\"google-site-verification=FGowpopCvkmZfhWUb8BaQVp4BvMNEVT7u0N2ctjEjJk\"",
+          "\"v=spf1 include:mx.ovh.com include:_spf.protonmail.ch mx ~all\"",
+          "\"protonmail-verification=dfa1b2d072dc1316e06262593cd68c524b03c7f8\""
+        ],
+        "timestamp": "2023-12-31T00:26:18.391439734Z",
         "matcher-status": true
       },
       {
@@ -2281,7 +2254,7 @@
           "ns20.ovh.net.",
           "dns20.ovh.net."
         ],
-        "timestamp": "2023-12-24T00:27:28.923219919Z",
+        "timestamp": "2023-12-31T00:26:18.431719024Z",
         "matcher-status": true
       },
       {
@@ -2310,7 +2283,7 @@
           "HEAD,GET,POST,OPTIONS"
         ],
         "ip": "213.186.33.4",
-        "timestamp": "2023-12-24T00:27:39.268132024Z",
+        "timestamp": "2023-12-31T00:26:26.03948782Z",
         "curl-command": "curl -X 'OPTIONS' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr'",
         "matcher-status": true
       },
@@ -2341,7 +2314,7 @@
           "Apache"
         ],
         "ip": "213.186.33.4",
-        "timestamp": "2023-12-24T00:27:47.436486119Z",
+        "timestamp": "2023-12-31T00:26:31.889333229Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr'",
         "matcher-status": true
       },
@@ -2368,7 +2341,7 @@
         "host": "https://www.keiruaprod.fr",
         "matched-at": "https://www.keiruaprod.fr",
         "ip": "213.186.33.4",
-        "timestamp": "2023-12-24T00:28:26.770352332Z",
+        "timestamp": "2023-12-31T00:26:58.698423182Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr'",
         "matcher-status": true
       },
@@ -2395,229 +2368,7 @@
         "host": "https://www.keiruaprod.fr",
         "matched-at": "https://www.keiruaprod.fr",
         "ip": "213.186.33.4",
-        "timestamp": "2023-12-24T00:28:26.770393359Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "strict-transport-security",
-        "type": "http",
-        "host": "https://www.keiruaprod.fr",
-        "matched-at": "https://www.keiruaprod.fr",
-        "ip": "213.186.33.4",
-        "timestamp": "2023-12-24T00:28:42.977357194Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "permissions-policy",
-        "type": "http",
-        "host": "https://www.keiruaprod.fr",
-        "matched-at": "https://www.keiruaprod.fr",
-        "ip": "213.186.33.4",
-        "timestamp": "2023-12-24T00:28:42.977393712Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "x-content-type-options",
-        "type": "http",
-        "host": "https://www.keiruaprod.fr",
-        "matched-at": "https://www.keiruaprod.fr",
-        "ip": "213.186.33.4",
-        "timestamp": "2023-12-24T00:28:42.977411324Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "x-permitted-cross-domain-policies",
-        "type": "http",
-        "host": "https://www.keiruaprod.fr",
-        "matched-at": "https://www.keiruaprod.fr",
-        "ip": "213.186.33.4",
-        "timestamp": "2023-12-24T00:28:42.977427655Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "referrer-policy",
-        "type": "http",
-        "host": "https://www.keiruaprod.fr",
-        "matched-at": "https://www.keiruaprod.fr",
-        "ip": "213.186.33.4",
-        "timestamp": "2023-12-24T00:28:42.977440489Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "clear-site-data",
-        "type": "http",
-        "host": "https://www.keiruaprod.fr",
-        "matched-at": "https://www.keiruaprod.fr",
-        "ip": "213.186.33.4",
-        "timestamp": "2023-12-24T00:28:42.977452972Z",
+        "timestamp": "2023-12-31T00:26:58.698480579Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr'",
         "matcher-status": true
       },
@@ -2654,81 +2405,7 @@
         "host": "https://www.keiruaprod.fr",
         "matched-at": "https://www.keiruaprod.fr",
         "ip": "213.186.33.4",
-        "timestamp": "2023-12-24T00:28:42.977465616Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "content-security-policy",
-        "type": "http",
-        "host": "https://www.keiruaprod.fr",
-        "matched-at": "https://www.keiruaprod.fr",
-        "ip": "213.186.33.4",
-        "timestamp": "2023-12-24T00:28:42.977487366Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "x-frame-options",
-        "type": "http",
-        "host": "https://www.keiruaprod.fr",
-        "matched-at": "https://www.keiruaprod.fr",
-        "ip": "213.186.33.4",
-        "timestamp": "2023-12-24T00:28:42.97750516Z",
+        "timestamp": "2023-12-31T00:27:09.25146697Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr'",
         "matcher-status": true
       },
@@ -2765,7 +2442,7 @@
         "host": "https://www.keiruaprod.fr",
         "matched-at": "https://www.keiruaprod.fr",
         "ip": "213.186.33.4",
-        "timestamp": "2023-12-24T00:28:42.97752118Z",
+        "timestamp": "2023-12-31T00:27:09.251504931Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr'",
         "matcher-status": true
       },
@@ -2802,7 +2479,303 @@
         "host": "https://www.keiruaprod.fr",
         "matched-at": "https://www.keiruaprod.fr",
         "ip": "213.186.33.4",
-        "timestamp": "2023-12-24T00:28:42.977537089Z",
+        "timestamp": "2023-12-31T00:27:09.25151533Z",
+        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr'",
+        "matcher-status": true
+      },
+      {
+        "template": "http/misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+        "template-id": "http-missing-security-headers",
+        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass",
+            "jub0bs"
+          ],
+          "tags": [
+            "misconfig",
+            "headers",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          }
+        },
+        "matcher-name": "strict-transport-security",
+        "type": "http",
+        "host": "https://www.keiruaprod.fr",
+        "matched-at": "https://www.keiruaprod.fr",
+        "ip": "213.186.33.4",
+        "timestamp": "2023-12-31T00:27:09.251524237Z",
+        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr'",
+        "matcher-status": true
+      },
+      {
+        "template": "http/misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+        "template-id": "http-missing-security-headers",
+        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass",
+            "jub0bs"
+          ],
+          "tags": [
+            "misconfig",
+            "headers",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          }
+        },
+        "matcher-name": "content-security-policy",
+        "type": "http",
+        "host": "https://www.keiruaprod.fr",
+        "matched-at": "https://www.keiruaprod.fr",
+        "ip": "213.186.33.4",
+        "timestamp": "2023-12-31T00:27:09.251532562Z",
+        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr'",
+        "matcher-status": true
+      },
+      {
+        "template": "http/misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+        "template-id": "http-missing-security-headers",
+        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass",
+            "jub0bs"
+          ],
+          "tags": [
+            "misconfig",
+            "headers",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          }
+        },
+        "matcher-name": "x-content-type-options",
+        "type": "http",
+        "host": "https://www.keiruaprod.fr",
+        "matched-at": "https://www.keiruaprod.fr",
+        "ip": "213.186.33.4",
+        "timestamp": "2023-12-31T00:27:09.251544284Z",
+        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr'",
+        "matcher-status": true
+      },
+      {
+        "template": "http/misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+        "template-id": "http-missing-security-headers",
+        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass",
+            "jub0bs"
+          ],
+          "tags": [
+            "misconfig",
+            "headers",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          }
+        },
+        "matcher-name": "x-permitted-cross-domain-policies",
+        "type": "http",
+        "host": "https://www.keiruaprod.fr",
+        "matched-at": "https://www.keiruaprod.fr",
+        "ip": "213.186.33.4",
+        "timestamp": "2023-12-31T00:27:09.251560985Z",
+        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr'",
+        "matcher-status": true
+      },
+      {
+        "template": "http/misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+        "template-id": "http-missing-security-headers",
+        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass",
+            "jub0bs"
+          ],
+          "tags": [
+            "misconfig",
+            "headers",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          }
+        },
+        "matcher-name": "permissions-policy",
+        "type": "http",
+        "host": "https://www.keiruaprod.fr",
+        "matched-at": "https://www.keiruaprod.fr",
+        "ip": "213.186.33.4",
+        "timestamp": "2023-12-31T00:27:09.251582235Z",
+        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr'",
+        "matcher-status": true
+      },
+      {
+        "template": "http/misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+        "template-id": "http-missing-security-headers",
+        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass",
+            "jub0bs"
+          ],
+          "tags": [
+            "misconfig",
+            "headers",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          }
+        },
+        "matcher-name": "x-frame-options",
+        "type": "http",
+        "host": "https://www.keiruaprod.fr",
+        "matched-at": "https://www.keiruaprod.fr",
+        "ip": "213.186.33.4",
+        "timestamp": "2023-12-31T00:27:09.251616158Z",
+        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr'",
+        "matcher-status": true
+      },
+      {
+        "template": "http/misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+        "template-id": "http-missing-security-headers",
+        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass",
+            "jub0bs"
+          ],
+          "tags": [
+            "misconfig",
+            "headers",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          }
+        },
+        "matcher-name": "referrer-policy",
+        "type": "http",
+        "host": "https://www.keiruaprod.fr",
+        "matched-at": "https://www.keiruaprod.fr",
+        "ip": "213.186.33.4",
+        "timestamp": "2023-12-31T00:27:09.251632318Z",
+        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr'",
+        "matcher-status": true
+      },
+      {
+        "template": "http/misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+        "template-id": "http-missing-security-headers",
+        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass",
+            "jub0bs"
+          ],
+          "tags": [
+            "misconfig",
+            "headers",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          }
+        },
+        "matcher-name": "clear-site-data",
+        "type": "http",
+        "host": "https://www.keiruaprod.fr",
+        "matched-at": "https://www.keiruaprod.fr",
+        "ip": "213.186.33.4",
+        "timestamp": "2023-12-31T00:27:09.251648939Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr'",
         "matcher-status": true
       },
@@ -2830,7 +2803,7 @@
         "host": "https://www.keiruaprod.fr",
         "matched-at": "https://www.keiruaprod.fr/robots.txt",
         "ip": "213.186.33.4",
-        "timestamp": "2023-12-24T00:28:59.465445678Z",
+        "timestamp": "2023-12-31T00:27:20.846442455Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr/robots.txt'",
         "matcher-status": true
       },
@@ -2868,7 +2841,7 @@
           "//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"
         ],
         "ip": "213.186.33.4",
-        "timestamp": "2023-12-24T00:29:09.158161944Z",
+        "timestamp": "2023-12-31T00:27:28.826365616Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Host: www.keiruaprod.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr/'",
         "matcher-status": true
       },
@@ -2908,7 +2881,7 @@
         "host": "https://www.keiruaprod.fr",
         "matched-at": "https://www.keiruaprod.fr/",
         "ip": "213.186.33.4",
-        "timestamp": "2023-12-24T00:29:21.096412235Z",
+        "timestamp": "2023-12-31T00:27:38.137640691Z",
         "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: www.keiruaprod.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr/'",
         "matcher-status": true
       },
@@ -2939,7 +2912,7 @@
           "Let's Encrypt"
         ],
         "ip": "213.186.33.4",
-        "timestamp": "2023-12-24T00:31:23.312345636Z",
+        "timestamp": "2023-12-31T00:29:30.429269778Z",
         "matcher-status": true
       },
       {
@@ -2966,29 +2939,29 @@
         "host": "www.keiruaprod.fr",
         "matched-at": "www.keiruaprod.fr:443",
         "extracted-results": [
-          "www.keiruaprod.fr",
           "147colors.keiruaprod.fr",
-          "www.champion-maths.keiruaprod.fr",
-          "www.ld23.keiruaprod.fr",
-          "www.147colors.keiruaprod.fr",
-          "www.2048craze.keiruaprod.fr",
-          "www.blog.keiruaprod.fr",
-          "2048craze.keiruaprod.fr",
-          "blog.keiruaprod.fr",
-          "champion-maths.keiruaprod.fr",
-          "foules.keiruaprod.fr",
           "twister.keiruaprod.fr",
+          "www.2048craze.keiruaprod.fr",
           "www.fragmentsdeplanete.fr",
           "www.onmangeou.keiruaprod.fr",
-          "www.foules.keiruaprod.fr",
-          "fragmentsdeplanete.fr",
-          "keiruaprod.fr",
+          "2048craze.keiruaprod.fr",
+          "foules.keiruaprod.fr",
           "ld23.keiruaprod.fr",
+          "www.champion-maths.keiruaprod.fr",
+          "www.keiruaprod.fr",
+          "champion-maths.keiruaprod.fr",
+          "fragmentsdeplanete.fr",
           "onmangeou.keiruaprod.fr",
-          "rand100.keiruaprod.fr"
+          "rand100.keiruaprod.fr",
+          "www.foules.keiruaprod.fr",
+          "www.ld23.keiruaprod.fr",
+          "blog.keiruaprod.fr",
+          "keiruaprod.fr",
+          "www.147colors.keiruaprod.fr",
+          "www.blog.keiruaprod.fr"
         ],
         "ip": "213.186.33.4",
-        "timestamp": "2023-12-24T00:31:23.312494825Z",
+        "timestamp": "2023-12-31T00:29:30.429405971Z",
         "matcher-status": true
       },
       {
@@ -3019,7 +2992,7 @@
           "tls12"
         ],
         "ip": "213.186.33.4",
-        "timestamp": "2023-12-24T00:31:25.756664587Z",
+        "timestamp": "2023-12-31T00:29:31.900407539Z",
         "matcher-status": true
       },
       {
@@ -3050,7 +3023,7 @@
           "tls13"
         ],
         "ip": "213.186.33.4",
-        "timestamp": "2023-12-24T00:31:26.401473901Z",
+        "timestamp": "2023-12-31T00:29:32.1114999Z",
         "matcher-status": true
       }
     ],
@@ -3058,7 +3031,7 @@
       {
         "requestedUrl": "https://www.keiruaprod.fr/",
         "finalUrl": "https://www.keiruaprod.fr/",
-        "fetchTime": "2023-12-24T00:23:50.006Z",
+        "fetchTime": "2023-12-31T00:23:55.566Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -3121,53 +3094,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 2921,
+            "numericValue": 2551,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 2462,
-                  "firstMeaningfulPaint": 2462,
-                  "largestContentfulPaint": 2462,
-                  "interactive": 2921,
-                  "speedIndex": 2617,
-                  "totalBlockingTime": 86,
-                  "maxPotentialFID": 116,
+                  "firstContentfulPaint": 2295,
+                  "firstMeaningfulPaint": 2551,
+                  "largestContentfulPaint": 2807,
+                  "interactive": 2551,
+                  "speedIndex": 2413,
+                  "totalBlockingTime": 4,
+                  "maxPotentialFID": 58,
                   "cumulativeLayoutShift": 0,
                   "cumulativeLayoutShiftMainFrame": 0,
                   "totalCumulativeLayoutShift": 0,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 327154529,
+                  "observedTimeOriginTs": 365874231,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 327154529,
-                  "observedFirstPaint": 902,
-                  "observedFirstPaintTs": 328056937,
-                  "observedFirstContentfulPaint": 902,
-                  "observedFirstContentfulPaintTs": 328056937,
-                  "observedFirstContentfulPaintAllFrames": 902,
-                  "observedFirstContentfulPaintAllFramesTs": 328056937,
-                  "observedFirstMeaningfulPaint": 902,
-                  "observedFirstMeaningfulPaintTs": 328056937,
-                  "observedLargestContentfulPaint": 902,
-                  "observedLargestContentfulPaintTs": 328056937,
-                  "observedLargestContentfulPaintAllFrames": 902,
-                  "observedLargestContentfulPaintAllFramesTs": 328056937,
-                  "observedTraceEnd": 3516,
-                  "observedTraceEndTs": 330670597,
-                  "observedLoad": 1206,
-                  "observedLoadTs": 328361024,
-                  "observedDomContentLoaded": 897,
-                  "observedDomContentLoadedTs": 328051450,
+                  "observedNavigationStartTs": 365874231,
+                  "observedFirstPaint": 753,
+                  "observedFirstPaintTs": 366627345,
+                  "observedFirstContentfulPaint": 753,
+                  "observedFirstContentfulPaintTs": 366627345,
+                  "observedFirstContentfulPaintAllFrames": 753,
+                  "observedFirstContentfulPaintAllFramesTs": 366627345,
+                  "observedFirstMeaningfulPaint": 753,
+                  "observedFirstMeaningfulPaintTs": 366627345,
+                  "observedLargestContentfulPaint": 753,
+                  "observedLargestContentfulPaintTs": 366627345,
+                  "observedLargestContentfulPaintAllFrames": 753,
+                  "observedLargestContentfulPaintAllFramesTs": 366627345,
+                  "observedTraceEnd": 3141,
+                  "observedTraceEndTs": 369015122,
+                  "observedLoad": 833,
+                  "observedLoadTs": 366707348,
+                  "observedDomContentLoaded": 731,
+                  "observedDomContentLoadedTs": 366605342,
                   "observedCumulativeLayoutShift": 0,
                   "observedCumulativeLayoutShiftMainFrame": 0,
                   "observedTotalCumulativeLayoutShift": 0,
-                  "observedFirstVisualChange": 899,
-                  "observedFirstVisualChangeTs": 328053529,
-                  "observedLastVisualChange": 1498,
-                  "observedLastVisualChangeTs": 328652529,
-                  "observedSpeedIndex": 905,
-                  "observedSpeedIndexTs": 328059544
+                  "observedFirstVisualChange": 727,
+                  "observedFirstVisualChangeTs": 366601231,
+                  "observedLastVisualChange": 1327,
+                  "observedLastVisualChangeTs": 367201231,
+                  "observedSpeedIndex": 734,
+                  "observedSpeedIndexTs": 366608002
                 },
                 {
                   "lcpInvalidated": false
@@ -3191,17 +3164,17 @@
                   "numFonts": 1,
                   "numTasks": 172,
                   "numTasksOver10ms": 4,
-                  "numTasksOver25ms": 3,
+                  "numTasksOver25ms": 1,
                   "numTasksOver50ms": 0,
                   "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 9.307,
-                  "throughput": 3187704.0447061867,
-                  "maxRtt": 154.671,
-                  "maxServerLatency": 11.496999999999986,
-                  "totalByteWeight": 128276,
-                  "totalTaskTime": 138.57999999999973,
-                  "mainDocumentTransferSize": 1903
+                  "rtt": 1.568,
+                  "throughput": 9767826.202860361,
+                  "maxRtt": 108.763,
+                  "maxServerLatency": 1.0189999999999997,
+                  "totalByteWeight": 128254,
+                  "totalTaskTime": 120.90599999999993,
+                  "mainDocumentTransferSize": 1895
                 }
               ]
             }
@@ -3224,7 +3197,7 @@
       "nmapGrade": "A",
       "nmapOpenPortsCount": 2,
       "nmapOpenPortsGrade": "A",
-      "testsslExpireSoon": false,
+      "testsslExpireSoon": true,
       "testsslExpireDate": "2024-01-25T15:24:00.000Z",
       "testsslGrade": "A",
       "cookiesGrade": "C",
@@ -3249,7 +3222,7 @@
     "http": {
       "url": "https://www.keiruaprod.fr/blog",
       "algorithm_version": 2,
-      "end_time": "Sun, 24 Dec 2023 00:24:04 GMT",
+      "end_time": "Sun, 31 Dec 2023 00:24:02 GMT",
       "grade": "F",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
@@ -3259,13 +3232,13 @@
         "Content-Encoding": "gzip",
         "Content-Length": "1763",
         "Content-Type": "text/html",
-        "Date": "Sun, 24 Dec 2023 00:24:03 GMT",
+        "Date": "Sun, 31 Dec 2023 00:24:01 GMT",
         "Server": "Apache",
         "Vary": "Accept-Encoding"
       },
-      "scan_id": 45750359,
+      "scan_id": 45995199,
       "score": 0,
-      "start_time": "Sun, 24 Dec 2023 00:24:00 GMT",
+      "start_time": "Sun, 31 Dec 2023 00:23:58 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 6,
@@ -3807,8 +3780,8 @@
         "id": "cert_expirationStatus",
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
-        "severity": "OK",
-        "finding": "32 >= 30 days"
+        "severity": "MEDIUM",
+        "finding": "expires < 30 days (25)"
       },
       {
         "id": "cert_notBefore",
@@ -3821,7 +3794,7 @@
         "id": "cert_notAfter",
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
-        "severity": "OK",
+        "severity": "MEDIUM",
         "finding": "2024-01-25 15:24"
       },
       {
@@ -4011,7 +3984,7 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "1703377549"
+        "finding": "1703982308"
       },
       {
         "id": "HSTS",
@@ -4567,7 +4540,7 @@
         "ip": "www.keiruaprod.fr/213.186.33.4",
         "port": "443",
         "severity": "INFO",
-        "finding": "102"
+        "finding": "56"
       }
     ],
     "thirdparties": {
@@ -4583,7 +4556,7 @@
         "content-encoding": "gzip",
         "content-length": "8883",
         "content-type": "text/html",
-        "date": "Sun, 24 Dec 2023 00:24:37 GMT",
+        "date": "Sun, 31 Dec 2023 00:24:32 GMT",
         "server": "Apache",
         "vary": "Accept-Encoding"
       },
@@ -4646,19 +4619,13 @@
         },
         {
           "hostname": "plausible.io",
-          "ip": "38.32.110.58",
+          "ip": "37.19.207.34",
           "geoip": {
             "city": {
-              "geoname_id": 5308655,
+              "geoname_id": 4744870,
               "names": {
-                "de": "Phoenix",
-                "en": "Phoenix",
-                "es": "Phoenix",
-                "fr": "Phoenix",
-                "ja": "フェニックス",
-                "pt-BR": "Phoenix",
-                "ru": "Финикс",
-                "zh-CN": "凤凰城"
+                "en": "Ashburn",
+                "ru": "Ашберн"
               }
             },
             "continent": {
@@ -4691,40 +4658,39 @@
             },
             "location": {
               "accuracy_radius": 20,
-              "latitude": 33.4475,
-              "longitude": -112.0866,
-              "metro_code": 753,
-              "time_zone": "America/Phoenix"
+              "latitude": 39.0469,
+              "longitude": -77.4903,
+              "metro_code": 511,
+              "time_zone": "America/New_York"
             },
             "postal": {
-              "code": "85036"
+              "code": "20149"
             },
             "registered_country": {
-              "geoname_id": 6252001,
-              "iso_code": "US",
+              "geoname_id": 2635167,
+              "iso_code": "GB",
               "names": {
-                "de": "Vereinigte Staaten",
-                "en": "United States",
-                "es": "Estados Unidos",
-                "fr": "États Unis",
-                "ja": "アメリカ",
-                "pt-BR": "EUA",
-                "ru": "США",
-                "zh-CN": "美国"
+                "de": "Vereinigtes Königreich",
+                "en": "United Kingdom",
+                "es": "Reino Unido",
+                "fr": "Royaume Uni",
+                "ja": "英国",
+                "pt-BR": "Reino Unido",
+                "ru": "Британия",
+                "zh-CN": "英国"
               }
             },
             "subdivisions": [
               {
-                "geoname_id": 5551752,
-                "iso_code": "AZ",
+                "geoname_id": 6254928,
+                "iso_code": "VA",
                 "names": {
-                  "de": "Arizona",
-                  "en": "Arizona",
-                  "es": "Arizona",
-                  "fr": "Arizona",
-                  "ja": "アリゾナ州",
-                  "pt-BR": "Arizona",
-                  "ru": "Аризона"
+                  "en": "Virginia",
+                  "fr": "Virginie",
+                  "ja": "バージニア州",
+                  "pt-BR": "Virgínia",
+                  "ru": "Вирджиния",
+                  "zh-CN": "弗吉尼亚州"
                 }
               }
             ]
@@ -4854,7 +4820,7 @@
     "zap": {
       "@programName": "ZAP",
       "@version": "2.14.0",
-      "@generated": "Sun, 24 Dec 2023 00:23:34",
+      "@generated": "Sun, 31 Dec 2023 00:23:30",
       "site": [
         {
           "@name": "https://www.keiruaprod.fr",
@@ -5022,41 +4988,6 @@
     },
     "nuclei": [
       {
-        "template": "dns/dns-saas-service-detection.yaml",
-        "template-url": "https://templates.nuclei.sh/public/dns-saas-service-detection",
-        "template-id": "dns-saas-service-detection",
-        "template-path": "/home/runner/nuclei-templates/dns/dns-saas-service-detection.yaml",
-        "info": {
-          "name": "DNS SaaS Service Detection",
-          "author": [
-            "noah @thesubtlety",
-            "pdteam"
-          ],
-          "tags": [
-            "dns",
-            "service"
-          ],
-          "description": "A CNAME DNS record was discovered",
-          "reference": [
-            "https://ns1.com/resources/cname",
-            "https://www.theregister.com/2021/02/24/dns_cname_tracking/",
-            "https://www.ionos.com/digitalguide/hosting/technical-matters/cname-record/"
-          ],
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "type": "dns",
-        "host": "www.keiruaprod.fr.",
-        "matched-at": "www.keiruaprod.fr",
-        "extracted-results": [
-          "keiruaprod.fr."
-        ],
-        "timestamp": "2023-12-24T00:27:24.454499997Z",
-        "matcher-status": true
-      },
-      {
         "template": "dns/dnssec-detection.yaml",
         "template-url": "https://templates.nuclei.sh/public/dnssec-detection",
         "template-id": "dnssec-detection",
@@ -5089,118 +5020,7 @@
         "type": "dns",
         "host": "www.keiruaprod.fr.",
         "matched-at": "www.keiruaprod.fr",
-        "timestamp": "2023-12-24T00:27:24.456746886Z",
-        "matcher-status": true
-      },
-      {
-        "template": "dns/txt-fingerprint.yaml",
-        "template-url": "https://templates.nuclei.sh/public/txt-fingerprint",
-        "template-id": "txt-fingerprint",
-        "template-path": "/home/runner/nuclei-templates/dns/txt-fingerprint.yaml",
-        "info": {
-          "name": "DNS TXT Record Detected",
-          "author": [
-            "pdteam"
-          ],
-          "tags": [
-            "dns",
-            "txt"
-          ],
-          "description": "A DNS TXT record was detected. The TXT record lets a domain admin leave notes on a DNS server.",
-          "reference": [
-            "https://www.netspi.com/blog/technical/network-penetration-testing/analyzing-dns-txt-records-to-fingerprint-service-providers/"
-          ],
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          },
-          "classification": {
-            "cve-id": null,
-            "cwe-id": [
-              "cwe-200"
-            ]
-          }
-        },
-        "type": "dns",
-        "host": "www.keiruaprod.fr.",
-        "matched-at": "www.keiruaprod.fr",
-        "extracted-results": [
-          "\"google-site-verification=FGowpopCvkmZfhWUb8BaQVp4BvMNEVT7u0N2ctjEjJk\"",
-          "\"v=spf1 include:mx.ovh.com include:_spf.protonmail.ch mx ~all\"",
-          "\"protonmail-verification=dfa1b2d072dc1316e06262593cd68c524b03c7f8\""
-        ],
-        "timestamp": "2023-12-24T00:27:24.570672165Z",
-        "matcher-status": true
-      },
-      {
-        "template": "dns/nameserver-fingerprint.yaml",
-        "template-url": "https://templates.nuclei.sh/public/nameserver-fingerprint",
-        "template-id": "nameserver-fingerprint",
-        "template-path": "/home/runner/nuclei-templates/dns/nameserver-fingerprint.yaml",
-        "info": {
-          "name": "NS Record Detection",
-          "author": [
-            "pdteam"
-          ],
-          "tags": [
-            "dns",
-            "ns"
-          ],
-          "description": "An NS record was detected. An NS record delegates a subdomain to a set of name servers.",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          },
-          "classification": {
-            "cve-id": null,
-            "cwe-id": [
-              "cwe-200"
-            ]
-          }
-        },
-        "type": "dns",
-        "host": "www.keiruaprod.fr.",
-        "matched-at": "www.keiruaprod.fr",
-        "extracted-results": [
-          "ns20.ovh.net.",
-          "dns20.ovh.net."
-        ],
-        "timestamp": "2023-12-24T00:27:25.206212248Z",
-        "matcher-status": true
-      },
-      {
-        "template": "dns/caa-fingerprint.yaml",
-        "template-url": "https://templates.nuclei.sh/public/caa-fingerprint",
-        "template-id": "caa-fingerprint",
-        "template-path": "/home/runner/nuclei-templates/dns/caa-fingerprint.yaml",
-        "info": {
-          "name": "CAA Record",
-          "author": [
-            "pdteam"
-          ],
-          "tags": [
-            "dns",
-            "caa"
-          ],
-          "description": "A CAA record was discovered. A CAA record is used to specify which certificate authorities (CAs) are allowed to issue certificates for a domain.",
-          "reference": [
-            "https://support.dnsimple.com/articles/caa-record/#whats-a-caa-record"
-          ],
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          },
-          "classification": {
-            "cve-id": null,
-            "cwe-id": [
-              "cwe-200"
-            ]
-          }
-        },
-        "type": "dns",
-        "host": "www.keiruaprod.fr.",
-        "matched-at": "www.keiruaprod.fr",
-        "timestamp": "2023-12-24T00:27:25.20753784Z",
+        "timestamp": "2023-12-31T00:26:19.560556513Z",
         "matcher-status": true
       },
       {
@@ -5233,7 +5053,7 @@
         "type": "dns",
         "host": "www.keiruaprod.fr.",
         "matched-at": "www.keiruaprod.fr",
-        "timestamp": "2023-12-24T00:27:25.735249494Z",
+        "timestamp": "2023-12-31T00:26:19.5671767Z",
         "matcher-status": true
       },
       {
@@ -5273,7 +5093,153 @@
           "10 mail.protonmail.ch.",
           "20 mailsec.protonmail.ch."
         ],
-        "timestamp": "2023-12-24T00:27:25.735314726Z",
+        "timestamp": "2023-12-31T00:26:19.56722507Z",
+        "matcher-status": true
+      },
+      {
+        "template": "dns/dns-saas-service-detection.yaml",
+        "template-url": "https://templates.nuclei.sh/public/dns-saas-service-detection",
+        "template-id": "dns-saas-service-detection",
+        "template-path": "/home/runner/nuclei-templates/dns/dns-saas-service-detection.yaml",
+        "info": {
+          "name": "DNS SaaS Service Detection",
+          "author": [
+            "noah @thesubtlety",
+            "pdteam"
+          ],
+          "tags": [
+            "dns",
+            "service"
+          ],
+          "description": "A CNAME DNS record was discovered",
+          "reference": [
+            "https://ns1.com/resources/cname",
+            "https://www.theregister.com/2021/02/24/dns_cname_tracking/",
+            "https://www.ionos.com/digitalguide/hosting/technical-matters/cname-record/"
+          ],
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          }
+        },
+        "type": "dns",
+        "host": "www.keiruaprod.fr.",
+        "matched-at": "www.keiruaprod.fr",
+        "extracted-results": [
+          "keiruaprod.fr."
+        ],
+        "timestamp": "2023-12-31T00:26:19.568983791Z",
+        "matcher-status": true
+      },
+      {
+        "template": "dns/caa-fingerprint.yaml",
+        "template-url": "https://templates.nuclei.sh/public/caa-fingerprint",
+        "template-id": "caa-fingerprint",
+        "template-path": "/home/runner/nuclei-templates/dns/caa-fingerprint.yaml",
+        "info": {
+          "name": "CAA Record",
+          "author": [
+            "pdteam"
+          ],
+          "tags": [
+            "dns",
+            "caa"
+          ],
+          "description": "A CAA record was discovered. A CAA record is used to specify which certificate authorities (CAs) are allowed to issue certificates for a domain.",
+          "reference": [
+            "https://support.dnsimple.com/articles/caa-record/#whats-a-caa-record"
+          ],
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          },
+          "classification": {
+            "cve-id": null,
+            "cwe-id": [
+              "cwe-200"
+            ]
+          }
+        },
+        "type": "dns",
+        "host": "www.keiruaprod.fr.",
+        "matched-at": "www.keiruaprod.fr",
+        "timestamp": "2023-12-31T00:26:19.6434105Z",
+        "matcher-status": true
+      },
+      {
+        "template": "dns/nameserver-fingerprint.yaml",
+        "template-url": "https://templates.nuclei.sh/public/nameserver-fingerprint",
+        "template-id": "nameserver-fingerprint",
+        "template-path": "/home/runner/nuclei-templates/dns/nameserver-fingerprint.yaml",
+        "info": {
+          "name": "NS Record Detection",
+          "author": [
+            "pdteam"
+          ],
+          "tags": [
+            "dns",
+            "ns"
+          ],
+          "description": "An NS record was detected. An NS record delegates a subdomain to a set of name servers.",
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          },
+          "classification": {
+            "cve-id": null,
+            "cwe-id": [
+              "cwe-200"
+            ]
+          }
+        },
+        "type": "dns",
+        "host": "www.keiruaprod.fr.",
+        "matched-at": "www.keiruaprod.fr",
+        "extracted-results": [
+          "ns20.ovh.net.",
+          "dns20.ovh.net."
+        ],
+        "timestamp": "2023-12-31T00:26:19.703432776Z",
+        "matcher-status": true
+      },
+      {
+        "template": "dns/txt-fingerprint.yaml",
+        "template-url": "https://templates.nuclei.sh/public/txt-fingerprint",
+        "template-id": "txt-fingerprint",
+        "template-path": "/home/runner/nuclei-templates/dns/txt-fingerprint.yaml",
+        "info": {
+          "name": "DNS TXT Record Detected",
+          "author": [
+            "pdteam"
+          ],
+          "tags": [
+            "dns",
+            "txt"
+          ],
+          "description": "A DNS TXT record was detected. The TXT record lets a domain admin leave notes on a DNS server.",
+          "reference": [
+            "https://www.netspi.com/blog/technical/network-penetration-testing/analyzing-dns-txt-records-to-fingerprint-service-providers/"
+          ],
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          },
+          "classification": {
+            "cve-id": null,
+            "cwe-id": [
+              "cwe-200"
+            ]
+          }
+        },
+        "type": "dns",
+        "host": "www.keiruaprod.fr.",
+        "matched-at": "www.keiruaprod.fr",
+        "extracted-results": [
+          "\"v=spf1 include:mx.ovh.com include:_spf.protonmail.ch mx ~all\"",
+          "\"protonmail-verification=dfa1b2d072dc1316e06262593cd68c524b03c7f8\"",
+          "\"google-site-verification=FGowpopCvkmZfhWUb8BaQVp4BvMNEVT7u0N2ctjEjJk\""
+        ],
+        "timestamp": "2023-12-31T00:26:20.762682284Z",
         "matcher-status": true
       },
       {
@@ -5300,7 +5266,7 @@
         "host": "https://www.keiruaprod.fr/blog",
         "matched-at": "https://www.keiruaprod.fr/robots.txt",
         "ip": "213.186.33.4",
-        "timestamp": "2023-12-24T00:28:55.045536407Z",
+        "timestamp": "2023-12-31T00:27:13.163922165Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr/robots.txt'",
         "matcher-status": true
       },
@@ -5337,48 +5303,8 @@
           "https://plausible.io/js/plausible.outbound-links.js"
         ],
         "ip": "213.186.33.4",
-        "timestamp": "2023-12-24T00:29:05.003116501Z",
+        "timestamp": "2023-12-31T00:27:19.442146638Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Host: www.keiruaprod.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr/blog/'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/technologies/waf-detect.yaml",
-        "template-url": "https://templates.nuclei.sh/public/waf-detect",
-        "template-id": "waf-detect",
-        "template-path": "/home/runner/nuclei-templates/http/technologies/waf-detect.yaml",
-        "info": {
-          "name": "WAF Detection",
-          "author": [
-            "dwisiswant0",
-            "lu4nx"
-          ],
-          "tags": [
-            "waf",
-            "tech",
-            "misc"
-          ],
-          "description": "A web application firewall was detected.",
-          "reference": [
-            "https://github.com/ekultek/whatwaf"
-          ],
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          },
-          "classification": {
-            "cve-id": null,
-            "cwe-id": [
-              "cwe-200"
-            ]
-          }
-        },
-        "matcher-name": "apachegeneric",
-        "type": "http",
-        "host": "https://www.keiruaprod.fr/blog",
-        "matched-at": "https://www.keiruaprod.fr/blog/",
-        "ip": "213.186.33.4",
-        "timestamp": "2023-12-24T00:29:17.325086231Z",
-        "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: www.keiruaprod.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr/blog/'",
         "matcher-status": true
       },
       {
@@ -5417,7 +5343,47 @@
         "host": "https://www.keiruaprod.fr/blog",
         "matched-at": "https://www.keiruaprod.fr/blog/",
         "ip": "213.186.33.4",
-        "timestamp": "2023-12-24T00:29:17.325124322Z",
+        "timestamp": "2023-12-31T00:27:27.134838213Z",
+        "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: www.keiruaprod.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr/blog/'",
+        "matcher-status": true
+      },
+      {
+        "template": "http/technologies/waf-detect.yaml",
+        "template-url": "https://templates.nuclei.sh/public/waf-detect",
+        "template-id": "waf-detect",
+        "template-path": "/home/runner/nuclei-templates/http/technologies/waf-detect.yaml",
+        "info": {
+          "name": "WAF Detection",
+          "author": [
+            "dwisiswant0",
+            "lu4nx"
+          ],
+          "tags": [
+            "waf",
+            "tech",
+            "misc"
+          ],
+          "description": "A web application firewall was detected.",
+          "reference": [
+            "https://github.com/ekultek/whatwaf"
+          ],
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          },
+          "classification": {
+            "cve-id": null,
+            "cwe-id": [
+              "cwe-200"
+            ]
+          }
+        },
+        "matcher-name": "apachegeneric",
+        "type": "http",
+        "host": "https://www.keiruaprod.fr/blog",
+        "matched-at": "https://www.keiruaprod.fr/blog/",
+        "ip": "213.186.33.4",
+        "timestamp": "2023-12-31T00:27:27.134986018Z",
         "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: www.keiruaprod.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr/blog/'",
         "matcher-status": true
       },
@@ -5448,7 +5414,7 @@
           "Let's Encrypt"
         ],
         "ip": "213.186.33.4",
-        "timestamp": "2023-12-24T00:31:19.60327228Z",
+        "timestamp": "2023-12-31T00:29:11.221472766Z",
         "matcher-status": true
       },
       {
@@ -5475,29 +5441,29 @@
         "host": "www.keiruaprod.fr",
         "matched-at": "www.keiruaprod.fr:443",
         "extracted-results": [
-          "champion-maths.keiruaprod.fr",
-          "keiruaprod.fr",
-          "onmangeou.keiruaprod.fr",
-          "www.blog.keiruaprod.fr",
-          "2048craze.keiruaprod.fr",
-          "blog.keiruaprod.fr",
-          "rand100.keiruaprod.fr",
+          "fragmentsdeplanete.fr",
           "twister.keiruaprod.fr",
           "www.147colors.keiruaprod.fr",
-          "www.2048craze.keiruaprod.fr",
-          "www.fragmentsdeplanete.fr",
-          "foules.keiruaprod.fr",
-          "ld23.keiruaprod.fr",
-          "147colors.keiruaprod.fr",
-          "www.ld23.keiruaprod.fr",
+          "2048craze.keiruaprod.fr",
+          "onmangeou.keiruaprod.fr",
           "www.foules.keiruaprod.fr",
           "www.keiruaprod.fr",
-          "www.onmangeou.keiruaprod.fr",
-          "fragmentsdeplanete.fr",
-          "www.champion-maths.keiruaprod.fr"
+          "www.ld23.keiruaprod.fr",
+          "www.champion-maths.keiruaprod.fr",
+          "www.fragmentsdeplanete.fr",
+          "champion-maths.keiruaprod.fr",
+          "foules.keiruaprod.fr",
+          "keiruaprod.fr",
+          "rand100.keiruaprod.fr",
+          "www.2048craze.keiruaprod.fr",
+          "147colors.keiruaprod.fr",
+          "blog.keiruaprod.fr",
+          "ld23.keiruaprod.fr",
+          "www.blog.keiruaprod.fr",
+          "www.onmangeou.keiruaprod.fr"
         ],
         "ip": "213.186.33.4",
-        "timestamp": "2023-12-24T00:31:19.603434063Z",
+        "timestamp": "2023-12-31T00:29:11.22160923Z",
         "matcher-status": true
       },
       {
@@ -5528,7 +5494,7 @@
           "tls12"
         ],
         "ip": "213.186.33.4",
-        "timestamp": "2023-12-24T00:31:21.606831087Z",
+        "timestamp": "2023-12-31T00:29:15.716939625Z",
         "matcher-status": true
       },
       {
@@ -5559,7 +5525,7 @@
           "tls13"
         ],
         "ip": "213.186.33.4",
-        "timestamp": "2023-12-24T00:31:22.257836498Z",
+        "timestamp": "2023-12-31T00:29:15.892433122Z",
         "matcher-status": true
       }
     ],
@@ -5567,7 +5533,7 @@
       {
         "requestedUrl": "https://www.keiruaprod.fr/blog",
         "finalUrl": "https://www.keiruaprod.fr/blog/",
-        "fetchTime": "2023-12-24T00:23:52.498Z",
+        "fetchTime": "2023-12-31T00:23:47.577Z",
         "runWarnings": [
           "The page may not be loading as expected because your test URL (https://www.keiruaprod.fr/blog) was redirected to https://www.keiruaprod.fr/blog/. Try testing the second URL directly."
         ],
@@ -5632,53 +5598,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 1303,
+            "numericValue": 1079,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 1187,
-                  "firstMeaningfulPaint": 1187,
-                  "largestContentfulPaint": 1436,
-                  "interactive": 1303,
-                  "speedIndex": 1780,
-                  "totalBlockingTime": 66,
-                  "maxPotentialFID": 150,
+                  "firstContentfulPaint": 1025,
+                  "firstMeaningfulPaint": 1025,
+                  "largestContentfulPaint": 1839,
+                  "interactive": 1079,
+                  "speedIndex": 1101,
+                  "totalBlockingTime": 7,
+                  "maxPotentialFID": 74,
                   "cumulativeLayoutShift": 0,
                   "cumulativeLayoutShiftMainFrame": 0,
                   "totalCumulativeLayoutShift": 0,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 310108358,
+                  "observedTimeOriginTs": 297032868,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 310108358,
-                  "observedFirstPaint": 834,
-                  "observedFirstPaintTs": 310942493,
-                  "observedFirstContentfulPaint": 834,
-                  "observedFirstContentfulPaintTs": 310942493,
-                  "observedFirstContentfulPaintAllFrames": 834,
-                  "observedFirstContentfulPaintAllFramesTs": 310942493,
-                  "observedFirstMeaningfulPaint": 834,
-                  "observedFirstMeaningfulPaintTs": 310942493,
-                  "observedLargestContentfulPaint": 834,
-                  "observedLargestContentfulPaintTs": 310942493,
-                  "observedLargestContentfulPaintAllFrames": 834,
-                  "observedLargestContentfulPaintAllFramesTs": 310942493,
-                  "observedTraceEnd": 3221,
-                  "observedTraceEndTs": 313328907,
-                  "observedLoad": 906,
-                  "observedLoadTs": 311014152,
-                  "observedDomContentLoaded": 906,
-                  "observedDomContentLoadedTs": 311014005,
+                  "observedNavigationStartTs": 297032868,
+                  "observedFirstPaint": 486,
+                  "observedFirstPaintTs": 297518370,
+                  "observedFirstContentfulPaint": 486,
+                  "observedFirstContentfulPaintTs": 297518370,
+                  "observedFirstContentfulPaintAllFrames": 486,
+                  "observedFirstContentfulPaintAllFramesTs": 297518370,
+                  "observedFirstMeaningfulPaint": 486,
+                  "observedFirstMeaningfulPaintTs": 297518370,
+                  "observedLargestContentfulPaint": 486,
+                  "observedLargestContentfulPaintTs": 297518370,
+                  "observedLargestContentfulPaintAllFrames": 486,
+                  "observedLargestContentfulPaintAllFramesTs": 297518370,
+                  "observedTraceEnd": 2804,
+                  "observedTraceEndTs": 299836486,
+                  "observedLoad": 472,
+                  "observedLoadTs": 297504503,
+                  "observedDomContentLoaded": 459,
+                  "observedDomContentLoadedTs": 297492164,
                   "observedCumulativeLayoutShift": 0,
                   "observedCumulativeLayoutShiftMainFrame": 0,
                   "observedTotalCumulativeLayoutShift": 0,
-                  "observedFirstVisualChange": 829,
-                  "observedFirstVisualChangeTs": 310937358,
-                  "observedLastVisualChange": 845,
-                  "observedLastVisualChangeTs": 310953358,
-                  "observedSpeedIndex": 830,
-                  "observedSpeedIndexTs": 310937895
+                  "observedFirstVisualChange": 488,
+                  "observedFirstVisualChangeTs": 297520868,
+                  "observedLastVisualChange": 505,
+                  "observedLastVisualChangeTs": 297537868,
+                  "observedSpeedIndex": 489,
+                  "observedSpeedIndexTs": 297521765
                 },
                 {
                   "lcpInvalidated": false
@@ -5700,19 +5666,19 @@
                   "numScripts": 1,
                   "numStylesheets": 3,
                   "numFonts": 0,
-                  "numTasks": 100,
-                  "numTasksOver10ms": 2,
-                  "numTasksOver25ms": 1,
+                  "numTasks": 95,
+                  "numTasksOver10ms": 1,
+                  "numTasksOver25ms": 0,
                   "numTasksOver50ms": 0,
                   "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 19.762999999999977,
-                  "throughput": 45502982.108253606,
-                  "maxRtt": 152.755,
-                  "maxServerLatency": 3.9850000000000136,
-                  "totalByteWeight": 17281,
-                  "totalTaskTime": 73.06500000000001,
-                  "mainDocumentTransferSize": 9023
+                  "rtt": 1.6709999999999998,
+                  "throughput": 49494062.612887934,
+                  "maxRtt": 81.59100000000001,
+                  "maxServerLatency": 5.332999999999984,
+                  "totalByteWeight": 17308,
+                  "totalTaskTime": 55.589000000000034,
+                  "mainDocumentTransferSize": 9032
                 }
               ]
             }
@@ -5735,7 +5701,7 @@
       "nmapGrade": "A",
       "nmapOpenPortsCount": 2,
       "nmapOpenPortsGrade": "A",
-      "testsslExpireSoon": false,
+      "testsslExpireSoon": true,
       "testsslExpireDate": "2024-01-25T15:24:00.000Z",
       "testsslGrade": "A",
       "cookiesGrade": "A",
