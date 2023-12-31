@@ -338,8 +338,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "www.keiruaprod.fr/213.186.33.4",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "32 >= 30 days"
+              "severity"     : "MEDIUM",
+              "finding"      : "expires < 30 days (25)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -352,7 +352,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "www.keiruaprod.fr/213.186.33.4",
               "port"         : "443",
-              "severity"     : "OK",
+              "severity"     : "MEDIUM",
               "finding"      : "2024-01-25 15:24"
           }
 ,         {
@@ -542,7 +542,7 @@
               "ip"           : "www.keiruaprod.fr/213.186.33.4",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1703377549"
+              "finding"      : "1703982308"
           }
 ,         {
               "id"           : "HSTS",
@@ -1098,6 +1098,6 @@
               "ip"           : "www.keiruaprod.fr/213.186.33.4",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "102"
+              "finding"      : "56"
           }
 ]
