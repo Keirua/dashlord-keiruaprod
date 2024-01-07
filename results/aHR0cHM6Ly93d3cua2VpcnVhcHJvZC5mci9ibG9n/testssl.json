@@ -339,7 +339,7 @@
               "ip"           : "www.keiruaprod.fr/213.186.33.4",
               "port"         : "443",
               "severity"     : "MEDIUM",
-              "finding"      : "expires < 30 days (25)"
+              "finding"      : "expires < 30 days (18)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -535,14 +535,14 @@
               "ip"           : "www.keiruaprod.fr/213.186.33.4",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 seconds from localtime"
+              "finding"      : "-1 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "www.keiruaprod.fr/213.186.33.4",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1703982308"
+              "finding"      : "1704587126"
           }
 ,         {
               "id"           : "HSTS",
