@@ -11,7 +11,7 @@
     "content-encoding": "gzip",
     "content-length": "8883",
     "content-type": "text/html",
-    "date": "Sun, 07 Jan 2024 00:24:49 GMT",
+    "date": "Sun, 14 Jan 2024 00:24:39 GMT",
     "server": "Apache",
     "vary": "Accept-Encoding"
   },
@@ -107,7 +107,7 @@
           "geoname_id": 6252001,
           "iso_code": "US",
           "names": {
-            "de": "Vereinigte Staaten",
+            "de": "USA",
             "en": "United States",
             "es": "Estados Unidos",
             "fr": "États Unis",
@@ -131,7 +131,7 @@
           "geoname_id": 6252001,
           "iso_code": "US",
           "names": {
-            "de": "Vereinigte Staaten",
+            "de": "USA",
             "en": "United States",
             "es": "Estados Unidos",
             "fr": "États Unis",
