@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 21 Jan 2024 00:23:39",
+	"@generated": "Sun, 28 Jan 2024 00:22:30",
 	"site":[ 
 		{
 			"@name": "https://www.keiruaprod.fr",
@@ -66,7 +66,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>https://www.w3.org/TR/CSP/</p><p>https://w3c.github.io/webappsec-csp/</p><p>https://web.dev/articles/csp</p><p>https://caniuse.com/#feat=contentsecuritypolicy</p><p>https://content-security-policy.com/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10020",
@@ -125,7 +125,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90003",
@@ -310,7 +310,7 @@
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10110",
@@ -489,7 +489,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/js/libs/bootstrap/bootstrap.min.js",
+							"uri": "https://www.keiruaprod.fr/resume.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -596,7 +596,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/js/libs/bootstrap/bootstrap.min.js",
+							"uri": "https://www.keiruaprod.fr/resume.html",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -696,7 +696,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "26"
+					"sourceid": "31"
 				},
 				{
 					"pluginid": "10015",
@@ -771,7 +771,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -800,7 +800,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/robots.txt",
+							"uri": "https://www.keiruaprod.fr/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -843,7 +843,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/robots.txt",
+							"uri": "https://www.keiruaprod.fr/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -878,15 +878,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/index.html",
-							"method": "GET",
-							"param": "Sec-Fetch-Site",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.keiruaprod.fr/robots.txt",
+							"uri": "https://www.keiruaprod.fr/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -894,7 +886,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
@@ -929,7 +921,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/robots.txt",
+							"uri": "https://www.keiruaprod.fr/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",
@@ -962,6 +954,14 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
+							"uri": "https://www.keiruaprod.fr/css/bootstrap-responsive.min.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=900",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/css/font-awesome-ie7.min.css",
@@ -1012,14 +1012,6 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/js/libs/bootstrap/bootstrap.min.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=900",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://www.keiruaprod.fr/resume.html",
 							"method": "GET",
 							"param": "",
@@ -1050,7 +1042,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "1"
 				}
 			]
 		}
