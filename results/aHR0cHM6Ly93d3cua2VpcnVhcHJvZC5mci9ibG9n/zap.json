@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 4 Feb 2024 00:22:44",
+	"@generated": "Sun, 11 Feb 2024 00:22:52",
 	"site":[ 
 		{
 			"@name": "https://www.keiruaprod.fr",
@@ -52,7 +52,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/10/21/un-jeu-pour-apprendre-les-additions.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/10/19/automatic-transcription-of-videos.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -167,14 +167,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/10/21/un-jeu-pour-apprendre-les-additions.html",
-							"method": "GET",
-							"param": "x-frame-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://www.keiruaprod.fr/developpement",
 							"method": "GET",
 							"param": "x-frame-options",
@@ -223,7 +215,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "12",
+					"count": "11",
 					"solution": "<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p><p>If you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy's \"frame-ancestors\" directive.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
@@ -264,7 +256,7 @@
 					"reference": "<p>https://www.wsj.com/articles/BL-CIOB-2999</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "517"
+					"sourceid": "555"
 				},
 				{
 					"pluginid": "10099",
@@ -299,7 +291,7 @@
 					"reference": "<p>https://www.wsj.com/articles/BL-CIOB-2999</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "513"
+					"sourceid": "527"
 				},
 				{
 					"pluginid": "90003",
@@ -328,6 +320,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://www.keiruaprod.fr/blog/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.outbound-links.js\"></script>",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://www.keiruaprod.fr/blog/2023/08/19/analyse-secu-converso.html",
 							"method": "GET",
 							"param": "",
@@ -345,14 +345,6 @@
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/blog/2023/10/19/automatic-transcription-of-videos.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.outbound-links.js\"></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/10/21/un-jeu-pour-apprendre-les-additions.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -414,7 +406,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "10003",
@@ -604,7 +596,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/08/31/string-art.html",
+							"uri": "https://www.keiruaprod.fr/blog/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -741,7 +733,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html</p>",
 					"cweid": "311",
 					"wascid": "4",
-					"sourceid": "702"
+					"sourceid": "701"
 				},
 				{
 					"pluginid": "10035",
@@ -875,7 +867,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "599"
+					"sourceid": "589"
 				},
 				{
 					"pluginid": "10021",
@@ -982,7 +974,7 @@
 					"reference": "<p>https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "10094",
@@ -995,12 +987,12 @@
 					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2021/08/16/summer-articles.html",
+							"uri": "https://www.keiruaprod.fr/blog/2021/11/16/slack-notifications-from-python.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "io/2021/08/08/Another-Homebrew-Console",
-							"otherinfo": "\uFFFD\uFFFD\uFFFD\uFFFDm\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD'\uFFFD\uFFFD^\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD{\\x000f\uFFFD\uFFFD{(\uFFFD"
+							"evidence": "com/devStepsize/b1b795309a217d24566dcc0ad136f784",
+							"otherinfo": "r\uFFFD\uFFFDu\uFFFD\u04B5\uFFFDl\uFFFD7\uFFFDoV\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u0778\u7B9Dq\uFFFD\\x001aw]\uFFFD\uFFFD8"
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/blog/2021/11/29/adventofcode-part3-algorithms-and-data-structures-competitive-programming.html",
@@ -1093,11 +1085,11 @@
 					],
 					"count": "12",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\uFFFD\uFFFD\uFFFDm\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD'\uFFFD\uFFFD^\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD{\\x000f\uFFFD\uFFFD{(\uFFFD</p>",
+					"otherinfo": "<p>r\uFFFD\uFFFDu\uFFFD\u04B5\uFFFDl\uFFFD7\uFFFDoV\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u0778\u7B9Dq\uFFFD\\x001aw]\uFFFD\uFFFD8</p>",
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "390"
+					"sourceid": "383"
 				},
 				{
 					"pluginid": "10027",
@@ -1148,7 +1140,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "995"
+					"sourceid": "1048"
 				},
 				{
 					"pluginid": "10109",
@@ -1175,7 +1167,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "623"
+					"sourceid": "594"
 				},
 				{
 					"pluginid": "10015",
@@ -1204,7 +1196,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/",
+							"uri": "https://www.keiruaprod.fr/blog/2023/10/19/automatic-transcription-of-videos.html",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -1303,7 +1295,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/index.html",
+							"uri": "https://www.keiruaprod.fr/formations.html",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -1317,7 +1309,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "90005",
@@ -1338,7 +1330,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/index.html",
+							"uri": "https://www.keiruaprod.fr/formations.html",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -1352,7 +1344,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "90005",
@@ -1373,7 +1365,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/index.html",
+							"uri": "https://www.keiruaprod.fr/formations.html",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -1387,7 +1379,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "90005",
@@ -1408,7 +1400,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/index.html",
+							"uri": "https://www.keiruaprod.fr/formations.html",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",
@@ -1422,7 +1414,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "10049",
@@ -1452,14 +1444,6 @@
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/css/bootstrap-responsive.min.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=900",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.keiruaprod.fr/css/font-awesome.min.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1499,6 +1483,14 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
+							"uri": "https://www.keiruaprod.fr/resume.html",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
 							"uri": "https://www.keiruaprod.fr/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -1521,7 +1513,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "8"
+					"sourceid": "3"
 				}
 			]
 		}
