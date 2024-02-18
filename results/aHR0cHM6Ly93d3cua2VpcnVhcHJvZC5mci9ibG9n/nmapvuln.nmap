@@ -1,4 +1,4 @@
-# Nmap 7.92 scan initiated Sun Feb 11 00:25:30 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.keiruaprod.fr
+# Nmap 7.92 scan initiated Sun Feb 18 00:25:03 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.keiruaprod.fr
 Nmap scan report for www.keiruaprod.fr (213.186.33.4)
 Host is up (0.15s latency).
 rDNS record for 213.186.33.4: cluster003.ovh.net
@@ -12,13 +12,13 @@ PORT    STATE SERVICE  VERSION
 |   GetRequest: 
 |     HTTP/1.1 404 Not Found
 |     server: nginx
-|     date: Sun, 11 Feb 2024 00:25:48 GMT
+|     date: Sun, 18 Feb 2024 00:25:20 GMT
 |     content-type: text/html; charset=utf8
-|     x-ovh-webhosting-id: 226d0a82deae6b9f1903bf1e2b3752ae
+|     x-ovh-webhosting-id: 309d01ae2ca00613cf2ce813936a244b
 |     pragma: no-cache
 |     cache-control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-|     content-length: 4958
-|     x-iplb-request-id: 349D0483:A0C4_D5BA2104:0050_65C81406_2CFAF:0336
+|     content-length: 4959
+|     x-iplb-request-id: 14AC1C8F:A801_D5BA2104:0050_65D14E6A_68B9:688C
 |     x-iplb-instance: 51911
 |     connection: close
 |     <html xml:lang="en-EN" lang="en-EN">
@@ -30,18 +30,18 @@ PORT    STATE SERVICE  VERSION
 |     <meta http-equiv="Content-Language" content="en-EN">
 |     <meta name="robots" content="noindex, nofollow">
 |     <meta name="description" qtlid="283606" content="Site not installed">
-|     <meta h
+|     <meta ht
 |   HTTPOptions: 
 |     HTTP/1.1 404 Not Found
 |     server: nginx
-|     date: Sun, 11 Feb 2024 00:25:48 GMT
+|     date: Sun, 18 Feb 2024 00:25:20 GMT
 |     content-type: text/html; charset=utf8
-|     x-ovh-webhosting-id: d07b1ed4d45e15ef37b1d0a7e8fe2916
+|     x-ovh-webhosting-id: 2c072dc87cbf90603349cb4ec4d1d4aa
 |     pragma: no-cache
 |     cache-control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-|     content-length: 4958
-|     x-iplb-request-id: 349D0483:A0C3_D5BA2104:0050_65C8140C_2DD20:0336
-|     x-iplb-instance: 51911
+|     content-length: 4959
+|     x-iplb-request-id: 14AC1C8F:A802_D5BA2104:0050_65D14E70_1753C:2B6F
+|     x-iplb-instance: 51919
 |     connection: close
 |     <html xml:lang="en-EN" lang="en-EN">
 |     <head>
@@ -56,33 +56,33 @@ PORT    STATE SERVICE  VERSION
 443/tcp open  ssl/http nginx
 |_http-server-header: Apache
 1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
-SF-Port80-TCP:V=7.92%I=7%D=2/11%Time=65C8140C%P=x86_64-alpine-linux-musl%r
+SF-Port80-TCP:V=7.92%I=7%D=2/18%Time=65D14E70%P=x86_64-alpine-linux-musl%r
 SF:(GetRequest,14F0,"HTTP/1\.1\x20404\x20Not\x20Found\r\nserver:\x20nginx\
-SF:r\ndate:\x20Sun,\x2011\x20Feb\x202024\x2000:25:48\x20GMT\r\ncontent-typ
-SF:e:\x20text/html;\x20charset=utf8\r\nx-ovh-webhosting-id:\x20226d0a82dea
-SF:e6b9f1903bf1e2b3752ae\r\npragma:\x20no-cache\r\ncache-control:\x20no-st
+SF:r\ndate:\x20Sun,\x2018\x20Feb\x202024\x2000:25:20\x20GMT\r\ncontent-typ
+SF:e:\x20text/html;\x20charset=utf8\r\nx-ovh-webhosting-id:\x20309d01ae2ca
+SF:00613cf2ce813936a244b\r\npragma:\x20no-cache\r\ncache-control:\x20no-st
 SF:ore,\x20no-cache,\x20must-revalidate,\x20post-check=0,\x20pre-check=0\r
-SF:\ncontent-length:\x204958\r\nx-iplb-request-id:\x20349D0483:A0C4_D5BA21
-SF:04:0050_65C81406_2CFAF:0336\r\nx-iplb-instance:\x2051911\r\nconnection:
-SF:\x20close\r\n\r\n<html\x20xml:lang=\"en-EN\"\x20lang=\"en-EN\">\n\x20\x
-SF:20\x20\x20<head>\n\x20\x20\x20\x20\x20\x20\x20\x20<title>Site\x20not\x2
-SF:0installed\x20-\x20OVHcloud</title>\n\x20\x20\x20\x20\x20\x20\x20\x20<m
-SF:eta\x20name=\"viewport\"\x20content=\"width=device-width\">\n\x20\x20\x
-SF:20\x20\x20\x20\x20\x20<meta\x20http-equiv=\"refresh\"\x20content=\"90\"
-SF:>\n\x20\x20\x20\x20\x20\x20\x20\x20<meta\x20http-equiv=\"Content-Type\"
-SF:\x20content=\"text/html;\x20charset=utf-8\">\n\x20\x20\x20\x20\x20\x20\
-SF:x20\x20<meta\x20http-equiv=\"Content-Language\"\x20content=\"en-EN\">\n
-SF:\x20\x20\x20\x20\x20\x20\x20\x20<meta\x20name=\"robots\"\x20content=\"n
-SF:oindex,\x20nofollow\">\n\x20\x20\x20\x20\x20\x20\x20\x20<meta\x20name=\
-SF:"description\"\x20\x20qtlid=\"283606\"\x20content=\"Site\x20not\x20inst
-SF:alled\">\n\x20\x20\x20\x20\x20\x20\x20\x20<meta\x20h")%r(HTTPOptions,14
-SF:F0,"HTTP/1\.1\x20404\x20Not\x20Found\r\nserver:\x20nginx\r\ndate:\x20Su
-SF:n,\x2011\x20Feb\x202024\x2000:25:48\x20GMT\r\ncontent-type:\x20text/htm
-SF:l;\x20charset=utf8\r\nx-ovh-webhosting-id:\x20d07b1ed4d45e15ef37b1d0a7e
-SF:8fe2916\r\npragma:\x20no-cache\r\ncache-control:\x20no-store,\x20no-cac
+SF:\ncontent-length:\x204959\r\nx-iplb-request-id:\x2014AC1C8F:A801_D5BA21
+SF:04:0050_65D14E6A_68B9:688C\r\nx-iplb-instance:\x2051911\r\nconnection:\
+SF:x20close\r\n\r\n<html\x20xml:lang=\"en-EN\"\x20lang=\"en-EN\">\n\x20\x2
+SF:0\x20\x20<head>\n\x20\x20\x20\x20\x20\x20\x20\x20<title>Site\x20not\x20
+SF:installed\x20-\x20OVHcloud</title>\n\x20\x20\x20\x20\x20\x20\x20\x20<me
+SF:ta\x20name=\"viewport\"\x20content=\"width=device-width\">\n\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20<meta\x20http-equiv=\"refresh\"\x20content=\"90\">
+SF:\n\x20\x20\x20\x20\x20\x20\x20\x20<meta\x20http-equiv=\"Content-Type\"\
+SF:x20content=\"text/html;\x20charset=utf-8\">\n\x20\x20\x20\x20\x20\x20\x
+SF:20\x20<meta\x20http-equiv=\"Content-Language\"\x20content=\"en-EN\">\n\
+SF:x20\x20\x20\x20\x20\x20\x20\x20<meta\x20name=\"robots\"\x20content=\"no
+SF:index,\x20nofollow\">\n\x20\x20\x20\x20\x20\x20\x20\x20<meta\x20name=\"
+SF:description\"\x20\x20qtlid=\"283606\"\x20content=\"Site\x20not\x20insta
+SF:lled\">\n\x20\x20\x20\x20\x20\x20\x20\x20<meta\x20ht")%r(HTTPOptions,14
+SF:F1,"HTTP/1\.1\x20404\x20Not\x20Found\r\nserver:\x20nginx\r\ndate:\x20Su
+SF:n,\x2018\x20Feb\x202024\x2000:25:20\x20GMT\r\ncontent-type:\x20text/htm
+SF:l;\x20charset=utf8\r\nx-ovh-webhosting-id:\x202c072dc87cbf90603349cb4ec
+SF:4d1d4aa\r\npragma:\x20no-cache\r\ncache-control:\x20no-store,\x20no-cac
 SF:he,\x20must-revalidate,\x20post-check=0,\x20pre-check=0\r\ncontent-leng
-SF:th:\x204958\r\nx-iplb-request-id:\x20349D0483:A0C3_D5BA2104:0050_65C814
-SF:0C_2DD20:0336\r\nx-iplb-instance:\x2051911\r\nconnection:\x20close\r\n\
+SF:th:\x204959\r\nx-iplb-request-id:\x2014AC1C8F:A802_D5BA2104:0050_65D14E
+SF:70_1753C:2B6F\r\nx-iplb-instance:\x2051919\r\nconnection:\x20close\r\n\
 SF:r\n<html\x20xml:lang=\"en-EN\"\x20lang=\"en-EN\">\n\x20\x20\x20\x20<hea
 SF:d>\n\x20\x20\x20\x20\x20\x20\x20\x20<title>Site\x20not\x20installed\x20
 SF:-\x20OVHcloud</title>\n\x20\x20\x20\x20\x20\x20\x20\x20<meta\x20name=\"
@@ -97,4 +97,4 @@ SF:\x20\x20qtlid=\"283606\"\x20content=\"Site\x20not\x20installed\">\n\x20
 SF:\x20\x20\x20\x20\x20\x20\x20<meta\x20h");
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Feb 11 00:26:03 2024 -- 1 IP address (1 host up) scanned in 33.03 seconds
+# Nmap done at Sun Feb 18 00:25:36 2024 -- 1 IP address (1 host up) scanned in 33.28 seconds
