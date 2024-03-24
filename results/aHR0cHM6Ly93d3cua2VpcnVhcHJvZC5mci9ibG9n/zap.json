@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 17 Mar 2024 00:23:46",
+	"@generated": "Sun, 24 Mar 2024 00:23:29",
 	"site":[ 
 		{
 			"@name": "https://www.keiruaprod.fr",
@@ -114,7 +114,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>https://www.w3.org/TR/CSP/</p><p>https://w3c.github.io/webappsec-csp/</p><p>https://web.dev/articles/csp</p><p>https://caniuse.com/#feat=contentsecuritypolicy</p><p>https://content-security-policy.com/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "3"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10020",
@@ -221,7 +221,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "3"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10099",
@@ -256,7 +256,7 @@
 					"reference": "<p>https://www.wsj.com/articles/BL-CIOB-2999</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "522"
+					"sourceid": "513"
 				},
 				{
 					"pluginid": "10099",
@@ -291,7 +291,7 @@
 					"reference": "<p>https://www.wsj.com/articles/BL-CIOB-2999</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "516"
+					"sourceid": "530"
 				},
 				{
 					"pluginid": "90003",
@@ -320,7 +320,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/08/31/string-art.html",
+							"uri": "https://www.keiruaprod.fr/blog/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -328,7 +328,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2023/10/19/automatic-transcription-of-videos.html",
+							"uri": "https://www.keiruaprod.fr/blog/2023/08/31/string-art.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -596,6 +596,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://www.keiruaprod.fr/blog/2023/08/31/string-art.html",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://www.keiruaprod.fr/developpement",
 							"method": "GET",
 							"param": "",
@@ -637,14 +645,6 @@
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/js/libs/bootstrap/bootstrap.min.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.keiruaprod.fr/js/libs/jquery-1.7.2.min.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -725,7 +725,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html</p>",
 					"cweid": "311",
 					"wascid": "4",
-					"sourceid": "706"
+					"sourceid": "708"
 				},
 				{
 					"pluginid": "10035",
@@ -762,6 +762,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://www.keiruaprod.fr/css/font-awesome.min.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://www.keiruaprod.fr/css/style.css",
 							"method": "GET",
 							"param": "",
@@ -794,14 +802,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/resume.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://www.keiruaprod.fr/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -824,7 +824,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>https://caniuse.com/stricttransportsecurity</p><p>https://datatracker.ietf.org/doc/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "10096",
@@ -859,7 +859,7 @@
 					"reference": "<p>https://cwe.mitre.org/data/definitions/200.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "587"
+					"sourceid": "638"
 				},
 				{
 					"pluginid": "10021",
@@ -896,7 +896,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/css/style.css",
+							"uri": "https://www.keiruaprod.fr/css/font-awesome-ie7.min.css",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -904,7 +904,15 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/css/style2.css",
+							"uri": "https://www.keiruaprod.fr/css/font-awesome.min.css",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"uri": "https://www.keiruaprod.fr/css/style.css",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -936,14 +944,6 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/resume.html",
-							"method": "GET",
-							"param": "x-content-type-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
-						},
-						{
 							"uri": "https://www.keiruaprod.fr/robots.txt",
 							"method": "GET",
 							"param": "x-content-type-options",
@@ -966,7 +966,7 @@
 					"reference": "<p>https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "10094",
@@ -979,12 +979,12 @@
 					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.keiruaprod.fr/blog/2021/08/16/summer-articles.html",
+							"uri": "https://www.keiruaprod.fr/blog/2021/11/16/slack-notifications-from-python.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "io/2021/08/08/Another-Homebrew-Console",
-							"otherinfo": "\uFFFD\uFFFD\uFFFD\uFFFDm\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD'\uFFFD\uFFFD^\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD{\\x000f\uFFFD\uFFFD{(\uFFFD"
+							"evidence": "com/devStepsize/b1b795309a217d24566dcc0ad136f784",
+							"otherinfo": "r\uFFFD\uFFFDu\uFFFD\u04B5\uFFFDl\uFFFD7\uFFFDoV\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u0778\u7B9Dq\uFFFD\\x001aw]\uFFFD\uFFFD8"
 						},
 						{
 							"uri": "https://www.keiruaprod.fr/blog/2021/11/29/adventofcode-part3-algorithms-and-data-structures-competitive-programming.html",
@@ -1077,11 +1077,11 @@
 					],
 					"count": "12",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\uFFFD\uFFFD\uFFFDm\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD'\uFFFD\uFFFD^\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD{\\x000f\uFFFD\uFFFD{(\uFFFD</p>",
+					"otherinfo": "<p>r\uFFFD\uFFFDu\uFFFD\u04B5\uFFFDl\uFFFD7\uFFFDoV\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u0778\u7B9Dq\uFFFD\\x001aw]\uFFFD\uFFFD8</p>",
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "388"
+					"sourceid": "365"
 				},
 				{
 					"pluginid": "10027",
@@ -1132,7 +1132,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1010"
+					"sourceid": "1057"
 				},
 				{
 					"pluginid": "10109",
@@ -1159,7 +1159,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "608"
+					"sourceid": "613"
 				},
 				{
 					"pluginid": "10015",
@@ -1266,7 +1266,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "3"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "90005",
@@ -1301,7 +1301,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "90005",
@@ -1336,7 +1336,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "90005",
@@ -1371,7 +1371,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "90005",
@@ -1443,6 +1443,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://www.keiruaprod.fr/css/font-awesome.min.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=900",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://www.keiruaprod.fr/css/style.css",
 							"method": "GET",
 							"param": "",
@@ -1475,14 +1483,6 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"uri": "https://www.keiruaprod.fr/resume.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
-						},
-						{
 							"uri": "https://www.keiruaprod.fr/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -1505,7 +1505,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "8"
+					"sourceid": "3"
 				}
 			]
 		}
