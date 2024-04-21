@@ -1,4 +1,4 @@
-# Nmap 7.92 scan initiated Sun Apr 14 00:26:06 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.keiruaprod.fr
+# Nmap 7.92 scan initiated Sun Apr 21 00:24:36 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.keiruaprod.fr
 Host: 213.186.33.4 (cluster003.ovh.net)	Status: Up
-Host: 213.186.33.4 (cluster003.ovh.net)	Ports: 17/closed/tcp//qotd///, 43/closed/tcp//whois///, 80/open/tcp//http//nginx/, 443/open/tcp//ssl|http//nginx/, 1417/closed/tcp//timbuktu-srv1///, 1718/closed/tcp//h323gatedisc///, 2382/closed/tcp//ms-olap3///, 2909/closed/tcp//funk-dialout///, 5269/closed/tcp//xmpp-server///, 6101/closed/tcp//backupexec///, 6667/closed/tcp//irc///, 6692/closed/tcp//unknown///, 8081/closed/tcp//blackice-icecap///, 8083/closed/tcp//us-srv///, 22939/closed/tcp//unknown///	Ignored State: filtered (985)
-# Nmap done at Sun Apr 14 00:26:39 2024 -- 1 IP address (1 host up) scanned in 32.21 seconds
+Host: 213.186.33.4 (cluster003.ovh.net)	Ports: 80/open/tcp//http//nginx/, 443/open/tcp//ssl|http//nginx/	Ignored State: filtered (998)
+# Nmap done at Sun Apr 21 00:25:01 2024 -- 1 IP address (1 host up) scanned in 24.80 seconds

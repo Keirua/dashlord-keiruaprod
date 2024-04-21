@@ -22,7 +22,7 @@
     },
     {
       "type": "google analytics",
-      "url": "https://ssl.google-analytics.com/r/__utm.gif?utmwv=5.7.2&utms=1&utmn=1477567789&utmhn=www.keiruaprod.fr&utmcs=UTF-8&utmsr=800x600&utmvp=800x600&utmsc=24-bit&utmul=en-us&utmje=0&utmfl=-&utmdt=D%C3%A9veloppeur%20web%20et%20formateur%20Symfony2%2FSymfony3%20freelance%20Paris%20-%20KeiruaProd&utmhid=150886677&utmr=-&utmp=%2F&utmht=1713054295395&utmac=UA-26997065-1&utmcc=__utma%3D185069491.364499975.1713054295.1713054295.1713054295.1%3B%2B__utmz%3D185069491.1713054295.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmjid=1206418609&utmredir=1&utmu=qAAAAAAAAAAAAAAAAAAAAAAE~",
+      "url": "https://ssl.google-analytics.com/r/__utm.gif?utmwv=5.7.2&utms=1&utmn=612306755&utmhn=www.keiruaprod.fr&utmcs=UTF-8&utmsr=800x600&utmvp=800x600&utmsc=24-bit&utmul=en-us&utmje=0&utmfl=-&utmdt=D%C3%A9veloppeur%20web%20et%20formateur%20Symfony2%2FSymfony3%20freelance%20Paris%20-%20KeiruaProd&utmhid=1185259584&utmr=-&utmp=%2F&utmht=1713659008315&utmac=UA-26997065-1&utmcc=__utma%3D185069491.1437412770.1713659008.1713659008.1713659008.1%3B%2B__utmz%3D185069491.1713659008.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmjid=1130314404&utmredir=1&utmu=qAAAAAAAAAAAAAAAAAAAAAAE~",
       "details": {
         "id": "google analytics",
         "message": "Use hosted Matomo instance"
@@ -32,10 +32,10 @@
   "cookies": [
     {
       "name": "__utmb",
-      "value": "185069491.1.10.1713054295",
+      "value": "185069491.1.10.1713659008",
       "domain": ".keiruaprod.fr",
       "path": "/",
-      "expires": 1713056095,
+      "expires": 1713660808,
       "size": 31,
       "httpOnly": false,
       "secure": false,
@@ -46,10 +46,10 @@
     },
     {
       "name": "__utmz",
-      "value": "185069491.1713054295.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)",
+      "value": "185069491.1713659008.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)",
       "domain": ".keiruaprod.fr",
       "path": "/",
-      "expires": 1728822295,
+      "expires": 1729427008,
       "size": 76,
       "httpOnly": false,
       "secure": false,
@@ -77,7 +77,7 @@
       "value": "1",
       "domain": ".keiruaprod.fr",
       "path": "/",
-      "expires": 1713054895,
+      "expires": 1713659608,
       "size": 7,
       "httpOnly": false,
       "secure": false,
@@ -88,11 +88,11 @@
     },
     {
       "name": "__utma",
-      "value": "185069491.364499975.1713054295.1713054295.1713054295.1",
+      "value": "185069491.1437412770.1713659008.1713659008.1713659008.1",
       "domain": ".keiruaprod.fr",
       "path": "/",
-      "expires": 1776126295,
-      "size": 60,
+      "expires": 1776731008,
+      "size": 61,
       "httpOnly": false,
       "secure": false,
       "session": false,
@@ -106,7 +106,7 @@
     "content-encoding": "gzip",
     "content-length": "1763",
     "content-type": "text/html",
-    "date": "Sun, 14 Apr 2024 00:24:55 GMT",
+    "date": "Sun, 21 Apr 2024 00:23:28 GMT",
     "server": "Apache",
     "vary": "Accept-Encoding"
   },
@@ -169,7 +169,7 @@
     },
     {
       "hostname": "ajax.googleapis.com",
-      "ip": "172.217.0.170",
+      "ip": "172.253.122.95",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -223,19 +223,19 @@
     },
     {
       "hostname": "plausible.io",
-      "ip": "185.93.1.244",
+      "ip": "38.104.169.186",
       "geoip": {
         "city": {
-          "geoname_id": 4887398,
+          "geoname_id": 4460243,
           "names": {
-            "de": "Chicago",
-            "en": "Chicago",
-            "es": "Chicago",
-            "fr": "Chicago",
-            "ja": "シカゴ",
-            "pt-BR": "Chicago",
-            "ru": "Чикаго",
-            "zh-CN": "芝加哥"
+            "de": "Charlotte",
+            "en": "Charlotte",
+            "es": "Charlotte",
+            "fr": "Charlotte",
+            "ja": "シャーロット",
+            "pt-BR": "Charlotte",
+            "ru": "Шарлотт",
+            "zh-CN": "夏洛特"
           }
         },
         "continent": {
@@ -268,42 +268,41 @@
         },
         "location": {
           "accuracy_radius": 20,
-          "latitude": 41.8874,
-          "longitude": -87.6318,
-          "metro_code": 602,
-          "time_zone": "America/Chicago"
+          "latitude": 35.2316,
+          "longitude": -80.8428,
+          "metro_code": 517,
+          "time_zone": "America/New_York"
         },
         "postal": {
-          "code": "60602"
+          "code": "28202"
         },
         "registered_country": {
-          "geoname_id": 3077311,
-          "is_in_european_union": true,
-          "iso_code": "CZ",
+          "geoname_id": 6252001,
+          "iso_code": "US",
           "names": {
-            "de": "Tschechien",
-            "en": "Czechia",
-            "es": "Chequia",
-            "fr": "Tchéquie",
-            "ja": "チェコ共和国",
-            "pt-BR": "Chéquia",
-            "ru": "Чехия",
-            "zh-CN": "捷克"
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
           }
         },
         "subdivisions": [
           {
-            "geoname_id": 4896861,
-            "iso_code": "IL",
+            "geoname_id": 4482348,
+            "iso_code": "NC",
             "names": {
-              "de": "Illinois",
-              "en": "Illinois",
-              "es": "Illinois",
-              "fr": "Illinois",
-              "ja": "イリノイ州",
-              "pt-BR": "Ilinóis",
-              "ru": "Иллинойс",
-              "zh-CN": "伊利诺伊州"
+              "de": "North Carolina",
+              "en": "North Carolina",
+              "es": "Carolina del Norte",
+              "fr": "Caroline du Nord",
+              "ja": "ノースカロライナ州",
+              "pt-BR": "Carolina do Norte",
+              "ru": "Северная Каролина",
+              "zh-CN": "北卡罗来纳州"
             }
           }
         ]
@@ -311,8 +310,14 @@
     },
     {
       "hostname": "ssl.google-analytics.com",
-      "ip": "142.250.191.232",
+      "ip": "142.251.111.97",
       "geoip": {
+        "city": {
+          "geoname_id": 5116931,
+          "names": {
+            "en": "Farmingdale"
+          }
+        },
         "continent": {
           "code": "NA",
           "geoname_id": 6255149,
@@ -342,10 +347,14 @@
           }
         },
         "location": {
-          "accuracy_radius": 1000,
-          "latitude": 37.751,
-          "longitude": -97.822,
-          "time_zone": "America/Chicago"
+          "accuracy_radius": 500,
+          "latitude": 40.7306,
+          "longitude": -73.4313,
+          "metro_code": 501,
+          "time_zone": "America/New_York"
+        },
+        "postal": {
+          "code": "11735"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -360,7 +369,23 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 5128638,
+            "iso_code": "NY",
+            "names": {
+              "de": "New York",
+              "en": "New York",
+              "es": "Nueva York",
+              "fr": "New York",
+              "ja": "ニューヨーク州",
+              "pt-BR": "Nova Iorque",
+              "ru": "Нью-Йорк",
+              "zh-CN": "纽约州"
+            }
+          }
+        ]
       }
     }
   ]
