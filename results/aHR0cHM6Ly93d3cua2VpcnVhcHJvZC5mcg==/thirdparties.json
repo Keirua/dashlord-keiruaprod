@@ -22,7 +22,7 @@
     },
     {
       "type": "google analytics",
-      "url": "https://ssl.google-analytics.com/r/__utm.gif?utmwv=5.7.2&utms=1&utmn=1560545037&utmhn=www.keiruaprod.fr&utmcs=UTF-8&utmsr=800x600&utmvp=800x600&utmsc=24-bit&utmul=en-us&utmje=0&utmfl=-&utmdt=D%C3%A9veloppeur%20web%20et%20formateur%20Symfony2%2FSymfony3%20freelance%20Paris%20-%20KeiruaProd&utmhid=1959602541&utmr=-&utmp=%2F&utmht=1714868598535&utmac=UA-26997065-1&utmcc=__utma%3D185069491.279812626.1714868599.1714868599.1714868599.1%3B%2B__utmz%3D185069491.1714868599.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmjid=784421009&utmredir=1&utmu=qAAAAAAAAAAAAAAAAAAAAAAE~",
+      "url": "https://ssl.google-analytics.com/r/__utm.gif?utmwv=5.7.2&utms=1&utmn=683339429&utmhn=www.keiruaprod.fr&utmcs=UTF-8&utmsr=800x600&utmvp=800x600&utmsc=24-bit&utmul=en-us&utmje=0&utmfl=-&utmdt=D%C3%A9veloppeur%20web%20et%20formateur%20Symfony2%2FSymfony3%20freelance%20Paris%20-%20KeiruaProd&utmhid=1416857141&utmr=-&utmp=%2F&utmht=1715473432536&utmac=UA-26997065-1&utmcc=__utma%3D185069491.867726805.1715473433.1715473433.1715473433.1%3B%2B__utmz%3D185069491.1715473433.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmjid=777331607&utmredir=1&utmu=qAAAAAAAAAAAAAAAAAAAAAAE~",
       "details": {
         "id": "google analytics",
         "message": "Use hosted Matomo instance"
@@ -32,10 +32,10 @@
   "cookies": [
     {
       "name": "__utmb",
-      "value": "185069491.1.10.1714868599",
+      "value": "185069491.1.10.1715473433",
       "domain": ".keiruaprod.fr",
       "path": "/",
-      "expires": 1714870398,
+      "expires": 1715475232,
       "size": 31,
       "httpOnly": false,
       "secure": false,
@@ -46,10 +46,10 @@
     },
     {
       "name": "__utmz",
-      "value": "185069491.1714868599.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)",
+      "value": "185069491.1715473433.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)",
       "domain": ".keiruaprod.fr",
       "path": "/",
-      "expires": 1730636598,
+      "expires": 1731241432,
       "size": 76,
       "httpOnly": false,
       "secure": false,
@@ -77,7 +77,7 @@
       "value": "1",
       "domain": ".keiruaprod.fr",
       "path": "/",
-      "expires": 1714869198,
+      "expires": 1715474032,
       "size": 7,
       "httpOnly": false,
       "secure": false,
@@ -88,10 +88,10 @@
     },
     {
       "name": "__utma",
-      "value": "185069491.279812626.1714868599.1714868599.1714868599.1",
+      "value": "185069491.867726805.1715473433.1715473433.1715473433.1",
       "domain": ".keiruaprod.fr",
       "path": "/",
-      "expires": 1777940598,
+      "expires": 1778545432,
       "size": 60,
       "httpOnly": false,
       "secure": false,
@@ -106,7 +106,7 @@
     "content-encoding": "gzip",
     "content-length": "1763",
     "content-type": "text/html",
-    "date": "Sun, 05 May 2024 00:23:18 GMT",
+    "date": "Sun, 12 May 2024 00:23:52 GMT",
     "server": "Apache",
     "vary": "Accept-Encoding"
   },
@@ -169,14 +169,8 @@
     },
     {
       "hostname": "ajax.googleapis.com",
-      "ip": "142.251.163.95",
+      "ip": "142.250.191.138",
       "geoip": {
-        "city": {
-          "geoname_id": 5116931,
-          "names": {
-            "en": "Farmingdale"
-          }
-        },
         "continent": {
           "code": "NA",
           "geoname_id": 6255149,
@@ -206,14 +200,10 @@
           }
         },
         "location": {
-          "accuracy_radius": 500,
-          "latitude": 40.7306,
-          "longitude": -73.4313,
-          "metro_code": 501,
-          "time_zone": "America/New_York"
-        },
-        "postal": {
-          "code": "11735"
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -228,40 +218,24 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        },
-        "subdivisions": [
-          {
-            "geoname_id": 5128638,
-            "iso_code": "NY",
-            "names": {
-              "de": "New York",
-              "en": "New York",
-              "es": "Nueva York",
-              "fr": "New York",
-              "ja": "ニューヨーク州",
-              "pt-BR": "Nova Iorque",
-              "ru": "Нью-Йорк",
-              "zh-CN": "纽约州"
-            }
-          }
-        ]
+        }
       }
     },
     {
       "hostname": "plausible.io",
-      "ip": "38.104.169.186",
+      "ip": "185.93.1.244",
       "geoip": {
         "city": {
-          "geoname_id": 4460243,
+          "geoname_id": 4887398,
           "names": {
-            "de": "Charlotte",
-            "en": "Charlotte",
-            "es": "Charlotte",
-            "fr": "Charlotte",
-            "ja": "シャーロット",
-            "pt-BR": "Charlotte",
-            "ru": "Шарлотт",
-            "zh-CN": "夏洛特"
+            "de": "Chicago",
+            "en": "Chicago",
+            "es": "Chicago",
+            "fr": "Chicago",
+            "ja": "シカゴ",
+            "pt-BR": "Chicago",
+            "ru": "Чикаго",
+            "zh-CN": "芝加哥"
           }
         },
         "continent": {
@@ -294,41 +268,42 @@
         },
         "location": {
           "accuracy_radius": 20,
-          "latitude": 35.2316,
-          "longitude": -80.8428,
-          "metro_code": 517,
-          "time_zone": "America/New_York"
+          "latitude": 41.8874,
+          "longitude": -87.6318,
+          "metro_code": 602,
+          "time_zone": "America/Chicago"
         },
         "postal": {
-          "code": "28202"
+          "code": "60602"
         },
         "registered_country": {
-          "geoname_id": 6252001,
-          "iso_code": "US",
+          "geoname_id": 3077311,
+          "is_in_european_union": true,
+          "iso_code": "CZ",
           "names": {
-            "de": "USA",
-            "en": "United States",
-            "es": "Estados Unidos",
-            "fr": "États Unis",
-            "ja": "アメリカ",
-            "pt-BR": "EUA",
-            "ru": "США",
-            "zh-CN": "美国"
+            "de": "Tschechien",
+            "en": "Czechia",
+            "es": "Chequia",
+            "fr": "Tchéquie",
+            "ja": "チェコ共和国",
+            "pt-BR": "Chéquia",
+            "ru": "Чехия",
+            "zh-CN": "捷克"
           }
         },
         "subdivisions": [
           {
-            "geoname_id": 4482348,
-            "iso_code": "NC",
+            "geoname_id": 4896861,
+            "iso_code": "IL",
             "names": {
-              "de": "North Carolina",
-              "en": "North Carolina",
-              "es": "Carolina del Norte",
-              "fr": "Caroline du Nord",
-              "ja": "ノースカロライナ州",
-              "pt-BR": "Carolina do Norte",
-              "ru": "Северная Каролина",
-              "zh-CN": "北卡罗来纳州"
+              "de": "Illinois",
+              "en": "Illinois",
+              "es": "Illinois",
+              "fr": "Illinois",
+              "ja": "イリノイ州",
+              "pt-BR": "Ilinóis",
+              "ru": "Иллинойс",
+              "zh-CN": "伊利诺伊州"
             }
           }
         ]
@@ -336,14 +311,8 @@
     },
     {
       "hostname": "ssl.google-analytics.com",
-      "ip": "142.251.163.97",
+      "ip": "142.250.190.8",
       "geoip": {
-        "city": {
-          "geoname_id": 5116931,
-          "names": {
-            "en": "Farmingdale"
-          }
-        },
         "continent": {
           "code": "NA",
           "geoname_id": 6255149,
@@ -373,14 +342,10 @@
           }
         },
         "location": {
-          "accuracy_radius": 500,
-          "latitude": 40.7306,
-          "longitude": -73.4313,
-          "metro_code": 501,
-          "time_zone": "America/New_York"
-        },
-        "postal": {
-          "code": "11735"
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -395,23 +360,7 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        },
-        "subdivisions": [
-          {
-            "geoname_id": 5128638,
-            "iso_code": "NY",
-            "names": {
-              "de": "New York",
-              "en": "New York",
-              "es": "Nueva York",
-              "fr": "New York",
-              "ja": "ニューヨーク州",
-              "pt-BR": "Nova Iorque",
-              "ru": "Нью-Йорк",
-              "zh-CN": "纽约州"
-            }
-          }
-        ]
+        }
       }
     }
   ]
