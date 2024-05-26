@@ -1,0 +1,1118 @@
+[
+  [
+    {
+      "template": "dns/spf-record-detect.yaml",
+      "template-url": "https://templates.nuclei.sh/public/spf-record-detect",
+      "template-id": "spf-record-detect",
+      "template-path": "/home/runner/nuclei-templates/dns/spf-record-detect.yaml",
+      "info": {
+        "name": "SPF Record - Detection",
+        "author": [
+          "rxerium"
+        ],
+        "tags": [
+          "dns",
+          "spf"
+        ],
+        "description": "An SPF TXT record was detected\n",
+        "reference": [
+          "https://www.mimecast.com/content/how-to-create-an-spf-txt-record"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "type": "dns",
+      "host": "www.keiruaprod.fr.",
+      "matched-at": "www.keiruaprod.fr",
+      "extracted-results": [
+        "v=spf1 include:mx.ovh.com include:_spf.protonmail.ch mx ~all\""
+      ],
+      "request": ";; opcode: QUERY, status: NOERROR, id: 62845\n;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.keiruaprod.fr.\tIN\t TXT\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 62845\n;; flags: qr rd ra ad; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;www.keiruaprod.fr.\tIN\t TXT\n\n;; ANSWER SECTION:\nwww.keiruaprod.fr.\t86400\tIN\tCNAME\tkeiruaprod.fr.\nkeiruaprod.fr.\t600\tIN\tTXT\t\"v=spf1 include:mx.ovh.com include:_spf.protonmail.ch mx ~all\"\nkeiruaprod.fr.\t600\tIN\tTXT\t\"protonmail-verification=dfa1b2d072dc1316e06262593cd68c524b03c7f8\"\nkeiruaprod.fr.\t600\tIN\tTXT\t\"google-site-verification=FGowpopCvkmZfhWUb8BaQVp4BvMNEVT7u0N2ctjEjJk\"\n",
+      "timestamp": "2024-05-26T00:26:10.486257689Z",
+      "matcher-status": true
+    },
+    {
+      "template": "dns/txt-fingerprint.yaml",
+      "template-url": "https://templates.nuclei.sh/public/txt-fingerprint",
+      "template-id": "txt-fingerprint",
+      "template-path": "/home/runner/nuclei-templates/dns/txt-fingerprint.yaml",
+      "info": {
+        "name": "DNS TXT Record Detected",
+        "author": [
+          "pdteam"
+        ],
+        "tags": [
+          "dns",
+          "txt"
+        ],
+        "description": "A DNS TXT record was detected. The TXT record lets a domain admin leave notes on a DNS server.",
+        "reference": [
+          "https://www.netspi.com/blog/technical/network-penetration-testing/analyzing-dns-txt-records-to-fingerprint-service-providers/"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-200"
+          ]
+        }
+      },
+      "type": "dns",
+      "host": "www.keiruaprod.fr.",
+      "matched-at": "www.keiruaprod.fr",
+      "extracted-results": [
+        "\"v=spf1 include:mx.ovh.com include:_spf.protonmail.ch mx ~all\"",
+        "\"protonmail-verification=dfa1b2d072dc1316e06262593cd68c524b03c7f8\"",
+        "\"google-site-verification=FGowpopCvkmZfhWUb8BaQVp4BvMNEVT7u0N2ctjEjJk\""
+      ],
+      "request": ";; opcode: QUERY, status: NOERROR, id: 62845\n;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.keiruaprod.fr.\tIN\t TXT\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 62845\n;; flags: qr rd ra ad; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;www.keiruaprod.fr.\tIN\t TXT\n\n;; ANSWER SECTION:\nwww.keiruaprod.fr.\t86400\tIN\tCNAME\tkeiruaprod.fr.\nkeiruaprod.fr.\t600\tIN\tTXT\t\"v=spf1 include:mx.ovh.com include:_spf.protonmail.ch mx ~all\"\nkeiruaprod.fr.\t600\tIN\tTXT\t\"protonmail-verification=dfa1b2d072dc1316e06262593cd68c524b03c7f8\"\nkeiruaprod.fr.\t600\tIN\tTXT\t\"google-site-verification=FGowpopCvkmZfhWUb8BaQVp4BvMNEVT7u0N2ctjEjJk\"\n",
+      "timestamp": "2024-05-26T00:26:10.486421856Z",
+      "matcher-status": true
+    },
+    {
+      "template": "dns/caa-fingerprint.yaml",
+      "template-url": "https://templates.nuclei.sh/public/caa-fingerprint",
+      "template-id": "caa-fingerprint",
+      "template-path": "/home/runner/nuclei-templates/dns/caa-fingerprint.yaml",
+      "info": {
+        "name": "CAA Record",
+        "author": [
+          "pdteam"
+        ],
+        "tags": [
+          "dns",
+          "caa"
+        ],
+        "description": "A CAA record was discovered. A CAA record is used to specify which certificate authorities (CAs) are allowed to issue certificates for a domain.",
+        "reference": [
+          "https://support.dnsimple.com/articles/caa-record/#whats-a-caa-record"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-200"
+          ]
+        }
+      },
+      "type": "dns",
+      "host": "www.keiruaprod.fr.",
+      "matched-at": "www.keiruaprod.fr",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 29018\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.keiruaprod.fr.\tIN\t CAA\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 29018\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;www.keiruaprod.fr.\tIN\t CAA\n\n;; ANSWER SECTION:\nwww.keiruaprod.fr.\t86400\tIN\tCNAME\tkeiruaprod.fr.\n\n;; AUTHORITY SECTION:\nkeiruaprod.fr.\t86400\tIN\tSOA\tdns20.ovh.net. tech.ovh.net. 2024051700 86400 3600 3600000 86400\n",
+      "timestamp": "2024-05-26T00:26:10.571006895Z",
+      "matcher-status": true
+    },
+    {
+      "template": "dns/mx-service-detector.yaml",
+      "template-url": "https://templates.nuclei.sh/public/mx-service-detector",
+      "template-id": "mx-service-detector",
+      "template-path": "/home/runner/nuclei-templates/dns/mx-service-detector.yaml",
+      "info": {
+        "name": "Email Service Detector",
+        "author": [
+          "binaryfigments"
+        ],
+        "tags": [
+          "dns",
+          "service"
+        ],
+        "description": "An email service was detected. Check the email service or spam filter that is used for a domain.",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-200"
+          ]
+        }
+      },
+      "matcher-name": "ProtonMail",
+      "type": "dns",
+      "host": "www.keiruaprod.fr.",
+      "matched-at": "www.keiruaprod.fr",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 54795\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.keiruaprod.fr.\tIN\t MX\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 54795\n;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;www.keiruaprod.fr.\tIN\t MX\n\n;; ANSWER SECTION:\nwww.keiruaprod.fr.\t21599\tIN\tCNAME\tkeiruaprod.fr.\nkeiruaprod.fr.\t600\tIN\tMX\t10 mail.protonmail.ch.\nkeiruaprod.fr.\t600\tIN\tMX\t20 mailsec.protonmail.ch.\n",
+      "timestamp": "2024-05-26T00:26:11.285623629Z",
+      "matcher-status": true
+    },
+    {
+      "template": "dns/mx-fingerprint.yaml",
+      "template-url": "https://templates.nuclei.sh/public/mx-fingerprint",
+      "template-id": "mx-fingerprint",
+      "template-path": "/home/runner/nuclei-templates/dns/mx-fingerprint.yaml",
+      "info": {
+        "name": "MX Record Detection",
+        "author": [
+          "pdteam"
+        ],
+        "tags": [
+          "dns",
+          "mx"
+        ],
+        "description": "An MX record was detected. MX records direct emails to a mail exchange server.",
+        "reference": [
+          "https://www.cloudflare.com/learning/dns/dns-records/dns-mx-record/",
+          "https://mxtoolbox.com/"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-200"
+          ]
+        }
+      },
+      "type": "dns",
+      "host": "www.keiruaprod.fr.",
+      "matched-at": "www.keiruaprod.fr",
+      "extracted-results": [
+        "10 mail.protonmail.ch.",
+        "20 mailsec.protonmail.ch."
+      ],
+      "request": ";; opcode: QUERY, status: NOERROR, id: 54795\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.keiruaprod.fr.\tIN\t MX\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 54795\n;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;www.keiruaprod.fr.\tIN\t MX\n\n;; ANSWER SECTION:\nwww.keiruaprod.fr.\t21599\tIN\tCNAME\tkeiruaprod.fr.\nkeiruaprod.fr.\t600\tIN\tMX\t10 mail.protonmail.ch.\nkeiruaprod.fr.\t600\tIN\tMX\t20 mailsec.protonmail.ch.\n",
+      "timestamp": "2024-05-26T00:26:11.285683752Z",
+      "matcher-status": true
+    },
+    {
+      "template": "dns/dnssec-detection.yaml",
+      "template-url": "https://templates.nuclei.sh/public/dnssec-detection",
+      "template-id": "dnssec-detection",
+      "template-path": "/home/runner/nuclei-templates/dns/dnssec-detection.yaml",
+      "info": {
+        "name": "DNSSEC Detection",
+        "author": [
+          "pdteam"
+        ],
+        "tags": [
+          "dns",
+          "dnssec"
+        ],
+        "description": "Domain Name System Security Extensions (DNSSEC) are enabled. The Delegation of Signing (DS) record provides information about a signed zone file when DNSSEC enabled.",
+        "reference": [
+          "https://www.icann.org/resources/pages/dnssec-what-is-it-why-important-2019-03-05-en",
+          "https://www.cyberciti.biz/faq/unix-linux-test-and-validate-dnssec-using-dig-command-line/"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-200"
+          ]
+        }
+      },
+      "type": "dns",
+      "host": "www.keiruaprod.fr.",
+      "matched-at": "www.keiruaprod.fr",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 9367\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.keiruaprod.fr.\tIN\t DS\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 9367\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;www.keiruaprod.fr.\tIN\t DS\n\n;; ANSWER SECTION:\nwww.keiruaprod.fr.\t86400\tIN\tCNAME\tkeiruaprod.fr.\nkeiruaprod.fr.\t301\tIN\tDS\t16840 8 2 532946D5F30FF0B263645837BC176309426AA032313A4473CD1BD9C3A1586ABE\n",
+      "timestamp": "2024-05-26T00:26:11.361560932Z",
+      "matcher-status": true
+    },
+    {
+      "template": "dns/nameserver-fingerprint.yaml",
+      "template-url": "https://templates.nuclei.sh/public/nameserver-fingerprint",
+      "template-id": "nameserver-fingerprint",
+      "template-path": "/home/runner/nuclei-templates/dns/nameserver-fingerprint.yaml",
+      "info": {
+        "name": "NS Record Detection",
+        "author": [
+          "pdteam"
+        ],
+        "tags": [
+          "dns",
+          "ns"
+        ],
+        "description": "An NS record was detected. An NS record delegates a subdomain to a set of name servers.",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-200"
+          ]
+        }
+      },
+      "type": "dns",
+      "host": "www.keiruaprod.fr.",
+      "matched-at": "www.keiruaprod.fr",
+      "extracted-results": [
+        "ns20.ovh.net.",
+        "dns20.ovh.net."
+      ],
+      "request": ";; opcode: QUERY, status: NOERROR, id: 49211\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.keiruaprod.fr.\tIN\t NS\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 49211\n;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;www.keiruaprod.fr.\tIN\t NS\n\n;; ANSWER SECTION:\nwww.keiruaprod.fr.\t86400\tIN\tCNAME\tkeiruaprod.fr.\nkeiruaprod.fr.\t86400\tIN\tNS\tns20.ovh.net.\nkeiruaprod.fr.\t86400\tIN\tNS\tdns20.ovh.net.\n",
+      "timestamp": "2024-05-26T00:26:11.370002381Z",
+      "matcher-status": true
+    },
+    {
+      "template": "dns/dns-saas-service-detection.yaml",
+      "template-url": "https://templates.nuclei.sh/public/dns-saas-service-detection",
+      "template-id": "dns-saas-service-detection",
+      "template-path": "/home/runner/nuclei-templates/dns/dns-saas-service-detection.yaml",
+      "info": {
+        "name": "DNS SaaS Service Detection",
+        "author": [
+          "noah @thesubtlety",
+          "pdteam"
+        ],
+        "tags": [
+          "dns",
+          "service"
+        ],
+        "description": "A CNAME DNS record was discovered",
+        "reference": [
+          "https://ns1.com/resources/cname",
+          "https://www.theregister.com/2021/02/24/dns_cname_tracking/",
+          "https://www.ionos.com/digitalguide/hosting/technical-matters/cname-record/"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "type": "dns",
+      "host": "www.keiruaprod.fr.",
+      "matched-at": "www.keiruaprod.fr",
+      "extracted-results": [
+        "keiruaprod.fr."
+      ],
+      "request": ";; opcode: QUERY, status: NOERROR, id: 26989\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.keiruaprod.fr.\tIN\t CNAME\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 26989\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;www.keiruaprod.fr.\tIN\t CNAME\n\n;; ANSWER SECTION:\nwww.keiruaprod.fr.\t21600\tIN\tCNAME\tkeiruaprod.fr.\n",
+      "timestamp": "2024-05-26T00:26:11.436406481Z",
+      "matcher-status": true
+    },
+    {
+      "template": "http/miscellaneous/options-method.yaml",
+      "template-url": "https://templates.nuclei.sh/public/options-method",
+      "template-id": "options-method",
+      "template-path": "/home/runner/nuclei-templates/http/miscellaneous/options-method.yaml",
+      "info": {
+        "name": "Allowed Options Method",
+        "author": [
+          "pdteam"
+        ],
+        "tags": [
+          "miscellaneous",
+          "misc",
+          "generic"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "type": "http",
+      "host": "https://www.keiruaprod.fr",
+      "matched-at": "https://www.keiruaprod.fr",
+      "extracted-results": [
+        "OPTIONS,HEAD,GET,POST"
+      ],
+      "request": "OPTIONS / HTTP/1.1\r\nHost: www.keiruaprod.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAllow: OPTIONS,HEAD,GET,POST\r\nContent-Type: text/html\r\nDate: Sun, 26 May 2024 00:26:17 GMT\r\nServer: Apache\r\nContent-Length: 0\r\n\r\n",
+      "ip": "213.186.33.4",
+      "timestamp": "2024-05-26T00:26:17.803927548Z",
+      "curl-command": "curl -X 'OPTIONS' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/technologies/apache/apache-detect.yaml",
+      "template-url": "https://templates.nuclei.sh/public/apache-detect",
+      "template-id": "apache-detect",
+      "template-path": "/home/runner/nuclei-templates/http/technologies/apache/apache-detect.yaml",
+      "info": {
+        "name": "Apache Detection",
+        "author": [
+          "philippedelteil"
+        ],
+        "tags": [
+          "tech",
+          "apache"
+        ],
+        "description": "Some Apache servers have the version on the response header. The OpenSSL version can be also obtained",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "type": "http",
+      "host": "https://www.keiruaprod.fr",
+      "matched-at": "https://www.keiruaprod.fr",
+      "extracted-results": [
+        "Apache"
+      ],
+      "request": "GET / HTTP/1.1\r\nHost: www.keiruaprod.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 26 May 2024 00:26:23 GMT\r\nServer: Apache\r\nVary: Accept-Encoding\r\n\r\n<!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js lt-ie9 lt-ie8 lt-ie7\" lang=\"en\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js lt-ie9 lt-ie8\" lang=\"en\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js lt-ie9\" lang=\"en\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en\"> <!--<![endif]-->\n<head>\n  <meta charset=\"utf-8\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n\n  <title>Développeur web et formateur Symfony2/Symfony3 freelance Paris - KeiruaProd</title>\n\n    \n    <meta name=\"author\" content=\"Clement Camin\">\n    <meta name=\"description\" content=\"Développeur web Symfony2/Symfony3 freelance à Paris, j'aime concevoir des applications web de qualité et transmettre mes compétences. Travaillons ensemble !\">\n    \n\n  <meta name=\"viewport\" content=\"width=device-width\">\n\n  <link rel=\"stylesheet\" href=\"css/bootstrap.min.css\">\n  <link rel=\"stylesheet\" href=\"css/bootstrap-responsive.min.css\">\n  <link rel=\"stylesheet\" href=\"css/font-awesome.min.css\">\n  \n  <link rel=\"stylesheet\" href=\"css/style.css\">\n \n  \n  <!--[if IE 7]>\n    <link rel=\"stylesheet\" href=\"css/font-awesome-ie7.min.css\">\n  <![endif]-->\n  <script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>\n</head>\n<body>\n  <div class=\"container\">\n    <div id=\"header\">\n  <h1><a href=\"index.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'home']);\">KeiruaProd</a></h1>\n  \n  <a href=\"formations.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'formations']);\">Formations</a> | <a href=\"developpement.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'developpement']);\">Développement</a> | <a href=\"resume.html\">En résumé</a> | <a href=\"http://blog.keiruaprod.fr/\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'blog']);\">Blog</a> | <a href=\"http://tweelinks.keiruaprod.fr/\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'veille']);\">Veille</a>\n</div>\n  \n  <div>\n      \n          <div class=\"accueil entrytitle\">\n          <p>\n          Je suis Clément, ingénieur web freelance. J'aime créer des <a href=\"developpement.html\">applications web de qualité</a> et <a href=\"formations.html\">partager mon expérience</a>. Et si nous travaillions ensemble ?\n          </p>\n          </div>\n                  \n          <div class=\"row accueil_categories\">\n            <div class=\"span5 offset1 entrytitle\">\n            <h2><a href=\"formations.html\">Formations Symfony</a></h2>\n            <strong>Je propose des formations à Symfony2/Symfony3</strong><br />\n            <p class=\"entry\">Je me déplace dans vos locaux, ou me charge de louer une salle pour réaliser un cours en petit groupe, sur 2 à 3 jours.\n            <strong><a href=\"formations.html\"><i class=\"icon-arrow-right\"></i> En savoir plus</a></strong></p>\n            </div>\n            \n\n            <div class=\"span5 offset1 entrytitle\">\n            <h2><a href=\"developpement.html\">Développement web</a></h2>\n            <strong>Je développe vos applications web</strong>\n            <p class=\"entry\">Je réalise vos projets entièrement sur mesure, en freelance.<br />\n             <strong><a href=\"developpement.html\"><i class=\"icon-arrow-right\"></i> En savoir plus</a></strong></p>\n            </div>\n           \n          </div>\n            \n          \n            <div class=\"row\">\n          <h1><i class=\"icon-calendar\"></i> Quand ? <i class=\"icon-eur\"></i> Combien ?</h1>\n          <p>Pour discuter d'une idée ou pour un devis, n'hésitez pas à me contacter : </p>\n\n\n          <div class=\"contactinfo\">  <i class=\"icon-mail-forward\"></i> <a href=\"mailto:clement@keiruaprod.fr\" class=\"email\">clement [a] keiruaprod.fr</a><br />  <i class=\"icon-phone\"></i> <a href=\"tel:+33625449011\" class=\"tel\">06.62.28.01.87</a></div></div>\n          </div>\n      \n  </div>\n  \n  \n</div>\n\n<script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js\"></script>\n<script>window.jQuery || document.write('<script src=\"js/libs/jquery-1.7.2.min.js\"><\\/script>')</script>\n\n<script src=\"js/libs/bootstrap/bootstrap.min.js\"></script>\n<script language=\"javascript\">\n$(function() {\n    $(\".imgicon\")\n        .mouseover(function() { \n      var src = $(this).attr(\"src\").replace(\".png\", \"-hover.png\");\n            $(this).attr(\"src\", src);\n        })\n        .mouseout(function() {\n            var src = $(this).attr(\"src\").replace(\"-hover.png\", \".png\");\n            $(this).attr(\"src\", src);\n        });\n});\n</script>\n<script>\n  var _gaq=[['_setAccount','UA-26997065-1'],['_trackPageview']];\n  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];\n  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';\n  s.parentNode.insertBefore(g,s)}(document,'script'));\n</script>\n\n</body>\n</html>\n",
+      "ip": "213.186.33.4",
+      "timestamp": "2024-05-26T00:26:23.251972655Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/technologies/tech-detect.yaml",
+      "template-url": "https://templates.nuclei.sh/public/tech-detect",
+      "template-id": "tech-detect",
+      "template-path": "/home/runner/nuclei-templates/http/technologies/tech-detect.yaml",
+      "info": {
+        "name": "Wappalyzer Technology Detection",
+        "author": [
+          "hakluke"
+        ],
+        "tags": [
+          "tech"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "font-awesome",
+      "type": "http",
+      "host": "https://www.keiruaprod.fr",
+      "matched-at": "https://www.keiruaprod.fr",
+      "request": "GET / HTTP/1.1\r\nHost: www.keiruaprod.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 26 May 2024 00:26:56 GMT\r\nServer: Apache\r\nVary: Accept-Encoding\r\n\r\n<!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js lt-ie9 lt-ie8 lt-ie7\" lang=\"en\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js lt-ie9 lt-ie8\" lang=\"en\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js lt-ie9\" lang=\"en\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en\"> <!--<![endif]-->\n<head>\n  <meta charset=\"utf-8\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n\n  <title>Développeur web et formateur Symfony2/Symfony3 freelance Paris - KeiruaProd</title>\n\n    \n    <meta name=\"author\" content=\"Clement Camin\">\n    <meta name=\"description\" content=\"Développeur web Symfony2/Symfony3 freelance à Paris, j'aime concevoir des applications web de qualité et transmettre mes compétences. Travaillons ensemble !\">\n    \n\n  <meta name=\"viewport\" content=\"width=device-width\">\n\n  <link rel=\"stylesheet\" href=\"css/bootstrap.min.css\">\n  <link rel=\"stylesheet\" href=\"css/bootstrap-responsive.min.css\">\n  <link rel=\"stylesheet\" href=\"css/font-awesome.min.css\">\n  \n  <link rel=\"stylesheet\" href=\"css/style.css\">\n \n  \n  <!--[if IE 7]>\n    <link rel=\"stylesheet\" href=\"css/font-awesome-ie7.min.css\">\n  <![endif]-->\n  <script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>\n</head>\n<body>\n  <div class=\"container\">\n    <div id=\"header\">\n  <h1><a href=\"index.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'home']);\">KeiruaProd</a></h1>\n  \n  <a href=\"formations.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'formations']);\">Formations</a> | <a href=\"developpement.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'developpement']);\">Développement</a> | <a href=\"resume.html\">En résumé</a> | <a href=\"http://blog.keiruaprod.fr/\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'blog']);\">Blog</a> | <a href=\"http://tweelinks.keiruaprod.fr/\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'veille']);\">Veille</a>\n</div>\n  \n  <div>\n      \n          <div class=\"accueil entrytitle\">\n          <p>\n          Je suis Clément, ingénieur web freelance. J'aime créer des <a href=\"developpement.html\">applications web de qualité</a> et <a href=\"formations.html\">partager mon expérience</a>. Et si nous travaillions ensemble ?\n          </p>\n          </div>\n                  \n          <div class=\"row accueil_categories\">\n            <div class=\"span5 offset1 entrytitle\">\n            <h2><a href=\"formations.html\">Formations Symfony</a></h2>\n            <strong>Je propose des formations à Symfony2/Symfony3</strong><br />\n            <p class=\"entry\">Je me déplace dans vos locaux, ou me charge de louer une salle pour réaliser un cours en petit groupe, sur 2 à 3 jours.\n            <strong><a href=\"formations.html\"><i class=\"icon-arrow-right\"></i> En savoir plus</a></strong></p>\n            </div>\n            \n\n            <div class=\"span5 offset1 entrytitle\">\n            <h2><a href=\"developpement.html\">Développement web</a></h2>\n            <strong>Je développe vos applications web</strong>\n            <p class=\"entry\">Je réalise vos projets entièrement sur mesure, en freelance.<br />\n             <strong><a href=\"developpement.html\"><i class=\"icon-arrow-right\"></i> En savoir plus</a></strong></p>\n            </div>\n           \n          </div>\n            \n          \n            <div class=\"row\">\n          <h1><i class=\"icon-calendar\"></i> Quand ? <i class=\"icon-eur\"></i> Combien ?</h1>\n          <p>Pour discuter d'une idée ou pour un devis, n'hésitez pas à me contacter : </p>\n\n\n          <div class=\"contactinfo\">  <i class=\"icon-mail-forward\"></i> <a href=\"mailto:clement@keiruaprod.fr\" class=\"email\">clement [a] keiruaprod.fr</a><br />  <i class=\"icon-phone\"></i> <a href=\"tel:+33625449011\" class=\"tel\">06.62.28.01.87</a></div></div>\n          </div>\n      \n  </div>\n  \n  \n</div>\n\n<script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js\"></script>\n<script>window.jQuery || document.write('<script src=\"js/libs/jquery-1.7.2.min.js\"><\\/script>')</script>\n\n<script src=\"js/libs/bootstrap/bootstrap.min.js\"></script>\n<script language=\"javascript\">\n$(function() {\n    $(\".imgicon\")\n        .mouseover(function() { \n      var src = $(this).attr(\"src\").replace(\".png\", \"-hover.png\");\n            $(this).attr(\"src\", src);\n        })\n        .mouseout(function() {\n            var src = $(this).attr(\"src\").replace(\"-hover.png\", \".png\");\n            $(this).attr(\"src\", src);\n        });\n});\n</script>\n<script>\n  var _gaq=[['_setAccount','UA-26997065-1'],['_trackPageview']];\n  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];\n  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';\n  s.parentNode.insertBefore(g,s)}(document,'script'));\n</script>\n\n</body>\n</html>\n",
+      "ip": "213.186.33.4",
+      "timestamp": "2024-05-26T00:26:56.327762899Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/technologies/tech-detect.yaml",
+      "template-url": "https://templates.nuclei.sh/public/tech-detect",
+      "template-id": "tech-detect",
+      "template-path": "/home/runner/nuclei-templates/http/technologies/tech-detect.yaml",
+      "info": {
+        "name": "Wappalyzer Technology Detection",
+        "author": [
+          "hakluke"
+        ],
+        "tags": [
+          "tech"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "bootstrap",
+      "type": "http",
+      "host": "https://www.keiruaprod.fr",
+      "matched-at": "https://www.keiruaprod.fr",
+      "request": "GET / HTTP/1.1\r\nHost: www.keiruaprod.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 26 May 2024 00:26:56 GMT\r\nServer: Apache\r\nVary: Accept-Encoding\r\n\r\n<!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js lt-ie9 lt-ie8 lt-ie7\" lang=\"en\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js lt-ie9 lt-ie8\" lang=\"en\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js lt-ie9\" lang=\"en\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en\"> <!--<![endif]-->\n<head>\n  <meta charset=\"utf-8\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n\n  <title>Développeur web et formateur Symfony2/Symfony3 freelance Paris - KeiruaProd</title>\n\n    \n    <meta name=\"author\" content=\"Clement Camin\">\n    <meta name=\"description\" content=\"Développeur web Symfony2/Symfony3 freelance à Paris, j'aime concevoir des applications web de qualité et transmettre mes compétences. Travaillons ensemble !\">\n    \n\n  <meta name=\"viewport\" content=\"width=device-width\">\n\n  <link rel=\"stylesheet\" href=\"css/bootstrap.min.css\">\n  <link rel=\"stylesheet\" href=\"css/bootstrap-responsive.min.css\">\n  <link rel=\"stylesheet\" href=\"css/font-awesome.min.css\">\n  \n  <link rel=\"stylesheet\" href=\"css/style.css\">\n \n  \n  <!--[if IE 7]>\n    <link rel=\"stylesheet\" href=\"css/font-awesome-ie7.min.css\">\n  <![endif]-->\n  <script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>\n</head>\n<body>\n  <div class=\"container\">\n    <div id=\"header\">\n  <h1><a href=\"index.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'home']);\">KeiruaProd</a></h1>\n  \n  <a href=\"formations.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'formations']);\">Formations</a> | <a href=\"developpement.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'developpement']);\">Développement</a> | <a href=\"resume.html\">En résumé</a> | <a href=\"http://blog.keiruaprod.fr/\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'blog']);\">Blog</a> | <a href=\"http://tweelinks.keiruaprod.fr/\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'veille']);\">Veille</a>\n</div>\n  \n  <div>\n      \n          <div class=\"accueil entrytitle\">\n          <p>\n          Je suis Clément, ingénieur web freelance. J'aime créer des <a href=\"developpement.html\">applications web de qualité</a> et <a href=\"formations.html\">partager mon expérience</a>. Et si nous travaillions ensemble ?\n          </p>\n          </div>\n                  \n          <div class=\"row accueil_categories\">\n            <div class=\"span5 offset1 entrytitle\">\n            <h2><a href=\"formations.html\">Formations Symfony</a></h2>\n            <strong>Je propose des formations à Symfony2/Symfony3</strong><br />\n            <p class=\"entry\">Je me déplace dans vos locaux, ou me charge de louer une salle pour réaliser un cours en petit groupe, sur 2 à 3 jours.\n            <strong><a href=\"formations.html\"><i class=\"icon-arrow-right\"></i> En savoir plus</a></strong></p>\n            </div>\n            \n\n            <div class=\"span5 offset1 entrytitle\">\n            <h2><a href=\"developpement.html\">Développement web</a></h2>\n            <strong>Je développe vos applications web</strong>\n            <p class=\"entry\">Je réalise vos projets entièrement sur mesure, en freelance.<br />\n             <strong><a href=\"developpement.html\"><i class=\"icon-arrow-right\"></i> En savoir plus</a></strong></p>\n            </div>\n           \n          </div>\n            \n          \n            <div class=\"row\">\n          <h1><i class=\"icon-calendar\"></i> Quand ? <i class=\"icon-eur\"></i> Combien ?</h1>\n          <p>Pour discuter d'une idée ou pour un devis, n'hésitez pas à me contacter : </p>\n\n\n          <div class=\"contactinfo\">  <i class=\"icon-mail-forward\"></i> <a href=\"mailto:clement@keiruaprod.fr\" class=\"email\">clement [a] keiruaprod.fr</a><br />  <i class=\"icon-phone\"></i> <a href=\"tel:+33625449011\" class=\"tel\">06.62.28.01.87</a></div></div>\n          </div>\n      \n  </div>\n  \n  \n</div>\n\n<script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js\"></script>\n<script>window.jQuery || document.write('<script src=\"js/libs/jquery-1.7.2.min.js\"><\\/script>')</script>\n\n<script src=\"js/libs/bootstrap/bootstrap.min.js\"></script>\n<script language=\"javascript\">\n$(function() {\n    $(\".imgicon\")\n        .mouseover(function() { \n      var src = $(this).attr(\"src\").replace(\".png\", \"-hover.png\");\n            $(this).attr(\"src\", src);\n        })\n        .mouseout(function() {\n            var src = $(this).attr(\"src\").replace(\"-hover.png\", \".png\");\n            $(this).attr(\"src\", src);\n        });\n});\n</script>\n<script>\n  var _gaq=[['_setAccount','UA-26997065-1'],['_trackPageview']];\n  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];\n  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';\n  s.parentNode.insertBefore(g,s)}(document,'script'));\n</script>\n\n</body>\n</html>\n",
+      "ip": "213.186.33.4",
+      "timestamp": "2024-05-26T00:26:56.327802793Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "x-permitted-cross-domain-policies",
+      "type": "http",
+      "host": "https://www.keiruaprod.fr",
+      "matched-at": "https://www.keiruaprod.fr",
+      "request": "GET / HTTP/1.1\r\nHost: www.keiruaprod.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 26 May 2024 00:27:07 GMT\r\nServer: Apache\r\nVary: Accept-Encoding\r\n\r\n<!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js lt-ie9 lt-ie8 lt-ie7\" lang=\"en\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js lt-ie9 lt-ie8\" lang=\"en\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js lt-ie9\" lang=\"en\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en\"> <!--<![endif]-->\n<head>\n  <meta charset=\"utf-8\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n\n  <title>Développeur web et formateur Symfony2/Symfony3 freelance Paris - KeiruaProd</title>\n\n    \n    <meta name=\"author\" content=\"Clement Camin\">\n    <meta name=\"description\" content=\"Développeur web Symfony2/Symfony3 freelance à Paris, j'aime concevoir des applications web de qualité et transmettre mes compétences. Travaillons ensemble !\">\n    \n\n  <meta name=\"viewport\" content=\"width=device-width\">\n\n  <link rel=\"stylesheet\" href=\"css/bootstrap.min.css\">\n  <link rel=\"stylesheet\" href=\"css/bootstrap-responsive.min.css\">\n  <link rel=\"stylesheet\" href=\"css/font-awesome.min.css\">\n  \n  <link rel=\"stylesheet\" href=\"css/style.css\">\n \n  \n  <!--[if IE 7]>\n    <link rel=\"stylesheet\" href=\"css/font-awesome-ie7.min.css\">\n  <![endif]-->\n  <script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>\n</head>\n<body>\n  <div class=\"container\">\n    <div id=\"header\">\n  <h1><a href=\"index.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'home']);\">KeiruaProd</a></h1>\n  \n  <a href=\"formations.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'formations']);\">Formations</a> | <a href=\"developpement.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'developpement']);\">Développement</a> | <a href=\"resume.html\">En résumé</a> | <a href=\"http://blog.keiruaprod.fr/\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'blog']);\">Blog</a> | <a href=\"http://tweelinks.keiruaprod.fr/\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'veille']);\">Veille</a>\n</div>\n  \n  <div>\n      \n          <div class=\"accueil entrytitle\">\n          <p>\n          Je suis Clément, ingénieur web freelance. J'aime créer des <a href=\"developpement.html\">applications web de qualité</a> et <a href=\"formations.html\">partager mon expérience</a>. Et si nous travaillions ensemble ?\n          </p>\n          </div>\n                  \n          <div class=\"row accueil_categories\">\n            <div class=\"span5 offset1 entrytitle\">\n            <h2><a href=\"formations.html\">Formations Symfony</a></h2>\n            <strong>Je propose des formations à Symfony2/Symfony3</strong><br />\n            <p class=\"entry\">Je me déplace dans vos locaux, ou me charge de louer une salle pour réaliser un cours en petit groupe, sur 2 à 3 jours.\n            <strong><a href=\"formations.html\"><i class=\"icon-arrow-right\"></i> En savoir plus</a></strong></p>\n            </div>\n            \n\n            <div class=\"span5 offset1 entrytitle\">\n            <h2><a href=\"developpement.html\">Développement web</a></h2>\n            <strong>Je développe vos applications web</strong>\n            <p class=\"entry\">Je réalise vos projets entièrement sur mesure, en freelance.<br />\n             <strong><a href=\"developpement.html\"><i class=\"icon-arrow-right\"></i> En savoir plus</a></strong></p>\n            </div>\n           \n          </div>\n            \n          \n            <div class=\"row\">\n          <h1><i class=\"icon-calendar\"></i> Quand ? <i class=\"icon-eur\"></i> Combien ?</h1>\n          <p>Pour discuter d'une idée ou pour un devis, n'hésitez pas à me contacter : </p>\n\n\n          <div class=\"contactinfo\">  <i class=\"icon-mail-forward\"></i> <a href=\"mailto:clement@keiruaprod.fr\" class=\"email\">clement [a] keiruaprod.fr</a><br />  <i class=\"icon-phone\"></i> <a href=\"tel:+33625449011\" class=\"tel\">06.62.28.01.87</a></div></div>\n          </div>\n      \n  </div>\n  \n  \n</div>\n\n<script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js\"></script>\n<script>window.jQuery || document.write('<script src=\"js/libs/jquery-1.7.2.min.js\"><\\/script>')</script>\n\n<script src=\"js/libs/bootstrap/bootstrap.min.js\"></script>\n<script language=\"javascript\">\n$(function() {\n    $(\".imgicon\")\n        .mouseover(function() { \n      var src = $(this).attr(\"src\").replace(\".png\", \"-hover.png\");\n            $(this).attr(\"src\", src);\n        })\n        .mouseout(function() {\n            var src = $(this).attr(\"src\").replace(\"-hover.png\", \".png\");\n            $(this).attr(\"src\", src);\n        });\n});\n</script>\n<script>\n  var _gaq=[['_setAccount','UA-26997065-1'],['_trackPageview']];\n  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];\n  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';\n  s.parentNode.insertBefore(g,s)}(document,'script'));\n</script>\n\n</body>\n</html>\n",
+      "ip": "213.186.33.4",
+      "timestamp": "2024-05-26T00:27:07.745456327Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "referrer-policy",
+      "type": "http",
+      "host": "https://www.keiruaprod.fr",
+      "matched-at": "https://www.keiruaprod.fr",
+      "request": "GET / HTTP/1.1\r\nHost: www.keiruaprod.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 26 May 2024 00:27:07 GMT\r\nServer: Apache\r\nVary: Accept-Encoding\r\n\r\n<!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js lt-ie9 lt-ie8 lt-ie7\" lang=\"en\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js lt-ie9 lt-ie8\" lang=\"en\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js lt-ie9\" lang=\"en\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en\"> <!--<![endif]-->\n<head>\n  <meta charset=\"utf-8\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n\n  <title>Développeur web et formateur Symfony2/Symfony3 freelance Paris - KeiruaProd</title>\n\n    \n    <meta name=\"author\" content=\"Clement Camin\">\n    <meta name=\"description\" content=\"Développeur web Symfony2/Symfony3 freelance à Paris, j'aime concevoir des applications web de qualité et transmettre mes compétences. Travaillons ensemble !\">\n    \n\n  <meta name=\"viewport\" content=\"width=device-width\">\n\n  <link rel=\"stylesheet\" href=\"css/bootstrap.min.css\">\n  <link rel=\"stylesheet\" href=\"css/bootstrap-responsive.min.css\">\n  <link rel=\"stylesheet\" href=\"css/font-awesome.min.css\">\n  \n  <link rel=\"stylesheet\" href=\"css/style.css\">\n \n  \n  <!--[if IE 7]>\n    <link rel=\"stylesheet\" href=\"css/font-awesome-ie7.min.css\">\n  <![endif]-->\n  <script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>\n</head>\n<body>\n  <div class=\"container\">\n    <div id=\"header\">\n  <h1><a href=\"index.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'home']);\">KeiruaProd</a></h1>\n  \n  <a href=\"formations.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'formations']);\">Formations</a> | <a href=\"developpement.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'developpement']);\">Développement</a> | <a href=\"resume.html\">En résumé</a> | <a href=\"http://blog.keiruaprod.fr/\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'blog']);\">Blog</a> | <a href=\"http://tweelinks.keiruaprod.fr/\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'veille']);\">Veille</a>\n</div>\n  \n  <div>\n      \n          <div class=\"accueil entrytitle\">\n          <p>\n          Je suis Clément, ingénieur web freelance. J'aime créer des <a href=\"developpement.html\">applications web de qualité</a> et <a href=\"formations.html\">partager mon expérience</a>. Et si nous travaillions ensemble ?\n          </p>\n          </div>\n                  \n          <div class=\"row accueil_categories\">\n            <div class=\"span5 offset1 entrytitle\">\n            <h2><a href=\"formations.html\">Formations Symfony</a></h2>\n            <strong>Je propose des formations à Symfony2/Symfony3</strong><br />\n            <p class=\"entry\">Je me déplace dans vos locaux, ou me charge de louer une salle pour réaliser un cours en petit groupe, sur 2 à 3 jours.\n            <strong><a href=\"formations.html\"><i class=\"icon-arrow-right\"></i> En savoir plus</a></strong></p>\n            </div>\n            \n\n            <div class=\"span5 offset1 entrytitle\">\n            <h2><a href=\"developpement.html\">Développement web</a></h2>\n            <strong>Je développe vos applications web</strong>\n            <p class=\"entry\">Je réalise vos projets entièrement sur mesure, en freelance.<br />\n             <strong><a href=\"developpement.html\"><i class=\"icon-arrow-right\"></i> En savoir plus</a></strong></p>\n            </div>\n           \n          </div>\n            \n          \n            <div class=\"row\">\n          <h1><i class=\"icon-calendar\"></i> Quand ? <i class=\"icon-eur\"></i> Combien ?</h1>\n          <p>Pour discuter d'une idée ou pour un devis, n'hésitez pas à me contacter : </p>\n\n\n          <div class=\"contactinfo\">  <i class=\"icon-mail-forward\"></i> <a href=\"mailto:clement@keiruaprod.fr\" class=\"email\">clement [a] keiruaprod.fr</a><br />  <i class=\"icon-phone\"></i> <a href=\"tel:+33625449011\" class=\"tel\">06.62.28.01.87</a></div></div>\n          </div>\n      \n  </div>\n  \n  \n</div>\n\n<script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js\"></script>\n<script>window.jQuery || document.write('<script src=\"js/libs/jquery-1.7.2.min.js\"><\\/script>')</script>\n\n<script src=\"js/libs/bootstrap/bootstrap.min.js\"></script>\n<script language=\"javascript\">\n$(function() {\n    $(\".imgicon\")\n        .mouseover(function() { \n      var src = $(this).attr(\"src\").replace(\".png\", \"-hover.png\");\n            $(this).attr(\"src\", src);\n        })\n        .mouseout(function() {\n            var src = $(this).attr(\"src\").replace(\"-hover.png\", \".png\");\n            $(this).attr(\"src\", src);\n        });\n});\n</script>\n<script>\n  var _gaq=[['_setAccount','UA-26997065-1'],['_trackPageview']];\n  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];\n  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';\n  s.parentNode.insertBefore(g,s)}(document,'script'));\n</script>\n\n</body>\n</html>\n",
+      "ip": "213.186.33.4",
+      "timestamp": "2024-05-26T00:27:07.745496963Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "cross-origin-embedder-policy",
+      "type": "http",
+      "host": "https://www.keiruaprod.fr",
+      "matched-at": "https://www.keiruaprod.fr",
+      "request": "GET / HTTP/1.1\r\nHost: www.keiruaprod.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 26 May 2024 00:27:07 GMT\r\nServer: Apache\r\nVary: Accept-Encoding\r\n\r\n<!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js lt-ie9 lt-ie8 lt-ie7\" lang=\"en\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js lt-ie9 lt-ie8\" lang=\"en\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js lt-ie9\" lang=\"en\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en\"> <!--<![endif]-->\n<head>\n  <meta charset=\"utf-8\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n\n  <title>Développeur web et formateur Symfony2/Symfony3 freelance Paris - KeiruaProd</title>\n\n    \n    <meta name=\"author\" content=\"Clement Camin\">\n    <meta name=\"description\" content=\"Développeur web Symfony2/Symfony3 freelance à Paris, j'aime concevoir des applications web de qualité et transmettre mes compétences. Travaillons ensemble !\">\n    \n\n  <meta name=\"viewport\" content=\"width=device-width\">\n\n  <link rel=\"stylesheet\" href=\"css/bootstrap.min.css\">\n  <link rel=\"stylesheet\" href=\"css/bootstrap-responsive.min.css\">\n  <link rel=\"stylesheet\" href=\"css/font-awesome.min.css\">\n  \n  <link rel=\"stylesheet\" href=\"css/style.css\">\n \n  \n  <!--[if IE 7]>\n    <link rel=\"stylesheet\" href=\"css/font-awesome-ie7.min.css\">\n  <![endif]-->\n  <script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>\n</head>\n<body>\n  <div class=\"container\">\n    <div id=\"header\">\n  <h1><a href=\"index.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'home']);\">KeiruaProd</a></h1>\n  \n  <a href=\"formations.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'formations']);\">Formations</a> | <a href=\"developpement.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'developpement']);\">Développement</a> | <a href=\"resume.html\">En résumé</a> | <a href=\"http://blog.keiruaprod.fr/\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'blog']);\">Blog</a> | <a href=\"http://tweelinks.keiruaprod.fr/\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'veille']);\">Veille</a>\n</div>\n  \n  <div>\n      \n          <div class=\"accueil entrytitle\">\n          <p>\n          Je suis Clément, ingénieur web freelance. J'aime créer des <a href=\"developpement.html\">applications web de qualité</a> et <a href=\"formations.html\">partager mon expérience</a>. Et si nous travaillions ensemble ?\n          </p>\n          </div>\n                  \n          <div class=\"row accueil_categories\">\n            <div class=\"span5 offset1 entrytitle\">\n            <h2><a href=\"formations.html\">Formations Symfony</a></h2>\n            <strong>Je propose des formations à Symfony2/Symfony3</strong><br />\n            <p class=\"entry\">Je me déplace dans vos locaux, ou me charge de louer une salle pour réaliser un cours en petit groupe, sur 2 à 3 jours.\n            <strong><a href=\"formations.html\"><i class=\"icon-arrow-right\"></i> En savoir plus</a></strong></p>\n            </div>\n            \n\n            <div class=\"span5 offset1 entrytitle\">\n            <h2><a href=\"developpement.html\">Développement web</a></h2>\n            <strong>Je développe vos applications web</strong>\n            <p class=\"entry\">Je réalise vos projets entièrement sur mesure, en freelance.<br />\n             <strong><a href=\"developpement.html\"><i class=\"icon-arrow-right\"></i> En savoir plus</a></strong></p>\n            </div>\n           \n          </div>\n            \n          \n            <div class=\"row\">\n          <h1><i class=\"icon-calendar\"></i> Quand ? <i class=\"icon-eur\"></i> Combien ?</h1>\n          <p>Pour discuter d'une idée ou pour un devis, n'hésitez pas à me contacter : </p>\n\n\n          <div class=\"contactinfo\">  <i class=\"icon-mail-forward\"></i> <a href=\"mailto:clement@keiruaprod.fr\" class=\"email\">clement [a] keiruaprod.fr</a><br />  <i class=\"icon-phone\"></i> <a href=\"tel:+33625449011\" class=\"tel\">06.62.28.01.87</a></div></div>\n          </div>\n      \n  </div>\n  \n  \n</div>\n\n<script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js\"></script>\n<script>window.jQuery || document.write('<script src=\"js/libs/jquery-1.7.2.min.js\"><\\/script>')</script>\n\n<script src=\"js/libs/bootstrap/bootstrap.min.js\"></script>\n<script language=\"javascript\">\n$(function() {\n    $(\".imgicon\")\n        .mouseover(function() { \n      var src = $(this).attr(\"src\").replace(\".png\", \"-hover.png\");\n            $(this).attr(\"src\", src);\n        })\n        .mouseout(function() {\n            var src = $(this).attr(\"src\").replace(\"-hover.png\", \".png\");\n            $(this).attr(\"src\", src);\n        });\n});\n</script>\n<script>\n  var _gaq=[['_setAccount','UA-26997065-1'],['_trackPageview']];\n  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];\n  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';\n  s.parentNode.insertBefore(g,s)}(document,'script'));\n</script>\n\n</body>\n</html>\n",
+      "ip": "213.186.33.4",
+      "timestamp": "2024-05-26T00:27:07.745513393Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "cross-origin-opener-policy",
+      "type": "http",
+      "host": "https://www.keiruaprod.fr",
+      "matched-at": "https://www.keiruaprod.fr",
+      "request": "GET / HTTP/1.1\r\nHost: www.keiruaprod.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 26 May 2024 00:27:07 GMT\r\nServer: Apache\r\nVary: Accept-Encoding\r\n\r\n<!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js lt-ie9 lt-ie8 lt-ie7\" lang=\"en\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js lt-ie9 lt-ie8\" lang=\"en\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js lt-ie9\" lang=\"en\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en\"> <!--<![endif]-->\n<head>\n  <meta charset=\"utf-8\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n\n  <title>Développeur web et formateur Symfony2/Symfony3 freelance Paris - KeiruaProd</title>\n\n    \n    <meta name=\"author\" content=\"Clement Camin\">\n    <meta name=\"description\" content=\"Développeur web Symfony2/Symfony3 freelance à Paris, j'aime concevoir des applications web de qualité et transmettre mes compétences. Travaillons ensemble !\">\n    \n\n  <meta name=\"viewport\" content=\"width=device-width\">\n\n  <link rel=\"stylesheet\" href=\"css/bootstrap.min.css\">\n  <link rel=\"stylesheet\" href=\"css/bootstrap-responsive.min.css\">\n  <link rel=\"stylesheet\" href=\"css/font-awesome.min.css\">\n  \n  <link rel=\"stylesheet\" href=\"css/style.css\">\n \n  \n  <!--[if IE 7]>\n    <link rel=\"stylesheet\" href=\"css/font-awesome-ie7.min.css\">\n  <![endif]-->\n  <script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>\n</head>\n<body>\n  <div class=\"container\">\n    <div id=\"header\">\n  <h1><a href=\"index.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'home']);\">KeiruaProd</a></h1>\n  \n  <a href=\"formations.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'formations']);\">Formations</a> | <a href=\"developpement.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'developpement']);\">Développement</a> | <a href=\"resume.html\">En résumé</a> | <a href=\"http://blog.keiruaprod.fr/\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'blog']);\">Blog</a> | <a href=\"http://tweelinks.keiruaprod.fr/\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'veille']);\">Veille</a>\n</div>\n  \n  <div>\n      \n          <div class=\"accueil entrytitle\">\n          <p>\n          Je suis Clément, ingénieur web freelance. J'aime créer des <a href=\"developpement.html\">applications web de qualité</a> et <a href=\"formations.html\">partager mon expérience</a>. Et si nous travaillions ensemble ?\n          </p>\n          </div>\n                  \n          <div class=\"row accueil_categories\">\n            <div class=\"span5 offset1 entrytitle\">\n            <h2><a href=\"formations.html\">Formations Symfony</a></h2>\n            <strong>Je propose des formations à Symfony2/Symfony3</strong><br />\n            <p class=\"entry\">Je me déplace dans vos locaux, ou me charge de louer une salle pour réaliser un cours en petit groupe, sur 2 à 3 jours.\n            <strong><a href=\"formations.html\"><i class=\"icon-arrow-right\"></i> En savoir plus</a></strong></p>\n            </div>\n            \n\n            <div class=\"span5 offset1 entrytitle\">\n            <h2><a href=\"developpement.html\">Développement web</a></h2>\n            <strong>Je développe vos applications web</strong>\n            <p class=\"entry\">Je réalise vos projets entièrement sur mesure, en freelance.<br />\n             <strong><a href=\"developpement.html\"><i class=\"icon-arrow-right\"></i> En savoir plus</a></strong></p>\n            </div>\n           \n          </div>\n            \n          \n            <div class=\"row\">\n          <h1><i class=\"icon-calendar\"></i> Quand ? <i class=\"icon-eur\"></i> Combien ?</h1>\n          <p>Pour discuter d'une idée ou pour un devis, n'hésitez pas à me contacter : </p>\n\n\n          <div class=\"contactinfo\">  <i class=\"icon-mail-forward\"></i> <a href=\"mailto:clement@keiruaprod.fr\" class=\"email\">clement [a] keiruaprod.fr</a><br />  <i class=\"icon-phone\"></i> <a href=\"tel:+33625449011\" class=\"tel\">06.62.28.01.87</a></div></div>\n          </div>\n      \n  </div>\n  \n  \n</div>\n\n<script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js\"></script>\n<script>window.jQuery || document.write('<script src=\"js/libs/jquery-1.7.2.min.js\"><\\/script>')</script>\n\n<script src=\"js/libs/bootstrap/bootstrap.min.js\"></script>\n<script language=\"javascript\">\n$(function() {\n    $(\".imgicon\")\n        .mouseover(function() { \n      var src = $(this).attr(\"src\").replace(\".png\", \"-hover.png\");\n            $(this).attr(\"src\", src);\n        })\n        .mouseout(function() {\n            var src = $(this).attr(\"src\").replace(\"-hover.png\", \".png\");\n            $(this).attr(\"src\", src);\n        });\n});\n</script>\n<script>\n  var _gaq=[['_setAccount','UA-26997065-1'],['_trackPageview']];\n  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];\n  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';\n  s.parentNode.insertBefore(g,s)}(document,'script'));\n</script>\n\n</body>\n</html>\n",
+      "ip": "213.186.33.4",
+      "timestamp": "2024-05-26T00:27:07.745529413Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "cross-origin-resource-policy",
+      "type": "http",
+      "host": "https://www.keiruaprod.fr",
+      "matched-at": "https://www.keiruaprod.fr",
+      "request": "GET / HTTP/1.1\r\nHost: www.keiruaprod.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 26 May 2024 00:27:07 GMT\r\nServer: Apache\r\nVary: Accept-Encoding\r\n\r\n<!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js lt-ie9 lt-ie8 lt-ie7\" lang=\"en\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js lt-ie9 lt-ie8\" lang=\"en\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js lt-ie9\" lang=\"en\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en\"> <!--<![endif]-->\n<head>\n  <meta charset=\"utf-8\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n\n  <title>Développeur web et formateur Symfony2/Symfony3 freelance Paris - KeiruaProd</title>\n\n    \n    <meta name=\"author\" content=\"Clement Camin\">\n    <meta name=\"description\" content=\"Développeur web Symfony2/Symfony3 freelance à Paris, j'aime concevoir des applications web de qualité et transmettre mes compétences. Travaillons ensemble !\">\n    \n\n  <meta name=\"viewport\" content=\"width=device-width\">\n\n  <link rel=\"stylesheet\" href=\"css/bootstrap.min.css\">\n  <link rel=\"stylesheet\" href=\"css/bootstrap-responsive.min.css\">\n  <link rel=\"stylesheet\" href=\"css/font-awesome.min.css\">\n  \n  <link rel=\"stylesheet\" href=\"css/style.css\">\n \n  \n  <!--[if IE 7]>\n    <link rel=\"stylesheet\" href=\"css/font-awesome-ie7.min.css\">\n  <![endif]-->\n  <script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>\n</head>\n<body>\n  <div class=\"container\">\n    <div id=\"header\">\n  <h1><a href=\"index.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'home']);\">KeiruaProd</a></h1>\n  \n  <a href=\"formations.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'formations']);\">Formations</a> | <a href=\"developpement.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'developpement']);\">Développement</a> | <a href=\"resume.html\">En résumé</a> | <a href=\"http://blog.keiruaprod.fr/\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'blog']);\">Blog</a> | <a href=\"http://tweelinks.keiruaprod.fr/\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'veille']);\">Veille</a>\n</div>\n  \n  <div>\n      \n          <div class=\"accueil entrytitle\">\n          <p>\n          Je suis Clément, ingénieur web freelance. J'aime créer des <a href=\"developpement.html\">applications web de qualité</a> et <a href=\"formations.html\">partager mon expérience</a>. Et si nous travaillions ensemble ?\n          </p>\n          </div>\n                  \n          <div class=\"row accueil_categories\">\n            <div class=\"span5 offset1 entrytitle\">\n            <h2><a href=\"formations.html\">Formations Symfony</a></h2>\n            <strong>Je propose des formations à Symfony2/Symfony3</strong><br />\n            <p class=\"entry\">Je me déplace dans vos locaux, ou me charge de louer une salle pour réaliser un cours en petit groupe, sur 2 à 3 jours.\n            <strong><a href=\"formations.html\"><i class=\"icon-arrow-right\"></i> En savoir plus</a></strong></p>\n            </div>\n            \n\n            <div class=\"span5 offset1 entrytitle\">\n            <h2><a href=\"developpement.html\">Développement web</a></h2>\n            <strong>Je développe vos applications web</strong>\n            <p class=\"entry\">Je réalise vos projets entièrement sur mesure, en freelance.<br />\n             <strong><a href=\"developpement.html\"><i class=\"icon-arrow-right\"></i> En savoir plus</a></strong></p>\n            </div>\n           \n          </div>\n            \n          \n            <div class=\"row\">\n          <h1><i class=\"icon-calendar\"></i> Quand ? <i class=\"icon-eur\"></i> Combien ?</h1>\n          <p>Pour discuter d'une idée ou pour un devis, n'hésitez pas à me contacter : </p>\n\n\n          <div class=\"contactinfo\">  <i class=\"icon-mail-forward\"></i> <a href=\"mailto:clement@keiruaprod.fr\" class=\"email\">clement [a] keiruaprod.fr</a><br />  <i class=\"icon-phone\"></i> <a href=\"tel:+33625449011\" class=\"tel\">06.62.28.01.87</a></div></div>\n          </div>\n      \n  </div>\n  \n  \n</div>\n\n<script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js\"></script>\n<script>window.jQuery || document.write('<script src=\"js/libs/jquery-1.7.2.min.js\"><\\/script>')</script>\n\n<script src=\"js/libs/bootstrap/bootstrap.min.js\"></script>\n<script language=\"javascript\">\n$(function() {\n    $(\".imgicon\")\n        .mouseover(function() { \n      var src = $(this).attr(\"src\").replace(\".png\", \"-hover.png\");\n            $(this).attr(\"src\", src);\n        })\n        .mouseout(function() {\n            var src = $(this).attr(\"src\").replace(\"-hover.png\", \".png\");\n            $(this).attr(\"src\", src);\n        });\n});\n</script>\n<script>\n  var _gaq=[['_setAccount','UA-26997065-1'],['_trackPageview']];\n  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];\n  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';\n  s.parentNode.insertBefore(g,s)}(document,'script'));\n</script>\n\n</body>\n</html>\n",
+      "ip": "213.186.33.4",
+      "timestamp": "2024-05-26T00:27:07.745542447Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "strict-transport-security",
+      "type": "http",
+      "host": "https://www.keiruaprod.fr",
+      "matched-at": "https://www.keiruaprod.fr",
+      "request": "GET / HTTP/1.1\r\nHost: www.keiruaprod.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 26 May 2024 00:27:07 GMT\r\nServer: Apache\r\nVary: Accept-Encoding\r\n\r\n<!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js lt-ie9 lt-ie8 lt-ie7\" lang=\"en\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js lt-ie9 lt-ie8\" lang=\"en\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js lt-ie9\" lang=\"en\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en\"> <!--<![endif]-->\n<head>\n  <meta charset=\"utf-8\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n\n  <title>Développeur web et formateur Symfony2/Symfony3 freelance Paris - KeiruaProd</title>\n\n    \n    <meta name=\"author\" content=\"Clement Camin\">\n    <meta name=\"description\" content=\"Développeur web Symfony2/Symfony3 freelance à Paris, j'aime concevoir des applications web de qualité et transmettre mes compétences. Travaillons ensemble !\">\n    \n\n  <meta name=\"viewport\" content=\"width=device-width\">\n\n  <link rel=\"stylesheet\" href=\"css/bootstrap.min.css\">\n  <link rel=\"stylesheet\" href=\"css/bootstrap-responsive.min.css\">\n  <link rel=\"stylesheet\" href=\"css/font-awesome.min.css\">\n  \n  <link rel=\"stylesheet\" href=\"css/style.css\">\n \n  \n  <!--[if IE 7]>\n    <link rel=\"stylesheet\" href=\"css/font-awesome-ie7.min.css\">\n  <![endif]-->\n  <script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>\n</head>\n<body>\n  <div class=\"container\">\n    <div id=\"header\">\n  <h1><a href=\"index.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'home']);\">KeiruaProd</a></h1>\n  \n  <a href=\"formations.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'formations']);\">Formations</a> | <a href=\"developpement.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'developpement']);\">Développement</a> | <a href=\"resume.html\">En résumé</a> | <a href=\"http://blog.keiruaprod.fr/\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'blog']);\">Blog</a> | <a href=\"http://tweelinks.keiruaprod.fr/\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'veille']);\">Veille</a>\n</div>\n  \n  <div>\n      \n          <div class=\"accueil entrytitle\">\n          <p>\n          Je suis Clément, ingénieur web freelance. J'aime créer des <a href=\"developpement.html\">applications web de qualité</a> et <a href=\"formations.html\">partager mon expérience</a>. Et si nous travaillions ensemble ?\n          </p>\n          </div>\n                  \n          <div class=\"row accueil_categories\">\n            <div class=\"span5 offset1 entrytitle\">\n            <h2><a href=\"formations.html\">Formations Symfony</a></h2>\n            <strong>Je propose des formations à Symfony2/Symfony3</strong><br />\n            <p class=\"entry\">Je me déplace dans vos locaux, ou me charge de louer une salle pour réaliser un cours en petit groupe, sur 2 à 3 jours.\n            <strong><a href=\"formations.html\"><i class=\"icon-arrow-right\"></i> En savoir plus</a></strong></p>\n            </div>\n            \n\n            <div class=\"span5 offset1 entrytitle\">\n            <h2><a href=\"developpement.html\">Développement web</a></h2>\n            <strong>Je développe vos applications web</strong>\n            <p class=\"entry\">Je réalise vos projets entièrement sur mesure, en freelance.<br />\n             <strong><a href=\"developpement.html\"><i class=\"icon-arrow-right\"></i> En savoir plus</a></strong></p>\n            </div>\n           \n          </div>\n            \n          \n            <div class=\"row\">\n          <h1><i class=\"icon-calendar\"></i> Quand ? <i class=\"icon-eur\"></i> Combien ?</h1>\n          <p>Pour discuter d'une idée ou pour un devis, n'hésitez pas à me contacter : </p>\n\n\n          <div class=\"contactinfo\">  <i class=\"icon-mail-forward\"></i> <a href=\"mailto:clement@keiruaprod.fr\" class=\"email\">clement [a] keiruaprod.fr</a><br />  <i class=\"icon-phone\"></i> <a href=\"tel:+33625449011\" class=\"tel\">06.62.28.01.87</a></div></div>\n          </div>\n      \n  </div>\n  \n  \n</div>\n\n<script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js\"></script>\n<script>window.jQuery || document.write('<script src=\"js/libs/jquery-1.7.2.min.js\"><\\/script>')</script>\n\n<script src=\"js/libs/bootstrap/bootstrap.min.js\"></script>\n<script language=\"javascript\">\n$(function() {\n    $(\".imgicon\")\n        .mouseover(function() { \n      var src = $(this).attr(\"src\").replace(\".png\", \"-hover.png\");\n            $(this).attr(\"src\", src);\n        })\n        .mouseout(function() {\n            var src = $(this).attr(\"src\").replace(\"-hover.png\", \".png\");\n            $(this).attr(\"src\", src);\n        });\n});\n</script>\n<script>\n  var _gaq=[['_setAccount','UA-26997065-1'],['_trackPageview']];\n  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];\n  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';\n  s.parentNode.insertBefore(g,s)}(document,'script'));\n</script>\n\n</body>\n</html>\n",
+      "ip": "213.186.33.4",
+      "timestamp": "2024-05-26T00:27:07.74555473Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "permissions-policy",
+      "type": "http",
+      "host": "https://www.keiruaprod.fr",
+      "matched-at": "https://www.keiruaprod.fr",
+      "request": "GET / HTTP/1.1\r\nHost: www.keiruaprod.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 26 May 2024 00:27:07 GMT\r\nServer: Apache\r\nVary: Accept-Encoding\r\n\r\n<!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js lt-ie9 lt-ie8 lt-ie7\" lang=\"en\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js lt-ie9 lt-ie8\" lang=\"en\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js lt-ie9\" lang=\"en\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en\"> <!--<![endif]-->\n<head>\n  <meta charset=\"utf-8\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n\n  <title>Développeur web et formateur Symfony2/Symfony3 freelance Paris - KeiruaProd</title>\n\n    \n    <meta name=\"author\" content=\"Clement Camin\">\n    <meta name=\"description\" content=\"Développeur web Symfony2/Symfony3 freelance à Paris, j'aime concevoir des applications web de qualité et transmettre mes compétences. Travaillons ensemble !\">\n    \n\n  <meta name=\"viewport\" content=\"width=device-width\">\n\n  <link rel=\"stylesheet\" href=\"css/bootstrap.min.css\">\n  <link rel=\"stylesheet\" href=\"css/bootstrap-responsive.min.css\">\n  <link rel=\"stylesheet\" href=\"css/font-awesome.min.css\">\n  \n  <link rel=\"stylesheet\" href=\"css/style.css\">\n \n  \n  <!--[if IE 7]>\n    <link rel=\"stylesheet\" href=\"css/font-awesome-ie7.min.css\">\n  <![endif]-->\n  <script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>\n</head>\n<body>\n  <div class=\"container\">\n    <div id=\"header\">\n  <h1><a href=\"index.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'home']);\">KeiruaProd</a></h1>\n  \n  <a href=\"formations.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'formations']);\">Formations</a> | <a href=\"developpement.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'developpement']);\">Développement</a> | <a href=\"resume.html\">En résumé</a> | <a href=\"http://blog.keiruaprod.fr/\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'blog']);\">Blog</a> | <a href=\"http://tweelinks.keiruaprod.fr/\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'veille']);\">Veille</a>\n</div>\n  \n  <div>\n      \n          <div class=\"accueil entrytitle\">\n          <p>\n          Je suis Clément, ingénieur web freelance. J'aime créer des <a href=\"developpement.html\">applications web de qualité</a> et <a href=\"formations.html\">partager mon expérience</a>. Et si nous travaillions ensemble ?\n          </p>\n          </div>\n                  \n          <div class=\"row accueil_categories\">\n            <div class=\"span5 offset1 entrytitle\">\n            <h2><a href=\"formations.html\">Formations Symfony</a></h2>\n            <strong>Je propose des formations à Symfony2/Symfony3</strong><br />\n            <p class=\"entry\">Je me déplace dans vos locaux, ou me charge de louer une salle pour réaliser un cours en petit groupe, sur 2 à 3 jours.\n            <strong><a href=\"formations.html\"><i class=\"icon-arrow-right\"></i> En savoir plus</a></strong></p>\n            </div>\n            \n\n            <div class=\"span5 offset1 entrytitle\">\n            <h2><a href=\"developpement.html\">Développement web</a></h2>\n            <strong>Je développe vos applications web</strong>\n            <p class=\"entry\">Je réalise vos projets entièrement sur mesure, en freelance.<br />\n             <strong><a href=\"developpement.html\"><i class=\"icon-arrow-right\"></i> En savoir plus</a></strong></p>\n            </div>\n           \n          </div>\n            \n          \n            <div class=\"row\">\n          <h1><i class=\"icon-calendar\"></i> Quand ? <i class=\"icon-eur\"></i> Combien ?</h1>\n          <p>Pour discuter d'une idée ou pour un devis, n'hésitez pas à me contacter : </p>\n\n\n          <div class=\"contactinfo\">  <i class=\"icon-mail-forward\"></i> <a href=\"mailto:clement@keiruaprod.fr\" class=\"email\">clement [a] keiruaprod.fr</a><br />  <i class=\"icon-phone\"></i> <a href=\"tel:+33625449011\" class=\"tel\">06.62.28.01.87</a></div></div>\n          </div>\n      \n  </div>\n  \n  \n</div>\n\n<script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js\"></script>\n<script>window.jQuery || document.write('<script src=\"js/libs/jquery-1.7.2.min.js\"><\\/script>')</script>\n\n<script src=\"js/libs/bootstrap/bootstrap.min.js\"></script>\n<script language=\"javascript\">\n$(function() {\n    $(\".imgicon\")\n        .mouseover(function() { \n      var src = $(this).attr(\"src\").replace(\".png\", \"-hover.png\");\n            $(this).attr(\"src\", src);\n        })\n        .mouseout(function() {\n            var src = $(this).attr(\"src\").replace(\"-hover.png\", \".png\");\n            $(this).attr(\"src\", src);\n        });\n});\n</script>\n<script>\n  var _gaq=[['_setAccount','UA-26997065-1'],['_trackPageview']];\n  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];\n  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';\n  s.parentNode.insertBefore(g,s)}(document,'script'));\n</script>\n\n</body>\n</html>\n",
+      "ip": "213.186.33.4",
+      "timestamp": "2024-05-26T00:27:07.74557089Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "x-frame-options",
+      "type": "http",
+      "host": "https://www.keiruaprod.fr",
+      "matched-at": "https://www.keiruaprod.fr",
+      "request": "GET / HTTP/1.1\r\nHost: www.keiruaprod.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 26 May 2024 00:27:07 GMT\r\nServer: Apache\r\nVary: Accept-Encoding\r\n\r\n<!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js lt-ie9 lt-ie8 lt-ie7\" lang=\"en\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js lt-ie9 lt-ie8\" lang=\"en\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js lt-ie9\" lang=\"en\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en\"> <!--<![endif]-->\n<head>\n  <meta charset=\"utf-8\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n\n  <title>Développeur web et formateur Symfony2/Symfony3 freelance Paris - KeiruaProd</title>\n\n    \n    <meta name=\"author\" content=\"Clement Camin\">\n    <meta name=\"description\" content=\"Développeur web Symfony2/Symfony3 freelance à Paris, j'aime concevoir des applications web de qualité et transmettre mes compétences. Travaillons ensemble !\">\n    \n\n  <meta name=\"viewport\" content=\"width=device-width\">\n\n  <link rel=\"stylesheet\" href=\"css/bootstrap.min.css\">\n  <link rel=\"stylesheet\" href=\"css/bootstrap-responsive.min.css\">\n  <link rel=\"stylesheet\" href=\"css/font-awesome.min.css\">\n  \n  <link rel=\"stylesheet\" href=\"css/style.css\">\n \n  \n  <!--[if IE 7]>\n    <link rel=\"stylesheet\" href=\"css/font-awesome-ie7.min.css\">\n  <![endif]-->\n  <script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>\n</head>\n<body>\n  <div class=\"container\">\n    <div id=\"header\">\n  <h1><a href=\"index.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'home']);\">KeiruaProd</a></h1>\n  \n  <a href=\"formations.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'formations']);\">Formations</a> | <a href=\"developpement.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'developpement']);\">Développement</a> | <a href=\"resume.html\">En résumé</a> | <a href=\"http://blog.keiruaprod.fr/\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'blog']);\">Blog</a> | <a href=\"http://tweelinks.keiruaprod.fr/\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'veille']);\">Veille</a>\n</div>\n  \n  <div>\n      \n          <div class=\"accueil entrytitle\">\n          <p>\n          Je suis Clément, ingénieur web freelance. J'aime créer des <a href=\"developpement.html\">applications web de qualité</a> et <a href=\"formations.html\">partager mon expérience</a>. Et si nous travaillions ensemble ?\n          </p>\n          </div>\n                  \n          <div class=\"row accueil_categories\">\n            <div class=\"span5 offset1 entrytitle\">\n            <h2><a href=\"formations.html\">Formations Symfony</a></h2>\n            <strong>Je propose des formations à Symfony2/Symfony3</strong><br />\n            <p class=\"entry\">Je me déplace dans vos locaux, ou me charge de louer une salle pour réaliser un cours en petit groupe, sur 2 à 3 jours.\n            <strong><a href=\"formations.html\"><i class=\"icon-arrow-right\"></i> En savoir plus</a></strong></p>\n            </div>\n            \n\n            <div class=\"span5 offset1 entrytitle\">\n            <h2><a href=\"developpement.html\">Développement web</a></h2>\n            <strong>Je développe vos applications web</strong>\n            <p class=\"entry\">Je réalise vos projets entièrement sur mesure, en freelance.<br />\n             <strong><a href=\"developpement.html\"><i class=\"icon-arrow-right\"></i> En savoir plus</a></strong></p>\n            </div>\n           \n          </div>\n            \n          \n            <div class=\"row\">\n          <h1><i class=\"icon-calendar\"></i> Quand ? <i class=\"icon-eur\"></i> Combien ?</h1>\n          <p>Pour discuter d'une idée ou pour un devis, n'hésitez pas à me contacter : </p>\n\n\n          <div class=\"contactinfo\">  <i class=\"icon-mail-forward\"></i> <a href=\"mailto:clement@keiruaprod.fr\" class=\"email\">clement [a] keiruaprod.fr</a><br />  <i class=\"icon-phone\"></i> <a href=\"tel:+33625449011\" class=\"tel\">06.62.28.01.87</a></div></div>\n          </div>\n      \n  </div>\n  \n  \n</div>\n\n<script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js\"></script>\n<script>window.jQuery || document.write('<script src=\"js/libs/jquery-1.7.2.min.js\"><\\/script>')</script>\n\n<script src=\"js/libs/bootstrap/bootstrap.min.js\"></script>\n<script language=\"javascript\">\n$(function() {\n    $(\".imgicon\")\n        .mouseover(function() { \n      var src = $(this).attr(\"src\").replace(\".png\", \"-hover.png\");\n            $(this).attr(\"src\", src);\n        })\n        .mouseout(function() {\n            var src = $(this).attr(\"src\").replace(\"-hover.png\", \".png\");\n            $(this).attr(\"src\", src);\n        });\n});\n</script>\n<script>\n  var _gaq=[['_setAccount','UA-26997065-1'],['_trackPageview']];\n  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];\n  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';\n  s.parentNode.insertBefore(g,s)}(document,'script'));\n</script>\n\n</body>\n</html>\n",
+      "ip": "213.186.33.4",
+      "timestamp": "2024-05-26T00:27:07.745588443Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "x-content-type-options",
+      "type": "http",
+      "host": "https://www.keiruaprod.fr",
+      "matched-at": "https://www.keiruaprod.fr",
+      "request": "GET / HTTP/1.1\r\nHost: www.keiruaprod.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 26 May 2024 00:27:07 GMT\r\nServer: Apache\r\nVary: Accept-Encoding\r\n\r\n<!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js lt-ie9 lt-ie8 lt-ie7\" lang=\"en\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js lt-ie9 lt-ie8\" lang=\"en\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js lt-ie9\" lang=\"en\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en\"> <!--<![endif]-->\n<head>\n  <meta charset=\"utf-8\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n\n  <title>Développeur web et formateur Symfony2/Symfony3 freelance Paris - KeiruaProd</title>\n\n    \n    <meta name=\"author\" content=\"Clement Camin\">\n    <meta name=\"description\" content=\"Développeur web Symfony2/Symfony3 freelance à Paris, j'aime concevoir des applications web de qualité et transmettre mes compétences. Travaillons ensemble !\">\n    \n\n  <meta name=\"viewport\" content=\"width=device-width\">\n\n  <link rel=\"stylesheet\" href=\"css/bootstrap.min.css\">\n  <link rel=\"stylesheet\" href=\"css/bootstrap-responsive.min.css\">\n  <link rel=\"stylesheet\" href=\"css/font-awesome.min.css\">\n  \n  <link rel=\"stylesheet\" href=\"css/style.css\">\n \n  \n  <!--[if IE 7]>\n    <link rel=\"stylesheet\" href=\"css/font-awesome-ie7.min.css\">\n  <![endif]-->\n  <script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>\n</head>\n<body>\n  <div class=\"container\">\n    <div id=\"header\">\n  <h1><a href=\"index.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'home']);\">KeiruaProd</a></h1>\n  \n  <a href=\"formations.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'formations']);\">Formations</a> | <a href=\"developpement.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'developpement']);\">Développement</a> | <a href=\"resume.html\">En résumé</a> | <a href=\"http://blog.keiruaprod.fr/\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'blog']);\">Blog</a> | <a href=\"http://tweelinks.keiruaprod.fr/\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'veille']);\">Veille</a>\n</div>\n  \n  <div>\n      \n          <div class=\"accueil entrytitle\">\n          <p>\n          Je suis Clément, ingénieur web freelance. J'aime créer des <a href=\"developpement.html\">applications web de qualité</a> et <a href=\"formations.html\">partager mon expérience</a>. Et si nous travaillions ensemble ?\n          </p>\n          </div>\n                  \n          <div class=\"row accueil_categories\">\n            <div class=\"span5 offset1 entrytitle\">\n            <h2><a href=\"formations.html\">Formations Symfony</a></h2>\n            <strong>Je propose des formations à Symfony2/Symfony3</strong><br />\n            <p class=\"entry\">Je me déplace dans vos locaux, ou me charge de louer une salle pour réaliser un cours en petit groupe, sur 2 à 3 jours.\n            <strong><a href=\"formations.html\"><i class=\"icon-arrow-right\"></i> En savoir plus</a></strong></p>\n            </div>\n            \n\n            <div class=\"span5 offset1 entrytitle\">\n            <h2><a href=\"developpement.html\">Développement web</a></h2>\n            <strong>Je développe vos applications web</strong>\n            <p class=\"entry\">Je réalise vos projets entièrement sur mesure, en freelance.<br />\n             <strong><a href=\"developpement.html\"><i class=\"icon-arrow-right\"></i> En savoir plus</a></strong></p>\n            </div>\n           \n          </div>\n            \n          \n            <div class=\"row\">\n          <h1><i class=\"icon-calendar\"></i> Quand ? <i class=\"icon-eur\"></i> Combien ?</h1>\n          <p>Pour discuter d'une idée ou pour un devis, n'hésitez pas à me contacter : </p>\n\n\n          <div class=\"contactinfo\">  <i class=\"icon-mail-forward\"></i> <a href=\"mailto:clement@keiruaprod.fr\" class=\"email\">clement [a] keiruaprod.fr</a><br />  <i class=\"icon-phone\"></i> <a href=\"tel:+33625449011\" class=\"tel\">06.62.28.01.87</a></div></div>\n          </div>\n      \n  </div>\n  \n  \n</div>\n\n<script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js\"></script>\n<script>window.jQuery || document.write('<script src=\"js/libs/jquery-1.7.2.min.js\"><\\/script>')</script>\n\n<script src=\"js/libs/bootstrap/bootstrap.min.js\"></script>\n<script language=\"javascript\">\n$(function() {\n    $(\".imgicon\")\n        .mouseover(function() { \n      var src = $(this).attr(\"src\").replace(\".png\", \"-hover.png\");\n            $(this).attr(\"src\", src);\n        })\n        .mouseout(function() {\n            var src = $(this).attr(\"src\").replace(\"-hover.png\", \".png\");\n            $(this).attr(\"src\", src);\n        });\n});\n</script>\n<script>\n  var _gaq=[['_setAccount','UA-26997065-1'],['_trackPageview']];\n  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];\n  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';\n  s.parentNode.insertBefore(g,s)}(document,'script'));\n</script>\n\n</body>\n</html>\n",
+      "ip": "213.186.33.4",
+      "timestamp": "2024-05-26T00:27:07.745603421Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "clear-site-data",
+      "type": "http",
+      "host": "https://www.keiruaprod.fr",
+      "matched-at": "https://www.keiruaprod.fr",
+      "request": "GET / HTTP/1.1\r\nHost: www.keiruaprod.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 26 May 2024 00:27:07 GMT\r\nServer: Apache\r\nVary: Accept-Encoding\r\n\r\n<!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js lt-ie9 lt-ie8 lt-ie7\" lang=\"en\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js lt-ie9 lt-ie8\" lang=\"en\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js lt-ie9\" lang=\"en\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en\"> <!--<![endif]-->\n<head>\n  <meta charset=\"utf-8\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n\n  <title>Développeur web et formateur Symfony2/Symfony3 freelance Paris - KeiruaProd</title>\n\n    \n    <meta name=\"author\" content=\"Clement Camin\">\n    <meta name=\"description\" content=\"Développeur web Symfony2/Symfony3 freelance à Paris, j'aime concevoir des applications web de qualité et transmettre mes compétences. Travaillons ensemble !\">\n    \n\n  <meta name=\"viewport\" content=\"width=device-width\">\n\n  <link rel=\"stylesheet\" href=\"css/bootstrap.min.css\">\n  <link rel=\"stylesheet\" href=\"css/bootstrap-responsive.min.css\">\n  <link rel=\"stylesheet\" href=\"css/font-awesome.min.css\">\n  \n  <link rel=\"stylesheet\" href=\"css/style.css\">\n \n  \n  <!--[if IE 7]>\n    <link rel=\"stylesheet\" href=\"css/font-awesome-ie7.min.css\">\n  <![endif]-->\n  <script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>\n</head>\n<body>\n  <div class=\"container\">\n    <div id=\"header\">\n  <h1><a href=\"index.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'home']);\">KeiruaProd</a></h1>\n  \n  <a href=\"formations.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'formations']);\">Formations</a> | <a href=\"developpement.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'developpement']);\">Développement</a> | <a href=\"resume.html\">En résumé</a> | <a href=\"http://blog.keiruaprod.fr/\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'blog']);\">Blog</a> | <a href=\"http://tweelinks.keiruaprod.fr/\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'veille']);\">Veille</a>\n</div>\n  \n  <div>\n      \n          <div class=\"accueil entrytitle\">\n          <p>\n          Je suis Clément, ingénieur web freelance. J'aime créer des <a href=\"developpement.html\">applications web de qualité</a> et <a href=\"formations.html\">partager mon expérience</a>. Et si nous travaillions ensemble ?\n          </p>\n          </div>\n                  \n          <div class=\"row accueil_categories\">\n            <div class=\"span5 offset1 entrytitle\">\n            <h2><a href=\"formations.html\">Formations Symfony</a></h2>\n            <strong>Je propose des formations à Symfony2/Symfony3</strong><br />\n            <p class=\"entry\">Je me déplace dans vos locaux, ou me charge de louer une salle pour réaliser un cours en petit groupe, sur 2 à 3 jours.\n            <strong><a href=\"formations.html\"><i class=\"icon-arrow-right\"></i> En savoir plus</a></strong></p>\n            </div>\n            \n\n            <div class=\"span5 offset1 entrytitle\">\n            <h2><a href=\"developpement.html\">Développement web</a></h2>\n            <strong>Je développe vos applications web</strong>\n            <p class=\"entry\">Je réalise vos projets entièrement sur mesure, en freelance.<br />\n             <strong><a href=\"developpement.html\"><i class=\"icon-arrow-right\"></i> En savoir plus</a></strong></p>\n            </div>\n           \n          </div>\n            \n          \n            <div class=\"row\">\n          <h1><i class=\"icon-calendar\"></i> Quand ? <i class=\"icon-eur\"></i> Combien ?</h1>\n          <p>Pour discuter d'une idée ou pour un devis, n'hésitez pas à me contacter : </p>\n\n\n          <div class=\"contactinfo\">  <i class=\"icon-mail-forward\"></i> <a href=\"mailto:clement@keiruaprod.fr\" class=\"email\">clement [a] keiruaprod.fr</a><br />  <i class=\"icon-phone\"></i> <a href=\"tel:+33625449011\" class=\"tel\">06.62.28.01.87</a></div></div>\n          </div>\n      \n  </div>\n  \n  \n</div>\n\n<script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js\"></script>\n<script>window.jQuery || document.write('<script src=\"js/libs/jquery-1.7.2.min.js\"><\\/script>')</script>\n\n<script src=\"js/libs/bootstrap/bootstrap.min.js\"></script>\n<script language=\"javascript\">\n$(function() {\n    $(\".imgicon\")\n        .mouseover(function() { \n      var src = $(this).attr(\"src\").replace(\".png\", \"-hover.png\");\n            $(this).attr(\"src\", src);\n        })\n        .mouseout(function() {\n            var src = $(this).attr(\"src\").replace(\"-hover.png\", \".png\");\n            $(this).attr(\"src\", src);\n        });\n});\n</script>\n<script>\n  var _gaq=[['_setAccount','UA-26997065-1'],['_trackPageview']];\n  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];\n  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';\n  s.parentNode.insertBefore(g,s)}(document,'script'));\n</script>\n\n</body>\n</html>\n",
+      "ip": "213.186.33.4",
+      "timestamp": "2024-05-26T00:27:07.745620954Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "content-security-policy",
+      "type": "http",
+      "host": "https://www.keiruaprod.fr",
+      "matched-at": "https://www.keiruaprod.fr",
+      "request": "GET / HTTP/1.1\r\nHost: www.keiruaprod.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 26 May 2024 00:27:07 GMT\r\nServer: Apache\r\nVary: Accept-Encoding\r\n\r\n<!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js lt-ie9 lt-ie8 lt-ie7\" lang=\"en\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js lt-ie9 lt-ie8\" lang=\"en\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js lt-ie9\" lang=\"en\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en\"> <!--<![endif]-->\n<head>\n  <meta charset=\"utf-8\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n\n  <title>Développeur web et formateur Symfony2/Symfony3 freelance Paris - KeiruaProd</title>\n\n    \n    <meta name=\"author\" content=\"Clement Camin\">\n    <meta name=\"description\" content=\"Développeur web Symfony2/Symfony3 freelance à Paris, j'aime concevoir des applications web de qualité et transmettre mes compétences. Travaillons ensemble !\">\n    \n\n  <meta name=\"viewport\" content=\"width=device-width\">\n\n  <link rel=\"stylesheet\" href=\"css/bootstrap.min.css\">\n  <link rel=\"stylesheet\" href=\"css/bootstrap-responsive.min.css\">\n  <link rel=\"stylesheet\" href=\"css/font-awesome.min.css\">\n  \n  <link rel=\"stylesheet\" href=\"css/style.css\">\n \n  \n  <!--[if IE 7]>\n    <link rel=\"stylesheet\" href=\"css/font-awesome-ie7.min.css\">\n  <![endif]-->\n  <script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>\n</head>\n<body>\n  <div class=\"container\">\n    <div id=\"header\">\n  <h1><a href=\"index.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'home']);\">KeiruaProd</a></h1>\n  \n  <a href=\"formations.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'formations']);\">Formations</a> | <a href=\"developpement.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'developpement']);\">Développement</a> | <a href=\"resume.html\">En résumé</a> | <a href=\"http://blog.keiruaprod.fr/\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'blog']);\">Blog</a> | <a href=\"http://tweelinks.keiruaprod.fr/\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'veille']);\">Veille</a>\n</div>\n  \n  <div>\n      \n          <div class=\"accueil entrytitle\">\n          <p>\n          Je suis Clément, ingénieur web freelance. J'aime créer des <a href=\"developpement.html\">applications web de qualité</a> et <a href=\"formations.html\">partager mon expérience</a>. Et si nous travaillions ensemble ?\n          </p>\n          </div>\n                  \n          <div class=\"row accueil_categories\">\n            <div class=\"span5 offset1 entrytitle\">\n            <h2><a href=\"formations.html\">Formations Symfony</a></h2>\n            <strong>Je propose des formations à Symfony2/Symfony3</strong><br />\n            <p class=\"entry\">Je me déplace dans vos locaux, ou me charge de louer une salle pour réaliser un cours en petit groupe, sur 2 à 3 jours.\n            <strong><a href=\"formations.html\"><i class=\"icon-arrow-right\"></i> En savoir plus</a></strong></p>\n            </div>\n            \n\n            <div class=\"span5 offset1 entrytitle\">\n            <h2><a href=\"developpement.html\">Développement web</a></h2>\n            <strong>Je développe vos applications web</strong>\n            <p class=\"entry\">Je réalise vos projets entièrement sur mesure, en freelance.<br />\n             <strong><a href=\"developpement.html\"><i class=\"icon-arrow-right\"></i> En savoir plus</a></strong></p>\n            </div>\n           \n          </div>\n            \n          \n            <div class=\"row\">\n          <h1><i class=\"icon-calendar\"></i> Quand ? <i class=\"icon-eur\"></i> Combien ?</h1>\n          <p>Pour discuter d'une idée ou pour un devis, n'hésitez pas à me contacter : </p>\n\n\n          <div class=\"contactinfo\">  <i class=\"icon-mail-forward\"></i> <a href=\"mailto:clement@keiruaprod.fr\" class=\"email\">clement [a] keiruaprod.fr</a><br />  <i class=\"icon-phone\"></i> <a href=\"tel:+33625449011\" class=\"tel\">06.62.28.01.87</a></div></div>\n          </div>\n      \n  </div>\n  \n  \n</div>\n\n<script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js\"></script>\n<script>window.jQuery || document.write('<script src=\"js/libs/jquery-1.7.2.min.js\"><\\/script>')</script>\n\n<script src=\"js/libs/bootstrap/bootstrap.min.js\"></script>\n<script language=\"javascript\">\n$(function() {\n    $(\".imgicon\")\n        .mouseover(function() { \n      var src = $(this).attr(\"src\").replace(\".png\", \"-hover.png\");\n            $(this).attr(\"src\", src);\n        })\n        .mouseout(function() {\n            var src = $(this).attr(\"src\").replace(\"-hover.png\", \".png\");\n            $(this).attr(\"src\", src);\n        });\n});\n</script>\n<script>\n  var _gaq=[['_setAccount','UA-26997065-1'],['_trackPageview']];\n  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];\n  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';\n  s.parentNode.insertBefore(g,s)}(document,'script'));\n</script>\n\n</body>\n</html>\n",
+      "ip": "213.186.33.4",
+      "timestamp": "2024-05-26T00:27:07.74563513Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/miscellaneous/robots-txt-endpoint.yaml",
+      "template-url": "https://templates.nuclei.sh/public/robots-txt-endpoint",
+      "template-id": "robots-txt-endpoint",
+      "template-path": "/home/runner/nuclei-templates/http/miscellaneous/robots-txt-endpoint.yaml",
+      "info": {
+        "name": "robots.txt endpoint prober",
+        "author": [
+          "caspergn",
+          "pdteam"
+        ],
+        "tags": [
+          "miscellaneous",
+          "misc",
+          "generic"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 2
+        }
+      },
+      "type": "http",
+      "host": "https://www.keiruaprod.fr",
+      "matched-at": "https://www.keiruaprod.fr/robots.txt",
+      "request": "GET /robots.txt HTTP/1.1\r\nHost: www.keiruaprod.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 13\r\nAccept-Ranges: bytes\r\nContent-Type: text/plain\r\nDate: Sun, 26 May 2024 00:27:19 GMT\r\nLast-Modified: Tue, 20 Feb 2018 22:15:42 GMT\r\nServer: Apache\r\n\r\nUser-agent: *",
+      "ip": "213.186.33.4",
+      "timestamp": "2024-05-26T00:27:19.647290315Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr/robots.txt'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/missing-sri.yaml",
+      "template-url": "https://templates.nuclei.sh/public/missing-sri",
+      "template-id": "missing-sri",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/missing-sri.yaml",
+      "info": {
+        "name": "Missing Subresource Integrity",
+        "author": [
+          "lucky0x0d",
+          "pulsesecurity.co.nz"
+        ],
+        "tags": [
+          "compliance",
+          "js",
+          "sri",
+          "misconfig"
+        ],
+        "description": "Checks if script tags within the HTML response have Subresource Integrity implemented via the integrity attribute\n",
+        "reference": [
+          "https://cheatsheetseries.owasp.org/cheatsheets/third_party_javascript_management_cheat_sheet.html#subresource-integrity"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "type": "http",
+      "host": "https://www.keiruaprod.fr",
+      "matched-at": "https://www.keiruaprod.fr/",
+      "extracted-results": [
+        "https://plausible.io/js/plausible.js",
+        "//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"
+      ],
+      "request": "GET / HTTP/1.1\r\nHost: www.keiruaprod.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 26 May 2024 00:27:27 GMT\r\nServer: Apache\r\nVary: Accept-Encoding\r\n\r\n<!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js lt-ie9 lt-ie8 lt-ie7\" lang=\"en\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js lt-ie9 lt-ie8\" lang=\"en\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js lt-ie9\" lang=\"en\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en\"> <!--<![endif]-->\n<head>\n  <meta charset=\"utf-8\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n\n  <title>Développeur web et formateur Symfony2/Symfony3 freelance Paris - KeiruaProd</title>\n\n    \n    <meta name=\"author\" content=\"Clement Camin\">\n    <meta name=\"description\" content=\"Développeur web Symfony2/Symfony3 freelance à Paris, j'aime concevoir des applications web de qualité et transmettre mes compétences. Travaillons ensemble !\">\n    \n\n  <meta name=\"viewport\" content=\"width=device-width\">\n\n  <link rel=\"stylesheet\" href=\"css/bootstrap.min.css\">\n  <link rel=\"stylesheet\" href=\"css/bootstrap-responsive.min.css\">\n  <link rel=\"stylesheet\" href=\"css/font-awesome.min.css\">\n  \n  <link rel=\"stylesheet\" href=\"css/style.css\">\n \n  \n  <!--[if IE 7]>\n    <link rel=\"stylesheet\" href=\"css/font-awesome-ie7.min.css\">\n  <![endif]-->\n  <script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>\n</head>\n<body>\n  <div class=\"container\">\n    <div id=\"header\">\n  <h1><a href=\"index.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'home']);\">KeiruaProd</a></h1>\n  \n  <a href=\"formations.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'formations']);\">Formations</a> | <a href=\"developpement.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'developpement']);\">Développement</a> | <a href=\"resume.html\">En résumé</a> | <a href=\"http://blog.keiruaprod.fr/\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'blog']);\">Blog</a> | <a href=\"http://tweelinks.keiruaprod.fr/\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'veille']);\">Veille</a>\n</div>\n  \n  <div>\n      \n          <div class=\"accueil entrytitle\">\n          <p>\n          Je suis Clément, ingénieur web freelance. J'aime créer des <a href=\"developpement.html\">applications web de qualité</a> et <a href=\"formations.html\">partager mon expérience</a>. Et si nous travaillions ensemble ?\n          </p>\n          </div>\n                  \n          <div class=\"row accueil_categories\">\n            <div class=\"span5 offset1 entrytitle\">\n            <h2><a href=\"formations.html\">Formations Symfony</a></h2>\n            <strong>Je propose des formations à Symfony2/Symfony3</strong><br />\n            <p class=\"entry\">Je me déplace dans vos locaux, ou me charge de louer une salle pour réaliser un cours en petit groupe, sur 2 à 3 jours.\n            <strong><a href=\"formations.html\"><i class=\"icon-arrow-right\"></i> En savoir plus</a></strong></p>\n            </div>\n            \n\n            <div class=\"span5 offset1 entrytitle\">\n            <h2><a href=\"developpement.html\">Développement web</a></h2>\n            <strong>Je développe vos applications web</strong>\n            <p class=\"entry\">Je réalise vos projets entièrement sur mesure, en freelance.<br />\n             <strong><a href=\"developpement.html\"><i class=\"icon-arrow-right\"></i> En savoir plus</a></strong></p>\n            </div>\n           \n          </div>\n            \n          \n            <div class=\"row\">\n          <h1><i class=\"icon-calendar\"></i> Quand ? <i class=\"icon-eur\"></i> Combien ?</h1>\n          <p>Pour discuter d'une idée ou pour un devis, n'hésitez pas à me contacter : </p>\n\n\n          <div class=\"contactinfo\">  <i class=\"icon-mail-forward\"></i> <a href=\"mailto:clement@keiruaprod.fr\" class=\"email\">clement [a] keiruaprod.fr</a><br />  <i class=\"icon-phone\"></i> <a href=\"tel:+33625449011\" class=\"tel\">06.62.28.01.87</a></div></div>\n          </div>\n      \n  </div>\n  \n  \n</div>\n\n<script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js\"></script>\n<script>window.jQuery || document.write('<script src=\"js/libs/jquery-1.7.2.min.js\"><\\/script>')</script>\n\n<script src=\"js/libs/bootstrap/bootstrap.min.js\"></script>\n<script language=\"javascript\">\n$(function() {\n    $(\".imgicon\")\n        .mouseover(function() { \n      var src = $(this).attr(\"src\").replace(\".png\", \"-hover.png\");\n            $(this).attr(\"src\", src);\n        })\n        .mouseout(function() {\n            var src = $(this).attr(\"src\").replace(\"-hover.png\", \".png\");\n            $(this).attr(\"src\", src);\n        });\n});\n</script>\n<script>\n  var _gaq=[['_setAccount','UA-26997065-1'],['_trackPageview']];\n  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];\n  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';\n  s.parentNode.insertBefore(g,s)}(document,'script'));\n</script>\n\n</body>\n</html>\n",
+      "ip": "213.186.33.4",
+      "timestamp": "2024-05-26T00:27:27.291204964Z",
+      "curl-command": "curl -X 'GET' -d '' -H 'Host: www.keiruaprod.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr/'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/technologies/waf-detect.yaml",
+      "template-url": "https://templates.nuclei.sh/public/waf-detect",
+      "template-id": "waf-detect",
+      "template-path": "/home/runner/nuclei-templates/http/technologies/waf-detect.yaml",
+      "info": {
+        "name": "WAF Detection",
+        "author": [
+          "dwisiswant0",
+          "lu4nx"
+        ],
+        "tags": [
+          "waf",
+          "tech",
+          "misc"
+        ],
+        "description": "A web application firewall was detected.",
+        "reference": [
+          "https://github.com/ekultek/whatwaf"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-200"
+          ]
+        }
+      },
+      "matcher-name": "apachegeneric",
+      "type": "http",
+      "host": "https://www.keiruaprod.fr",
+      "matched-at": "https://www.keiruaprod.fr/",
+      "request": "POST / HTTP/1.1\r\nHost: www.keiruaprod.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nContent-Length: 27\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept-Encoding: gzip\r\n\r\n_=<script>alert(1)</script>",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 26 May 2024 00:27:35 GMT\r\nServer: Apache\r\nVary: Accept-Encoding\r\n\r\n<!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js lt-ie9 lt-ie8 lt-ie7\" lang=\"en\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js lt-ie9 lt-ie8\" lang=\"en\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js lt-ie9\" lang=\"en\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en\"> <!--<![endif]-->\n<head>\n  <meta charset=\"utf-8\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n\n  <title>Développeur web et formateur Symfony2/Symfony3 freelance Paris - KeiruaProd</title>\n\n    \n    <meta name=\"author\" content=\"Clement Camin\">\n    <meta name=\"description\" content=\"Développeur web Symfony2/Symfony3 freelance à Paris, j'aime concevoir des applications web de qualité et transmettre mes compétences. Travaillons ensemble !\">\n    \n\n  <meta name=\"viewport\" content=\"width=device-width\">\n\n  <link rel=\"stylesheet\" href=\"css/bootstrap.min.css\">\n  <link rel=\"stylesheet\" href=\"css/bootstrap-responsive.min.css\">\n  <link rel=\"stylesheet\" href=\"css/font-awesome.min.css\">\n  \n  <link rel=\"stylesheet\" href=\"css/style.css\">\n \n  \n  <!--[if IE 7]>\n    <link rel=\"stylesheet\" href=\"css/font-awesome-ie7.min.css\">\n  <![endif]-->\n  <script defer data-domain=\"keiruaprod.fr\" src=\"https://plausible.io/js/plausible.js\"></script>\n</head>\n<body>\n  <div class=\"container\">\n    <div id=\"header\">\n  <h1><a href=\"index.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'home']);\">KeiruaProd</a></h1>\n  \n  <a href=\"formations.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'formations']);\">Formations</a> | <a href=\"developpement.html\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'developpement']);\">Développement</a> | <a href=\"resume.html\">En résumé</a> | <a href=\"http://blog.keiruaprod.fr/\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'blog']);\">Blog</a> | <a href=\"http://tweelinks.keiruaprod.fr/\" onClick=\"_gaq.push(['_trackEvent', 'menu', 'veille']);\">Veille</a>\n</div>\n  \n  <div>\n      \n          <div class=\"accueil entrytitle\">\n          <p>\n          Je suis Clément, ingénieur web freelance. J'aime créer des <a href=\"developpement.html\">applications web de qualité</a> et <a href=\"formations.html\">partager mon expérience</a>. Et si nous travaillions ensemble ?\n          </p>\n          </div>\n                  \n          <div class=\"row accueil_categories\">\n            <div class=\"span5 offset1 entrytitle\">\n            <h2><a href=\"formations.html\">Formations Symfony</a></h2>\n            <strong>Je propose des formations à Symfony2/Symfony3</strong><br />\n            <p class=\"entry\">Je me déplace dans vos locaux, ou me charge de louer une salle pour réaliser un cours en petit groupe, sur 2 à 3 jours.\n            <strong><a href=\"formations.html\"><i class=\"icon-arrow-right\"></i> En savoir plus</a></strong></p>\n            </div>\n            \n\n            <div class=\"span5 offset1 entrytitle\">\n            <h2><a href=\"developpement.html\">Développement web</a></h2>\n            <strong>Je développe vos applications web</strong>\n            <p class=\"entry\">Je réalise vos projets entièrement sur mesure, en freelance.<br />\n             <strong><a href=\"developpement.html\"><i class=\"icon-arrow-right\"></i> En savoir plus</a></strong></p>\n            </div>\n           \n          </div>\n            \n          \n            <div class=\"row\">\n          <h1><i class=\"icon-calendar\"></i> Quand ? <i class=\"icon-eur\"></i> Combien ?</h1>\n          <p>Pour discuter d'une idée ou pour un devis, n'hésitez pas à me contacter : </p>\n\n\n          <div class=\"contactinfo\">  <i class=\"icon-mail-forward\"></i> <a href=\"mailto:clement@keiruaprod.fr\" class=\"email\">clement [a] keiruaprod.fr</a><br />  <i class=\"icon-phone\"></i> <a href=\"tel:+33625449011\" class=\"tel\">06.62.28.01.87</a></div></div>\n          </div>\n      \n  </div>\n  \n  \n</div>\n\n<script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js\"></script>\n<script>window.jQuery || document.write('<script src=\"js/libs/jquery-1.7.2.min.js\"><\\/script>')</script>\n\n<script src=\"js/libs/bootstrap/bootstrap.min.js\"></script>\n<script language=\"javascript\">\n$(function() {\n    $(\".imgicon\")\n        .mouseover(function() { \n      var src = $(this).attr(\"src\").replace(\".png\", \"-hover.png\");\n            $(this).attr(\"src\", src);\n        })\n        .mouseout(function() {\n            var src = $(this).attr(\"src\").replace(\"-hover.png\", \".png\");\n            $(this).attr(\"src\", src);\n        });\n});\n</script>\n<script>\n  var _gaq=[['_setAccount','UA-26997065-1'],['_trackPageview']];\n  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];\n  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';\n  s.parentNode.insertBefore(g,s)}(document,'script'));\n</script>\n\n</body>\n</html>\n",
+      "ip": "213.186.33.4",
+      "timestamp": "2024-05-26T00:27:36.001269765Z",
+      "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: www.keiruaprod.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.keiruaprod.fr/'",
+      "matcher-status": true
+    },
+    {
+      "template": "ssl/detect-ssl-issuer.yaml",
+      "template-url": "https://templates.nuclei.sh/public/ssl-issuer",
+      "template-id": "ssl-issuer",
+      "template-path": "/home/runner/nuclei-templates/ssl/detect-ssl-issuer.yaml",
+      "info": {
+        "name": "Detect SSL Certificate Issuer",
+        "author": [
+          "lingtren"
+        ],
+        "tags": [
+          "ssl",
+          "tls"
+        ],
+        "description": "Extract the issuer's organization from the target's certificate. Issuers are entities which sign and distribute certificates.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "type": "ssl",
+      "host": "www.keiruaprod.fr",
+      "matched-at": "www.keiruaprod.fr:443",
+      "extracted-results": [
+        "Let's Encrypt"
+      ],
+      "ip": "213.186.33.4",
+      "timestamp": "2024-05-26T00:29:30.960726082Z",
+      "matcher-status": true
+    },
+    {
+      "template": "ssl/ssl-dns-names.yaml",
+      "template-url": "https://templates.nuclei.sh/public/ssl-dns-names",
+      "template-id": "ssl-dns-names",
+      "template-path": "/home/runner/nuclei-templates/ssl/ssl-dns-names.yaml",
+      "info": {
+        "name": "SSL DNS Names",
+        "author": [
+          "pdteam"
+        ],
+        "tags": [
+          "ssl",
+          "tls"
+        ],
+        "description": "Extract the Subject Alternative Name (SAN) from the target's certificate. SAN facilitates the usage of additional hostnames with the same certificate.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "type": "ssl",
+      "host": "www.keiruaprod.fr",
+      "matched-at": "www.keiruaprod.fr:443",
+      "extracted-results": [
+        "147colors.keiruaprod.fr",
+        "keiruaprod.fr",
+        "ld23.keiruaprod.fr",
+        "www.147colors.keiruaprod.fr",
+        "www.champion-maths.keiruaprod.fr",
+        "www.foules.keiruaprod.fr",
+        "www.keiruaprod.fr",
+        "www.onmangeou.keiruaprod.fr",
+        "www.techjam.fr",
+        "champion-maths.keiruaprod.fr",
+        "rand100.keiruaprod.fr",
+        "twister.keiruaprod.fr",
+        "www.2048craze.keiruaprod.fr",
+        "www.blog.keiruaprod.fr",
+        "www.ld23.keiruaprod.fr",
+        "english20.keiruaprod.fr",
+        "fragmentsdeplanete.fr",
+        "techjam.fr",
+        "www.fragmentsdeplanete.fr",
+        "2048craze.keiruaprod.fr",
+        "blog.keiruaprod.fr",
+        "foules.keiruaprod.fr",
+        "onmangeou.keiruaprod.fr",
+        "www.english20.keiruaprod.fr"
+      ],
+      "ip": "213.186.33.4",
+      "timestamp": "2024-05-26T00:29:30.960851616Z",
+      "matcher-status": true
+    },
+    {
+      "template": "ssl/tls-version.yaml",
+      "template-url": "https://templates.nuclei.sh/public/tls-version",
+      "template-id": "tls-version",
+      "template-path": "/home/runner/nuclei-templates/ssl/tls-version.yaml",
+      "info": {
+        "name": "TLS Version - Detect",
+        "author": [
+          "pdteam",
+          "pussycat0x"
+        ],
+        "tags": [
+          "ssl",
+          "tls"
+        ],
+        "description": "TLS version detection is a security process used to determine the version of the Transport Layer Security (TLS) protocol used by a computer or server.\nIt is important to detect the TLS version in order to ensure secure communication between two computers or servers.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 4
+        }
+      },
+      "type": "ssl",
+      "host": "www.keiruaprod.fr",
+      "matched-at": "www.keiruaprod.fr:443",
+      "extracted-results": [
+        "tls12"
+      ],
+      "ip": "213.186.33.4",
+      "timestamp": "2024-05-26T00:29:32.504972409Z",
+      "matcher-status": true
+    },
+    {
+      "template": "ssl/tls-version.yaml",
+      "template-url": "https://templates.nuclei.sh/public/tls-version",
+      "template-id": "tls-version",
+      "template-path": "/home/runner/nuclei-templates/ssl/tls-version.yaml",
+      "info": {
+        "name": "TLS Version - Detect",
+        "author": [
+          "pdteam",
+          "pussycat0x"
+        ],
+        "tags": [
+          "ssl",
+          "tls"
+        ],
+        "description": "TLS version detection is a security process used to determine the version of the Transport Layer Security (TLS) protocol used by a computer or server.\nIt is important to detect the TLS version in order to ensure secure communication between two computers or servers.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 4
+        }
+      },
+      "type": "ssl",
+      "host": "www.keiruaprod.fr",
+      "matched-at": "www.keiruaprod.fr:443",
+      "extracted-results": [
+        "tls13"
+      ],
+      "ip": "213.186.33.4",
+      "timestamp": "2024-05-26T00:29:32.714370042Z",
+      "matcher-status": true
+    }
+  ]
+]
