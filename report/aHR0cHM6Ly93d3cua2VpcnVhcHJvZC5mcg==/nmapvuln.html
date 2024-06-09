@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.keiruaprod.fr</pre>
-<p class="lead">Sun Jun  9 00:26:43 2024 – Sun Jun  9 00:27:10 2024<br>1 hosts scanned.
+<p class="lead">Sun Jun  9 00:26:46 2024 – Sun Jun  9 00:27:29 2024<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -110,6 +110,15 @@
 <th>Extra Info</th>
 </tr></thead>
 <tbody>
+<tr class="active">
+<td>25</td>
+<td>tcp</td>
+<td>closed<br>reset</td>
+<td>smtp</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
 <tr class="success">
 <td title="Port">80</td>
 <td title="Protocol">tcp</td>
@@ -120,19 +129,23 @@
 <td title="Extra Info"></td>
 </tr>
 <tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>http-server-header</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">
+  Apache
+  nginx</pre>
+<h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
   GetRequest: 
     HTTP/1.1 404 Not Found
     server: nginx
-    date: Sun, 09 Jun 2024 00:26:58 GMT
+    date: Sun, 09 Jun 2024 00:27:16 GMT
     content-type: text/html; charset=utf8
-    x-ovh-webhosting-id: 1bbf8035c627080a4000d661b3d26628
+    x-ovh-webhosting-id: a61e4ef158ea6ebcd296b127de7f992c
     pragma: no-cache
     cache-control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
     content-length: 4961
-    x-iplb-request-id: ACB782CE:5D02_D5BA2104:0050_6664F6CC_2E586:3DDB
-    x-iplb-instance: 51946
+    x-iplb-request-id: ACB782C5:98C0_D5BA2104:0050_6664F6DE_26B8B:184E
+    x-iplb-instance: 51886
     connection: close
     &lt;html xml:lang="en-EN" lang="en-EN"&gt;
     &lt;head&gt;
@@ -147,14 +160,14 @@
   HTTPOptions: 
     HTTP/1.1 404 Not Found
     server: nginx
-    date: Sun, 09 Jun 2024 00:26:58 GMT
+    date: Sun, 09 Jun 2024 00:27:16 GMT
     content-type: text/html; charset=utf8
-    x-ovh-webhosting-id: 8bca4b1cdb23d9ea28c3687eeaf3d4f6
+    x-ovh-webhosting-id: decd119ec7aeeea6e0758eb8980cb342
     pragma: no-cache
     cache-control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
     content-length: 4961
-    x-iplb-request-id: ACB782CE:5CF0_D5BA2104:0050_6664F6D2_1E878:461A
-    x-iplb-instance: 51911
+    x-iplb-request-id: ACB782C5:98C4_D5BA2104:0050_6664F6E4_16226:04C3
+    x-iplb-instance: 51919
     connection: close
     &lt;html xml:lang="en-EN" lang="en-EN"&gt;
     &lt;head&gt;
@@ -166,10 +179,6 @@
     &lt;meta name="robots" content="noindex, nofollow"&gt;
     &lt;meta name="description" qtlid="283606" content="Site not installed"&gt;
     &lt;meta h</pre>
-<h5>http-server-header</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">
-  Apache
-  nginx</pre>
 </td></tr>
 <tr class="success">
 <td title="Port">443</td>
