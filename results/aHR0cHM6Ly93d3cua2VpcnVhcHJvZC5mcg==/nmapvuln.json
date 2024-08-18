@@ -1,1 +1,1 @@
-{"host":"www.keiruaprod.fr","protocol":"tcp","closed_ports":"997","open_ports":[{"service":{"name":"whois","id":"43","vulnerabilities":[]}},{"service":{"name":"http","product":"nginx","id":"80","vulnerabilities":[]}},{"service":{"name":"http","product":"nginx","id":"443","vulnerabilities":[]}}],"grade":"B"}
+{"host":"www.keiruaprod.fr","protocol":"tcp","closed_ports":"921","open_ports":[{"service":{"name":"http","product":"nginx","id":"80","vulnerabilities":[]}},{"service":{"name":"http","product":"nginx","id":"443","vulnerabilities":[]}}],"grade":"A"}
