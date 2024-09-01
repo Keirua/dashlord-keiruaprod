@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.keiruaprod.fr</pre>
-<p class="lead">Sun Sep  1 00:32:35 2024 – Sun Sep  1 00:34:30 2024<br>1 hosts scanned.
+<p class="lead">Sun Sep  1 00:32:43 2024 – Sun Sep  1 00:33:08 2024<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -110,15 +110,6 @@
 <th>Extra Info</th>
 </tr></thead>
 <tbody>
-<tr class="active">
-<td>25</td>
-<td>tcp</td>
-<td>closed<br>reset</td>
-<td>smtp</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
 <tr class="success">
 <td title="Port">80</td>
 <td title="Protocol">tcp</td>
@@ -129,18 +120,22 @@
 <td title="Extra Info"></td>
 </tr>
 <tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>http-server-header</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">
+  Apache
+  nginx</pre>
+<h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
   GetRequest: 
     HTTP/1.1 404 Not Found
     server: nginx
-    date: Sun, 01 Sep 2024 00:34:19 GMT
+    date: Sun, 01 Sep 2024 00:32:57 GMT
     content-type: text/html; charset=utf8
-    x-ovh-webhosting-id: 07731a1b03d3b851bfa46e91d4f06511
+    x-ovh-webhosting-id: c0a226157af0904b78ffc0d91db2247d
     pragma: no-cache
     cache-control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
     content-length: 4959
-    x-iplb-request-id: 1461BFB2:DBC1_D5BA2104:0050_66D3B685_E607:1FCF
+    x-iplb-request-id: 2843859E:DC80_D5BA2104:0050_66D3B633_3D73:1FCF
     x-iplb-instance: 51911
     connection: close
     &lt;html xml:lang="en-EN" lang="en-EN"&gt;
@@ -156,14 +151,14 @@
   HTTPOptions: 
     HTTP/1.1 404 Not Found
     server: nginx
-    date: Sun, 01 Sep 2024 00:34:19 GMT
+    date: Sun, 01 Sep 2024 00:32:57 GMT
     content-type: text/html; charset=utf8
-    x-ovh-webhosting-id: a170bd960e8e9003bb7b707a85ae32cd
+    x-ovh-webhosting-id: b5bc6cfef844e8e3262c551e62bca694
     pragma: no-cache
     cache-control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
     content-length: 4959
-    x-iplb-request-id: 1461BFB2:DBC3_D5BA2104:0050_66D3B68B_F3EA:1FCF
-    x-iplb-instance: 51911
+    x-iplb-request-id: 2843859E:DC81_D5BA2104:0050_66D3B639_91C3:78A7
+    x-iplb-instance: 51886
     connection: close
     &lt;html xml:lang="en-EN" lang="en-EN"&gt;
     &lt;head&gt;
@@ -175,20 +170,7 @@
     &lt;meta name="robots" content="noindex, nofollow"&gt;
     &lt;meta name="description" qtlid="283606" content="Site not installed"&gt;
     &lt;meta ht</pre>
-<h5>http-server-header</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">
-  Apache
-  nginx</pre>
 </td></tr>
-<tr class="active">
-<td>407</td>
-<td>tcp</td>
-<td>closed<br>reset</td>
-<td>timbuktu</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
 <tr class="success">
 <td title="Port">443</td>
 <td title="Protocol">tcp</td>
@@ -202,168 +184,6 @@
 <a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:igor_sysoev:nginx">cpe:/a:igor_sysoev:nginx</a><h5>http-server-header</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">Apache</pre>
 </td></tr>
-<tr class="active">
-<td>1053</td>
-<td>tcp</td>
-<td>closed<br>reset</td>
-<td>remote-as</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="active">
-<td>1055</td>
-<td>tcp</td>
-<td>closed<br>reset</td>
-<td>ansyslmd</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="active">
-<td>1148</td>
-<td>tcp</td>
-<td>closed<br>reset</td>
-<td>elfiq-repl</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="active">
-<td>1580</td>
-<td>tcp</td>
-<td>closed<br>reset</td>
-<td>tn-tl-r1</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="active">
-<td>1721</td>
-<td>tcp</td>
-<td>closed<br>reset</td>
-<td>caicci</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="active">
-<td>2875</td>
-<td>tcp</td>
-<td>closed<br>reset</td>
-<td>dxmessagebase2</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="active">
-<td>3221</td>
-<td>tcp</td>
-<td>closed<br>reset</td>
-<td>xnm-clear-text</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="active">
-<td>3493</td>
-<td>tcp</td>
-<td>closed<br>reset</td>
-<td>nut</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="active">
-<td>5298</td>
-<td>tcp</td>
-<td>closed<br>reset</td>
-<td>presence</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="active">
-<td>5922</td>
-<td>tcp</td>
-<td>closed<br>reset</td>
-<td>unknown</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="active">
-<td>6389</td>
-<td>tcp</td>
-<td>closed<br>reset</td>
-<td>clariion-evr01</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="active">
-<td>7106</td>
-<td>tcp</td>
-<td>closed<br>reset</td>
-<td>unknown</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="active">
-<td>9002</td>
-<td>tcp</td>
-<td>closed<br>reset</td>
-<td>dynamid</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="active">
-<td>9290</td>
-<td>tcp</td>
-<td>closed<br>reset</td>
-<td>unknown</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="active">
-<td>10024</td>
-<td>tcp</td>
-<td>closed<br>reset</td>
-<td>unknown</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="active">
-<td>10629</td>
-<td>tcp</td>
-<td>closed<br>reset</td>
-<td>unknown</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="active">
-<td>19780</td>
-<td>tcp</td>
-<td>closed<br>reset</td>
-<td>unknown</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="active">
-<td>40911</td>
-<td>tcp</td>
-<td>closed<br>reset</td>
-<td>unknown</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
 </tbody>
 </table></div>
 </div>
