@@ -22,7 +22,7 @@
     },
     {
       "type": "google analytics",
-      "url": "https://ssl.google-analytics.com/r/__utm.gif?utmwv=5.7.2&utms=1&utmn=449987423&utmhn=www.keiruaprod.fr&utmcs=UTF-8&utmsr=800x600&utmvp=800x600&utmsc=24-bit&utmul=en-us&utmje=0&utmfl=-&utmdt=D%C3%A9veloppeur%20web%20et%20formateur%20Symfony2%2FSymfony3%20freelance%20Paris%20-%20KeiruaProd&utmhid=959555685&utmr=-&utmp=%2F&utmht=1724545722348&utmac=UA-26997065-1&utmcc=__utma%3D185069491.1974228185.1724545722.1724545722.1724545722.1%3B%2B__utmz%3D185069491.1724545722.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmjid=203482245&utmredir=1&utmu=qAAAAAAAAAAAAAAAAAAAAAAE~",
+      "url": "https://ssl.google-analytics.com/r/__utm.gif?utmwv=5.7.2&utms=1&utmn=938217371&utmhn=www.keiruaprod.fr&utmcs=UTF-8&utmsr=800x600&utmvp=800x600&utmsc=24-bit&utmul=en-us&utmje=0&utmfl=-&utmdt=D%C3%A9veloppeur%20web%20et%20formateur%20Symfony2%2FSymfony3%20freelance%20Paris%20-%20KeiruaProd&utmhid=20696698&utmr=-&utmp=%2F&utmht=1725150689585&utmac=UA-26997065-1&utmcc=__utma%3D185069491.347740680.1725150690.1725150690.1725150690.1%3B%2B__utmz%3D185069491.1725150690.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmjid=2069999320&utmredir=1&utmu=qAAAAAAAAAAAAAAAAAAAAAAE~",
       "details": {
         "id": "google analytics",
         "message": "Use hosted Matomo instance"
@@ -32,10 +32,10 @@
   "cookies": [
     {
       "name": "__utmb",
-      "value": "185069491.1.10.1724545722",
+      "value": "185069491.1.10.1725150690",
       "domain": ".keiruaprod.fr",
       "path": "/",
-      "expires": 1724547522,
+      "expires": 1725152489,
       "size": 31,
       "httpOnly": false,
       "secure": false,
@@ -46,10 +46,10 @@
     },
     {
       "name": "__utmz",
-      "value": "185069491.1724545722.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)",
+      "value": "185069491.1725150690.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)",
       "domain": ".keiruaprod.fr",
       "path": "/",
-      "expires": 1740313722,
+      "expires": 1740918689,
       "size": 76,
       "httpOnly": false,
       "secure": false,
@@ -77,7 +77,7 @@
       "value": "1",
       "domain": ".keiruaprod.fr",
       "path": "/",
-      "expires": 1724546322,
+      "expires": 1725151289,
       "size": 7,
       "httpOnly": false,
       "secure": false,
@@ -88,11 +88,11 @@
     },
     {
       "name": "__utma",
-      "value": "185069491.1974228185.1724545722.1724545722.1724545722.1",
+      "value": "185069491.347740680.1725150690.1725150690.1725150690.1",
       "domain": ".keiruaprod.fr",
       "path": "/",
-      "expires": 1787617722,
-      "size": 61,
+      "expires": 1788222689,
+      "size": 60,
       "httpOnly": false,
       "secure": false,
       "session": false,
@@ -106,7 +106,7 @@
     "content-encoding": "gzip",
     "content-length": "1763",
     "content-type": "text/html",
-    "date": "Sun, 25 Aug 2024 00:28:41 GMT",
+    "date": "Sun, 01 Sep 2024 00:31:29 GMT",
     "server": "Apache",
     "vary": "Accept-Encoding"
   },
@@ -169,14 +169,8 @@
     },
     {
       "hostname": "ajax.googleapis.com",
-      "ip": "142.250.68.42",
+      "ip": "172.253.115.95",
       "geoip": {
-        "city": {
-          "geoname_id": 5131638,
-          "names": {
-            "en": "Plainview"
-          }
-        },
         "continent": {
           "code": "NA",
           "geoname_id": 6255149,
@@ -206,14 +200,10 @@
           }
         },
         "location": {
-          "accuracy_radius": 100,
-          "latitude": 40.7746,
-          "longitude": -73.4761,
-          "metro_code": 501,
-          "time_zone": "America/New_York"
-        },
-        "postal": {
-          "code": "11803"
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -228,40 +218,23 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        },
-        "subdivisions": [
-          {
-            "geoname_id": 5128638,
-            "iso_code": "NY",
-            "names": {
-              "de": "New York",
-              "en": "New York",
-              "es": "Nueva York",
-              "fr": "New York",
-              "ja": "ニューヨーク州",
-              "pt-BR": "Nova Iorque",
-              "ru": "Нью-Йорк",
-              "zh-CN": "纽约州"
-            }
-          }
-        ]
+        }
       }
     },
     {
       "hostname": "plausible.io",
-      "ip": "143.244.49.177",
+      "ip": "138.199.40.58",
       "geoip": {
         "city": {
-          "geoname_id": 5368361,
+          "geoname_id": 5128581,
           "names": {
-            "de": "Los Angeles",
-            "en": "Los Angeles",
-            "es": "Los Ángeles",
-            "fr": "Los Angeles",
-            "ja": "ロサンゼルス",
-            "pt-BR": "Los Angeles",
-            "ru": "Лос-Анджелес",
-            "zh-CN": "洛杉矶"
+            "de": "New York City",
+            "en": "New York",
+            "es": "Nueva York",
+            "fr": "New York",
+            "ja": "ニューヨーク",
+            "pt-BR": "Nova Iorque",
+            "ru": "Нью-Йорк"
           }
         },
         "continent": {
@@ -294,13 +267,13 @@
         },
         "location": {
           "accuracy_radius": 20,
-          "latitude": 34.0544,
-          "longitude": -118.2441,
-          "metro_code": 803,
-          "time_zone": "America/Los_Angeles"
+          "latitude": 40.7123,
+          "longitude": -74.0068,
+          "metro_code": 501,
+          "time_zone": "America/New_York"
         },
         "postal": {
-          "code": "90060"
+          "code": "10118"
         },
         "registered_country": {
           "geoname_id": 2635167,
@@ -318,17 +291,17 @@
         },
         "subdivisions": [
           {
-            "geoname_id": 5332921,
-            "iso_code": "CA",
+            "geoname_id": 5128638,
+            "iso_code": "NY",
             "names": {
-              "de": "Kalifornien",
-              "en": "California",
-              "es": "California",
-              "fr": "Californie",
-              "ja": "カリフォルニア州",
-              "pt-BR": "Califórnia",
-              "ru": "Калифорния",
-              "zh-CN": "加州"
+              "de": "New York",
+              "en": "New York",
+              "es": "Nueva York",
+              "fr": "New York",
+              "ja": "ニューヨーク州",
+              "pt-BR": "Nova Iorque",
+              "ru": "Нью-Йорк",
+              "zh-CN": "纽约州"
             }
           }
         ]
@@ -336,7 +309,7 @@
     },
     {
       "hostname": "ssl.google-analytics.com",
-      "ip": "142.250.217.136",
+      "ip": "172.253.62.97",
       "geoip": {
         "continent": {
           "code": "NA",
