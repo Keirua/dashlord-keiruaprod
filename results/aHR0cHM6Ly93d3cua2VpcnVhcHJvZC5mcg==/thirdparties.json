@@ -22,7 +22,7 @@
     },
     {
       "type": "google analytics",
-      "url": "https://ssl.google-analytics.com/r/__utm.gif?utmwv=5.7.2&utms=1&utmn=539131779&utmhn=www.keiruaprod.fr&utmcs=UTF-8&utmsr=800x600&utmvp=800x600&utmsc=24-bit&utmul=en-us&utmje=0&utmfl=-&utmdt=D%C3%A9veloppeur%20web%20et%20formateur%20Symfony2%2FSymfony3%20freelance%20Paris%20-%20KeiruaProd&utmhid=1510061341&utmr=-&utmp=%2F&utmht=1725755379530&utmac=UA-26997065-1&utmcc=__utma%3D185069491.1134482632.1725755380.1725755380.1725755380.1%3B%2B__utmz%3D185069491.1725755380.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmjid=1002099264&utmredir=1&utmu=qAAAAAAAAAAAAAAAAAAAAAAE~",
+      "url": "https://ssl.google-analytics.com/r/__utm.gif?utmwv=5.7.2&utms=1&utmn=1913163581&utmhn=www.keiruaprod.fr&utmcs=UTF-8&utmsr=800x600&utmvp=800x600&utmsc=24-bit&utmul=en-us&utmje=0&utmfl=-&utmdt=D%C3%A9veloppeur%20web%20et%20formateur%20Symfony2%2FSymfony3%20freelance%20Paris%20-%20KeiruaProd&utmhid=129399776&utmr=-&utmp=%2F&utmht=1726360218521&utmac=UA-26997065-1&utmcc=__utma%3D185069491.75255928.1726360219.1726360219.1726360219.1%3B%2B__utmz%3D185069491.1726360219.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmjid=1803028693&utmredir=1&utmu=qAAAAAAAAAAAAAAAAAAAAAAE~",
       "details": {
         "id": "google analytics",
         "message": "Use hosted Matomo instance"
@@ -32,10 +32,10 @@
   "cookies": [
     {
       "name": "__utmb",
-      "value": "185069491.1.10.1725755380",
+      "value": "185069491.1.10.1726360219",
       "domain": ".keiruaprod.fr",
       "path": "/",
-      "expires": 1725757179,
+      "expires": 1726362018,
       "size": 31,
       "httpOnly": false,
       "secure": false,
@@ -46,10 +46,10 @@
     },
     {
       "name": "__utmz",
-      "value": "185069491.1725755380.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)",
+      "value": "185069491.1726360219.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)",
       "domain": ".keiruaprod.fr",
       "path": "/",
-      "expires": 1741523379,
+      "expires": 1742128218,
       "size": 76,
       "httpOnly": false,
       "secure": false,
@@ -77,7 +77,7 @@
       "value": "1",
       "domain": ".keiruaprod.fr",
       "path": "/",
-      "expires": 1725755979,
+      "expires": 1726360818,
       "size": 7,
       "httpOnly": false,
       "secure": false,
@@ -88,11 +88,11 @@
     },
     {
       "name": "__utma",
-      "value": "185069491.1134482632.1725755380.1725755380.1725755380.1",
+      "value": "185069491.75255928.1726360219.1726360219.1726360219.1",
       "domain": ".keiruaprod.fr",
       "path": "/",
-      "expires": 1788827379,
-      "size": 61,
+      "expires": 1789432218,
+      "size": 59,
       "httpOnly": false,
       "secure": false,
       "session": false,
@@ -106,7 +106,7 @@
     "content-encoding": "gzip",
     "content-length": "1763",
     "content-type": "text/html",
-    "date": "Sun, 08 Sep 2024 00:29:39 GMT",
+    "date": "Sun, 15 Sep 2024 00:30:18 GMT",
     "server": "Apache",
     "vary": "Accept-Encoding"
   },
@@ -169,7 +169,7 @@
     },
     {
       "hostname": "ajax.googleapis.com",
-      "ip": "142.251.179.95",
+      "ip": "142.250.190.138",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -223,18 +223,19 @@
     },
     {
       "hostname": "plausible.io",
-      "ip": "138.199.40.58",
+      "ip": "169.150.236.104",
       "geoip": {
         "city": {
-          "geoname_id": 5128581,
+          "geoname_id": 4887398,
           "names": {
-            "de": "New York City",
-            "en": "New York",
-            "es": "Nueva York",
-            "fr": "New York",
-            "ja": "ニューヨーク",
-            "pt-BR": "Nova Iorque",
-            "ru": "Нью-Йорк"
+            "de": "Chicago",
+            "en": "Chicago",
+            "es": "Chicago",
+            "fr": "Chicago",
+            "ja": "シカゴ",
+            "pt-BR": "Chicago",
+            "ru": "Чикаго",
+            "zh-CN": "芝加哥"
           }
         },
         "continent": {
@@ -267,13 +268,13 @@
         },
         "location": {
           "accuracy_radius": 20,
-          "latitude": 40.7123,
-          "longitude": -74.0068,
-          "metro_code": 501,
-          "time_zone": "America/New_York"
+          "latitude": 41.8874,
+          "longitude": -87.6318,
+          "metro_code": 602,
+          "time_zone": "America/Chicago"
         },
         "postal": {
-          "code": "10118"
+          "code": "60602"
         },
         "registered_country": {
           "geoname_id": 2635167,
@@ -291,17 +292,17 @@
         },
         "subdivisions": [
           {
-            "geoname_id": 5128638,
-            "iso_code": "NY",
+            "geoname_id": 4896861,
+            "iso_code": "IL",
             "names": {
-              "de": "New York",
-              "en": "New York",
-              "es": "Nueva York",
-              "fr": "New York",
-              "ja": "ニューヨーク州",
-              "pt-BR": "Nova Iorque",
-              "ru": "Нью-Йорк",
-              "zh-CN": "纽约州"
+              "de": "Illinois",
+              "en": "Illinois",
+              "es": "Illinois",
+              "fr": "Illinois",
+              "ja": "イリノイ州",
+              "pt-BR": "Ilinóis",
+              "ru": "Иллинойс",
+              "zh-CN": "伊利诺伊州"
             }
           }
         ]
@@ -309,7 +310,7 @@
     },
     {
       "hostname": "ssl.google-analytics.com",
-      "ip": "172.253.62.97",
+      "ip": "172.217.5.8",
       "geoip": {
         "continent": {
           "code": "NA",
