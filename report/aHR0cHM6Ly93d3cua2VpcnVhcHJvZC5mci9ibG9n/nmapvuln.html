@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.keiruaprod.fr</pre>
-<p class="lead">Sun Sep 22 00:31:58 2024 – Sun Sep 22 00:33:32 2024<br>1 hosts scanned.
+<p class="lead">Sun Sep 22 00:31:41 2024 – Sun Sep 22 00:35:14 2024<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -110,24 +110,6 @@
 <th>Extra Info</th>
 </tr></thead>
 <tbody>
-<tr class="active">
-<td>25</td>
-<td>tcp</td>
-<td>closed<br>reset</td>
-<td>smtp</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="active">
-<td>43</td>
-<td>tcp</td>
-<td>closed<br>reset</td>
-<td>whois</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
 <tr class="success">
 <td title="Port">80</td>
 <td title="Protocol">tcp</td>
@@ -138,23 +120,19 @@
 <td title="Extra Info"></td>
 </tr>
 <tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>http-server-header</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">
-  Apache
-  nginx</pre>
-<h5>fingerprint-strings</h5>
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
   GetRequest: 
     HTTP/1.1 404 Not Found
     server: nginx
-    date: Sun, 22 Sep 2024 00:33:21 GMT
+    date: Sun, 22 Sep 2024 00:35:03 GMT
     content-type: text/html; charset=utf8
-    content-length: 4957
-    x-ovh-webhosting-id: 1e0e59164a6a0b88dabe75e8b5f98f18
+    content-length: 4958
+    x-ovh-webhosting-id: 1be54779239dae6e08e7c31530515dc3
     pragma: no-cache
     cache-control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-    x-iplb-request-id: 14370F57:6844_D5BA2104:0050_66EF65CB_B78B:70B8
-    x-iplb-instance: 51886
+    x-iplb-request-id: 14377E2A:0C51_D5BA2104:0050_66EF6631_25BCC:3161
+    x-iplb-instance: 51919
     connection: close
     &lt;html xml:lang="en-EN" lang="en-EN"&gt;
     &lt;head&gt;
@@ -165,18 +143,18 @@
     &lt;meta http-equiv="Content-Language" content="en-EN"&gt;
     &lt;meta name="robots" content="noindex, nofollow"&gt;
     &lt;meta name="description" qtlid="283606" content="Site not installed"&gt;
-    &lt;meta ht
+    &lt;meta h
   HTTPOptions: 
     HTTP/1.1 404 Not Found
     server: nginx
-    date: Sun, 22 Sep 2024 00:33:21 GMT
+    date: Sun, 22 Sep 2024 00:35:03 GMT
     content-type: text/html; charset=utf8
-    content-length: 4957
-    x-ovh-webhosting-id: fb8c84cb9aca107f0ad9d8c8edf49f57
+    content-length: 4958
+    x-ovh-webhosting-id: ba078904e00f53ddd2484ac08ec66704
     pragma: no-cache
     cache-control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-    x-iplb-request-id: 14370F57:6840_D5BA2104:0050_66EF65D1_4496:1355
-    x-iplb-instance: 51946
+    x-iplb-request-id: 14377E2A:0C54_D5BA2104:0050_66EF6637_26F0E:3161
+    x-iplb-instance: 51919
     connection: close
     &lt;html xml:lang="en-EN" lang="en-EN"&gt;
     &lt;head&gt;
@@ -187,7 +165,11 @@
     &lt;meta http-equiv="Content-Language" content="en-EN"&gt;
     &lt;meta name="robots" content="noindex, nofollow"&gt;
     &lt;meta name="description" qtlid="283606" content="Site not installed"&gt;
-    &lt;meta ht</pre>
+    &lt;meta h</pre>
+<h5>http-server-header</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">
+  Apache
+  nginx</pre>
 </td></tr>
 <tr class="success">
 <td title="Port">443</td>
