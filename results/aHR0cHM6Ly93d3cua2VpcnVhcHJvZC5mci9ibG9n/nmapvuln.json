@@ -1,0 +1,1 @@
+{"host":"www.keiruaprod.fr","protocol":"tcp","closed_ports":"863","open_ports":[{"service":{"name":"http","product":"nginx","id":"80","vulnerabilities":[]}},{"service":{"name":"http","product":"nginx","id":"443","vulnerabilities":[]}}],"grade":"A"}
