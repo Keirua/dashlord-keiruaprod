@@ -262,7 +262,7 @@
               "ip"           : "www.keiruaprod.fr/213.186.33.4",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "049072A15983BAA5F2C4FB8663C974A96534"
+              "finding"      : "048D18192A88DC371B8FC9A24E20A595E5AB"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -276,21 +276,21 @@
               "ip"           : "www.keiruaprod.fr/213.186.33.4",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "B09B479C6A2170AB3FDEECFE97BCF7CB0C923C19"
+              "finding"      : "F9DA8FF871A8C55826C9D11C8541CF30B087411E"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "www.keiruaprod.fr/213.186.33.4",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "E4029DBDAA821B1D8AA3621E8A9FA3CCA2E9EF54F6AE84859582837FA5629B3B"
+              "finding"      : "0360CF742639CB0C7DBAA61FCC77C3409F9A5BF3AD18FD1524AFA4E965C66754"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "www.keiruaprod.fr/213.186.33.4",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -338,22 +338,22 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "www.keiruaprod.fr/213.186.33.4",
               "port"         : "443",
-              "severity"     : "MEDIUM",
-              "finding"      : "expires < 30 days (18)"
+              "severity"     : "OK",
+              "finding"      : "83 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "www.keiruaprod.fr/213.186.33.4",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2024-11-01 00:56"
+              "finding"      : "2025-01-12 08:20"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "www.keiruaprod.fr/213.186.33.4",
               "port"         : "443",
-              "severity"     : "MEDIUM",
-              "finding"      : "2025-01-30 00:56"
+              "severity"     : "OK",
+              "finding"      : "2025-04-12 08:19"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -500,7 +500,7 @@
               "ip"           : "www.keiruaprod.fr/213.186.33.4",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1736641939"
+              "finding"      : "1737246710"
           }
 ,         {
               "id"           : "HSTS",
@@ -673,7 +673,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=E4029DBDAA821B1D8AA3621E8A9FA3CCA2E9EF54F6AE84859582837FA5629B3B"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=0360CF742639CB0C7DBAA61FCC77C3409F9A5BF3AD18FD1524AFA4E965C66754"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -1056,6 +1056,6 @@
               "ip"           : "www.keiruaprod.fr/213.186.33.4",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "63"
+              "finding"      : "100"
           }
 ]
